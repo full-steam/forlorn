@@ -33,7 +33,9 @@ namespace ClockStone
         public static void CreatePrefab( GameObject gameObject )
         {
             var filePath = GetNoneExistingFilePath( GetSelectedPathOrFallback(), gameObject.name, "prefab" );
+#pragma warning disable 612, 618
             PrefabUtility.CreatePrefab( filePath, gameObject );
+#pragma warning restore 612, 618
             GameObject.DestroyImmediate( gameObject );
         }
 
