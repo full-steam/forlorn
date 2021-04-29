@@ -67,18 +67,18 @@ public class GameManager : MonoBehaviour
 
 public class Blackboard 
 {
-    //public PlayerController Player { set; get; }
+    public PlayerController Player { set; get; }
     //public bl_Joystick Joystick { set; get; }
-    //public ItemLibrary ItemLibrary { set; get; }
-    //public FlagManager Flag { set; get; }
-    //public DictionaryManager Dictionary { set; get; }
+    public ItemLibrary ItemLibrary { set; get; }
+    public FlagManager Flag { set; get; }
+    public DictionaryManager Dictionary { set; get; }
 
     public Blackboard()
     {
         CreateItemLibrary();
         void CreateItemLibrary()
         {
-            //ItemLibrary = new ItemLibrary();
+            ItemLibrary = new ItemLibrary();
         }
     }
 }
