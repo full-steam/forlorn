@@ -1,28 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class ObjectPoolItem : MonoBehaviour
+/// <summary>
+/// Data for objects that need to be pooled using ObjectPooler.
+/// </summary>
+[System.Serializable]
+public class ObjectPoolItem
 {
-    public GameObject pooledObjectPrefab;
-    public int size;
+    public GameObject poolObjectPrefab;
+    public int poolSize;
     public bool shouldExpand;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public GameObject GetPooledObject()
-    {
-        Debug.LogWarning("ObjectPoolItem.GetPooledObject is not implemented");
-        return new GameObject();
-    }
 }
