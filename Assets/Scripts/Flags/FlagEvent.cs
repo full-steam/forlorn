@@ -1,21 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class FlagEvent : MonoBehaviour
+﻿/// <summary>
+/// An event associated with a flag on an object.
+/// </summary>
+[System.Serializable]
+public class FlagEvent
 {
+    public string flag;
 
-    public string Flag { set; get; }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    /// <summary>
+    /// Executes the event associated with the flag on the object.
+    /// </summary>
+    public void ExecuteEvent() { }
 }
