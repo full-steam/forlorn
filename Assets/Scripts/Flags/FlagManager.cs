@@ -1,48 +1,73 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Manages flags for in-game events.
+/// </summary>
 public class FlagManager : MonoBehaviour
 {
+    public event Action<string> FlagTriggered;
 
     private Dictionary<string, bool> flags;
-    public Action<string> OnFlagTriggered; //should this be a property?
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        if (GameManager.Instance.Blackboard.FlagManager != null && GameManager.Instance.Blackboard.FlagManager != this) Destroy(this);
+        else
+        {
+            GameManager.Instance.Blackboard.FlagManager = this;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    /// <summary>
+    /// Returns the value of a flag.
+    /// </summary>
+    /// <param name="flag">Name of the requested value's flag.</param>
+    /// <returns>Value of the requested flag.</returns>
     public bool GetFlag(string flag)
     {
-
-        return new bool();
+        return flags[flag];
     }
 
-    public void SetFlag(string flag, bool trigger)
+    /// <summary>
+    /// Sets the value of a flag.
+    /// </summary>
+    /// <param name="flag">Name of the flag.</param>
+    /// <param name="value">Value to be set.</param>
+    public void SetFlag(string flag, bool value)
     {
-        // Slight error in Class Diagram sketch
-        // Reversed name placement in: `..., bool : trigger`
+        flags[flag] = value;
+        FlagTriggered(flag);
     }
 
-    public void InitFlags(Dictionary<string, bool> dict)
+    // TODO: Integrate with Save module
+    public void InitFlags()
     {
-        // Slight error in Class Diagram sketch
-        // Missing parameter name: `Dictionary<string, bool> *`
+        
     }
 
-    public Dictionary<string, bool> GetFlagsAll()
+    /// <summary>
+    /// Sets all flags to false. See VariableStorage.
+    /// </summary>
+    public void ResetFlags()
     {
+        foreach (var key in flags.Keys)
+        {
+            flags[key] = false;
+        }
+    }
 
-        //return flags;
-        return new Dictionary<string, bool>();
+    /// <summary>
+    /// Saves the flags to a SaveObject with separate lists for the keys and values.
+    /// </summary>
+    /// <param name="saveObj">SaveObject to save the flags to.</param>
+    /// <returns>Modified SaveObject.</returns>
+    public SaveObject SaveFlags(SaveObject saveObj)
+    {
+        saveObj.keys = new List<string>(flags.Keys).ToArray();
+        saveObj.values = new List<bool>(flags.Values).ToArray();
+        return saveObj;
     }
 }
