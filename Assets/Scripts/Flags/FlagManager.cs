@@ -66,8 +66,8 @@ public class FlagManager : MonoBehaviour
     /// <returns>Modified SaveObject.</returns>
     public SaveObject SaveFlags(SaveObject saveObj)
     {
-        saveObj.keys = new List<string>(flags.Keys).ToArray();
-        saveObj.values = new List<bool>(flags.Values).ToArray();
+        saveObj.keys = new List<string>(flags.Keys);
+        saveObj.values = new List<bool>(flags.Values);
         return saveObj;
     }
 }

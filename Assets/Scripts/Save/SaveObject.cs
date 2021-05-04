@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 [System.Serializable]
 public class SaveObject
@@ -14,6 +15,6 @@ public class SaveObject
     //public ItemObject[] itemList;             //uncomment later after implementing Item
 
     // ---Flags
-    public string[] keys;
-    public bool[] values;
+    public List<string> keys;
+    public List<bool> values;
 }
