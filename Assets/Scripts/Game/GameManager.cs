@@ -72,6 +72,7 @@ public class Blackboard
     public ItemLibrary ItemLibrary { set; get; }
     public FlagManager FlagManager { set; get; }
     public DictionaryManager Dictionary { set; get; }
+    public ObjectPooler ObjectPooler { set; get; }
 
     public Blackboard()
     {
