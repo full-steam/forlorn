@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class DictionaryItem : MonoBehaviour
 {
-    private Word word;
+    public Word Word { get; private set; }
     private TMP_Text text;
     private DefinitionHandler definitionPanel;
 
@@ -14,13 +14,13 @@ public class DictionaryItem : MonoBehaviour
 
     public void Init(Word word, DefinitionHandler definitionPanel)
     {
-        this.word = word;
+        Word = word;
         this.definitionPanel = definitionPanel;
         text.text = word.eng;
     }
 
     public void Define()
     {
-        definitionPanel.SetWord(word);
+        definitionPanel.SetWord(Word);
     }
 }

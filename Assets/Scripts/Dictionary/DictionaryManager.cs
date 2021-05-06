@@ -20,16 +20,16 @@ public class DictionaryManager : MonoBehaviour
         public RawWord[] dict;
     }
 
+    public DefinitionHandler definitionPanel;
+
     private List<Word> words;
     private Dictionary<string, GameObject> dictItems = new Dictionary<string, GameObject>();
-    private DefinitionHandler definitionPanel;
 
     private void Start()
     {
         words = LoadData();
 
         DictionaryItem currDictItem;
-
 
         foreach (Word word in words)
         {
