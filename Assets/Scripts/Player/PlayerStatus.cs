@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class PlayerStatus : MonoBehaviour
 {
 
-    public float maxHealth;
-    public float maxHunger;
+    [HideInInspector] public float maxHealth = 5;
+    [HideInInspector] public float maxHunger = 5;
     public float health;
     public float hunger;
     public int money;
@@ -32,9 +32,27 @@ public class PlayerStatus : MonoBehaviour
         
     }
 
-    public void AssignPlayerStatus(SaveObject stat) { }
+    public void AssignPlayerStatus(SaveObject stat) 
+    {
+        health = stat.health;
+        hunger = stat.hunger;
+        distanceSum = stat.distanceSum;
+        steps = stat.steps;
+        starving = stat.starving;
+        transform.position = stat.posInScene.GetData();
+        itemList = stat.itemList;
+    }
 
-    public void GetPlayerStatus(/*out*/ SaveObject stat) { }
+    public void GetPlayerStatus(ref SaveObject stat) 
+    {
+        stat.health = health;
+        stat.hunger = hunger;
+        stat.distanceSum = distanceSum;
+        stat.steps = steps;
+        stat.starving = starving;
+        stat.posInScene.SetData(transform.position);
+        stat.itemList = itemList;
+    }
 
     public void SetIcons(Image[] health, Image[] hunger)
     {

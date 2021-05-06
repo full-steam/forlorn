@@ -42,10 +42,17 @@ public class FlagManager : MonoBehaviour
         FlagTriggered(flag);
     }
 
-    // TODO: Integrate with Save module
-    public void InitFlags()
+    /// <summary>
+    /// Create a dictionary based on the save file
+    /// </summary>
+    /// <param name="so">SaveObject to load from</param>
+    public void InitFlags(SaveObject so)
     {
-        
+        flags = new Dictionary<string, bool>();
+        for (int i = 0; i < so.keys.Count; i++) 
+        {
+            flags.Add(so.keys[i], so.values[i]);
+        }
     }
 
     /// <summary>
@@ -62,12 +69,12 @@ public class FlagManager : MonoBehaviour
     /// <summary>
     /// Saves the flags to a SaveObject with separate lists for the keys and values.
     /// </summary>
-    /// <param name="saveObj">SaveObject to save the flags to.</param>
-    /// <returns>Modified SaveObject.</returns>
-    public SaveObject SaveFlags(SaveObject saveObj)
+    /// <param name="saveObj">Reference of SaveObject to save the flags to.</param>
+    ///// <returns>Modified SaveObject.</returns>
+    public void SaveFlags(ref SaveObject saveObj)
     {
         saveObj.keys = new List<string>(flags.Keys);
         saveObj.values = new List<bool>(flags.Values);
-        return saveObj;
+        //return saveObj;
     }
 }

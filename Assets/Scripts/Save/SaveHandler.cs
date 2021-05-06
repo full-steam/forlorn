@@ -1,25 +1,65 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Handles as a mediator between actual game data with GameManager
+/// </summary>
 public class SaveHandler : MonoBehaviour
 {
-
     public SaveObject so = new SaveObject();
-    //public PlayerController player;
-    //public FlagManager flag;
+    public PlayerController player;
+    public FlagManager flag;
+
+    public bool inDebugScene;
+    public SaveDataTesting sdt;
+
+    private void Start()
+    {
+        flag = GetComponent<FlagManager>();     //flag persists with GameManager, so only need to get the ref once
+    }
+
+    /// <summary>
+    /// SaveHandler check the latest Player reference in Blackboard.
+    /// </summary>
+    public void GetPlayerRef()
+    {
+        player = GameManager.Instance.Blackboard.Player;
+    }
 
     public void AssignSaveData()
     {
-        //player.playerStatus.AssignPlayerStatus(so);
-
-        //Flags should have a method to apply data to FlagManager
+        GetPlayerRef();
+        flag.InitFlags(so); 
+        if (inDebugScene)
+        {
+            sdt.saveObject = so;
+            sdt.UpdateUI();
+        }
+        else
+        {
+            player.playerStatus.AssignPlayerStatus(so);
+        }
     }
 
     public SaveObject GetLatestSaveData()
     {
-        //player.playerStatus.GetPlayerStatus(out so);
+        GetPlayerRef();
+        if (inDebugScene)
+        {
+            sdt.GetPlayerStatus(ref so);
+        }
+        else
+        {
+            player.playerStatus.GetPlayerStatus(ref so);
+        }
 
-        //Flags should have a method to give the data of dictionary that is already split into 2 attributes by sending out SaveHandler's so.
+        flag.SaveFlags(ref so);
+
+        so.sceneName = SceneManager.GetActiveScene().name;
 
         return so;
     }
+
+    
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-[RequireComponent(typeof(SaveHandler))]
+[RequireComponent(typeof(SaveHandler), typeof(FlagManager))]
 public class GameManager : MonoBehaviour
 {
     // ---Properties
@@ -24,7 +24,17 @@ public class GameManager : MonoBehaviour
 
         Blackboard = new Blackboard();
         saveHandler = GetComponent<SaveHandler>();
-        so = new SaveObject();
+
+        if (PlayerPrefs.GetInt("HasSaveData", 0) == 0)
+        {
+            so = new SaveObject();
+            Debug.Log("No save data found.");
+        }
+        else if (PlayerPrefs.GetInt("HasSaveData") == 1)
+        {
+            so = SaveLoad.Load();
+            Debug.Log("Save data found.");
+        }
     }
 
     public void Pause()
@@ -47,14 +57,24 @@ public class GameManager : MonoBehaviour
 
     public void LoadGame()
     {
-        so = SaveLoad.Load();
+        //so = SaveLoad.Load();     saved files are loaded at the start of the game into GameManager
         saveHandler.so = so;
         SceneManager.LoadScene(so.sceneName);
         StartCoroutine(LoadScene());
     }
 
     /// <summary>
-    /// Load scene asynchronously to wait until the end of first frame, letting other objects finish their (non-coroutine) Awake and Start before applying the save data.
+    /// for debugging scene only
+    /// </summary>
+    public void LoadDebug()
+    {
+        if (PlayerPrefs.GetInt("HasSaveData") == 0) { Debug.Log("No Save data to load"); return; }
+        saveHandler.so = so;
+        saveHandler.AssignSaveData();
+    }
+
+    /// <summary>
+    /// Load scene (from save data) asynchronously to wait until the end of first frame, letting other objects finish their (non-coroutine) Awake and Start before applying the save data.
     /// </summary>
     private IEnumerator LoadScene()
     {
