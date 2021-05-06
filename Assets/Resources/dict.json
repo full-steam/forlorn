@@ -1,16 +1,17 @@
 {
-    "dict": [
+    "dict":
+    [
         {
             "eng": "bear",
             "ind": "melahirkan",
-            "pos": "Kerja",
+            "posVal": 3,
             "pronunciationAudioClipID": "",
             "isUnlocked": true
         },
         {
             "eng": "love",
             "ind": "mencintai",
-            "pos": "Kerja",
+            "posVal": 3,
             "pronunciationAudioClipID": "",
             "isUnlocked": true
         }

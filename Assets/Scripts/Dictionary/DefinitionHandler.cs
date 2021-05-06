@@ -1,35 +1,40 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using TMPro;
 using UnityEngine;
-using TMPro;
 using UnityEngine.UI;
 
 public class DefinitionHandler : MonoBehaviour
 {
-
     private TMP_Text engText;
     private TMP_Text indText;
     private TMP_Text posText;
-    private Button pronunciationButton;
+    private string pronunciationID;
+    private Button button;
+    private ButtonHandler buttonHandler;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
+        buttonHandler = GetComponent<ButtonHandler>();
+
+        button.onClick.AddListener(PlayPronunciation);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    /// <summary>
+    /// Sets the currently displayed dictionary entry.
+    /// </summary>
+    /// <param name="word">Dictionary entry to be displayed.</param>
     public void SetWord(Word word)
     {
-
+        engText.text = word.eng;
+        indText.text = word.ind;
+        posText.text = "Kata " + word.pos.ToString();
+        pronunciationID = word.pronunciationAudioClipID;
     }
 
-    //-------------
-    // To play an audio, have the button hold a ButtonManager to play the clip with PlaySound(string audioID)
-    //-------------
+    /// <summary>
+    /// Plays the currently defined pronunciation audio.
+    /// </summary>
+    private void PlayPronunciation()
+    {
+        buttonHandler.PlaySound(pronunciationID);
+    }
 }

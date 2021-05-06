@@ -1,34 +1,26 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
 public class DictionaryItem : MonoBehaviour
 {
-
-    private Word word;
+    public Word Word { get; private set; }
     private TMP_Text text;
     private DefinitionHandler definitionPanel;
 
-    public DictionaryItem(Word word, DefinitionHandler definitionPanel)
+    private void Awake()
     {
-
+        text = GetComponentInChildren<TMP_Text>();
     }
 
-    // Start is called before the first frame update
-    void Start()
+    public void Init(Word word, DefinitionHandler definitionPanel)
     {
-        
+        Word = word;
+        this.definitionPanel = definitionPanel;
+        text.text = word.eng;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Define()
     {
-        
-    }
-
-    public void Define() 
-    { 
-        
+        definitionPanel.SetWord(Word);
     }
 }
