@@ -6,11 +6,11 @@ using UnityEngine;
 public class DictionaryItem : MonoBehaviour
 {
 
-    private Word word;
+    public Word Word { get; private set; }
     private TMP_Text text;
     private DefinitionHandler definitionPanel;
 
-    public DictionaryItem(Word word, DefinitionHandler definitionPanel)
+    public void Init(Word word, DefinitionHandler definitionPanel)
     {
 
     }
