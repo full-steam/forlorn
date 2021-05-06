@@ -20,8 +20,6 @@ public class DictionaryManager : MonoBehaviour
         public RawWord[] dict;
     }
 
-    public GameObject dictionaryItemPrefab;
-
     private List<Word> words;
     private Dictionary<string, GameObject> dictItems = new Dictionary<string, GameObject>();
     private DefinitionHandler definitionPanel;
