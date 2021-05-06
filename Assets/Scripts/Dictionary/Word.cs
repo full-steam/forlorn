@@ -1,39 +1,30 @@
-﻿[System.Serializable]
-public class Word
+﻿public class Word
 {
+    public enum PartOfSpeech
+    {
+        Benda,
+        Penentu,
+        Ganti,
+        Kerja,
+        Sifat,
+        Keterangan,
+        Depan,
+        Konjungsi
+    };
 
     public string eng;
     public string ind;
-    public string pos;
+    public PartOfSpeech pos;
     public string pronunciationAudioClipID;
     public bool isUnlocked;
-    public Word(string eng, string ind, PartOfSpeech pos, string pronunciationAudioClipID, bool isUnlocked)
+
+    public Word(string eng, string ind, int posVal, string pronunciationAudioClipID, bool isUnlocked)
     {
-
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        this.eng = eng;
+        this.ind = ind;
+        this.pos = (PartOfSpeech)posVal;
+        this.pronunciationAudioClipID = pronunciationAudioClipID;
+        this.isUnlocked = isUnlocked;
     }
 }
 
-//Does this need to be public?
-public enum PartOfSpeech
-{
-    Benda,
-    Penentu,
-    Ganti,
-    Kerja,
-    Sifat,
-    Keterangan,
-    Depan,
-    Konjungsi
-};
