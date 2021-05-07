@@ -1,36 +1,37 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.EventSystems;
+﻿using UnityEngine.EventSystems;
+using Yarn;
 
-// ---------------------------------------------!
-// Does this need a collider?
-// [RequireComponent(typeof(Collider2D))]
-// ---------------------------------------------!
+/// <summary>
+/// Component to run dialogue when the object is clicked.
+/// </summary>
 public class DialogueClick : Dialogue, IPointerClickHandler
 {
-    //Dialogue attribute can/should be omitted here. 
-    //AFAIK we just need to load "Nodes" which is part of YarnProgram (where 1 YarnProgram can hold more than 1 node), then by loading to the YarnProgram to the Yarn runner (i.e DialogueRunner.cs/our own custom class), we can access all those nodes from everywhere as long as we have the node name (string). Then we just need to modify variables to change the text according to the current component.
+    public string objName;
 
-    public new string name;
-
-    private void Start()
+    protected override void Start()
     {
-        //nodeName = (STATIC_CLICK_NODE_NAME)
+        runner = GameManager.Instance.Blackboard.DialogueRunner;
+        nodeName = "Click";
+
+        if (string.IsNullOrEmpty(objName)) objName = gameObject.name; 
     }
 
     public override void StartDialogue()
     {
-        //SetObjectName();
+        SetObjectName();
+        base.StartDialogue();
+    }
+
+    /// <summary>
+    /// Sets the variable used by YarnSpinner to the current object name.
+    /// </summary>
+    private void SetObjectName()
+    {
+        GameManager.Instance.Blackboard.VariableStorage.SetVariable("$click_object_name", new Value(objName));
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
         StartDialogue();
-    }
-
-    private void SetObjectName()
-    {
-        //change the variable that holds the object name to be shown on Dialogue (that will be read from the node)
     }
 }
