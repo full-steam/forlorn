@@ -1,23 +1,30 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using Yarn;
-//using Yarn.Unity;         uncomment if uses DialogueRunner
+﻿using UnityEngine;
+using Yarn.Unity;
 
-public abstract class Dialogue : MonoBehaviour
+/// <summary>
+/// Base component for running dialogue.
+/// Only runs the set dialogue.
+/// For sentence arrangement, clicks, and collectibes, use DialogueArrange, DialogueClick, and DialogueCollectible.
+/// </summary>
+public class Dialogue : MonoBehaviour
 {
-    //Yarn's ScriptableObject
     public YarnProgram dialogue;
 
-
-    //My first idea is to let each dialogue component to get reference to the DialogueRunner (or any script that runs Yarn)
-    //protected DialogueRunner runner;
-
-    //Holds the name of the main node of the YarnProgram
+    protected DialogueRunner runner;
     protected string nodeName;
 
-    //Add any other attribute if needed (e.g for flag, etc.)
+    protected virtual void Start()
+    {
+        runner = GameManager.Instance.Blackboard.DialogueRunner;
+        nodeName = dialogue.name;
+        if (dialogue) runner.Add(dialogue);
+    }
 
-    public abstract void StartDialogue();
-    //Add any other behaviour if needed (e.g for flag, etc.)
+    /// <summary>
+    /// Starts the dialogue.
+    /// </summary>
+    public virtual void StartDialogue()
+    {
+        runner.StartDialogue(nodeName);
+    }
 }
