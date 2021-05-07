@@ -1,24 +1,63 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogueArrange : Dialogue
 {
+    public List<string> answers;
+    public List<string> options;
+    public GameObject arrangementPanel;
+    public SentenceHolder sentenceHolder;
+    public Button arrangementButton;
+    public ArrangementOptionsHolder optionsHolder;
+
+    protected override void Start()
+    {
+        runner.AddCommandHandler("arrange_sentence", ArrangeSentence);
+
+        foreach (string answer in answers) answer.ToLower();
+    }
+
     public override void StartDialogue()
     {
-        
+        optionsHolder.SetOptions(options);
+        base.StartDialogue();
     }
 
-    public void EndDialogue()
+    private void ArrangeSentence(string[] parameters, Action onComplete)
     {
-
+        arrangementPanel.SetActive(true);
+        arrangementButton.onClick.AddListener(delegate { ProcessAnswer(onComplete); });
     }
 
-    private void ArrangeSentence()
+    private void ProcessAnswer(Action onComplete)
     {
-        //I actually forgot what I meant in sketch (so take this with a grain of salt), 許してください :<
-        //
-        //To integrate Arrange in Yarn dialogue, we need to give use a Command that will call a method that is a CommandHandler, so we add this method to the CommandHandler when we START the dialogue from this component, then remove it at the END
-        //ps: 'Blocking' as in (temporarily) stopping Yarn Dialogue, should be
+        string sent = sentenceHolder.GetSentence();
+
+        if (!string.IsNullOrWhiteSpace(sent))
+        {
+            bool isCorrect = false;
+
+            // lowercase
+            sent = sent.ToLower();
+
+            foreach (string answer in answers)
+            {
+                if (sent == answer)
+                {
+                    isCorrect = true;
+                    break;
+                }
+            }
+
+            if (isCorrect)
+            {
+                arrangementPanel.SetActive(false);
+                arrangementButton.onClick.RemoveAllListeners();
+                onComplete();
+            }
+            else sentenceHolder.Reset();
+        }
     }
 }
