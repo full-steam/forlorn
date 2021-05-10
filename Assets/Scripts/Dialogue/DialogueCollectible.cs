@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using Yarn;
 
 public class DialogueCollectible : Dialogue
 {
@@ -9,30 +7,39 @@ public class DialogueCollectible : Dialogue
 
     public Item item;
     public int count;
+    public string takenFlag;
     private int itemID;
 
-    private void Start()
+    protected override void Start()
     {
         //TODO: Get Item ID after Item module implemented
         //itemID = (get from ItemLibrary)
 
-        //nodeName = (STATIC_COLLECTIBLE_NODE_NAME)
+        runner = GameManager.Instance.Blackboard.DialogueRunner;
+        nodeName = "Collectible";
+
+        CheckTakenStatus();
     }
 
     public override void StartDialogue()
     {
-        //SetItemName();
+        SetItemName();
+        base.StartDialogue();
     }
 
+    /// <summary>
+    /// Sets the variable used by YarnSpinner to the current item name.
+    /// </summary>
     private void SetItemName()
     {
-        //change the variable that holds the item name to be shown on Dialogue (that will be read from the node)
+        GameManager.Instance.Blackboard.VariableStorage.SetVariable("$collectible_object_name", new Value(item.name));
     }
 
+    /// <summary>
+    /// Checks if the object has been taken in this save. If it has, disable the object.
+    /// </summary>
     private void CheckTakenStatus()
     {
-        //I'm not sure how to save these collectibles status, read and write to flags?
-        
-        //Disable script/object if already taken.
+        if (GameManager.Instance.Blackboard.FlagManager.GetFlag(takenFlag)) gameObject.SetActive(false);
     }
 }
