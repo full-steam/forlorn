@@ -1,7 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Component to hold the data and logic of the sentence holder.
+/// </summary>
 public class SentenceHolder : MonoBehaviour
 {
     private List<ArrangementOption> tokens;
@@ -12,6 +14,10 @@ public class SentenceHolder : MonoBehaviour
         tokens = new List<ArrangementOption>();
     }
 
+    /// <summary>
+    /// Adds a word from the options holder to the sentence.
+    /// </summary>
+    /// <param name="option">Option to be added.</param>
     public void AddWord(ArrangementOption option)
     {
         tokens.Add(option);
@@ -19,11 +25,21 @@ public class SentenceHolder : MonoBehaviour
         option.transform.SetPositionAndRotation(Vector3.zero, Quaternion.identity);
     }
 
+    /// <summary>
+    /// Removes a word from the list of sentence tokens.
+    /// Only removes it from the private list.
+    /// Moving it to the options holder happens in ArrangementOptionsHolder.
+    /// </summary>
+    /// <param name="wordToRemove">Option to be removed.</param>
     public void RemoveWord(ArrangementOption wordToRemove)
     {
         tokens.Remove(wordToRemove);
     }
 
+    /// <summary>
+    /// Returns the sentence as a string with spaces between each token.
+    /// </summary>
+    /// <returns></returns>
     public string GetSentence()
     {
         string sent = "";
@@ -39,9 +55,13 @@ public class SentenceHolder : MonoBehaviour
         return sent;
     }
 
+    /// <summary>
+    /// Clears the sentence and returns all options to the options holder.
+    /// </summary>
     public void Reset()
     {
-        foreach(Transform child in transform)
+        tokens.Clear();
+        foreach (Transform child in transform)
         {
             child.GetComponent<ArrangementOption>().Toggle();
         }

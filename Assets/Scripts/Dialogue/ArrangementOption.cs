@@ -1,6 +1,9 @@
 ﻿using TMPro;
 using UnityEngine;
 
+/// <summary>
+/// Component handling the logic and data of options in the sentence arrangement mechanic.
+/// </summary>
 public class ArrangementOption : MonoBehaviour
 {
     public string Word { get; private set; }
@@ -15,6 +18,11 @@ public class ArrangementOption : MonoBehaviour
         text = GetComponent<TMP_Text>();
     }
 
+    /// <summary>
+    /// Pseudo-constructor.
+    /// </summary>
+    /// <param name="option">The option to display.</param>
+    /// <param name="holder">Reference to the arrangement options holder.</param>
     public void Init(string option, ArrangementOptionsHolder holder)
     {
         Word = option;
@@ -24,6 +32,10 @@ public class ArrangementOption : MonoBehaviour
         isInSent = false;
     }
 
+    /// <summary>
+    /// If the option is not in the sentence, it is put into the sentence.
+    /// If the option is in the sentence, it is returned to the options holder.
+    /// </summary>
     public void Toggle()
     {
         if (isInSent)

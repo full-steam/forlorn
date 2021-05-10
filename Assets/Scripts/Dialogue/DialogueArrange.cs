@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Component to handle the sentence arrangement mechanic.
+/// </summary>
 public class DialogueArrange : Dialogue
 {
     public List<string> answers;
@@ -19,18 +22,22 @@ public class DialogueArrange : Dialogue
         foreach (string answer in answers) answer.ToLower();
     }
 
-    public override void StartDialogue()
-    {
-        optionsHolder.SetOptions(options);
-        base.StartDialogue();
-    }
-
+    /// <summary>
+    /// Begins the sentence arrangement mechanic.
+    /// </summary>
+    /// <param name="parameters">Unused. Parameters sent from Yarn Programs.</param>
+    /// <param name="onComplete">Action to be called once the arrangement is complete.</param>
     private void ArrangeSentence(string[] parameters, Action onComplete)
     {
+        optionsHolder.SetOptions(options);
         arrangementPanel.SetActive(true);
         arrangementButton.onClick.AddListener(delegate { ProcessAnswer(onComplete); });
     }
 
+    /// <summary>
+    /// Processes the answer sentence.
+    /// </summary>
+    /// <param name="onComplete">Action to be called if the arrangement is correct.</param>
     private void ProcessAnswer(Action onComplete)
     {
         string sent = sentenceHolder.GetSentence();
@@ -57,6 +64,7 @@ public class DialogueArrange : Dialogue
                 arrangementButton.onClick.RemoveAllListeners();
                 onComplete();
             }
+            // TODO: implement feedback if incorrect
             else sentenceHolder.Reset();
         }
     }
