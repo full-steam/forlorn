@@ -10,21 +10,23 @@ public class ItemLibrary
 
     public ItemLibrary()
     {
-
-    }
-
-    public void GetItem(int id)
-    {
-
+        SetLibrary();
     }
 
     private void SetLibrary()
     {
+        items = Resources.LoadAll<Item>("Item");
 
+        //probably needs to check for duplicates just in case?
+
+        foreach (var item in items)
+        {
+            library.Add(item.id, item);
+        }
     }
 
-    private void GetAllItem()
+    public Item GetItem(int id)
     {
-        //Get all Scriptable Objects of Item in data
+        return library[id];
     }
 }
