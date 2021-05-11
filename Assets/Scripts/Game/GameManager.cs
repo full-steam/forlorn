@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Yarn.Unity;
 
 [RequireComponent(typeof(SaveHandler), typeof(FlagManager))]
 public class GameManager : MonoBehaviour
@@ -93,6 +94,8 @@ public class Blackboard
     public FlagManager FlagManager { set; get; }
     public DictionaryManager Dictionary { set; get; }
     public ObjectPooler ObjectPooler { set; get; }
+    public DialogueRunner DialogueRunner { set; get; }
+    public VariableStorage VariableStorage { set; get; }
 
     public Blackboard()
     {
