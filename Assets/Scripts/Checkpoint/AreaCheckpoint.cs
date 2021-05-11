@@ -11,6 +11,9 @@ public class AreaCheckpoint : Checkpoint
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        TriggerCheckpoint();
+        if (collision.CompareTag("Player"))
+        {
+            TriggerCheckpoint();
+        }
     }
 }
