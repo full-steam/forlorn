@@ -1,9 +1,25 @@
-﻿using UnityEngine;
+﻿using UnityEditor;
+using UnityEngine;
 using UnityEngine.UI;
 
-// TODO: ADD CREATE COMPONENT
 public class Item : ScriptableObject
 {
+    #region Asset Creation
+    [MenuItem("Assets/Create/Scriptable Objects/Item")]
+    public static void CreateMyAsset()
+    {
+        var items = Resources.LoadAll<Item>("Item");
+        int nextCount = items.Length + 1;
+
+        Item asset = ScriptableObject.CreateInstance<Item>();
+        asset.id = nextCount;
+        AssetDatabase.CreateAsset(asset, "Assets/Resources/Item/" + (nextCount).ToString("0") + "-.asset");
+        AssetDatabase.SaveAssets();
+        EditorUtility.FocusProjectWindow();
+        Selection.activeObject = asset;
+    }
+    #endregion
+
     public int id;
     public new string name;
     public string text;
@@ -24,16 +40,16 @@ public class Item : ScriptableObject
     }
 }
 
-//Change to `Struct` instead?
+//Changed to `Struct` instead
 [System.Serializable]
-public class ItemEffect
+public struct ItemEffect
 {
     public int statID;
     public float value;
 
-    ///Status ID table:
-    /// 1   : Health
-    /// 2   : Hunger
+    //Status ID table:
+    // 1   : Health
+    // 2   : Hunger
 }
 
 public enum ItemType { Consumable, QuestItem };

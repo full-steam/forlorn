@@ -9,22 +9,34 @@ public class PlayerInteraction : MonoBehaviour
     public Button interactButton;
     public GameObject toInteract;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void Interact(GameObject _toInteract = null)
     {
-        if (!_toInteract) _toInteract = toInteract;
+        //method will use the paramater as the item to be interacted, unless stated explicitly, will interact with existing reference in component
+        if (_toInteract = null)
+        {
+            if (toInteract = null) { Debug.LogError("No object detected"); return; }
+            _toInteract = toInteract;
+        }
 
-        //IMPLEMENT
+        Debug.Log("Please uncomment previoulsy missing reference. (Dialogue.cs)");
+        //_toInteract.GetComponent<Dialogue>().StartDialogue();
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Interactable"))
+        {
+            interactButton.interactable = true;
+            toInteract = collision.gameObject;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Interactable"))
+        {
+            interactButton.interactable = false;
+            toInteract = null;
+        }
     }
 }

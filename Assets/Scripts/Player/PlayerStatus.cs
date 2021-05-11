@@ -23,13 +23,25 @@ public class PlayerStatus : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        lastPos = transform.position;
+        UpdateUI();
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        
+        distanceSum += Vector3.Distance(lastPos, transform.position);
+        lastPos = transform.position;
+        if (distanceSum >= 1.0f)
+        {
+            distanceSum = 0;
+            steps++;
+            if (steps >= 30)
+            {
+                steps = 0;
+                ModifyHunger(-0.5f);
+            }
+        }
     }
 
     public void AssignPlayerStatus(SaveObject stat) 
@@ -41,6 +53,9 @@ public class PlayerStatus : MonoBehaviour
         starving = stat.starving;
         transform.position = stat.posInScene.GetData();
         itemList = stat.itemList;
+
+        lastPos = transform.position;
+        UpdateUI();
     }
 
     public void GetPlayerStatus(ref SaveObject stat) 
@@ -60,21 +75,111 @@ public class PlayerStatus : MonoBehaviour
         hungerIcons = hunger;
     }
 
-    public void ModifyHealth(float amount) { }
+    public void ModifyHealth(float amount) 
+    {
+        health += amount;
+        CheckHealth();
+        UpdateUI();
+    }
     
-    public void ModifyHunger(float amount) { }
+    public void ModifyHunger(float amount) 
+    {
+        hunger += amount;
+        CheckHunger();
+        UpdateUI();
+    }
     
-    public void ModifyMoney(int amount) { }
+    public void ModifyMoney(int amount) 
+    {
+        money += amount;
+    }
     
-    public void AddItem(ItemObject newItem) { }
+    public void AddItem(ItemObject newItem) 
+    {
+        int sameItemIndex = -1;
+        if (GameManager.Instance.Blackboard.ItemLibrary.GetItem(newItem.itemID).stackable)  //check if item is stackable
+        {                                                                                   //if so then check if player already has them before
+            for (int i = 0; i < itemList.Count; i++)
+            {
+                if (itemList[i].itemID == newItem.itemID) { sameItemIndex = i; break; }
+            }
+        }
 
-    private void CheckHealth() { }
+        if (sameItemIndex == -1) //no same item in itemlist / item unstackable, add new
+        {
+            itemList.Add(newItem);
+            Debug.Log("new item added");
+        }
+        else                    //add the amount from the obtained item to previously owned stacks
+        {
+            itemList[sameItemIndex].count += newItem.count;
+            Debug.Log("item amount added");
+        }
+    }
 
-    private void CheckHunger() { }
+    private void CheckHealth() 
+    {
+        if (health <= 0)
+        {
+            health = 0;
+            Death();
 
-    private void Starving() { }
+            //debug, change later
+            Time.timeScale = 0f;
+        }
+        else if (health > maxHealth) health = maxHealth;
+    }
 
-    private void Death() { }
+    private void CheckHunger() 
+    {
+        if (hunger <= 0)
+        {
+            hunger = 0;
+            if (starving) return;
+            else
+            {
+                //Debug.Log("Starving started");
+                starving = true;
+                InvokeRepeating("Starving", 3.0f, 3.0f);
+            }
+        }
+        else if (hunger > 0)
+        {
+            if (hunger > maxHunger) hunger = maxHunger;
+            if (starving)
+            {
+                //Debug.Log("Starving stopped");
+                starving = false;
+                CancelInvoke("Starving");
+            }
+        }
+    }
 
-    private void UpdateUI() { }
+    private void Starving() 
+    {
+        //Debug.Log("Health reduced from starving");
+        ModifyHealth(-0.5f);
+    }
+
+    private void Death() 
+    {
+        Debug.Log("Player ded. F");
+    }
+
+    private void UpdateUI() 
+    {
+        //Health Icons
+        for (int i = 0; i < healthIcons.Length; i++)
+        {
+            if (i <= (health * 2)) healthIcons[i].enabled = true;
+            else healthIcons[i].enabled = false;
+        }
+
+        //Hunger Icons
+        for (int i = 0; i < hungerIcons.Length; i++)
+        {
+            if (i <= (hunger * 2)) hungerIcons[i].enabled = true;
+            else hungerIcons[i].enabled = false;
+        }
+    }
 }
