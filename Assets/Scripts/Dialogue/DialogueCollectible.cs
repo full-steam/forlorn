@@ -1,19 +1,19 @@
 ﻿using Yarn;
 
+/// <summary>
+/// Component to run dialogue when an item is collected.
+/// </summary>
 public class DialogueCollectible : Dialogue
 {
-    //Dialogue attribute can/should be omitted here. 
-    //AFAIK we just need to load "Nodes" which is part of YarnProgram (where 1 YarnProgram can hold more than 1 node), then by loading to the YarnProgram to the Yarn runner (i.e DialogueRunner.cs/our own custom class), we can access all those nodes from everywhere as long as we have the node name (string). Then we just need to modify variables to change the text according to the current component.
-
     public Item item;
     public int count;
     public string takenFlag;
-    private int itemID;
+    private ItemObject itemObject;
 
     protected override void Start()
     {
-        //TODO: Get Item ID after Item module implemented
-        //itemID = (get from ItemLibrary)
+        itemObject.itemID = item.id;
+        itemObject.count = count;
 
         runner = GameManager.Instance.Blackboard.DialogueRunner;
         nodeName = "Collectible";
@@ -21,9 +21,10 @@ public class DialogueCollectible : Dialogue
         CheckTakenStatus();
     }
 
-    public override void StartDialogue()
+    protected override void StartDialogue()
     {
         SetItemName();
+        GameManager.Instance.Blackboard.Player.playerStatus.AddItem(itemObject);
         base.StartDialogue();
     }
 

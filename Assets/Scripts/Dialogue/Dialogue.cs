@@ -9,6 +9,9 @@ using Yarn.Unity;
 public class Dialogue : MonoBehaviour
 {
     public YarnProgram dialogue;
+    [HideInInspector]
+    public Checkpoint checkpoint;
+    public bool triggerCheckpointDirectly;
 
     protected DialogueRunner runner;
     protected string nodeName;
@@ -23,8 +26,20 @@ public class Dialogue : MonoBehaviour
     /// <summary>
     /// Starts the dialogue.
     /// </summary>
-    public virtual void StartDialogue()
+    protected virtual void StartDialogue()
     {
+        runner.AddCommandHandler("trigger_checkpoint", TriggerCheckpoint);
+        if (triggerCheckpointDirectly) checkpoint.TriggerCheckpoint();
         runner.StartDialogue(nodeName);
+    }
+
+    /// <summary>
+    /// Triggers a checkpoint from a Yarn Program.
+    /// </summary>
+    /// <param name="parameters">Parameters sent from the Yarn Program. Should either be empty or have one string argument.</param>
+    protected void TriggerCheckpoint(string[] parameters)
+    {
+        if (parameters.Length > 0) checkpoint.TriggerCheckpoint();
+        else checkpoint.TriggerCheckpoint(parameters[0]);
     }
 }
