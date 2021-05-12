@@ -29,6 +29,12 @@ public class bl_Joystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     private float diff;
     private Vector3 PressScaleVector;
 
+    private void Awake()
+    {
+        //Self assign to GameManager added
+        GameManager.Instance.Blackboard.Joystick = this;
+    }
+
     /// <summary>
     /// 
     /// </summary>

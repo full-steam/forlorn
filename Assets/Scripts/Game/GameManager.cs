@@ -89,7 +89,7 @@ public class GameManager : MonoBehaviour
 public class Blackboard 
 {
     public PlayerController Player { set; get; }
-    //public bl_Joystick Joystick { set; get; }
+    public bl_Joystick Joystick { set; get; }
     public ItemLibrary ItemLibrary { set; get; }
     public FlagManager FlagManager { set; get; }
     public DictionaryManager Dictionary { set; get; }
