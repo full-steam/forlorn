@@ -21,14 +21,14 @@ public class Dialogue : MonoBehaviour
         runner = GameManager.Instance.Blackboard.DialogueRunner;
         nodeName = dialogue.name;
         if (dialogue) runner.Add(dialogue);
-        runner.AddCommandHandler("trigger_checkpoint", TriggerCheckpoint);
     }
 
     /// <summary>
     /// Starts the dialogue.
     /// </summary>
-    public virtual void StartDialogue()
+    protected virtual void StartDialogue()
     {
+        runner.AddCommandHandler("trigger_checkpoint", TriggerCheckpoint);
         if (triggerCheckpointDirectly) checkpoint.TriggerCheckpoint();
         runner.StartDialogue(nodeName);
     }

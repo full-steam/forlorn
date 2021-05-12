@@ -18,10 +18,14 @@ public class DialogueArrange : Dialogue
     protected override void Start()
     {
         base.Start();
-        
-        runner.AddCommandHandler("arrange_sentence", ArrangeSentence);
 
         foreach (string answer in answers) answer.ToLower();
+    }
+
+    protected override void StartDialogue()
+    {
+        runner.AddCommandHandler("arrange_sentence", ArrangeSentence);
+        base.StartDialogue();
     }
 
     /// <summary>
