@@ -17,6 +17,8 @@ public class DialogueArrange : Dialogue
 
     protected override void Start()
     {
+        base.Start();
+        
         runner.AddCommandHandler("arrange_sentence", ArrangeSentence);
 
         foreach (string answer in answers) answer.ToLower();
