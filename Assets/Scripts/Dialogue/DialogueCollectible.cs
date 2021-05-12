@@ -21,7 +21,7 @@ public class DialogueCollectible : Dialogue
         CheckTakenStatus();
     }
 
-    public override void StartDialogue()
+    protected override void StartDialogue()
     {
         SetItemName();
         base.StartDialogue();
