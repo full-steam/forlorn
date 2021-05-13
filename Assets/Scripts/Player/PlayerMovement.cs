@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         joystick = GameManager.Instance.Blackboard.Joystick;
+        canMove = true;
     }
 
     // Update is called once per frame
@@ -44,9 +45,10 @@ public class PlayerMovement : MonoBehaviour
                 movement.x = (joystick.Horizontal > 0.1) ? 1 : ((joystick.Horizontal < -0.1) ? -1 : 0);
                 movement.y = (joystick.Vertical > 0.1) ? 1 : ((joystick.Vertical < -0.1) ? -1 : 0);
             }
-            anim.SetFloat("Horizontal", movement.x);
-            anim.SetFloat("Vertical", movement.y);
-            anim.SetFloat("Speed", movement.sqrMagnitude);
+            //TODO: Add animation
+            //anim.SetFloat("Horizontal", movement.x);
+            //anim.SetFloat("Vertical", movement.y);
+            //anim.SetFloat("Speed", movement.sqrMagnitude);
         }
     }
     private void FixedUpdate()

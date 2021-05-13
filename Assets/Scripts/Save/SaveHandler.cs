@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class SaveHandler : MonoBehaviour
 {
-    public SaveObject so = new SaveObject();
+    public SaveObject so;
     public PlayerController player;
     public FlagManager flag;
 
@@ -17,6 +17,7 @@ public class SaveHandler : MonoBehaviour
     private void Start()
     {
         flag = GetComponent<FlagManager>();     //flag persists with GameManager, so only need to get the ref once
+        so = new SaveObject();
     }
 
     /// <summary>

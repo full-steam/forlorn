@@ -3,6 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class ButtonHandler : MonoBehaviour
 {
+    private const string FIRST_LEVEL = "LevelScene";    //Change according to first scene name
+
     public void QuitGame()
     {
         Application.Quit();
@@ -15,8 +17,7 @@ public class ButtonHandler : MonoBehaviour
 
     public void StartNewGame()
     {
-        //TODO: Implement New Game
-        Debug.LogWarning("\"New Game\" not implemented yet");
+        SceneManager.LoadScene(FIRST_LEVEL);
     }
 
     public void Pause()
@@ -42,5 +43,10 @@ public class ButtonHandler : MonoBehaviour
     public void PlayMusic(string songID)
     {
         AudioController.PlayMusic(songID);
+    }
+
+    public void SaveGame()
+    {
+        GameManager.Instance.SaveGame();
     }
 }

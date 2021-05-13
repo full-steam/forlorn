@@ -24,7 +24,7 @@ public class PlayerStatus : MonoBehaviour
     void Start()
     {
         lastPos = transform.position;
-        UpdateUI();
+        //UpdateUI();
     }
 
     // Update is called once per frame
@@ -73,6 +73,7 @@ public class PlayerStatus : MonoBehaviour
     {
         healthIcons = health;
         hungerIcons = hunger;
+        UpdateUI();
     }
 
     public void ModifyHealth(float amount) 
@@ -171,14 +172,14 @@ public class PlayerStatus : MonoBehaviour
         //Health Icons
         for (int i = 0; i < healthIcons.Length; i++)
         {
-            if (i <= (health * 2)) healthIcons[i].enabled = true;
+            if (i+1 <= (health * 2)) healthIcons[i].enabled = true;
             else healthIcons[i].enabled = false;
         }
 
         //Hunger Icons
         for (int i = 0; i < hungerIcons.Length; i++)
         {
-            if (i <= (hunger * 2)) hungerIcons[i].enabled = true;
+            if (i+1 <= (hunger * 2)) hungerIcons[i].enabled = true;
             else hungerIcons[i].enabled = false;
         }
     }

@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
 
     // ---Public Variables 
     public bool isPaused;
+    public bool isLoading;
 
     // ---Private Variables
     private SaveHandler saveHandler;
@@ -22,6 +23,8 @@ public class GameManager : MonoBehaviour
     {
         if (Instance != null && Instance != this) Destroy(gameObject);
         else { Instance = this; DontDestroyOnLoad(gameObject); }
+
+        isLoading = true;
 
         Blackboard = new Blackboard();
         saveHandler = GetComponent<SaveHandler>();
@@ -36,6 +39,8 @@ public class GameManager : MonoBehaviour
             so = SaveLoad.Load();
             Debug.Log("Save data found.");
         }
+
+        isLoading = false;
     }
 
     public void Pause()

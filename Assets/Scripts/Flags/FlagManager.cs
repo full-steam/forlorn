@@ -19,6 +19,7 @@ public class FlagManager : MonoBehaviour
         {
             GameManager.Instance.Blackboard.FlagManager = this;
         }
+        flags = new Dictionary<string, bool>();
     }
 
     /// <summary>
