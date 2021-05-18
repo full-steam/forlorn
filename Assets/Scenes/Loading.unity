@@ -601,6 +601,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3513663437035085399, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: poolItems.Array.data[0].poolSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3513663437035085399, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: poolItems.Array.data[1].poolSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3513663437035085399, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: poolItems.Array.data[0].poolObjectPrefab
+      value: 
+      objectReference: {fileID: 2864203771018288709, guid: 31e31caa841430e4b8334288f13baec5, type: 3}
+    - target: {fileID: 3513663437035085399, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: poolItems.Array.data[1].poolObjectPrefab
+      value: 
+      objectReference: {fileID: 8656632089768052862, guid: a3a816ae484981f498dd41507b3017e8, type: 3}
+    - target: {fileID: 5271586481242911375, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5271586482053511297, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
       propertyPath: m_Name
       value: GameManager

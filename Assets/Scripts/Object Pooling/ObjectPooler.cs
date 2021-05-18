@@ -7,9 +7,9 @@ using UnityEngine;
 public class ObjectPooler : MonoBehaviour
 {
     public static ObjectPooler Instance { set; get; }
+    public List<ObjectPoolItem> poolItems;
 
     private List<GameObject> pooledObjects;
-    private List<ObjectPoolItem> poolItems;
 
     private void Awake()
     {
