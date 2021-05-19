@@ -36,7 +36,7 @@ public class DictionaryManager : MonoBehaviour
             currDictItem = GameManager.Instance.Blackboard.ObjectPooler.GetPooledObject("dictItem").GetComponent<DictionaryItem>();
             currDictItem.Init(word, definitionPanel);
             currDictItem.gameObject.transform.SetParent(transform);
-            if (!word.isUnlocked) currDictItem.gameObject.SetActive(false);
+            currDictItem.gameObject.SetActive(word.isUnlocked);
             dictItems.Add(word.eng, currDictItem.gameObject);
         }
     }

@@ -603,11 +603,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3513663437035085399, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
       propertyPath: poolItems.Array.data[0].poolSize
-      value: 20
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3513663437035085399, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
       propertyPath: poolItems.Array.data[1].poolSize
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3513663437035085399, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
       propertyPath: poolItems.Array.data[0].poolObjectPrefab

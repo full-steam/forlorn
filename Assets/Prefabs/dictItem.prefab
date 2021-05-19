@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 855300049723416845}
   - component: {fileID: 8398385275169241731}
   - component: {fileID: 2419601296346969953}
+  - component: {fileID: 6325023883962012576}
   m_Layer: 5
   m_Name: dictItem
-  m_TagString: dicItem
+  m_TagString: dictItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,6 +121,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6325023883962012576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2864203771018288709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c86eef42cb3414a8a6cac475dc8e72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3478075398846318868
 GameObject:
   m_ObjectHideFlags: 0

@@ -101,6 +101,7 @@ public class Blackboard
     public ObjectPooler ObjectPooler { set; get; }
     public DialogueRunner DialogueRunner { set; get; }
     public VariableStorage VariableStorage { set; get; }
+    public GameObject DictionaryPanel { set; get; }
 
     public Blackboard()
     {
