@@ -6,6 +6,7 @@ TagManager:
   tags:
   - objective
   - dictItem
+  - Interactable
   layers:
   - Default
   - TransparentFX

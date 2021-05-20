@@ -1935,6 +1935,7 @@ GameObject:
   - component: {fileID: 1651035686}
   - component: {fileID: 1651035685}
   - component: {fileID: 1651035684}
+  - component: {fileID: 1651035687}
   m_Layer: 5
   m_Name: Dictionary Button
   m_TagString: Untagged
@@ -2005,13 +2006,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1651035687}
+        m_TargetAssemblyTypeName: ButtonHandler, Assembly-CSharp
+        m_MethodName: OpenDictionary
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2055,6 +2056,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1651035682}
   m_CullTransparentMesh: 0
+--- !u!114 &1651035687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651035682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f7bd0585b128e4f855bbc10fd86d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1947516956
 GameObject:
   m_ObjectHideFlags: 0
@@ -2196,30 +2209,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1298505114}
     m_Modifications:
-    - target: {fileID: 7137244474983803838, guid: bc105ef1d4cf2c241a04788c8e4c647f, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7137244474983803838, guid: bc105ef1d4cf2c241a04788c8e4c647f, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7137244474983803838, guid: bc105ef1d4cf2c241a04788c8e4c647f, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 666680289}
-    - target: {fileID: 7137244474983803838, guid: bc105ef1d4cf2c241a04788c8e4c647f, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 7137244474983803838, guid: bc105ef1d4cf2c241a04788c8e4c647f, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 7137244474983803838, guid: bc105ef1d4cf2c241a04788c8e4c647f, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 7137244475507579505, guid: bc105ef1d4cf2c241a04788c8e4c647f, type: 3}
       propertyPath: m_Name
       value: Settings Panel

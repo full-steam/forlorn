@@ -14,10 +14,13 @@ public class GameManager : MonoBehaviour
     // ---Public Variables 
     public bool isPaused;
     public bool isLoading;
+    public GameObject dictionaryPanel;
+    public DialogueRunner dialogueRunner;
 
     // ---Private Variables
     private SaveHandler saveHandler;
     private SaveObject so;
+    
 
     private void Awake()
     {
@@ -28,6 +31,9 @@ public class GameManager : MonoBehaviour
 
         Blackboard = new Blackboard();
         saveHandler = GetComponent<SaveHandler>();
+
+        Blackboard.DictionaryPanel = dictionaryPanel;
+        Blackboard.DialogueRunner = dialogueRunner;
 
         if (PlayerPrefs.GetInt("HasSaveData", 0) == 0)
         {

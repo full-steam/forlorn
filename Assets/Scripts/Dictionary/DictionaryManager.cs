@@ -21,9 +21,11 @@ public class DictionaryManager : MonoBehaviour
     }
 
     public DefinitionHandler definitionPanel;
+    //public GameObject dictionaryPanel;
 
     private List<Word> words;
     private Dictionary<string, GameObject> dictItems = new Dictionary<string, GameObject>();
+
 
     private void Start()
     {

@@ -1,0 +1,46 @@
+﻿title: Bush2
+tags:
+---
+System: This is Choice Dialogue. Click the continue button because I don't know how to set it ON/OFF yet.
+Player: cool ig.
+System: I know pressing continue is quite a drag.
+-> Yeah kinda.
+-> Not really.
+System: The choices just now was not a really meaningful choices. They didn't give out different result.
+System: Now these choices do have impact for the dialogue.
+-> Pick option 1
+    <<set $option = 1>>
+-> Pick option 2
+    <<set $option = 2>>
+-> Pick option 3
+    <<set $option = 3>>
+-> Finish dialogue    // if player chose this then immediately jump to Finish, otherwise continue through this node to jump to options node 
+    [[Bush2.Finish]]
+[[Bush2.Option]]
+===
+
+title: Bush2.Option
+tags:
+---
+<<if $option is 1>>
+    System: You picked option 1. Noice
+<<elseif $option is 2>>
+    System: You picked option 2. There will be 2 lines for this option.
+    System: This is the second one.
+<<elseif $option is 3>>
+    System: You picked option 3. There will be 3 lines for this option.
+    System: This is the second one.
+    System: And this is the third one.
+<<endif>>
+[[Bush2.Finish]]
+===
+
+title: Bush2.Finish
+tags:
+---
+<<if $option != null>>
+    System: You reach the final sentence after choosing an option, the sentence would be different otherwise.
+<<else>>
+    System: You immediately pick the end of this dialogue, the sentence would be different otherwise.
+<<endif>>
+===

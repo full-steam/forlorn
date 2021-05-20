@@ -11,7 +11,7 @@ public class Dialogue : MonoBehaviour
     public YarnProgram dialogue;
 
     protected DialogueRunner runner;
-    protected string nodeName;
+    [SerializeField]protected string nodeName;
 
     protected virtual void Start()
     {

@@ -1,0 +1,36 @@
+fileFormatVersion: 2
+guid: 45d0ce41304096c4c8403590ab767e04
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - Bush2-Bush2-0
+  - Bush2-Bush2-1
+  - Bush2-Bush2-2
+  - Bush2-Bush2-3
+  - Bush2-Bush2-4
+  - Bush2-Bush2-5
+  - Bush2-Bush2-6
+  - Bush2-Bush2-7
+  - Bush2-Bush2-8
+  - Bush2-Bush2-9
+  - Bush2-Bush2-10
+  - Bush2-Bush2.Option-11
+  - Bush2-Bush2.Option-12
+  - Bush2-Bush2.Option-13
+  - Bush2-Bush2.Option-14
+  - Bush2-Bush2.Option-15
+  - Bush2-Bush2.Option-16
+  - Bush2-Bush2.Finish-17
+  - Bush2-Bush2.Finish-18
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 45d0ce41304096c4c8403590ab767e04, type: 3}
+  localizations: []

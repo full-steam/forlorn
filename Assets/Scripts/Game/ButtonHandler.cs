@@ -49,4 +49,9 @@ public class ButtonHandler : MonoBehaviour
     {
         GameManager.Instance.SaveGame();
     }
+
+    public void OpenDictionary()
+    {
+        GameManager.Instance.Blackboard.DictionaryPanel.SetActive(true);
+    }
 }
