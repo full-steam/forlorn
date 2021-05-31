@@ -258,8 +258,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Game is Loading...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 52c490bdff496724cb50695d73c40065, type: 2}
+  m_sharedMaterial: {fileID: -6378509945962596539, guid: 52c490bdff496724cb50695d73c40065, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -617,13 +617,49 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1037004263067438711, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1350
+      objectReference: {fileID: 0}
+    - target: {fileID: 1085650777394852149, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -23.10701
+      objectReference: {fileID: 0}
+    - target: {fileID: 1085650777394852149, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 3.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 1181025903010782102, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1350
+      objectReference: {fileID: 0}
     - target: {fileID: 1692481765210350186, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1804024290605277268, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -23.022324
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804024290605277268, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 3.592
+      objectReference: {fileID: 0}
     - target: {fileID: 2073805141834259640, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
       propertyPath: m_Color.a
       value: 0.29803923
+      objectReference: {fileID: 0}
+    - target: {fileID: 2105427194090862639, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 52c490bdff496724cb50695d73c40065, type: 2}
+    - target: {fileID: 2105427194090862639, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -6378509945962596539, guid: 52c490bdff496724cb50695d73c40065, type: 2}
+    - target: {fileID: 2105427194090862639, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2258256066646458219, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
       propertyPath: m_AnchorMax.x
@@ -635,6 +671,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2258256066646458219, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
       propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2258256067069186513, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 52c490bdff496724cb50695d73c40065, type: 2}
+    - target: {fileID: 2258256067069186513, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -6378509945962596539, guid: 52c490bdff496724cb50695d73c40065, type: 2}
+    - target: {fileID: 2258256067069186513, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2258256068282182919, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
@@ -657,9 +705,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3095427623688730653, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
-      propertyPath: textSpeed
-      value: 0.001
+    - target: {fileID: 2258256068524970664, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 52c490bdff496724cb50695d73c40065, type: 2}
+    - target: {fileID: 2258256068524970664, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -6378509945962596539, guid: 52c490bdff496724cb50695d73c40065, type: 2}
+    - target: {fileID: 2258256068524970664, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2890956528574025140, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_fontSize
+      value: 47.7
       objectReference: {fileID: 0}
     - target: {fileID: 3095427623688730653, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
       propertyPath: onLineEnd.m_PersistentCalls.m_Calls.Array.size
@@ -693,6 +753,10 @@ PrefabInstance:
       propertyPath: poolItems.Array.data[1].poolObjectPrefab
       value: 
       objectReference: {fileID: 8656632089768052862, guid: a3a816ae484981f498dd41507b3017e8, type: 3}
+    - target: {fileID: 4752977532800166685, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_fontSize
+      value: 37.3
+      objectReference: {fileID: 0}
     - target: {fileID: 5271586481242911375, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -700,6 +764,10 @@ PrefabInstance:
     - target: {fileID: 5271586482053511297, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271586482053511297, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5271586482053511298, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
       propertyPath: dialogueRunner
@@ -749,9 +817,53 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5833372404703451603, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -23.029045
+      objectReference: {fileID: 0}
+    - target: {fileID: 5833372404703451603, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 3.7
+      objectReference: {fileID: 0}
     - target: {fileID: 5837134134179444437, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.00010681152
+      objectReference: {fileID: 0}
+    - target: {fileID: 6055075076047946925, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1350
+      objectReference: {fileID: 0}
+    - target: {fileID: 6802948738245904031, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1350
+      objectReference: {fileID: 0}
+    - target: {fileID: 7195627092356747311, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_fontSize
+      value: 37.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7289092402429907479, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1350
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282106924696966333, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -23.314304
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282106924696966333, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 3.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 8638010874397179983, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_fontSize
+      value: 37.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869698427015502577, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -23.317894
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869698427015502577, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 3.951
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
