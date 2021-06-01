@@ -22,7 +22,7 @@ public class DialogueArrange : Dialogue
         foreach (string answer in answers) answer.ToLower();
     }
 
-    protected override void StartDialogue()
+    public override void StartDialogue()
     {
         runner.AddCommandHandler("arrange_sentence", ArrangeSentence);
         base.StartDialogue();

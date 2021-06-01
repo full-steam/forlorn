@@ -16,7 +16,7 @@ public class DialogueClick : Dialogue, IPointerClickHandler
         if (string.IsNullOrEmpty(objName)) objName = gameObject.name; 
     }
 
-    protected override void StartDialogue()
+    public override void StartDialogue()
     {
         SetObjectName();
         base.StartDialogue();

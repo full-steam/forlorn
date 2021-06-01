@@ -26,7 +26,7 @@ public class Dialogue : MonoBehaviour
     /// <summary>
     /// Starts the dialogue.
     /// </summary>
-    protected virtual void StartDialogue()
+    public virtual void StartDialogue()
     {
         runner.AddCommandHandler("trigger_checkpoint", TriggerCheckpoint);
         if (triggerCheckpointDirectly) checkpoint.TriggerCheckpoint();

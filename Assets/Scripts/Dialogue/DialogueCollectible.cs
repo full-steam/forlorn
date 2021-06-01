@@ -21,7 +21,7 @@ public class DialogueCollectible : Dialogue
         CheckTakenStatus();
     }
 
-    protected override void StartDialogue()
+    public override void StartDialogue()
     {
         SetItemName();
         GameManager.Instance.Blackboard.Player.playerStatus.AddItem(itemObject);
