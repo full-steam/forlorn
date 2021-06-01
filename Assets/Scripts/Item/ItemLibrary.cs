@@ -5,7 +5,7 @@ using UnityEngine;
 public class ItemLibrary
 {
 
-    private Dictionary<int, Item> library;
+    private Dictionary<int, Item> library = new Dictionary<int, Item>();
     private Item[] items;
 
     public ItemLibrary()

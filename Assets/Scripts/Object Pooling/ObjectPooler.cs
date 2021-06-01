@@ -7,9 +7,9 @@ using UnityEngine;
 public class ObjectPooler : MonoBehaviour
 {
     public static ObjectPooler Instance { set; get; }
+    public List<ObjectPoolItem> poolItems;
 
     private List<GameObject> pooledObjects;
-    private List<ObjectPoolItem> poolItems;
 
     private void Awake()
     {
@@ -24,6 +24,7 @@ public class ObjectPooler : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        GameManager.Instance.Blackboard.ObjectPooler = Instance;
         pooledObjects = new List<GameObject>();
         foreach (ObjectPoolItem item in poolItems)
         {
@@ -41,6 +42,7 @@ public class ObjectPooler : MonoBehaviour
     /// <returns>A requested pooled object if available, null otherwise.</returns>
     public GameObject GetPooledObject(string tag)
     {
+        Debug.Log(pooledObjects.Count);
         for (int i = 0; i < pooledObjects.Count; i++)
         {
             if (!pooledObjects[i].activeInHierarchy && pooledObjects[i].tag == tag)

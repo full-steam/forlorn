@@ -14,7 +14,7 @@ public class Dialogue : MonoBehaviour
     public bool triggerCheckpointDirectly;
 
     protected DialogueRunner runner;
-    protected string nodeName;
+    [SerializeField]protected string nodeName;
 
     protected virtual void Start()
     {

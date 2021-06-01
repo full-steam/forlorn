@@ -29,10 +29,10 @@ public class SaveObject
     public string sceneName;
     public int steps;
     public bool starving;
-    public SerializeableVector3 posInScene;
-    public List<ItemObject> itemList;
+    public SerializeableVector3 posInScene = new SerializeableVector3();
+    public List<ItemObject> itemList = new List<ItemObject>();
 
     // ---Flags
-    public List<string> keys;
-    public List<bool> values;
+    public List<string> keys = new List<string>();
+    public List<bool> values = new List<bool>();
 }

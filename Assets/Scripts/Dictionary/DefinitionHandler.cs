@@ -2,14 +2,15 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(ButtonHandler))]
 public class DefinitionHandler : MonoBehaviour
 {
-    private TMP_Text engText;
-    private TMP_Text indText;
-    private TMP_Text posText;
-    private string pronunciationID;
-    private Button button;
+    public TMP_Text engText;
+    public TMP_Text indText;
+    public TMP_Text posText;
+    public Button button;
     private ButtonHandler buttonHandler;
+    private string pronunciationID;
 
     private void Awake()
     {

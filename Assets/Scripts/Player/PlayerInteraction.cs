@@ -5,28 +5,24 @@ using UnityEngine.UI;
 
 public class PlayerInteraction : MonoBehaviour
 {
+    public Button InteractButton { set; get; }
+    [SerializeField] private GameObject toInteract;
 
-    public Button interactButton;
-    public GameObject toInteract;
-
-    public void Interact(GameObject _toInteract = null)
+    public void Interact()
     {
-        //method will use the paramater as the item to be interacted, unless stated explicitly, will interact with existing reference in component
-        if (_toInteract = null)
-        {
-            if (toInteract = null) { Debug.LogError("No object detected"); return; }
-            _toInteract = toInteract;
-        }
+        toInteract.GetComponent<Dialogue>().StartDialogue();
+    }
 
-        Debug.Log("Please uncomment previoulsy missing reference. (Dialogue.cs)");
-        //_toInteract.GetComponent<Dialogue>().StartDialogue();
+    public void Interact(GameObject _toInteract)
+    {
+        _toInteract.GetComponent<Dialogue>().StartDialogue();
     }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Interactable"))
         {
-            interactButton.interactable = true;
+            InteractButton.interactable = true;
             toInteract = collision.gameObject;
         }
     }
@@ -35,7 +31,7 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Interactable"))
         {
-            interactButton.interactable = false;
+            InteractButton.interactable = false;
             toInteract = null;
         }
     }

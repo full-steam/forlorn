@@ -13,18 +13,27 @@ public class GameManager : MonoBehaviour
 
     // ---Public Variables 
     public bool isPaused;
+    public bool isLoading;
+    public GameObject dictionaryPanel;
+    public DialogueRunner dialogueRunner;
 
     // ---Private Variables
     private SaveHandler saveHandler;
     private SaveObject so;
+    
 
     private void Awake()
     {
         if (Instance != null && Instance != this) Destroy(gameObject);
         else { Instance = this; DontDestroyOnLoad(gameObject); }
 
+        isLoading = true;
+
         Blackboard = new Blackboard();
         saveHandler = GetComponent<SaveHandler>();
+
+        Blackboard.DictionaryPanel = dictionaryPanel;
+        Blackboard.DialogueRunner = dialogueRunner;
 
         if (PlayerPrefs.GetInt("HasSaveData", 0) == 0)
         {
@@ -36,6 +45,8 @@ public class GameManager : MonoBehaviour
             so = SaveLoad.Load();
             Debug.Log("Save data found.");
         }
+
+        isLoading = false;
     }
 
     public void Pause()
@@ -89,13 +100,14 @@ public class GameManager : MonoBehaviour
 public class Blackboard 
 {
     public PlayerController Player { set; get; }
-    //public bl_Joystick Joystick { set; get; }
+    public bl_Joystick Joystick { set; get; }
     public ItemLibrary ItemLibrary { set; get; }
     public FlagManager FlagManager { set; get; }
     public DictionaryManager Dictionary { set; get; }
     public ObjectPooler ObjectPooler { set; get; }
     public DialogueRunner DialogueRunner { set; get; }
     public VariableStorage VariableStorage { set; get; }
+    public GameObject DictionaryPanel { set; get; }
 
     public Blackboard()
     {
