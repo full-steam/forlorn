@@ -1,7 +1,6 @@
 title: Amy
 tags:
 ---
-<<if $>>
 ???: Phew, thanks. I thought I was going to be stuck forever and die there.
 ???: My name's Amy, nice to meet you!
 Petualang: (Dia berbahasa Inggris? Aku coba berbicara juga pakai bahasa Inggris kalau begitu).
@@ -12,20 +11,12 @@ Petualang: (Dia berbahasa Inggris? Aku coba berbicara juga pakai bahasa Inggris 
     Amy: Nice to meet you too!
 Amy: Hmm... you're not from here, are you?
 Petualang: No.
-<<set $HasMetAmy to true>>
-===
-
-title: 
-tags:
----
+Petualang: I'm from a place called Tandula.
+Petualang: I was walking home with my friends. Then suddenly there was a storm. I don't know what happened. I woke up in this forest.
 Amy: I see... so when you woke up, your friends were gone and you were in this forest?
 Amy: That's weird...
 Amy: But don't worry, Amy will help you! But first...
-===
-
-title: Amy.Freed3
-tags:
----
+Amy memegang dagu kamu dan mulai bersinar.
 Amy: Halo! Sekarang kita bisa bicara pakai bahasa kamu.
 Petualang: Hah? Kok bisa?
 Amy: Hehe, Amy memang bisa begitu. Lebih nyaman kalau begini! Tapi sayangnya Amy tidak bisa membuat kamu langsung fasih bahasa Inggris, tapi Amy pasti akan bantu kamu!
@@ -44,56 +35,59 @@ tags:
 Amy: Harusnya di situ kita keluar dari hutan ini dan jalan sedikit lagi sampai kota. Yuk!
 ===
 
-title: Amy.PathOpened
+title: Amy.PathOpen
 tags:
 ---
-AMY	: Woah, apa yang baru terjadi?
-GUARD	: What?
-AMY	: That path just suddenly opened.
-GUARD	: Huh? Oh, you're right. How odd...
-AMY	: (Kita tidak ada jalan lain, mungkin locket-nya ada di sana!)
+Amy: Woah, apa yang baru terjadi?
+Guard: What?
+Amy: That path just suddenly opened.
+Guard: Huh? Oh, you're right. How odd...
+Amy: (Kita tidak ada jalan lain, mungkin locket-nya ada di sana!)
 ===
 
-title: Amy.Path1
+title: Amy.EnterArea1
 tags:
 ---
 <<if $HasFoundLocket is true>>
     Amy: Kita sebaiknya kembali.
 <<else>>
-    AMY	: Sedikit menakutkan ya... kenapa ada kuburan satu seperti itu di sini?
+    Amy: Sedikit menakutkan ya... kenapa ada kuburan satu seperti itu di sini?
+<<endif>>
 ===
 
-title: Amy.Path2
+title: Amy.EnterArea2
 tags:
 ---
 <<if $HasFoundLocket is true>>
     Amy: Kita sebaiknya kembali.
 <<else>>
-    AMY	: Sepertinya dulu pernah ada pertempuran di sini.
+    Amy: Sepertinya dulu pernah ada pertempuran di sini.
+<<endif>>
 ===
 
-title: Amy.Path3
+title: Amy.EnterArea3
 tags:
 ---
 <<if $HasFoundLocket is true>>
     Amy: Kita sebaiknya kembali.
 <<else>>
-    AMY	: Sedikit menakutkan ya... kenapa ada kuburan di hutan begini?
+    Amy: Sedikit menakutkan ya... kenapa ada kuburan di hutan begini?
+<<endif>>
 ===
 
 title: Amy.Searched1
 tags:
 ---
-AMY	: Sepertinya tidak di sini, coba kita cek di tempat lain.
+Amy: Sepertinya tidak di sini, coba kita cek di tempat lain.
 ===
 
 title: Amy.Searched2
 tags:
 ---
-AMY	: Sepertinya tidak ada di sini juga. Kita coba cari di tempat lain yuk.
+Amy: Sepertinya tidak ada di sini juga. Kita coba cari di tempat lain yuk.
 ===
 
-title: Amy.RoadOpened
+title: Amy.RoadOpen
 tags:
 ---
 Amy: Eh, ke mana dia? Kok tiba-tiba hilang?

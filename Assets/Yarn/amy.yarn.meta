@@ -1,0 +1,54 @@
+fileFormatVersion: 2
+guid: 6d4b2d0b22b6fd84fb7631b4b280317e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - amy-Amy-0
+  - amy-Amy-1
+  - amy-Amy-2
+  - amy-Amy-3
+  - amy-Amy-4
+  - amy-Amy-5
+  - amy-Amy-6
+  - amy-Amy-7
+  - amy-Amy-8
+  - amy-Amy-9
+  - amy-Amy-10
+  - amy-Amy-11
+  - amy-Amy-12
+  - amy-Amy-13
+  - amy-Amy-14
+  - amy-Amy-15
+  - amy-Amy-16
+  - amy-Amy-17
+  - amy-Amy-18
+  - amy-Amy-19
+  - amy-Amy.SeeSign-20
+  - amy-Amy.SeeEnd-21
+  - amy-Amy.PathOpen-22
+  - amy-Amy.PathOpen-23
+  - amy-Amy.PathOpen-24
+  - amy-Amy.PathOpen-25
+  - amy-Amy.PathOpen-26
+  - amy-Amy.EnterArea1-27
+  - amy-Amy.EnterArea1-28
+  - amy-Amy.EnterArea2-29
+  - amy-Amy.EnterArea2-30
+  - amy-Amy.EnterArea3-31
+  - amy-Amy.EnterArea3-32
+  - amy-Amy.Searched1-33
+  - amy-Amy.Searched2-34
+  - amy-Amy.RoadOpen-35
+  - amy-Amy.RoadOpen-36
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []
