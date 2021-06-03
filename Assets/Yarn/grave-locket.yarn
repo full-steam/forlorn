@@ -1,0 +1,42 @@
+title: Grave
+tags:
+---
+<<if $HasFoundLocket is false and $VAR_HasFoundPhilip is false>>
+    [[Philip]]
+<<elseif $HasFoundLocket is false and $VAR_HasFoundPhilip is true>>
+    [[Locket]]
+<<else>>
+    Amy: Yuk kita kembali ke penjaga tadi.
+===
+
+title: Philip
+tags:
+---
+Grave: Here lies Philip, rebel, traitor, killed in the Battle of Covenhill Woods.
+Amy: Sepertinya ada pertempuran di sini, dan ini salah satu musuhnya.
+Amy: Eh, ada apa itu? Seperti ada yang berkilau, sedikit terkubur.
+<<set $VAR_HasFoundPhilip to true>>
+===
+
+title: Locket
+tags:
+---
+Amy: Ini sepertinya. Ternyata terkubur bersama Philip ini ya...
+Amy: Kamu tahu cara mengatakan bahwa locket ini dikubur?
+Amy: Amy ajarkan saja!
+[[Passive]]
+===
+
+title: Passive
+tags:
+---
+Amy: Ini namanya <color=blue>kalimat pasif<color=white>, seperti pakai "di-" di bahasa kamu.
+Amy: Kalau di bahasa Inggris, caranya adalah pakai kata <color=blue>"be"<color=white> seperti <color=blue>"am, are, is"<color=white> terus di belakangnya kata kerjanya tapi dalam bentuk <color=blue>"past participle"<color=white>-nya.
+Amy: Contohnya, "buat" dalam bahasa Inggris adalah <color=blue>"make"<color=white>, dan <color=blue>"past participle"<color=white>-nya <color=blue>"made"<color=white>. Kalau jadi pasif, contohnya "Gedung terbuat dari kayu", maka menjadi <color=blue>"The building is made of wood."<color=white> Mengerti kan?
+-> Ya.
+-> Coba ulang sekali lagi?
+    [[Passive]]
+Amy: Ingat, <color=blue>"be"<color=white>-nya sesuai waktu. Kalau mau mengatakan "tadi dibuat", maka jadinya <color=blue>"was"<color=blue>!
+Amy: Baik, sekarang yuk kita kembali ke penjaga!
+<<set $HasFoundLocket to true>>
+===

@@ -1,0 +1,11 @@
+title: Broken Equipment
+tags:
+---
+<<if $VAR_BrokenEquipmentFound is 0>>
+    Amy: Tidak ada <color=blue>locket<color=white> di sini.
+<<elseif $VAR_BrokenEquipmentFound is 1>>
+    Amy: Bukan juga.
+<<elseif $VAR_BrokenEquipmentFound is 2>>
+    Amy: Bukan ini.
+<<set $VAR_BrokenEquipmentFound = $VAR_BrokenEquipmentFound + 1>>
+===
