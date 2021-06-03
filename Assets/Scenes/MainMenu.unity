@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 64795048}
   - component: {fileID: 64795050}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Test Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -321,7 +321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerEvent: 6
-  audioID: Door
+  audioID: WalkDirt
   fadeOut: 0
 --- !u!1 &114114105
 GameObject:
@@ -464,6 +464,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1136220506933230621, guid: 4ff2d19a327e06e439592ff7eab081c5, type: 3}
+      propertyPath: _volume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1136220506933230621, guid: 4ff2d19a327e06e439592ff7eab081c5, type: 3}
+      propertyPath: _currentInspectorSelection.currentItemIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1136220506933230621, guid: 4ff2d19a327e06e439592ff7eab081c5, type: 3}
+      propertyPath: _currentInspectorSelection.currentSubitemIndex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3846758910292282994, guid: 4ff2d19a327e06e439592ff7eab081c5, type: 3}
       propertyPath: m_RootOrder
       value: 3
