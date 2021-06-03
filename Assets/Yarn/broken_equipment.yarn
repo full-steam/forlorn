@@ -1,4 +1,4 @@
-title: Broken Equipment
+title: Broken_Equipment
 tags:
 ---
 <<if $VAR_BrokenEquipmentFound is 0>>
@@ -7,5 +7,6 @@ tags:
     Amy: Bukan juga.
 <<elseif $VAR_BrokenEquipmentFound is 2>>
     Amy: Bukan ini.
+<<endif>>
 <<set $VAR_BrokenEquipmentFound = $VAR_BrokenEquipmentFound + 1>>
 ===

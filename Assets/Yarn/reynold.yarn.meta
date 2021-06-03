@@ -1,0 +1,47 @@
+fileFormatVersion: 2
+guid: af832122ce340a6408aa0a2c77a09105
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - reynold-Meeting-0
+  - reynold-Meeting-1
+  - reynold-Meeting-2
+  - reynold-Meeting-3
+  - reynold-Meeting-4
+  - reynold-Meeting-5
+  - reynold-Meeting-6
+  - reynold-Meeting-7
+  - reynold-Meeting-8
+  - reynold-Meeting-9
+  - reynold-Meeting-10
+  - reynold-Meeting-11
+  - reynold-Meeting-12
+  - reynold-Meeting-13
+  - reynold-Meeting-14
+  - reynold-Meeting-15
+  - reynold-Meeting-16
+  - reynold-Meeting-17
+  - reynold-Meeting-18
+  - reynold-Goodbye-19
+  - reynold-Goodbye-20
+  - reynold-Goodbye-21
+  - reynold-Goodbye-22
+  - reynold-Goodbye-23
+  - reynold-Goodbye-24
+  - reynold-Goodbye-25
+  - reynold-Goodbye-26
+  - reynold-Goodbye-27
+  - reynold-Goodbye-28
+  - reynold-Goodbye-29
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []

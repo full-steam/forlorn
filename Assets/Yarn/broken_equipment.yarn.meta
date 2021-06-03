@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 273b62bde238e4245ad5737520c63601
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - broken_equipment-Broken_Equipment-0
+  - broken_equipment-Broken_Equipment-1
+  - broken_equipment-Broken_Equipment-2
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []

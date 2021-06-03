@@ -1,4 +1,4 @@
-title: Grave
+title: Grave-Locket
 tags:
 ---
 <<if $HasFoundLocket is false and $VAR_HasFoundPhilip is false>>
@@ -7,6 +7,7 @@ tags:
     [[Locket]]
 <<else>>
     Amy: Yuk kita kembali ke penjaga tadi.
+<<endif>>
 ===
 
 title: Philip
