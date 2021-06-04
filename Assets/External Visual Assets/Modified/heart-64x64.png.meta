@@ -8,6 +8,9 @@ TextureImporter:
   - first:
       213: 4870444386867998565
     second: heart-64x64_1
+  - first:
+      213: -1267936086801811479
+    second: heart-64x64_full
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,7 +118,7 @@ TextureImporter:
         width: 32
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -136,7 +139,7 @@ TextureImporter:
         width: 32
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -144,6 +147,27 @@ TextureImporter:
       bones: []
       spriteID: 56fef897d5b479340800000000000000
       internalID: 4870444386867998565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: heart-64x64_full
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e7774cc8d2676ee0800000000000000
+      internalID: -1267936086801811479
       vertices: []
       indices: 
       edges: []

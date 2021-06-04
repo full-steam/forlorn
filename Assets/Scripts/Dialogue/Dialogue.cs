@@ -8,18 +8,19 @@ using Yarn.Unity;
 /// </summary>
 public class Dialogue : MonoBehaviour
 {
+    [Tooltip("Giving a node name manually will takes priority to be ran than the set Dialogue")]
+    public string nodeName;
     public YarnProgram dialogue;
     [HideInInspector]
     public Checkpoint checkpoint;
     public bool triggerCheckpointDirectly;
 
     protected DialogueRunner runner;
-    [SerializeField]protected string nodeName;
 
     protected virtual void Start()
     {
         runner = GameManager.Instance.Blackboard.DialogueRunner;
-        nodeName = dialogue.name;
+        if (nodeName == null) nodeName = dialogue.name;
         if (dialogue) runner.Add(dialogue);
     }
 

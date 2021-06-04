@@ -8,6 +8,9 @@ TextureImporter:
   - first:
       213: 5798298638113755804
     second: Meat-64x64_1
+  - first:
+      213: -6695304240043200808
+    second: Meat-64x64_full
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,7 +118,7 @@ TextureImporter:
         width: 32
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -136,7 +139,7 @@ TextureImporter:
         width: 32
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -144,6 +147,27 @@ TextureImporter:
       bones: []
       spriteID: c92d66204e1b77050800000000000000
       internalID: 5798298638113755804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Meat-64x64_full
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8deee0554408513a0800000000000000
+      internalID: -6695304240043200808
       vertices: []
       indices: 
       edges: []

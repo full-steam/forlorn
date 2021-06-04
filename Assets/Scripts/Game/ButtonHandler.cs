@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class ButtonHandler : MonoBehaviour
 {
-    private const string FIRST_LEVEL = "LevelScene";    //Change according to first scene name
+    private const string FIRST_LEVEL = "Forest";    //Change according to first scene name
 
     public void QuitGame()
     {

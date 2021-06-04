@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3516765511646557990}
   - component: {fileID: 3516765511646557985}
+  - component: {fileID: 1840247197200465114}
   m_Layer: 0
   m_Name: Sign-dark
   m_TagString: Untagged
@@ -82,3 +83,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1840247197200465114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3516765511646557984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7032643ff3dd4c4bbccfb6ea7712da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeName: 
+  dialogue: {fileID: 0}
+  checkpoint: {fileID: 0}
+  triggerCheckpointDirectly: 0
