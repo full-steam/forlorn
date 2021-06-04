@@ -31,6 +31,7 @@ public class Dialogue : MonoBehaviour
     {
         GameManager.Instance.Blackboard.Player.playerMovement.ToggleMovement(false);
         runner.AddCommandHandler("trigger_checkpoint", TriggerCheckpoint);
+        runner.AddCommandHandler("trigger_flag", TriggerFlag);
         if (triggerCheckpointDirectly) checkpoint.TriggerCheckpoint();
         runner.StartDialogue(nodeName);
     }
@@ -43,5 +44,14 @@ public class Dialogue : MonoBehaviour
     {
         if (parameters.Length <= 0) checkpoint.TriggerCheckpoint();
         else checkpoint.TriggerCheckpoint(parameters[0]);
+    }
+
+    protected void TriggerFlag(string[] parameters)
+    {
+        bool value = true;
+
+        if (parameters.Length == 2) value = bool.Parse(parameters[1]);
+
+        GameManager.Instance.Blackboard.FlagManager.SetFlag(parameters[0], value);
     }
 }

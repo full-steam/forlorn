@@ -19,8 +19,8 @@ public class VariableStorage : Yarn.Unity.VariableStorageBehaviour
     /// </returns>
     public override Value GetValue(string variableName)
     {
-        if (variableName.StartsWith("$")) return variables[variableName];
-        return new Value(GameManager.Instance.Blackboard.FlagManager.GetFlag(variableName));
+        if (variableName.StartsWith("$VAR")) return variables[variableName];
+        return new Value(GameManager.Instance.Blackboard.FlagManager.GetFlag(variableName.Substring(1)));
     }
 
     /// <summary>
@@ -39,8 +39,8 @@ public class VariableStorage : Yarn.Unity.VariableStorageBehaviour
     /// <param name="value">Value to be stored.</param>
     public override void SetValue(string variableName, Value value)
     {
-        if (variableName.StartsWith("$")) SetVariable(variableName, value);
-        GameManager.Instance.Blackboard.FlagManager.SetFlag(variableName, value.AsBool);
+        if (variableName.StartsWith("$VAR")) SetVariable(variableName, value);
+        GameManager.Instance.Blackboard.FlagManager.SetFlag(variableName.Substring(1), value.AsBool);
     }
 
     /// <summary>
@@ -51,7 +51,7 @@ public class VariableStorage : Yarn.Unity.VariableStorageBehaviour
     /// <param name="value">Value to be stored.</param>
     public void SetVariable(string variableName, Value value)
     {
-        if (!variableName.StartsWith("$")) Debug.LogError("Locally-stored variables must start with a '$'!");
+        if (!variableName.StartsWith("$VAR")) Debug.LogError("Locally-stored variables must start with a '$VAR'!");
 
         if (variables.ContainsKey(variableName)) variables[variableName] = new Value(value);
         else variables.Add(variableName, new Value(value));

@@ -20,8 +20,7 @@ public class DialogueTrigger : Dialogue
         if (collision.CompareTag("Player"))
         {
             StartDialogue();
-            if (!disableAfterTrigger) return;
-            else enabled = false;
+            if (disableAfterTrigger) gameObject.SetActive(false);
         }
     }
 
@@ -30,8 +29,7 @@ public class DialogueTrigger : Dialogue
         if (collision.gameObject.CompareTag("Player"))
         {
             StartDialogue();
-            if (!disableAfterTrigger) return;
-            else enabled = false;
+            if (disableAfterTrigger) gameObject.SetActive(false);
         }
     }
 }

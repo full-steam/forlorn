@@ -76,4 +76,9 @@ public class FlagManager : MonoBehaviour
         saveObj.values = new List<bool>(flags.Values);
         //return saveObj;
     }
+
+    public void CheckFlags()
+    {
+        foreach (string flag in flags.Keys) FlagTriggered(flag);
+    }
 }
