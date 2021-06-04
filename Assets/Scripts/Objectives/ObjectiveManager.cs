@@ -60,8 +60,12 @@ public class ObjectiveManager : MonoBehaviour
         if (!objectiveTexts.ContainsKey(endFlag))
         {
             GameObject newObjective = GameManager.Instance.Blackboard.ObjectPooler.GetPooledObject("objective");
+            newObjective.transform.SetParent(transform);
+            newObjective.transform.localScale = Vector3.one;
 
-            newObjective.GetComponent<TMP_Text>().text = text;
+            newObjective.GetComponentInChildren<TMP_Text>().text = text;
+
+            newObjective.SetActive(true);
 
             objectiveTexts.Add(endFlag, newObjective);
         }
@@ -73,6 +77,7 @@ public class ObjectiveManager : MonoBehaviour
     /// <param name="endFlag">End flag of the objective.</param>
     private void RemoveObjective(string endFlag)
     {
+        Debug.Log("RemoveObjective called");
         if (objectiveTexts.ContainsKey(endFlag))
         {
             GameObject temp = objectiveTexts[endFlag];
