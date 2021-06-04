@@ -219,10 +219,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33378670511f19343ae7d59becb0d968, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nodeName: 
   dialogue: {fileID: 2480198943629176163, guid: 3603db5949f31e74db088ef9a37e6504, type: 3}
   checkpoint: {fileID: 0}
   triggerCheckpointDirectly: 0
-  nodeName: 
 --- !u!58 &648641493
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -482,6 +482,22 @@ PrefabInstance:
     - target: {fileID: 1016973104680842061, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
       propertyPath: m_Name
       value: Level Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860085859706, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860085859706, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860085859706, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860085859706, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
