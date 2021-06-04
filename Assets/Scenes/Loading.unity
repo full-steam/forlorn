@@ -884,6 +884,18 @@ PrefabInstance:
       propertyPath: dialogueRunner
       value: 
       objectReference: {fileID: 1704334777}
+    - target: {fileID: 5271586482053511299, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: so.keys.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271586482053511299, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: so.values.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271586482053511299, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: so.keys.Array.data[0]
+      value: HasMetMovement
+      objectReference: {fileID: 0}
     - target: {fileID: 5271586482053511309, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
       propertyPath: m_RootOrder
       value: 3

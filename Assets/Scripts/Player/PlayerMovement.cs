@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator))]
 public class PlayerMovement : MonoBehaviour
-{    
+{
     public float moveSpeed = 5f;                    //considering changing access modifier later if no need to make changes
     [SerializeField] private bl_Joystick joystick;
 

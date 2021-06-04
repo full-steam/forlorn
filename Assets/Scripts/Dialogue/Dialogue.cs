@@ -29,6 +29,7 @@ public class Dialogue : MonoBehaviour
     /// </summary>
     public virtual void StartDialogue()
     {
+        GameManager.Instance.Blackboard.Player.playerMovement.ToggleMovement(false);
         runner.AddCommandHandler("trigger_checkpoint", TriggerCheckpoint);
         if (triggerCheckpointDirectly) checkpoint.TriggerCheckpoint();
         runner.StartDialogue(nodeName);
@@ -40,7 +41,7 @@ public class Dialogue : MonoBehaviour
     /// <param name="parameters">Parameters sent from the Yarn Program. Should either be empty or have one string argument.</param>
     protected void TriggerCheckpoint(string[] parameters)
     {
-        if (parameters.Length > 0) checkpoint.TriggerCheckpoint();
+        if (parameters.Length <= 0) checkpoint.TriggerCheckpoint();
         else checkpoint.TriggerCheckpoint(parameters[0]);
     }
 }

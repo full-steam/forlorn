@@ -172,8 +172,9 @@ MonoBehaviour:
     steps: 0
     starving: 0
     itemList: []
-    keys: []
-    values: 
+    keys:
+    - HasMetMovement
+    values: 00
   player: {fileID: 0}
   flag: {fileID: 0}
   inDebugScene: 0

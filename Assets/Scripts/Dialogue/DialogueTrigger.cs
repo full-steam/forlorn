@@ -7,12 +7,12 @@ using UnityEngine;
 /// </summary>
 public class DialogueTrigger : Dialogue
 {
-    public bool dontDisableAfterTrigger;
+    public bool disableAfterTrigger = true;
 
     protected override void Start()
     {
         base.Start();
-        if (GetComponent<Collider>() == null) Debug.LogError("No collider found in " + gameObject.name + "!");
+        if (GetComponent<Collider2D>() == null) Debug.LogError("No collider found in " + gameObject.name + "!");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -20,7 +20,7 @@ public class DialogueTrigger : Dialogue
         if (collision.CompareTag("Player"))
         {
             StartDialogue();
-            if (dontDisableAfterTrigger) return;
+            if (!disableAfterTrigger) return;
             else enabled = false;
         }
     }
@@ -30,7 +30,7 @@ public class DialogueTrigger : Dialogue
         if (collision.gameObject.CompareTag("Player"))
         {
             StartDialogue();
-            if (dontDisableAfterTrigger) return;
+            if (!disableAfterTrigger) return;
             else enabled = false;
         }
     }
