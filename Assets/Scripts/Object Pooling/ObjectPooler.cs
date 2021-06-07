@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Component that handles object pooling.
@@ -19,6 +20,8 @@ public class ObjectPooler : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
+
+        SceneManager.sceneLoaded += ClearPooledObjects;
     }
 
     // Start is called before the first frame update
@@ -76,5 +79,10 @@ public class ObjectPooler : MonoBehaviour
         obj.SetActive(false);
         pooledObjects.Add(obj);
         return obj;
+    }
+
+    private void ClearPooledObjects(Scene scene, LoadSceneMode mode)
+    {
+        pooledObjects.Clear();
     }
 }
