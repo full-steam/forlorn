@@ -1,5 +1,5 @@
 title: TreeAmy
 tags:
 ---
-<<trigger_checkpoint IsHelpingAmy>>
+<<trigger_flag IsHelpingAmy>>
 ===

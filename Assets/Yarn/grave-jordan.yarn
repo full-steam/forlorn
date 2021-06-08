@@ -2,8 +2,11 @@ title: Grave-Jordan
 tags:
 ---
 Grave: Here lies Sir Jordan, knight, killed in the Battle of Covenhill Woods.
-<<if $VAR_HasFoundJordan is false>>
+<<if $HasFoundJordan is false>>
     Amy: Oh, kuburan. Sepertinya ksatria yang mati di pertempuran di hutan ini.
-    <<set $VAR_HasFoundJordan to true>>
+    <<set $HasFoundJordan to true>>
+<<endif>>
+<<if $HasFoundAmbrose is true and $HasFoundJordan is true and $HasFoundReynold is true>>
+    [[EventsPrologue.SearchPrompt]]
 <<endif>>
 ===

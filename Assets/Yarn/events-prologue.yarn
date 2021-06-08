@@ -5,7 +5,7 @@ tags:
     Petualang: Di mana aku...?
     Petualang: Terakhir aku ingat... ada badai. Aku terpisah dari teman-teman.
     Petualang: Hanya berdiri di sini tidak akan berguna. Aku harus coba mencari orang.
-    <<trigger_checkpoint HasMetMovement>>
+    <<trigger_flag HasMetMovement>>
     Gerakkan <color=blue>Joystick<color=black> di kiri bawah untuk berjalan.
 <<endif>>
 ===
@@ -21,7 +21,7 @@ tags:
 ---
 <<if $HasMetInteraction is false>>
     ???: Hey, you there! Stop watching and help me!
-    <<trigger_checkpoint HasMetInteraction>>
+    <<trigger_flag HasMetInteraction>>
     Tekan tombol <color=blue>Interact<color=black> di kanan bawah ketika dekat pohon untuk membantu.
     <color=blue>Interact<color=black> dengan <color=blue>pohon<color=black> di tengah.
 <<endif>>
@@ -51,6 +51,7 @@ tags:
     Petualang: Hah? Kok bisa?
     Amy: Hehe, Amy memang bisa begitu. Lebih nyaman kalau begini! Tapi sayangnya Amy tidak bisa membuat kamu langsung fasih bahasa Inggris, tapi Amy pasti akan bantu kamu!
     Amy: Yuk, kita jalan. Harusnya hutan ini dekat kota.
+    Amy: Oh, kamu pasti lapar kan? Di situ ada <color=blue>buah-buahan<color=black> bisa kamu ambil dan makan.
     <<trigger_checkpoint HasMetAmy>>
 <<endif>>
 ===
@@ -59,4 +60,84 @@ title: EventsPrologue.ShouldHelp
 tags:
 ---
 Petualang: Aku harus membantu orang itu dulu.
+===
+
+title: EventsPrologue.SeeSign
+tags:
+---
+<<if $HasSeenSign is false>>
+    Amy: Lihat itu! Ada papan.
+    Dekati papan dan tekan tombol <color=blue>Interact<color=black> untuk membaca papan.
+    <<trigger_flag HasSeenSign>>
+<<endif>>
+===
+
+title: EventsPrologue.NearExit
+tags:
+---
+Amy: Harusnya kalau kita ikuti jalan ini, kita keluar dari hutan dan jalan sedikit lagi sampai kota. Yuk!
+===
+
+title: EventsPrologue.RoadBlock
+tags:
+---
+<<if $HasSeenBlock is false>>
+    Amy: Eh? Aneh... Padahal harusnya kita bisa keluar... Kenapa ini?
+    ???: Stop! What are you doing?!
+    Amy: Eh, siapa itu?!
+    <<trigger_flag HasSeenBlock>>
+<<endif>>
+===
+
+title: EventsPrologue.PathOpen
+tags:
+---
+Amy: (Woah, apa yang baru terjadi? Ada jalan tiba-tiba kebuka?!)
+Guard: What?
+Amy: That path just suddenly opened.
+Guard: Huh? Oh, you're right. How odd...
+Amy: (Kita tidak ada jalan lain, mungkin <color=blue>locket<color=black>-nya ada di sana!)
+===
+
+title: EventsPrologue.ShouldReturn
+tags:
+---
+<<if $HasFoundLocket is true>>
+    Amy: Kita seharusnya kembali ke penjaga tadi.
+<<endif>>
+===
+
+title: EventsPrologue.SeeGrave
+tags:
+---
+<<if $HasSeenGraves is false>>
+    Amy: Sedikit menakutkan ya... kenapa ada kuburan di hutan begini?
+<<endif>>
+===
+
+title: EventsPrologue.SearchPrompt
+tags:
+---
+Amy: Sepertinya tidak di sini, coba kita cek di tempat lain.
+===
+
+title: EventsPrologue.SeeBattle
+tags:
+---
+Amy: Sepertinya dulu pernah ada pertempuran di sini.
+===
+
+title: EventsPrologue.SeeLocketGrave
+tags:
+---
+<<if $HasFoundGrave is false>>
+    Amy: Sedikit menakutkan ya... kenapa ada kuburan satu seperti itu di sini?
+<<endif>>
+===
+
+title: EventsPrologue.RoadOpen
+tags:
+---
+Amy: Eh, ke mana dia? Kok tiba-tiba hilang?
+Amy: Hutan ini aneh.. Yuk cepat-cepat keluar. Amy ingin keluar dari hutan ini secepat mungkin...
 ===

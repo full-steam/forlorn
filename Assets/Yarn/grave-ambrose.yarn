@@ -2,4 +2,10 @@ title: Grave-Ambrose
 tags:
 ---
 Grave: Here lies Sir Ambrose, man-at-arms, killed in the Battle of Covenhill Woods.
+<<if $HasFoundAmbrose is false>>
+    <<set $HasFoundAmbrose to true>>
+<<endif>>
+<<if $HasFoundAmbrose is true and $HasFoundJordan is true and $HasFoundReynold is true>>
+    [[EventsPrologue.SearchPrompt]]
+<<endif>>
 ===

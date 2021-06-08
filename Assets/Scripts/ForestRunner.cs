@@ -17,15 +17,13 @@ public class ForestRunner : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        GameManager.Instance.Blackboard.FlagManager.CheckFlags();
-        if (!GameManager.Instance.Blackboard.FlagManager.GetFlag("HasMetMovement"))
+        foreach (GameObject element in disabledUIElements)
         {
-            foreach (GameObject element in disabledUIElements)
-            {
-                element.SetActive(false);
-            }
-            StartCoroutine(StartMonologue());
+            element.SetActive(false);
+            Debug.Log(element.name + " disabled.");
         }
+        GameManager.Instance.Blackboard.FlagManager.CheckFlags();
+        StartCoroutine(StartMonologue());
     }
 
     private IEnumerator StartMonologue()

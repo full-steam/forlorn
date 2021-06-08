@@ -16,12 +16,14 @@ tags:
 Grave: Here lies Philip, rebel, traitor, killed in the Battle of Covenhill Woods.
 Amy: Sepertinya ada pertempuran di sini, dan ini salah satu musuhnya.
 Amy: Eh, ada apa itu? Seperti ada yang berkilau, sedikit terkubur.
+<color=blue>Interact<color=black> dengan batu nisannya.
 <<set $VAR_HasFoundPhilip to true>>
 ===
 
 title: Locket
 tags:
 ---
+Kamu menemukan sebuah <color=blue>locket<color=black> setengah terkubur di sebelah batu nisan.
 Amy: Ini sepertinya. Ternyata terkubur bersama Philip ini ya...
 Amy: Kamu tahu cara mengatakan bahwa locket ini dikubur?
 Amy: Amy ajarkan saja!

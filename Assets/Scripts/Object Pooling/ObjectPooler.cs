@@ -59,7 +59,6 @@ public class ObjectPooler : MonoBehaviour
             {
                 if (item.shouldExpand)
                 {
-                    Debug.Log("Making new object.");
                     return AddPoolObject(item.poolObjectPrefab);
                 }
             }

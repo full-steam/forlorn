@@ -5,8 +5,11 @@ tags:
     Amy: Tidak ada <color=blue>locket<color=white> di sini.
 <<elseif $VAR_BrokenEquipmentFound is 1>>
     Amy: Bukan juga.
-<<elseif $VAR_BrokenEquipmentFound is 2>>
+<<elseif $VAR_BrokenEquipmentFound is 2 or $VAR_BrokenEquipmentFound is 3>>
     Amy: Bukan ini.
+<<else>>
+    <<set $HasSearchedWeapons to true>>
+    [[EventsPrologue.SearchPrompt]]
 <<endif>>
 <<set $VAR_BrokenEquipmentFound = $VAR_BrokenEquipmentFound + 1>>
 ===

@@ -11,8 +11,7 @@ tags:
 title: Meeting
 tags:
 ---
-Amy: Eh? Aneh... Padahal harusnya kita bisa keluar... Kenapa ini?
-Guard: Stop! What are you doing?
+Guard: What are you doing?
 Petualang: We want to go to Maplehollow.
 Guard: Nobody can go out of the forest.
 Amy: Huh? Why?
@@ -23,14 +22,14 @@ Guard: No.
 Amy: Come on! We really need to. My friend here is lost and we need to find a way to get him home. Is there anything we can do?
 Guard: Well... maybe there is.
 Amy: What?
-Guard: I lost my <color=blue>locket<color=white>.
+Guard: I lost my <color=blue>locket<color=black>.
 -> Locket?
     Amy: (Iya, seperti kalung tapi di akhir kalungnya ada tempat buat taruh sesuatu seperti gambar. Bergantung di leher.)
 -> And then?
 Guard: I don't remember why I lost it... But I lost it in this forest. If you help me find it, I'll let you pass.
 Amy: Alright then, we will find it for you!
 Guard: Thank you.
-<<set $HasMetReynold to true>>
+<<trigger_checkpoint HasMetReynold>>
 ===
 
 title: Goodbye
@@ -48,5 +47,5 @@ Amy: So, can we go to Maplehollow now?
 Guard: Sure.
 Guard: I can't leave my post, but I realy want Bridget to have this locket. Can you bring it to her? She's in town.
 Guard: Farewell. Thank you.
-<<set $HasOpenedPath to true>>
+<<trigger_checkpoint HasOpenedPath>>
 ===

@@ -2,4 +2,10 @@ title: Grave-Reynold
 tags:
 ---
 Grave: Here lies Reynold, guard, killed before the Battle of Covenhill Woods.
+<<if $HasFoundReynold is false>>
+    <<set $HasFoundReynold to true>>
+<<endif>>
+<<if $HasFoundAmbrose is true and $HasFoundJordan is true and $HasFoundReynold is true>>
+    [[EventsPrologue.SearchPrompt]]
+<<endif>>
 ===
