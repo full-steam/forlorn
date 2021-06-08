@@ -20,7 +20,7 @@ public class Dialogue : MonoBehaviour
     protected virtual void Start()
     {
         runner = GameManager.Instance.Blackboard.DialogueRunner;
-        if (nodeName == null) nodeName = dialogue.name;
+        if (string.IsNullOrEmpty(nodeName)) nodeName = dialogue.name;
         if (dialogue) runner.Add(dialogue);
     }
 
