@@ -26,8 +26,9 @@ public class Item : ScriptableObject
     public bool stackable;
     public bool usable;
     public ItemType type;
+    [Tooltip("Each ID is bound to a specific value, please refer to Item.cs to check each ID's value.")]
     public ItemEffect[] effects;
-    public Image icon;
+    public Sprite icon;
 
     public string GetTypeString()
     {

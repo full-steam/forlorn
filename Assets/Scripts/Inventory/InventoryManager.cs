@@ -101,7 +101,7 @@ public class InventoryManager : MonoBehaviour
     private void SetItem(InventoryItemHolder holder)
     {
         tempItem = GameManager.Instance.Blackboard.ItemLibrary.GetItem(holder.item.itemID);
-        holder.itemImage.sprite = tempItem.icon.sprite;
+        holder.itemImage.sprite = tempItem.icon;
         holder.itemImage.enabled = true;
         if (tempItem.stackable) holder.itemCount.text = holder.item.count.ToString();
         tempItem = null;
