@@ -19,7 +19,11 @@ public class VariableStorage : Yarn.Unity.VariableStorageBehaviour
     /// </returns>
     public override Value GetValue(string variableName)
     {
-        if (variableName.StartsWith("$VAR")) return variables[variableName];
+        if (variableName.StartsWith("$VAR"))
+        {
+            if (variables.ContainsKey(variableName)) return variables[variableName];
+            return new Value(false);
+        }
         return new Value(GameManager.Instance.Blackboard.FlagManager.GetFlag(variableName.Substring(1)));
     }
 
@@ -40,7 +44,7 @@ public class VariableStorage : Yarn.Unity.VariableStorageBehaviour
     public override void SetValue(string variableName, Value value)
     {
         if (variableName.StartsWith("$VAR")) SetVariable(variableName, value);
-        GameManager.Instance.Blackboard.FlagManager.SetFlag(variableName.Substring(1), value.AsBool);
+        else GameManager.Instance.Blackboard.FlagManager.SetFlag(variableName.Substring(1), value.AsBool);
     }
 
     /// <summary>

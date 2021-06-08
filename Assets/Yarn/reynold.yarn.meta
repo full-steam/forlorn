@@ -8,7 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
-  baseLanguageID: 
+  baseLanguageID: en-US
   stringIDs:
   - reynold-Meeting-0
   - reynold-Meeting-1
@@ -28,7 +28,7 @@ ScriptedImporter:
   - reynold-Meeting-15
   - reynold-Meeting-16
   - reynold-Meeting-17
-  - reynold-Meeting-18
+  - reynold-Goodbye-18
   - reynold-Goodbye-19
   - reynold-Goodbye-20
   - reynold-Goodbye-21
@@ -39,9 +39,8 @@ ScriptedImporter:
   - reynold-Goodbye-26
   - reynold-Goodbye-27
   - reynold-Goodbye-28
-  - reynold-Goodbye-29
   compilationStatus: 1
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
-  baseLanguage: {instanceID: 0}
+  baseLanguage: {fileID: 7128917941130120860, guid: af832122ce340a6408aa0a2c77a09105, type: 3}
   localizations: []

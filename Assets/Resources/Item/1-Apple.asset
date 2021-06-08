@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 998e267a1a8ec414991317cefb3057b3, type: 3}
-  m_Name: 2-
+  m_Name: 1-Apple
   m_EditorClassIdentifier: 
-  id: 2
-  name: 
+  id: 1
+  name: Apple
   text: 
-  stackable: 0
+  stackable: 1
   usable: 0
   type: 0
-  effects: []
+  effects:
+  - statID: 2
+    value: 1
   icon: {fileID: 0}
