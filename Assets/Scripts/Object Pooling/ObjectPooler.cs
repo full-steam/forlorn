@@ -20,7 +20,7 @@ public class ObjectPooler : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
-
+        pooledObjects = new List<GameObject>();
         SceneManager.sceneLoaded += ClearPooledObjects;
     }
 
@@ -28,7 +28,7 @@ public class ObjectPooler : MonoBehaviour
     private void Start()
     {
         GameManager.Instance.Blackboard.ObjectPooler = Instance;
-        pooledObjects = new List<GameObject>();
+        
         foreach (ObjectPoolItem item in poolItems)
         {
             for (int i = 0; i < item.poolSize; i++)
@@ -82,6 +82,6 @@ public class ObjectPooler : MonoBehaviour
 
     private void ClearPooledObjects(Scene scene, LoadSceneMode mode)
     {
-        pooledObjects.Clear();
+        if (pooledObjects.Count > 0) pooledObjects.Clear();
     }
 }

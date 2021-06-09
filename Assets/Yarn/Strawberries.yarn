@@ -1,0 +1,8 @@
+title: Strawberries
+tags:
+---
+You have picked up {$VARCollectibleObjName}.
+Buka <color=blue>inventory<color=black> dengan menekan tombol <color=blue>tas<color=black> di kanan atas.
+Pilih <color=blue>Strawberries<color=black> dan tekan tombol <color=blue>use<color=black> di kanan bawah untuk memakannya.
+<<set $HasMetItem to true>>
+===

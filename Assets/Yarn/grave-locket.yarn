@@ -24,6 +24,8 @@ title: Locket
 tags:
 ---
 Kamu menemukan sebuah <color=blue>locket<color=black> setengah terkubur di sebelah batu nisan.
+<<give_item>>
+You have picked up {$VARCollectibleObjName}.
 Amy: Ini sepertinya. Ternyata terkubur bersama Philip ini ya...
 Amy: Kamu tahu cara mengatakan bahwa locket ini dikubur?
 Amy: Amy ajarkan saja!
