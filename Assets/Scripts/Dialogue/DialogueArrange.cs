@@ -20,6 +20,11 @@ public class DialogueArrange : Dialogue
         base.Start();
 
         foreach (string answer in answers) answer.ToLower();
+
+        arrangementPanel = GameManager.Instance.Blackboard.ArrangementPanel;
+        sentenceHolder = GameManager.Instance.Blackboard.SentenceHolder;
+        arrangementButton = GameManager.Instance.Blackboard.ArrangementButton;
+        optionsHolder = GameManager.Instance.Blackboard.OptionsHolder;
     }
 
     public override void StartDialogue()

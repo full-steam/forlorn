@@ -15,7 +15,7 @@ public class ArrangementOption : MonoBehaviour
 
     private void Awake()
     {
-        text = GetComponent<TMP_Text>();
+        text = GetComponentInChildren<TMP_Text>();
     }
 
     /// <summary>

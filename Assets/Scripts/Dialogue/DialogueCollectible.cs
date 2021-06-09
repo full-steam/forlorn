@@ -1,4 +1,5 @@
-﻿using Yarn;
+﻿using UnityEngine;
+using Yarn;
 
 /// <summary>
 /// Component to run dialogue when an item is collected.
@@ -9,14 +10,17 @@ public class DialogueCollectible : Dialogue
     public int count;
     public string takenFlag;
     private ItemObject itemObject;
+    public bool manual;
 
     protected override void Start()
     {
+        itemObject = new ItemObject();
         itemObject.itemID = item.id;
         itemObject.count = count;
 
         runner = GameManager.Instance.Blackboard.DialogueRunner;
-        nodeName = "Collectible";
+        if (string.IsNullOrEmpty(nodeName)) nodeName = "Collectible";
+        if (dialogue) runner.Add(dialogue);
 
         CheckTakenStatus();
     }
@@ -24,7 +28,8 @@ public class DialogueCollectible : Dialogue
     public override void StartDialogue()
     {
         SetItemName();
-        GameManager.Instance.Blackboard.Player.playerStatus.AddItem(itemObject);
+        if (!manual) GiveItem(null);
+        else runner.AddCommandHandler("give_item", GiveItem);
         base.StartDialogue();
     }
 
@@ -33,7 +38,11 @@ public class DialogueCollectible : Dialogue
     /// </summary>
     private void SetItemName()
     {
-        GameManager.Instance.Blackboard.VariableStorage.SetVariable("$collectible_object_name", new Value(item.name));
+        Debug.Log(GameManager.Instance);
+        Debug.Log(GameManager.Instance.Blackboard);
+        Debug.Log(GameManager.Instance.Blackboard.VariableStorage);
+        Debug.Log(new Value(1));
+        GameManager.Instance.Blackboard.VariableStorage.SetVariable("$VARCollectibleObjName", new Value(item.name));
     }
 
     /// <summary>
@@ -42,5 +51,10 @@ public class DialogueCollectible : Dialogue
     private void CheckTakenStatus()
     {
         if (GameManager.Instance.Blackboard.FlagManager.GetFlag(takenFlag)) gameObject.SetActive(false);
+    }
+
+    private void GiveItem(string[] parameters)
+    {
+        GameManager.Instance.Blackboard.Player.playerStatus.AddItem(itemObject);
     }
 }
