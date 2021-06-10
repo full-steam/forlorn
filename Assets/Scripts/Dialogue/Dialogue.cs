@@ -11,7 +11,6 @@ public class Dialogue : MonoBehaviour
     [Tooltip("Giving a node name manually will takes priority to be ran than the set Dialogue")]
     public string nodeName;
     public YarnProgram dialogue;
-    [HideInInspector]
     public Checkpoint checkpoint;
     public bool triggerCheckpointDirectly;
 
@@ -34,6 +33,7 @@ public class Dialogue : MonoBehaviour
         runner.AddCommandHandler("trigger_flag", TriggerFlag);
         if (triggerCheckpointDirectly) checkpoint.TriggerCheckpoint();
         runner.StartDialogue(nodeName);
+        runner.onDialogueComplete.AddListener(RemoveCommandHandlers);
     }
 
     /// <summary>
@@ -53,5 +53,12 @@ public class Dialogue : MonoBehaviour
         if (parameters.Length == 2) value = bool.Parse(parameters[1]);
 
         GameManager.Instance.Blackboard.FlagManager.SetFlag(parameters[0], value);
+    }
+
+    protected virtual void RemoveCommandHandlers()
+    {
+        runner.RemoveCommandHandler("trigger_checkpoint");
+        runner.RemoveCommandHandler("trigger_flag");
+        runner.onDialogueComplete.RemoveListener(RemoveCommandHandlers);
     }
 }

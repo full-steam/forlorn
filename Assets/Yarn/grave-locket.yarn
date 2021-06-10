@@ -35,13 +35,13 @@ Amy: Amy ajarkan saja!
 title: Passive
 tags:
 ---
-Amy: Ini namanya <color=blue>kalimat pasif<color=white>, seperti pakai "di-" di bahasa kamu.
-Amy: Kalau di bahasa Inggris, caranya adalah pakai kata <color=blue>"be"<color=white> seperti <color=blue>"am, are, is"<color=white> terus di belakangnya kata kerjanya tapi dalam bentuk <color=blue>"past participle"<color=white>-nya.
-Amy: Contohnya, "buat" dalam bahasa Inggris adalah <color=blue>"make"<color=white>, dan <color=blue>"past participle"<color=white>-nya <color=blue>"made"<color=white>. Kalau jadi pasif, contohnya "Gedung terbuat dari kayu", maka menjadi <color=blue>"The building is made of wood."<color=white> Mengerti kan?
+Amy: Ini namanya <color=blue>kalimat pasif<color=black>, seperti pakai "di-" di bahasa kamu.
+Amy: Kalau di bahasa Inggris, caranya adalah pakai kata <color=blue>"be"<color=black> seperti <color=blue>"am, are, is"<color=black> terus di belakangnya kata kerjanya tapi dalam bentuk <color=blue>"past participle"<color=black>-nya.
+Amy: Contohnya, "buat" dalam bahasa Inggris adalah <color=blue>"make"<color=black>, dan <color=blue>"past participle"<color=black>-nya <color=blue>"made"<color=black>. Kalau jadi pasif, contohnya "Gedung terbuat dari kayu", maka menjadi <color=blue>"The building is made of wood."<color=black> Mengerti kan?
 -> Ya.
 -> Coba ulang sekali lagi?
     [[Passive]]
-Amy: Ingat, <color=blue>"be"<color=white>-nya sesuai waktu. Kalau mau mengatakan "tadi dibuat", maka jadinya <color=blue>"was"<color=blue>!
+Amy: Ingat, <color=blue>"be"<color=black>-nya sesuai waktu. Kalau mau mengatakan "tadi dibuat", maka jadinya <color=blue>"was"<color=blue>!
 Amy: Baik, sekarang yuk kita kembali ke penjaga!
 <<set $HasFoundLocket to true>>
 ===

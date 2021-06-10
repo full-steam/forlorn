@@ -57,4 +57,10 @@ public class DialogueCollectible : Dialogue
     {
         GameManager.Instance.Blackboard.Player.playerStatus.AddItem(itemObject);
     }
+
+    protected override void RemoveCommandHandlers()
+    {
+        runner.RemoveCommandHandler("give_item");
+        base.RemoveCommandHandlers();
+    }
 }

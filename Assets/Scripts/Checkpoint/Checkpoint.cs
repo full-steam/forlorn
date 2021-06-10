@@ -9,6 +9,7 @@ public class Checkpoint : MonoBehaviour
     {
         // self assign to dialogue
         GetComponent<Dialogue>().checkpoint = this;
+        Debug.Log(GetComponent<DialogueArrange>().gameObject.name);
     }
 
     /// <summary>
@@ -25,6 +26,7 @@ public class Checkpoint : MonoBehaviour
     /// <param name="checkpointId">Flag or checkpoint ID of the checkpoing to be triggered.</param>
     public void TriggerCheckpoint(string checkpointId)
     {
+        Debug.Log("Trigger checkpoint called");
         // to prevent checkpoint from activating more than once
         if (GameManager.Instance.Blackboard.FlagManager.GetFlag(checkpointId) == false)
         {

@@ -79,4 +79,10 @@ public class DialogueArrange : Dialogue
             else sentenceHolder.Reset();
         }
     }
+
+    protected override void RemoveCommandHandlers()
+    {
+        runner.RemoveCommandHandler("arrange_sentence");
+        base.RemoveCommandHandlers();
+    }
 }

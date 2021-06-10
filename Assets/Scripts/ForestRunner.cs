@@ -23,7 +23,7 @@ public class ForestRunner : MonoBehaviour
             Debug.Log(element.name + " disabled.");
         }
         GameManager.Instance.Blackboard.FlagManager.CheckFlags();
-        StartCoroutine(StartMonologue());
+        if (!GameManager.Instance.Blackboard.FlagManager.GetFlag("HasMetMovement")) StartCoroutine(StartMonologue());
     }
 
     private IEnumerator StartMonologue()
