@@ -82,7 +82,8 @@ public class GameManager : MonoBehaviour
     {
         //so = SaveLoad.Load();     saved files are loaded at the start of the game into GameManager
         saveHandler.so = so;
-        SceneManager.LoadScene(so.sceneName);
+        saveHandler.AssignFlags();
+        //SceneManager.LoadScene(so.sceneName);
         StartCoroutine(LoadScene());
     }
 
@@ -102,6 +103,7 @@ public class GameManager : MonoBehaviour
     private IEnumerator LoadScene()
     {
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(so.sceneName);
+        asyncLoad.allowSceneActivation = true;
         while (!asyncLoad.isDone) yield return null;
         yield return new WaitForEndOfFrame();
         saveHandler.AssignSaveData();

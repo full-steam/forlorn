@@ -31,7 +31,6 @@ public class SaveHandler : MonoBehaviour
     public void AssignSaveData()
     {
         GetPlayerRef();
-        flag.InitFlags(so); 
         if (inDebugScene)
         {
             sdt.saveObject = so;
@@ -41,6 +40,11 @@ public class SaveHandler : MonoBehaviour
         {
             player.playerStatus.AssignPlayerStatus(so);
         }
+    }
+
+    public void AssignFlags()
+    {
+        flag.InitFlags(so);
     }
 
     public SaveObject GetLatestSaveData()
@@ -61,6 +65,4 @@ public class SaveHandler : MonoBehaviour
 
         return so;
     }
-
-    
 }

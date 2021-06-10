@@ -10,13 +10,14 @@ public class ButtonHandler : MonoBehaviour
         Application.Quit();
     }
 
-    public void ContinueGame()
+    public void LoadGame()
     {
         GameManager.Instance.LoadGame();
     }
 
-    public void StartNewGame()
+    public void NewGame()
     {
+        GameManager.Instance.Blackboard.FlagManager.ResetFlags();
         SceneManager.LoadScene(FIRST_LEVEL);
     }
 
