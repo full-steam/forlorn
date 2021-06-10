@@ -45,11 +45,11 @@ public class ObjectPooler : MonoBehaviour
     /// <returns>A requested pooled object if available, null otherwise.</returns>
     public GameObject GetPooledObject(string tag)
     {
-        Debug.Log(pooledObjects.Count);
         for (int i = 0; i < pooledObjects.Count; i++)
         {
-            if (!pooledObjects[i].activeInHierarchy && pooledObjects[i].tag == tag)
+            if (!pooledObjects[i].activeSelf && pooledObjects[i].tag == tag)
             {
+                Debug.Log("Returning existing object.");
                 return pooledObjects[i];
             }
         }
@@ -59,6 +59,7 @@ public class ObjectPooler : MonoBehaviour
             {
                 if (item.shouldExpand)
                 {
+                    Debug.Log("Instantiating new object.");
                     return AddPoolObject(item.poolObjectPrefab);
                 }
             }
@@ -75,7 +76,7 @@ public class ObjectPooler : MonoBehaviour
     private GameObject AddPoolObject(GameObject prefab)
     {
         GameObject obj = Instantiate(prefab);
-        obj.SetActive(false);
+        // obj.SetActive(false);
         pooledObjects.Add(obj);
         return obj;
     }

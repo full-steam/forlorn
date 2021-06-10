@@ -41,7 +41,7 @@ public class ArrangementOption : MonoBehaviour
         if (isInSent)
         {
             sentenceHolder.RemoveWord(this);
-            optionsHolder.AddOption(Word);
+            transform.SetParent(optionsHolder.transform);
             isInSent = false;
         }
         else
