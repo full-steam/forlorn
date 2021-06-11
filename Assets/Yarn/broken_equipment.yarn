@@ -18,7 +18,9 @@ tags:
         <<set $VAR_BrokenEquipmentFound to 4>>
     <<endif>>
 <<else>>
-    <<set $HasSearchedWeapons to true>>
+    <<if $HasSearchedWeapons is false>>
+        <<set $HasSearchedWeapons to true>>
+    <<endif>>
     [[EventsPrologue.SearchPrompt]]
 <<endif>>
 ===
