@@ -40,7 +40,8 @@ public class FlagManager : MonoBehaviour
     /// <param name="value">Value to be set.</param>
     public void SetFlag(string flag, bool value)
     {
-        flags.Add(flag, value);
+        if (flags.ContainsKey(flag)) flags[flag] = value;
+        else flags.Add(flag, value);
         FlagTriggered(flag);
     }
 
