@@ -9,7 +9,6 @@ public class Checkpoint : MonoBehaviour
     {
         // self assign to dialogue
         GetComponent<Dialogue>().checkpoint = this;
-        Debug.Log(GetComponent<DialogueArrange>().gameObject.name);
     }
 
     /// <summary>

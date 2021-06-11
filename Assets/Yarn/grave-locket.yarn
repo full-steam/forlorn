@@ -43,5 +43,5 @@ Amy: Contohnya, "buat" dalam bahasa Inggris adalah <color=blue>"make"<color=blac
     [[Passive]]
 Amy: Ingat, <color=blue>"be"<color=black>-nya sesuai waktu. Kalau mau mengatakan "tadi dibuat", maka jadinya <color=blue>"was"<color=blue>!
 Amy: Baik, sekarang yuk kita kembali ke penjaga!
-<<set $HasFoundLocket to true>>
+<<trigger_checkpoint HasFoundLocket>>
 ===

@@ -30,10 +30,9 @@ public class Dialogue : MonoBehaviour
     {
         GameManager.Instance.Blackboard.Player.playerMovement.ToggleMovement(false);
         runner.AddCommandHandler("trigger_checkpoint", TriggerCheckpoint);
-        runner.AddCommandHandler("trigger_flag", TriggerFlag);
         if (triggerCheckpointDirectly) checkpoint.TriggerCheckpoint();
-        runner.StartDialogue(nodeName);
         runner.onDialogueComplete.AddListener(RemoveCommandHandlers);
+        runner.StartDialogue(nodeName);
     }
 
     /// <summary>
@@ -42,23 +41,14 @@ public class Dialogue : MonoBehaviour
     /// <param name="parameters">Parameters sent from the Yarn Program. Should either be empty or have one string argument.</param>
     protected void TriggerCheckpoint(string[] parameters)
     {
-        if (parameters.Length <= 0) checkpoint.TriggerCheckpoint();
+        Debug.Log(gameObject.name);
+        if (parameters.Length <= 0) this.checkpoint.TriggerCheckpoint();
         else checkpoint.TriggerCheckpoint(parameters[0]);
-    }
-
-    protected void TriggerFlag(string[] parameters)
-    {
-        bool value = true;
-
-        if (parameters.Length == 2) value = bool.Parse(parameters[1]);
-
-        GameManager.Instance.Blackboard.FlagManager.SetFlag(parameters[0], value);
     }
 
     protected virtual void RemoveCommandHandlers()
     {
         runner.RemoveCommandHandler("trigger_checkpoint");
-        runner.RemoveCommandHandler("trigger_flag");
         runner.onDialogueComplete.RemoveListener(RemoveCommandHandlers);
     }
 }

@@ -19,4 +19,4 @@ MonoBehaviour:
   usable: 0
   type: 1
   effects: []
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 1fc370f14e1307c4b8e5642176a9e116, type: 3}

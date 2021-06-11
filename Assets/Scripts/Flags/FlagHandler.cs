@@ -37,4 +37,9 @@ public class FlagHandler : MonoBehaviour
             }
         }
     }
+
+    private void OnDestroy()
+    {
+        GameManager.Instance.Blackboard.FlagManager.FlagTriggered -= OnFlagTriggered;
+    }
 }

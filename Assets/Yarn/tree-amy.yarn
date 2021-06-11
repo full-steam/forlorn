@@ -2,6 +2,6 @@ title: TreeAmy
 tags:
 ---
 <<if $IsHelpingAmy is false>>
-    <<trigger_flag IsHelpingAmy>>
+    <<set $IsHelpingAmy to true>>
 <<endif>>
 ===

@@ -11,23 +11,25 @@ public class ObjectiveManager : MonoBehaviour
 
     public Dictionary<string, GameObject> objectiveTexts;
 
+    private void Awake()
+    {
+        objectiveTexts = new Dictionary<string, GameObject>();
+        GameManager.Instance.Blackboard.FlagManager.FlagTriggered += OnFlagTriggered;
+    }
+
     // Start is called before the first frame update
     private void Start()
     {
-        objectiveTexts = new Dictionary<string, GameObject>();
-        
-        GameManager.Instance.Blackboard.FlagManager.FlagTriggered += OnFlagTriggered;
-
-        foreach (var objective in objectives)
-        {
-            if (GameManager.Instance.Blackboard.FlagManager.GetFlag(objective.startFlag))
-            {
-                if (!GameManager.Instance.Blackboard.FlagManager.GetFlag(objective.endFlag))
-                {
-                    AddObjective(objective.endFlag, objective.text);
-                }
-            }
-        }
+        //foreach (var objective in objectives)
+        //{
+        //    if (GameManager.Instance.Blackboard.FlagManager.GetFlag(objective.startFlag))
+        //    {
+        //        if (!GameManager.Instance.Blackboard.FlagManager.GetFlag(objective.endFlag))
+        //        {
+        //            AddObjective(objective.endFlag, objective.text);
+        //        }
+        //    }
+        //}
     }
 
     /// <summary>
@@ -84,5 +86,10 @@ public class ObjectiveManager : MonoBehaviour
             objectiveTexts.Remove(endFlag);
             temp.SetActive(false);
         }
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.Instance.Blackboard.FlagManager.FlagTriggered -= OnFlagTriggered;
     }
 }

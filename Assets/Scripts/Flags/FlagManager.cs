@@ -51,7 +51,7 @@ public class FlagManager : MonoBehaviour
     public void InitFlags(SaveObject so)
     {
         flags = new Dictionary<string, bool>();
-        for (int i = 0; i < so.keys.Count; i++) 
+        for (int i = 0; i < so.keys.Count; i++)
         {
             flags.Add(so.keys[i], so.values[i]);
         }

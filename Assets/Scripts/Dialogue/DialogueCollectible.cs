@@ -1,5 +1,4 @@
-﻿using UnityEngine;
-using Yarn;
+﻿using Yarn;
 
 /// <summary>
 /// Component to run dialogue when an item is collected.
@@ -38,10 +37,6 @@ public class DialogueCollectible : Dialogue
     /// </summary>
     private void SetItemName()
     {
-        Debug.Log(GameManager.Instance);
-        Debug.Log(GameManager.Instance.Blackboard);
-        Debug.Log(GameManager.Instance.Blackboard.VariableStorage);
-        Debug.Log(new Value(1));
         GameManager.Instance.Blackboard.VariableStorage.SetVariable("$VARCollectibleObjName", new Value(item.name));
     }
 
@@ -56,11 +51,18 @@ public class DialogueCollectible : Dialogue
     private void GiveItem(string[] parameters)
     {
         GameManager.Instance.Blackboard.Player.playerStatus.AddItem(itemObject);
+        runner.onDialogueComplete.AddListener(DisableObject);
     }
 
     protected override void RemoveCommandHandlers()
     {
         runner.RemoveCommandHandler("give_item");
         base.RemoveCommandHandlers();
+    }
+
+    private void DisableObject()
+    {
+        gameObject.SetActive(false);
+        runner.onDialogueComplete.RemoveListener(DisableObject);
     }
 }

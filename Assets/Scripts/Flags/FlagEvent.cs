@@ -38,7 +38,7 @@ public class FlagEvent
                 Debug.Log("ENABLE OBJECT");
                 foreach (GameObject target in targets)
                 {
-                    target.SetActive(true);
+                    if (target) target.SetActive(true);
                 }
                 break;
             case FlagEventType.DisableObject:
