@@ -9,7 +9,7 @@ public class FlagHandler : MonoBehaviour
     public List<FlagEvent> flagEvents;
 
     // Start is called before the first frame update
-    private void Start()
+    private void Awake()
     {
         GameManager.Instance.Blackboard.FlagManager.FlagTriggered += OnFlagTriggered;
     }
@@ -36,5 +36,10 @@ public class FlagHandler : MonoBehaviour
                 flagEvent.ExecuteEvent();
             }
         }
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.Instance.Blackboard.FlagManager.FlagTriggered -= OnFlagTriggered;
     }
 }

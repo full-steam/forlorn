@@ -1,0 +1,31 @@
+fileFormatVersion: 2
+guid: 7dee2108ccb4d044c8163458ad428ce8
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - grave-locket-Grave-Locket-0
+  - grave-locket-Philip-1
+  - grave-locket-Philip-2
+  - grave-locket-Philip-3
+  - grave-locket-Locket-4
+  - grave-locket-Locket-5
+  - grave-locket-Locket-6
+  - grave-locket-Passive-7
+  - grave-locket-Passive-8
+  - grave-locket-Passive-9
+  - grave-locket-Passive-10
+  - grave-locket-Passive-11
+  - grave-locket-Passive-12
+  - grave-locket-Passive-13
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: 7dee2108ccb4d044c8163458ad428ce8, type: 3}
+  localizations: []

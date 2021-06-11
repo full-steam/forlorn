@@ -14,9 +14,10 @@ public class ArrangementOptionsHolder : MonoBehaviour
     /// <param name="option">Option to be displayed.</param>
     public void AddOption(string option)
     {
-        ArrangementOption arrangementOption = GameManager.Instance.Blackboard.ObjectPooler.GetPooledObject("arrangement option").GetComponent<ArrangementOption>();
+        ArrangementOption arrangementOption = GameManager.Instance.Blackboard.ObjectPooler.GetPooledObject("arrangement option").GetComponentInChildren<ArrangementOption>();
         arrangementOption.Init(option, this);
         arrangementOption.transform.SetParent(transform);
+        // arrangementOption.gameObject.SetActive(true);
     }
 
     /// <summary>

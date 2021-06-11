@@ -1,0 +1,26 @@
+title: Broken_Equipment
+tags:
+---
+<<if $VAR_BrokenEquipmentFound is false>>
+    <<set $VAR_BrokenEquipmentFound to 0>>
+<<endif>>
+<<if $VAR_BrokenEquipmentFound is 0>>
+    Amy: Tidak ada <color=blue>locket<color=black> di sini.
+    <<set $VAR_BrokenEquipmentFound to 1>>
+<<elseif $VAR_BrokenEquipmentFound is 1>>
+    Amy: Bukan juga.
+    <<set $VAR_BrokenEquipmentFound to 2>>
+<<elseif $VAR_BrokenEquipmentFound is 2 or $VAR_BrokenEquipmentFound is 3>>
+    Amy: Bukan ini.
+    <<if $VAR_BrokenEquipmentFound is 2>>
+        <<set $VAR_BrokenEquipmentFound to 3>>
+    <<elseif $VAR_BrokenEquipmentFound is 3>>
+        <<set $VAR_BrokenEquipmentFound to 4>>
+    <<endif>>
+<<else>>
+    <<if $HasSearchedWeapons is false>>
+        <<set $HasSearchedWeapons to true>>
+    <<endif>>
+    [[EventsPrologue.SearchPrompt]]
+<<endif>>
+===

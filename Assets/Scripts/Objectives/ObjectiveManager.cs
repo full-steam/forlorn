@@ -11,23 +11,25 @@ public class ObjectiveManager : MonoBehaviour
 
     public Dictionary<string, GameObject> objectiveTexts;
 
+    private void Awake()
+    {
+        objectiveTexts = new Dictionary<string, GameObject>();
+        GameManager.Instance.Blackboard.FlagManager.FlagTriggered += OnFlagTriggered;
+    }
+
     // Start is called before the first frame update
     private void Start()
     {
-        objectiveTexts = new Dictionary<string, GameObject>();
-        
-        GameManager.Instance.Blackboard.FlagManager.FlagTriggered += OnFlagTriggered;
-
-        foreach (var objective in objectives)
-        {
-            if (GameManager.Instance.Blackboard.FlagManager.GetFlag(objective.startFlag))
-            {
-                if (!GameManager.Instance.Blackboard.FlagManager.GetFlag(objective.endFlag))
-                {
-                    AddObjective(objective.endFlag, objective.text);
-                }
-            }
-        }
+        //foreach (var objective in objectives)
+        //{
+        //    if (GameManager.Instance.Blackboard.FlagManager.GetFlag(objective.startFlag))
+        //    {
+        //        if (!GameManager.Instance.Blackboard.FlagManager.GetFlag(objective.endFlag))
+        //        {
+        //            AddObjective(objective.endFlag, objective.text);
+        //        }
+        //    }
+        //}
     }
 
     /// <summary>
@@ -60,8 +62,12 @@ public class ObjectiveManager : MonoBehaviour
         if (!objectiveTexts.ContainsKey(endFlag))
         {
             GameObject newObjective = GameManager.Instance.Blackboard.ObjectPooler.GetPooledObject("objective");
+            newObjective.transform.SetParent(transform);
+            newObjective.transform.localScale = Vector3.one;
 
-            newObjective.GetComponent<TMP_Text>().text = text;
+            newObjective.GetComponentInChildren<TMP_Text>().text = text;
+
+            newObjective.SetActive(true);
 
             objectiveTexts.Add(endFlag, newObjective);
         }
@@ -73,11 +79,17 @@ public class ObjectiveManager : MonoBehaviour
     /// <param name="endFlag">End flag of the objective.</param>
     private void RemoveObjective(string endFlag)
     {
+        Debug.Log("RemoveObjective called");
         if (objectiveTexts.ContainsKey(endFlag))
         {
             GameObject temp = objectiveTexts[endFlag];
             objectiveTexts.Remove(endFlag);
             temp.SetActive(false);
         }
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.Instance.Blackboard.FlagManager.FlagTriggered -= OnFlagTriggered;
     }
 }

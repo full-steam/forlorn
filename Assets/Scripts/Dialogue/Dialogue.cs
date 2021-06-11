@@ -8,18 +8,18 @@ using Yarn.Unity;
 /// </summary>
 public class Dialogue : MonoBehaviour
 {
+    [Tooltip("Giving a node name manually will takes priority to be ran than the set Dialogue")]
+    public string nodeName;
     public YarnProgram dialogue;
-    [HideInInspector]
     public Checkpoint checkpoint;
     public bool triggerCheckpointDirectly;
 
     protected DialogueRunner runner;
-    [SerializeField]protected string nodeName;
 
     protected virtual void Start()
     {
         runner = GameManager.Instance.Blackboard.DialogueRunner;
-        nodeName = dialogue.name;
+        if (string.IsNullOrEmpty(nodeName)) nodeName = dialogue.name;
         if (dialogue) runner.Add(dialogue);
     }
 
@@ -28,8 +28,10 @@ public class Dialogue : MonoBehaviour
     /// </summary>
     public virtual void StartDialogue()
     {
+        GameManager.Instance.Blackboard.Player.playerMovement.ToggleMovement(false);
         runner.AddCommandHandler("trigger_checkpoint", TriggerCheckpoint);
         if (triggerCheckpointDirectly) checkpoint.TriggerCheckpoint();
+        runner.onDialogueComplete.AddListener(RemoveCommandHandlers);
         runner.StartDialogue(nodeName);
     }
 
@@ -39,7 +41,14 @@ public class Dialogue : MonoBehaviour
     /// <param name="parameters">Parameters sent from the Yarn Program. Should either be empty or have one string argument.</param>
     protected void TriggerCheckpoint(string[] parameters)
     {
-        if (parameters.Length > 0) checkpoint.TriggerCheckpoint();
+        Debug.Log(gameObject.name);
+        if (parameters.Length <= 0) this.checkpoint.TriggerCheckpoint();
         else checkpoint.TriggerCheckpoint(parameters[0]);
+    }
+
+    protected virtual void RemoveCommandHandlers()
+    {
+        runner.RemoveCommandHandler("trigger_checkpoint");
+        runner.onDialogueComplete.RemoveListener(RemoveCommandHandlers);
     }
 }

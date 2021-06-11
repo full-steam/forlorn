@@ -9,14 +9,17 @@ public class DialogueCollectible : Dialogue
     public int count;
     public string takenFlag;
     private ItemObject itemObject;
+    public bool manual;
 
     protected override void Start()
     {
+        itemObject = new ItemObject();
         itemObject.itemID = item.id;
         itemObject.count = count;
 
         runner = GameManager.Instance.Blackboard.DialogueRunner;
-        nodeName = "Collectible";
+        if (string.IsNullOrEmpty(nodeName)) nodeName = "Collectible";
+        if (dialogue) runner.Add(dialogue);
 
         CheckTakenStatus();
     }
@@ -24,7 +27,8 @@ public class DialogueCollectible : Dialogue
     public override void StartDialogue()
     {
         SetItemName();
-        GameManager.Instance.Blackboard.Player.playerStatus.AddItem(itemObject);
+        if (!manual) GiveItem(null);
+        else runner.AddCommandHandler("give_item", GiveItem);
         base.StartDialogue();
     }
 
@@ -33,7 +37,7 @@ public class DialogueCollectible : Dialogue
     /// </summary>
     private void SetItemName()
     {
-        GameManager.Instance.Blackboard.VariableStorage.SetVariable("$collectible_object_name", new Value(item.name));
+        GameManager.Instance.Blackboard.VariableStorage.SetVariable("$VARCollectibleObjName", new Value(item.name));
     }
 
     /// <summary>
@@ -42,5 +46,23 @@ public class DialogueCollectible : Dialogue
     private void CheckTakenStatus()
     {
         if (GameManager.Instance.Blackboard.FlagManager.GetFlag(takenFlag)) gameObject.SetActive(false);
+    }
+
+    private void GiveItem(string[] parameters)
+    {
+        GameManager.Instance.Blackboard.Player.playerStatus.AddItem(itemObject);
+        runner.onDialogueComplete.AddListener(DisableObject);
+    }
+
+    protected override void RemoveCommandHandlers()
+    {
+        runner.RemoveCommandHandler("give_item");
+        base.RemoveCommandHandlers();
+    }
+
+    private void DisableObject()
+    {
+        gameObject.SetActive(false);
+        runner.onDialogueComplete.RemoveListener(DisableObject);
     }
 }

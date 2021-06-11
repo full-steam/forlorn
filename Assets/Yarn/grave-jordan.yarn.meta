@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: fbe00659564cc994eab47e4cabffcd4a
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - grave-jordan-Grave-Jordan-0
+  - grave-jordan-Grave-Jordan-1
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: fbe00659564cc994eab47e4cabffcd4a, type: 3}
+  localizations: []

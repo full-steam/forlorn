@@ -23,13 +23,14 @@ public class FlagManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Returns the value of a flag.
+    /// Returns the value of a flag if it exists. Otherwise, returns false.
     /// </summary>
     /// <param name="flag">Name of the requested value's flag.</param>
-    /// <returns>Value of the requested flag.</returns>
+    /// <returns>Value of the requested flag if it exists. Otherwise, false.</returns>
     public bool GetFlag(string flag)
     {
-        return flags[flag];
+        if (flags.ContainsKey(flag)) return flags[flag];
+        return false;
     }
 
     /// <summary>
@@ -39,7 +40,8 @@ public class FlagManager : MonoBehaviour
     /// <param name="value">Value to be set.</param>
     public void SetFlag(string flag, bool value)
     {
-        flags[flag] = value;
+        if (flags.ContainsKey(flag)) flags[flag] = value;
+        else flags.Add(flag, value);
         FlagTriggered(flag);
     }
 
@@ -50,7 +52,7 @@ public class FlagManager : MonoBehaviour
     public void InitFlags(SaveObject so)
     {
         flags = new Dictionary<string, bool>();
-        for (int i = 0; i < so.keys.Count; i++) 
+        for (int i = 0; i < so.keys.Count; i++)
         {
             flags.Add(so.keys[i], so.values[i]);
         }
@@ -61,10 +63,7 @@ public class FlagManager : MonoBehaviour
     /// </summary>
     public void ResetFlags()
     {
-        foreach (var key in flags.Keys)
-        {
-            flags[key] = false;
-        }
+        flags.Clear();
     }
 
     /// <summary>
@@ -77,5 +76,10 @@ public class FlagManager : MonoBehaviour
         saveObj.keys = new List<string>(flags.Keys);
         saveObj.values = new List<bool>(flags.Values);
         //return saveObj;
+    }
+
+    public void CheckFlags()
+    {
+        foreach (string flag in flags.Keys) { FlagTriggered(flag); Debug.Log(flag + " triggered"); }
     }
 }

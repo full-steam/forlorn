@@ -849,12 +849,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3513663437035085399, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: poolItems.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3513663437035085399, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
       propertyPath: poolItems.Array.data[0].poolSize
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3513663437035085399, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
       propertyPath: poolItems.Array.data[1].poolSize
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3513663437035085399, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: poolItems.Array.data[2].shouldExpand
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3513663437035085399, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
       propertyPath: poolItems.Array.data[0].poolObjectPrefab
@@ -864,6 +872,10 @@ PrefabInstance:
       propertyPath: poolItems.Array.data[1].poolObjectPrefab
       value: 
       objectReference: {fileID: 8656632089768052862, guid: a3a816ae484981f498dd41507b3017e8, type: 3}
+    - target: {fileID: 3513663437035085399, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: poolItems.Array.data[2].poolObjectPrefab
+      value: 
+      objectReference: {fileID: 8790236908765686990, guid: 9f002666e28d2c849b96a0cc58f5909d, type: 3}
     - target: {fileID: 4752977532800166685, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
       propertyPath: m_fontSize
       value: 37.3
@@ -884,6 +896,18 @@ PrefabInstance:
       propertyPath: dialogueRunner
       value: 
       objectReference: {fileID: 1704334777}
+    - target: {fileID: 5271586482053511299, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: so.keys.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271586482053511299, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: so.values.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5271586482053511299, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: so.keys.Array.data[0]
+      value: HasMetMovement
+      objectReference: {fileID: 0}
     - target: {fileID: 5271586482053511309, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -926,6 +950,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5271586482053511309, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454843006951942098, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5833372404703451603, guid: b78dd54df60ee7c428c44f7a9b9fe2b9, type: 3}

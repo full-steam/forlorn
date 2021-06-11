@@ -15,7 +15,7 @@ public class ArrangementOption : MonoBehaviour
 
     private void Awake()
     {
-        text = GetComponent<TMP_Text>();
+        text = GetComponentInChildren<TMP_Text>();
     }
 
     /// <summary>
@@ -41,7 +41,7 @@ public class ArrangementOption : MonoBehaviour
         if (isInSent)
         {
             sentenceHolder.RemoveWord(this);
-            optionsHolder.AddOption(Word);
+            transform.SetParent(optionsHolder.transform);
             isInSent = false;
         }
         else

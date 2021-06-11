@@ -3,20 +3,21 @@ using UnityEngine.SceneManagement;
 
 public class ButtonHandler : MonoBehaviour
 {
-    private const string FIRST_LEVEL = "LevelScene";    //Change according to first scene name
+    private const string FIRST_LEVEL = "Forest";    //Change according to first scene name
 
     public void QuitGame()
     {
         Application.Quit();
     }
 
-    public void ContinueGame()
+    public void LoadGame()
     {
         GameManager.Instance.LoadGame();
     }
 
-    public void StartNewGame()
+    public void NewGame()
     {
+        GameManager.Instance.Blackboard.FlagManager.ResetFlags();
         SceneManager.LoadScene(FIRST_LEVEL);
     }
 

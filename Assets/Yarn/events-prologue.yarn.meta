@@ -1,0 +1,66 @@
+fileFormatVersion: 2
+guid: f936a0e2f23775c409cdee730f722416
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - events-prologue-EventsPrologue-0
+  - events-prologue-EventsPrologue-1
+  - events-prologue-EventsPrologue-2
+  - events-prologue-EventsPrologue-3
+  - events-prologue-EventsPrologue.SeeAmy-4
+  - events-prologue-EventsPrologue.AmyCall-5
+  - events-prologue-EventsPrologue.AmyCall-6
+  - events-prologue-EventsPrologue.AmyCall-7
+  - events-prologue-EventsPrologue.MeetAmy-8
+  - events-prologue-EventsPrologue.MeetAmy-9
+  - events-prologue-EventsPrologue.MeetAmy-10
+  - events-prologue-EventsPrologue.MeetAmy-11
+  - events-prologue-EventsPrologue.MeetAmy-12
+  - events-prologue-EventsPrologue.MeetAmy-13
+  - events-prologue-EventsPrologue.MeetAmy-14
+  - events-prologue-EventsPrologue.MeetAmy-15
+  - events-prologue-EventsPrologue.MeetAmy-16
+  - events-prologue-EventsPrologue.MeetAmy-17
+  - events-prologue-EventsPrologue.MeetAmy-18
+  - events-prologue-EventsPrologue.MeetAmy-19
+  - events-prologue-EventsPrologue.MeetAmy-20
+  - events-prologue-EventsPrologue.MeetAmy-21
+  - events-prologue-EventsPrologue.MeetAmy-22
+  - events-prologue-EventsPrologue.MeetAmy-23
+  - events-prologue-EventsPrologue.MeetAmy-24
+  - events-prologue-EventsPrologue.MeetAmy-25
+  - events-prologue-EventsPrologue.MeetAmy-26
+  - events-prologue-EventsPrologue.MeetAmy-27
+  - events-prologue-EventsPrologue.MeetAmy-28
+  - events-prologue-EventsPrologue.ShouldHelp-29
+  - events-prologue-EventsPrologue.ShouldTake-30
+  - events-prologue-EventsPrologue.SeeSign-31
+  - events-prologue-EventsPrologue.SeeSign-32
+  - events-prologue-EventsPrologue.NearExit-33
+  - events-prologue-EventsPrologue.RoadBlock-34
+  - events-prologue-EventsPrologue.RoadBlock-35
+  - events-prologue-EventsPrologue.RoadBlock-36
+  - events-prologue-EventsPrologue.PathOpen-37
+  - events-prologue-EventsPrologue.PathOpen-38
+  - events-prologue-EventsPrologue.PathOpen-39
+  - events-prologue-EventsPrologue.PathOpen-40
+  - events-prologue-EventsPrologue.PathOpen-41
+  - events-prologue-EventsPrologue.ShouldReturn-42
+  - events-prologue-EventsPrologue.SeeGrave-43
+  - events-prologue-EventsPrologue.SearchPrompt-44
+  - events-prologue-EventsPrologue.SeeBattle-45
+  - events-prologue-EventsPrologue.SeeLocketGrave-46
+  - events-prologue-EventsPrologue.RoadOpen-47
+  - events-prologue-EventsPrologue.RoadOpen-48
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: f936a0e2f23775c409cdee730f722416, type: 3}
+  localizations: []

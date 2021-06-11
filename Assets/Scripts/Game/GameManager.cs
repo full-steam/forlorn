@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using Yarn.Unity;
 
 [RequireComponent(typeof(SaveHandler), typeof(FlagManager))]
@@ -16,6 +17,11 @@ public class GameManager : MonoBehaviour
     public bool isLoading;
     public GameObject dictionaryPanel;
     public DialogueRunner dialogueRunner;
+    public VariableStorage variableStorage;
+    public GameObject arrangementPanel;
+    public SentenceHolder sentenceHolder;
+    public Button arrangementButton;
+    public ArrangementOptionsHolder optionsHolder;
 
     // ---Private Variables
     private SaveHandler saveHandler;
@@ -34,6 +40,11 @@ public class GameManager : MonoBehaviour
 
         Blackboard.DictionaryPanel = dictionaryPanel;
         Blackboard.DialogueRunner = dialogueRunner;
+        Blackboard.VariableStorage = variableStorage;
+        Blackboard.ArrangementPanel = arrangementPanel;
+        Blackboard.SentenceHolder = sentenceHolder;
+        Blackboard.ArrangementButton = arrangementButton;
+        Blackboard.OptionsHolder = optionsHolder;
 
         if (PlayerPrefs.GetInt("HasSaveData", 0) == 0)
         {
@@ -71,7 +82,8 @@ public class GameManager : MonoBehaviour
     {
         //so = SaveLoad.Load();     saved files are loaded at the start of the game into GameManager
         saveHandler.so = so;
-        SceneManager.LoadScene(so.sceneName);
+        saveHandler.AssignFlags();
+        //SceneManager.LoadScene(so.sceneName);
         StartCoroutine(LoadScene());
     }
 
@@ -91,6 +103,7 @@ public class GameManager : MonoBehaviour
     private IEnumerator LoadScene()
     {
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(so.sceneName);
+        asyncLoad.allowSceneActivation = true;
         while (!asyncLoad.isDone) yield return null;
         yield return new WaitForEndOfFrame();
         saveHandler.AssignSaveData();
@@ -108,6 +121,10 @@ public class Blackboard
     public DialogueRunner DialogueRunner { set; get; }
     public VariableStorage VariableStorage { set; get; }
     public GameObject DictionaryPanel { set; get; }
+    public GameObject ArrangementPanel { set; get; }
+    public SentenceHolder SentenceHolder { set; get; }
+    public Button ArrangementButton { set; get; }
+    public ArrangementOptionsHolder OptionsHolder { get; set; }
 
     public Blackboard()
     {

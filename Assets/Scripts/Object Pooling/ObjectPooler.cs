@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Component that handles object pooling.
@@ -19,13 +20,15 @@ public class ObjectPooler : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
+        pooledObjects = new List<GameObject>();
+        SceneManager.sceneLoaded += ClearPooledObjects;
     }
 
     // Start is called before the first frame update
     private void Start()
     {
         GameManager.Instance.Blackboard.ObjectPooler = Instance;
-        pooledObjects = new List<GameObject>();
+        
         foreach (ObjectPoolItem item in poolItems)
         {
             for (int i = 0; i < item.poolSize; i++)
@@ -42,11 +45,11 @@ public class ObjectPooler : MonoBehaviour
     /// <returns>A requested pooled object if available, null otherwise.</returns>
     public GameObject GetPooledObject(string tag)
     {
-        Debug.Log(pooledObjects.Count);
         for (int i = 0; i < pooledObjects.Count; i++)
         {
-            if (!pooledObjects[i].activeInHierarchy && pooledObjects[i].tag == tag)
+            if (!pooledObjects[i].activeSelf && pooledObjects[i].tag == tag)
             {
+                Debug.Log("Returning existing object.");
                 return pooledObjects[i];
             }
         }
@@ -56,6 +59,7 @@ public class ObjectPooler : MonoBehaviour
             {
                 if (item.shouldExpand)
                 {
+                    Debug.Log("Instantiating new object.");
                     return AddPoolObject(item.poolObjectPrefab);
                 }
             }
@@ -72,8 +76,13 @@ public class ObjectPooler : MonoBehaviour
     private GameObject AddPoolObject(GameObject prefab)
     {
         GameObject obj = Instantiate(prefab);
-        obj.SetActive(false);
+        // obj.SetActive(false);
         pooledObjects.Add(obj);
         return obj;
+    }
+
+    private void ClearPooledObjects(Scene scene, LoadSceneMode mode)
+    {
+        if (pooledObjects.Count > 0) pooledObjects.Clear();
     }
 }
