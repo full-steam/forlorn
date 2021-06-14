@@ -1,0 +1,26 @@
+﻿title: Guard
+tags:
+---
+<<if $GuardApproached is false>>
+    <<set $GuardApproached to true>>
+<<endif>>
+
+Guard: Stop! Who are you? Where did you come from?
+Amy: Woah! We mean no harm!
+Amy: I'm Amy, and this is, uh, an adventurer travelling with me.
+Amy: (Ikuti saja.)
+Guard: Where did you come from?
+Petualang: The woods. Covenhill Woods.
+Guard: That can't be. That's impossible. Nobody has gone into Covenhill Woods for months, and nobody has come out of it either.
+Amy: But... we just did.
+Guard: And where are you headed?
+Petualang: Maplehollow.
+Guard: Well, you're not getting there until we allow you to.
+Amy: What?!
+Guard: Please go into the camp and speak to the Captain.
+Amy: But why?
+Guard: The Captain will decide.
+Amy: But-
+Guard: Please go into the camp.
+Amy: (Menyebalkan...)
+===
