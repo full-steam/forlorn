@@ -22,6 +22,8 @@ public class FlagEvent
 
     public string flag;
     public FlagEventType eventType;
+    public bool foldout = false;
+    public bool foldoutTargets = false;
 
     public List<GameObject> targets;
     public List<MoveTarget> moveTargets;
