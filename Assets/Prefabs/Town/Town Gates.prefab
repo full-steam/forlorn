@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4442157751687710187}
   - component: {fileID: 2164395093174612672}
   m_Layer: 0
-  m_Name: Gates (1)
+  m_Name: Town Gates
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
