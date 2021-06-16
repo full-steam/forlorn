@@ -1,7 +1,0 @@
-title: TreeAmy
-tags:
----
-<<if $IsHelpingAmy is false>>
-    <<set $IsHelpingAmy to true>>
-<<endif>>
-===
