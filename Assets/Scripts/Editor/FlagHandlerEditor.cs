@@ -122,11 +122,11 @@ public class FlagHandlerEditor : Editor
         SerializedProperty element = reoderableList.serializedProperty.GetArrayElementAtIndex(index);
         var foldout = element.FindPropertyRelative("foldout");
 
-        var height = EditorGUIUtility.singleLineHeight;
+        var height = EditorGUIUtility.singleLineHeight + 4f;
 
         if (foldout.boolValue)
         {
-            height += EditorGUIUtility.singleLineHeight * 3f + 2f;
+            height += EditorGUIUtility.singleLineHeight * 3f;
 
             if (element.FindPropertyRelative("foldoutTargets").boolValue)
             {
