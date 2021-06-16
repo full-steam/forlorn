@@ -125,6 +125,7 @@ public class Blackboard
     public SentenceHolder SentenceHolder { set; get; }
     public Button ArrangementButton { set; get; }
     public ArrangementOptionsHolder OptionsHolder { get; set; }
+    public GameObject Camera { get; set; }
 
     public Blackboard()
     {
