@@ -1,0 +1,84 @@
+﻿title: Quest3.ReachGate
+tags:
+---
+<<if $HasReachedGate is false>>
+    Guard: Halt! Who are you? What business do you have here?
+    Amy: We're here to see the scholar.
+    Guard: Lord Covert? Who do you think you are? You think just anyone can see the Lord of the town?
+    -> We <color=blue>were told<color=black> to come here.
+    -> There <color=blue>must<color=black> be a mistake.
+        Guard: What do you mean?
+        Amy: We were told to come here!
+    Guard: By who?
+    Player: Sir Mark.
+    Guard: Sir Mark? The Captain of the Guards?
+    Guard: Oh, you must be the Adventurer and his pet.
+    Amy: Huh? I'm not a pet! My name's Amy!
+    Guard: Right, apologies, Miss Amy.
+    Guard: They told us you were coming. Please go in. Lord Covert is in the courtyard.
+    <<set $HasReachedGate to true>>
+<<endif>>
+===
+
+title: Quest3.MeetJames
+tags:
+---
+<<if $HasMetJames is false>>
+    Guard: Stop, please. What are you doing here?
+    -> We <color=blue>were sent<color=black> by Mr. Covert to investigate.
+    -> What are YOU doing here?
+        Amy: Woah, woah! Calm down now! Mr. William Covert sent the Adventurer here and Amy to investigate.
+        Amy: (Kamu kenapa?!)
+    Guard: Oh, you must be the Adventurer everybody's talking about.
+    Guard: Well, you're free to look around.
+    Guard: But I don't think you'll be able to do anything. No one has been able to go in.
+    <<set $HasMetJames to true>>
+<<endif>>
+===
+
+title: Quest3.ReachDoor
+tags:
+---
+<<if $HasReachedDoor is false>>
+    Amy: Hmm... Memang sepertinya kita tidak bisa masuk ya.
+    AMY: Hm? Itu sepertinya ada tulisan?
+    -> Di mana? Aku tidak melihatnya.
+    Amy: Itu, di semak-semak. Coba kamu keluarkan.
+    <color=blue>Interact<color=black> dengan <color=blue>semak-semak<color=black>.
+    <<trigger_checkpoint HasReachedDoor>>
+<<endif>>
+===
+
+title: Quest3.InteractBush
+tags:
+---
+<<if $HasInteractedBush is false>>
+    <<set $HasInteractedBush to true>>
+<<endif>>
+===
+
+title: Quest3.NormanDisappear
+tags:
+---
+Amy: Aduh, mengerikan...
+===
+
+title: Quest3.SeeCoffin
+tags:
+---
+<<if $HasSeenCoffin is false>>
+    Amy: Mungkin kita perlu meletakkan cincinnya di atas petinya?
+    <<set $HasSeenCoffin to true>>
+<<endif>>
+===
+
+title: Quest3.SeePillars
+tags:
+---
+<<if $HasSeenPillars is false>>
+    Amy: Sepertinya berakhir di sini. Ada apa itu? Papan?
+    Amy: Coba baca papan di sebelah pintu di sana.
+    <color=blue>Interact<color=black> dengan <color=blue>sign<color=black> di akhir ruangan.
+    <<set $HasSeenPillars to true>>
+<<endif>>
+===

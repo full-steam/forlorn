@@ -10,7 +10,12 @@ public class FlagEvent
     {
         EnableObject,
         DisableObject,
-        MoveObject
+        MoveObject,
+        FadeOutAndIn,
+        RunDialogue,
+        ChangeSprite,
+        SetTag,
+        REMOVE_RING
     };
 
     [System.Serializable]
@@ -22,29 +27,33 @@ public class FlagEvent
 
     public string flag;
     public FlagEventType eventType;
+    public float delay = 1.0f;
     public bool foldout = false;
     public bool foldoutTargets = false;
+    public string tag;
 
     public List<GameObject> targets;
     public List<MoveTarget> moveTargets;
+    public CameraFadeManager.Options fadeOutOptions;
+    public CameraFadeManager.Options fadeInOptions;
+    public Dialogue dialogueComponent;
+    public SpriteRenderer spriteRenderer;
+    public Sprite sprite;
 
     /// <summary>
     /// Executes the event associated with the flag on the object.
     /// </summary>
     public void ExecuteEvent()
     {
-        Debug.Log("Execute event called!");
         switch (eventType)
         {
             case FlagEventType.EnableObject:
-                Debug.Log("ENABLE OBJECT");
                 foreach (GameObject target in targets)
                 {
                     if (target) target.SetActive(true);
                 }
                 break;
             case FlagEventType.DisableObject:
-                Debug.Log("DISABLE OBJECT");
                 foreach (GameObject target in targets)
                 {
                     target.SetActive(false);
@@ -54,6 +63,33 @@ public class FlagEvent
                 foreach (MoveTarget target in moveTargets)
                 {
                     target.target.transform.SetPositionAndRotation(target.coords, target.target.transform.localRotation);
+                }
+                break;
+            case FlagEventType.FadeOutAndIn:
+                GameManager.Instance.Blackboard.Camera.GetComponent<CameraFadeManager>().FadeOutAndIn(fadeOutOptions, fadeInOptions, delay);
+                break;
+            case FlagEventType.RunDialogue:
+                dialogueComponent.StartDialogue();
+                break;
+            case FlagEventType.ChangeSprite:
+                spriteRenderer.sprite = sprite;
+                break;
+            case FlagEventType.SetTag:
+                foreach (GameObject target in targets)
+                {
+                    target.tag = tag;
+                }
+                break;
+            case FlagEventType.REMOVE_RING:
+                List<ItemObject> itemList = GameManager.Instance.Blackboard.Player.GetComponent<PlayerStatus>().itemList;
+
+                for (int i = 0; i < itemList.Count; i++)
+                {
+                    if (itemList[i].itemID == 3)
+                    {
+                        GameManager.Instance.Blackboard.Player.GetComponent<PlayerStatus>().itemList.RemoveAt(i);
+                        return;
+                    }
                 }
                 break;
         }

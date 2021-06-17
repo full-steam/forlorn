@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5316226553914931689}
   - component: {fileID: 7823601849498006798}
   - component: {fileID: 2441229820408298833}
+  - component: {fileID: 1708266493639254005}
   m_Layer: 0
   m_Name: Scholar
   m_TagString: Interactable
@@ -99,3 +100,25 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1.5}
   m_Direction: 0
+--- !u!114 &1708266493639254005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6929088249611446385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fdbdfcc386be874685b0f68ff7ad7e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeName: 
+  dialogue: {fileID: 0}
+  checkpoint: {fileID: 0}
+  triggerCheckpointDirectly: 0
+  answers: []
+  options: []
+  arrangementPanel: {fileID: 0}
+  sentenceHolder: {fileID: 0}
+  arrangementButton: {fileID: 0}
+  optionsHolder: {fileID: 0}

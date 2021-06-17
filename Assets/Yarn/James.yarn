@@ -1,0 +1,48 @@
+﻿title: James
+tags:
+---
+<<if $HasMetNorman is true and $HasFoundRing is false>>
+    [[James.Caught]]
+<<endif>>
+===
+
+title: James.Caught
+tags:
+---
+Guard: Hello! Did you manage to get in?
+Amy: No, not yet.
+-> We're looking for a ring.
+Guard: A ring?
+Amy: Yes. Some thief stole a ring from inside the temple.
+Guard: I-I see. And why do you need the ring?
+Amy: See, Adventurer here can speak with ghosts.
+Guard: G-g-ghosts?!
+-> We don't know if they're ghosts.
+Amy: They look like ghosts.
+Amy: Anyway, we met the person in charge of this temple. A ghost too, Amy thinks. His name's Norman, and he'll let us in if we find his ring.
+Guard: Ah, I see. N-no, I haven't seen it.
+Amy: Hmm?
+-> What?
+Amy: (Orang ini sedikit mencurigakan.)
+Amy: What's your name, guard?
+Guard: What? J-james?
+Amy: You sound suspicious... are you hiding something?
+-> (Amy, jangan terlalu jahat...)
+-> Yeah, what are you hiding?
+James: Hiding something? N-no, of course not!
+Amy: You know where the ring is, don't you?
+James: What? No! I don't know what ring you're talking about!
+Amy: Say it, James! Or Amy is going to be very, very angry...
+James: Okay! Okay! I took the ring!
+Amy: What?! This...
+-> Amy!
+James: I'm sorry, I didn't think anyone would mind! I mean, it's abandoned!
+James: I thought nobody would notice one ring missing. It looked really expensive too...
+-> Do you still have it?
+James: Y-yes.
+Amy: Give it! Now!
+James: Y-yes!
+<<give_item>>
+Amy: Okay! Waktunya kembali ke Norman.
+<<trigger_checkpoint HasFoundRing>>
+===

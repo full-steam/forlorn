@@ -10,10 +10,11 @@ public class DialogueArrange : Dialogue
 {
     public List<string> answers;
     public List<string> options;
-    public GameObject arrangementPanel;
-    public SentenceHolder sentenceHolder;
-    public Button arrangementButton;
-    public ArrangementOptionsHolder optionsHolder;
+
+    private GameObject arrangementPanel;
+    private SentenceHolder sentenceHolder;
+    private Button arrangementButton;
+    private ArrangementOptionsHolder optionsHolder;
 
     protected override void Start()
     {
