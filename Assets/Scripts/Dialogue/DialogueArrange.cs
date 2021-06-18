@@ -73,6 +73,7 @@ public class DialogueArrange : Dialogue
             {
                 arrangementPanel.SetActive(false);
                 arrangementButton.onClick.RemoveAllListeners();
+                sentenceHolder.Reset();
                 onComplete();
             }
             // TODO: implement feedback if incorrect

@@ -61,7 +61,15 @@ public class SentenceHolder : MonoBehaviour
     public void Reset()
     {
         tokens.Clear();
+
+        List<Transform> children = new List<Transform>();
+
         foreach (Transform child in transform)
+        {
+            children.Add(child);
+        }
+
+        foreach (Transform child in children)
         {
             child.GetComponent<ArrangementOption>().Toggle();
         }
