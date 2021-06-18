@@ -21,7 +21,7 @@ public class DialogueCollectible : Dialogue
         if (string.IsNullOrEmpty(nodeName)) nodeName = "Collectible";
         if (dialogue) runner.Add(dialogue);
 
-        CheckTakenStatus();
+        if(takenFlag != "") CheckTakenStatus();
     }
 
     public override void StartDialogue()
@@ -62,7 +62,7 @@ public class DialogueCollectible : Dialogue
 
     private void DisableObject()
     {
-        gameObject.SetActive(false);
         runner.onDialogueComplete.RemoveListener(DisableObject);
+        gameObject.SetActive(false);
     }
 }

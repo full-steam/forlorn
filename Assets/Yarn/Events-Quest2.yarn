@@ -1,0 +1,135 @@
+﻿title: EventsQuest2
+tags:
+---
+<<if $EnteredTown is false>>
+    Amy: Akhirnya kita sudah keluar dari hutan! Ayo kita lanjut menuju ke Maplehollow!
+    <<trigger_checkpoint EnteredTown>>
+<<endif>>
+===
+
+title:ReportedSpeech
+---
+<<if $ReportedSpeechDone is false>>
+    [[ReportedSpeech.Opening]]
+<<endif>>
+===
+
+title: ReportedSpeech.Opening
+tags:
+---
+Amy: Orang itu kayaknya Captain-nya. Kayaknya dia akan bertanya apa yang terjadi dan bagaimana kita bisa keluar dari hutan itu.
+Amy: Nanti Petualang harus memberi tahu kepada Captain apa yang dikatakan si penjaga di hutan tadi.
+Petualang: Petualang?
+Amy: Kamu maksudnya.
+-> Sejak kapan aku "Petualang"?
+    Amy: Sejak tadi. Itu tidak penting, lanjut!
+-> Oke.
+Amy: Amy ajarkan dulu sebelum ketemu Captain-nya cara memberi tahu dia apa yang dikatakan si penjaga tadi.
+Petualang: Kenapa tidak kamu saja yang beri tahu mereka?
+Amy: Amy merasa mereka tidak akan dengarkan Amy... Sudahlah! Ayo mulai!
+<<set $ReportedSpeechOpening to true>>
+===
+
+title: ReportedSpeech.Arrange1
+tags:
+---
+Amy: Ini namanya <color=blue>"Reported speech"<color=black>, yaitu ketika kita memberi tahu seseorang apa yang dikatakan orang lain.
+Amy: Contoh. Misal Amy mengatakan <color=blue>"Amy is the best!"<color=black> Kalau kamu mau memberi tahu seseorang apa yang Amy katakan, kamu harus mengatakan <color=blue>"Amy said that she was the best!"<color=black>.
+Amy: Perhatikan apa yang berubah di kalimatnya. Pertama, tadi Amy mengatakan <color=blue>"is"<color=black>, tapi berubah menjadi <color=blue>"was"<color=black>. Kalau <color=blue>"reported speech"<color=black>, <color=blue>"tense"<color=black> yang dipakai berubah. 
+Amy: Akan mundur seperti dari <color=blue>"present"<color=black> ke <color=blue>"past"<color=black>, <color=blue>"future"<color=black> ke <color=blue>"present"<color=black>. Kalau tadinya <color=blue>"is"<color=black>, jadi <color=blue>"was"<color=black>.
+Amy: Itu lumayan gampang. Selain itu, kamu harus perhatikan kata ganti yang kamu pakai harus benar ya!
+Petualang: Kata ganti?
+Amy: Ya! Kalau misal kalimatnya <color=blue>"I am the best."<color=black>, ketika <color=blue>"reported speech"<color=black> jelas yang mengatakan itu bukan kamu. 
+Amy: Jadi <color=blue>"I"<color=black> berubah menjadi sesuai dengan siapa yang mengatakannya. Misalnya <color=blue>"The Guard said that HE was the best."<color=black>
+Amy: Kamu mengerti? Atau kamu butuh Amy ulang?
+-> Sudah cukup.
+-> Coba ulangi lagi.
+    [[ReportedSpeech.Arrange1]]
+Amy: Amy tes kamu ya.
+Amy: <color=blue>"The guard is annoying!"<color=black>
+Amy: Kalau kamu mau beri tahu orang lain bagaimana?
+<<arrange_sentence>>    //SENTENCE: Amy said that the guard was annoying.
+Amy: Okay, nice!
+Amy: Untuk <color=blue>"past simple"<color=black> dan <color=blue>"past continuous"<color=black>, berubahnya menjadi <color=blue>"past perfect"<color=black>.
+Petualang: <color=blue>"Past perfect"<color=black>?
+Amy: Ya! <color=blue>"Past perfect"<color=black> sama seperti <color=blue>"present perfect"<color=black>, tapi bukan <color=blue>"have"<color=black>, kita pakainya <color=blue>"had"<color=black>.
+Amy: Misal, <color=blue>"We had walked"<color=black>.
+Amy: <color=blue>"Past perfect simple"<color=black> digunakan ketika kita membicarakan suatu waktu hingga titik tertentu di masa lalu.
+Amy: Contohnya seorang perempuan menerbitkan buku pertamanya saat dia berusia delapan tahun.
+Amy: <color=blue>"She had published her first book by the time she was eight."<color=black>
+<<set $ReportedSpeechArrange1 to true>>
+===
+
+title: ReportedSpeech.Arrange2
+---
+Amy: <color=blue>"The Adventurer saved me."
+Amy: Maka akan jadi?
+<<arrange_sentence>>    //SENTENCE: Amy said that the Adventurer had saved her. | Amy said that I had saved her.
+Amy: Okay! Ayuk!
+<<trigger_checkpoint $ReportedSpeechDone>>
+===
+
+title: ModalsOfDeduction
+---
+<<if $ModalsOfDeductionDone is false>>
+    [[ModalsOfDeduction.Opening]]
+<<endif>>
+===
+
+title: ModalsOfDeduction.Opening
+tags:
+---
+Amy: Kamu perhatikan tidak tadi, si tentara ada mengatakan <color=blue>"That can't be" dan si ksatria ada mengatakan <color=blue>"That must be...".
+Petualang: Ya?
+Amy: Kamu mengerti?
+Petualang: <color=blue>"Can't" itu <color=blue>"cannot"<color=black>, "tidak bisa"?
+Amy: Ya, tapi ada nuansa lain kalau dipakai seperti itu.
+<<set $ModalsOfDeductionOpening to true>>
+===
+
+title: ModalsOfDeduction.Arrange1
+---
+Amy: Itu dipanggilnya <color=blue>"modals of deduction".
+Petualang:<color=blue>"Deduction"?
+Amy: Ya! Menebak sesuatu berdasarkan apa yang kita sudah tahu.
+Amy: Misalnya, untuk <color=blue>"must", kita bisa pakai ketika kita merasa sesuatu itu hampir pasti benar.
+Amy: Contohnya... Tadi Kapten Mark! Dia mengatakan itu pasti Reynold karena menurut dia tidak ada kemungkinan lain.
+Amy: Makanya dia berkata <color=blue>"That must be Reynold."
+Petualang: Rasanya dia tidak berkata begitu.
+Amy: Ya, mirip dengan itu. Bukan itu poinnya!
+Amy: Selain <color=blue>"must", ada juga <color=blue>"might", <color=blue>"may", dan <color=blue>"could" buat sesuatu yang mungkin tapi kita tidak pasti. Contohnya seperti <color=blue>"She's not here yet. She might stil be asleep."
+-> Apa bedanya <color=blue>"might", "could", "may"<color=black>?
+    Amy: <color=blue>"May" lebih formal, tapi <color=blue>"might" dan <color=blue>"could" sama saja.
+-> Paham, paham.
+Amy: Terakhir juga ada <color=blue>"can't". Ini ketika kita pasti sesuatu tidak mungkin, seperti yang tadi si penjaga mengatakan <color=blue>"That can't be."
+Amy: Mengerti?
+-> Ya.
+-> Coba ulang sekali lagi?
+[[ModalsOfDeduction.Arrange1]]
+Amy: Okay, Amy coba tes kamu!
+Amy: Amy baru sampai rumah kamu setelah perjalanan panjang. Amy lelah, berarti?
+-> You must be tired.
+    Amy: Benar!
+-> You may be tired.
+    Amy: Kurang tepat! Seharusnya <color=blue>"You must be tired".
+    Amy: Karena kamu melihat Amy lelah, jadi seharusnya Amy lelah kan?
+-> You might be tired.
+    Amy: Kurang tepat! Seharusnya <color=blue>"You must be tired".
+    Amy: Karena kamu melihat Amy lelah, jadi seharusnya Amy lelah kan?
+-> You could be tired.
+    Amy: Kurang tepat! Seharusnya <color=blue>"You must be tired".
+    Amy: Karena kamu melihat Amy lelah, jadi seharusnya Amy lelah kan?
+
+Amy: Lagi! Kamu menemukan sebuah gaun besar dan jelek. Kamu tidak tahu punya siapa, tapi tidak mungkin Amy karena Amy kecil dan tidak mungkin pakai gaun jelek seperti itu.
+<<arrange_sentence>> //# SENTENCE: This coat can't be Amy's.
+Amy: Yup! Kamu cepat juga ya pahamnya.
+<<set $ModalsOfDeductionArrange1 to true>>
+===
+
+title: ModalsOfDeduction2
+---
+Amy: Terkahir! Kamu baru selesai ujian, dan sedang berbicara tentang kapan hasilnya keluar. Mungkin minggu ini, mungkin minggu depan.
+<<arrange_sentence>> //# SENTENCE: The exam results might come out this week or next week. | The exam results could come out this week or next week. | The exam results may come out this week or next week.
+Amy: Amy bangga sekali. Yuk, lanjut jalan.
+<<trigger_checkpoint $ModalsOfDeductionDone>>
+===

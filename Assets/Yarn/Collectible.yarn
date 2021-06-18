@@ -1,0 +1,6 @@
+﻿title: Collectible
+tags:
+---
+<<give_item>>
+You have picked up <color=blue>{$VARCollectibleObjName}<color=black>.
+===

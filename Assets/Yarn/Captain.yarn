@@ -1,0 +1,97 @@
+﻿title: Captain
+tags:
+---
+<<if $HasTalkedToCaptain is false>>
+    Captain: Hello, welcome. I'm Sir Mark, Captain of the guards here. You must be the ones that came from Covenhill Woods.
+    Petualang: Yes.
+    Amy: When can we go to Maplehollow?
+    Captain: Don't worry. I just want to know what happened and how you got out.
+    Captain: We haven't been able to go into the woods for months, and nobody has ever come out of there either. It's like Maplehollow is quarantined, isolated.
+    Captain: So, you must be the Adventurer. How did you get out of the forest?
+    Amy: The path out was blocked, but a guard suddenly appeared.
+    Captain: A guard? Who?
+    Petualang: He didn't tell us his name.
+    Captain: What did he say then?
+    [[Captain.Choice1]]
+<<else>>
+    Captain: Look for the scholar living next to the church. He might have the knowledge to help you.
+<<endif>>
+===
+
+title: Captain.Choice1
+tags:
+---
+
+Petualang: (Tadi dia mengatakan "Nobody is allowed to go out of the forest" kalau tidak salah.)
+//*Choice dialogue*
+//# Repeat when wrong?
+-> He said that nobody was allowed to go out of the forest.
+    [[Captain.Choice2]]
+-> He said that nobody had been allowed to go out of the forest.
+    Petualang: (Sepertinya kurang tepat...)
+    [[Captain.Choice1]]
+-> He said that nobody is allowed to go out of the forest.
+    Petualang: (Sepertinya kurang tepat...)
+    [[Captain.Choice1]]
+===
+
+title: Captain.Choice2
+tags:
+---
+Captain: I see... but you did get out. How?
+Petualang: (Terus dia mengatakan "I lost my locket."...)
+//*Choice dialogue*
+-> He said that he has lost his locket.
+    Petualang: (Sepertinya kurang tepat...)
+    [[Captain.Choice2]]
+-> He said that he lost his locket.
+    Petualang: (Sepertinya kurang tepat...)
+    [[Captain.Choice2]]
+-> He said that he had lost his locket.
+    [[Captain.Arrange1]]
+===
+
+
+title:Captain.Arrange1
+tags:
+---
+Petualang: A locket?
+Amy: Yeah.
+Petualang: (Terus... "I'll let you pass if you find it."?)
+<<arrange_sentence>>  //# SENTENCE: He said that he would let us pass if we found it.
+Captain: So you found it, then?
+Petualang: Yes.
+Captain: Show me.
+Player: This one.
+<<set $CaptainArrange1 to true>>
+===
+
+title:Captain.Arrange2
+---
+Captain: This is... Bridget, right?
+Amy: That's right! How did you know?
+Captain: She lives in Maplehollow. Her fiance was a guard under my command. His name was Reynold, but he died in a battle a few months ago. We buried him in the forest.
+Captain: So you must have met Reynold...
+Captain: Did he say anything else?
+Petualang: (Dia meminta kita berikan ini ke Bridget.)
+<<arrange_sentence>>  //# SENTENCE: He asked us to bring it to Bridget. | He said could you bring it to Bridget.
+Captain: And then?
+Amy: He disappeared, and then we could go out.
+Captain: This is quite weird... and scary, honestly. Anything else?
+Amy: No, that's all.
+Captain: Alright.
+Amy: ...
+Captain: ...
+Amy: So... can we go to Maplehollow now?
+Captain: Yes, you may go.
+Captain: I don't know where Bridget lives, but she does live in Maplehollow.
+Captain: But I would like to ask, why go to Maplehollow?
+Petualang: I am not from here, and I would like to go home.
+Captain: Where are you from, Adventurer?
+Petualang: Tandula.
+Captain: Never heard of it, but the <color=blue>Scholar<color=black> in town may have. He lives in a <color=blue>small house next to the church<color=black>. Go to him, maybe he can help you.
+Petualang: Okay, thank you.
+Amy: Thanks!
+Amy: Waktunya ke Maplehollow!
+<<trigger_checkpoint HasTalkedToCaptain>>
+===

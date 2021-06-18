@@ -123,6 +123,85 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &111101983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 111101984}
+  - component: {fileID: 111101986}
+  - component: {fileID: 111101985}
+  m_Layer: 0
+  m_Name: ReportedSpeechArrange1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &111101984
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111101983}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.84, y: -7.35, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 692217186}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &111101985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111101983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae5982e42b31a641963ee58cd33fedb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.5
+--- !u!114 &111101986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111101983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fdbdfcc386be874685b0f68ff7ad7e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeName: ReportedSpeech.Arrange1
+  dialogue: {fileID: 0}
+  checkpoint: {fileID: 0}
+  triggerCheckpointDirectly: 0
+  answers:
+  - Amy said that the guard was annoying
+  options:
+  - Amy
+  - says
+  - said
+  - say
+  - those
+  - that
+  - guard
+  - is
+  - was
+  - annoying
+  - the
+  arrangementPanel: {fileID: 0}
+  sentenceHolder: {fileID: 0}
+  arrangementButton: {fileID: 0}
+  optionsHolder: {fileID: 0}
 --- !u!1 &154149461
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,9 +212,11 @@ GameObject:
   m_Component:
   - component: {fileID: 154149463}
   - component: {fileID: 154149462}
+  - component: {fileID: 154149464}
+  - component: {fileID: 154149465}
   m_Layer: 0
-  m_Name: Knight
-  m_TagString: Untagged
+  m_Name: Captain Knight
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -199,12 +280,78 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154149461}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.05, y: -21.41, z: -45.93015}
+  m_LocalPosition: {x: 24.05, y: -21.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1792345843}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &154149464
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154149461}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.9375, y: 1.5}
+    newSize: {x: 1.09375, y: 1.53125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9375, y: 1.5}
+  m_EdgeRadius: 0
+--- !u!114 &154149465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154149461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fdbdfcc386be874685b0f68ff7ad7e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeName: 
+  dialogue: {fileID: 2480198943629176163, guid: 3b784e3bc3c837e4fabf0eff872e3f40, type: 3}
+  checkpoint: {fileID: 0}
+  triggerCheckpointDirectly: 0
+  answers:
+  - He said that he would let us pass if we found it
+  options:
+  - he
+  - find
+  - found
+  - will
+  - would
+  - let
+  - us
+  - them
+  - pass
+  - if
+  - we
+  - say
+  - said
+  - that
+  - he
+  - it
+  arrangementPanel: {fileID: 0}
+  sentenceHolder: {fileID: 0}
+  arrangementButton: {fileID: 0}
+  optionsHolder: {fileID: 0}
 --- !u!1 &174027506
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,8 +363,9 @@ GameObject:
   - component: {fileID: 174027509}
   - component: {fileID: 174027507}
   - component: {fileID: 174027508}
+  - component: {fileID: 174027510}
   m_Layer: 0
-  m_Name: Knight Trigger
+  m_Name: Guard Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -236,7 +384,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.26697826, y: -0.19828653}
+  m_Offset: {x: -0.26697826, y: 0.052248478}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -247,7 +395,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.46604347, y: 8.658544}
+  m_Size: {x: 0.46604347, y: 9.589103}
   m_EdgeRadius: 0
 --- !u!114 &174027508
 MonoBehaviour:
@@ -261,8 +409,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7032643ff3dd4c4bbccfb6ea7712da5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeName: 
-  dialogue: {fileID: 2480198943629176163, guid: e9a808b57f0fe5142bd2e6079e6666bc, type: 3}
+  nodeName: GuardTrigger
+  dialogue: {fileID: 0}
   checkpoint: {fileID: 0}
   triggerCheckpointDirectly: 0
   disableAfterTrigger: 1
@@ -273,13 +421,26 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 174027506}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.15, y: 0.26, z: -48.41028}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.3400002, y: -0.6, z: -2.4801292}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 231512545}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &174027510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174027506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b01de093687e4d9e07433bf64595a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkpointId: 
 --- !u!1 &231512543
 GameObject:
   m_ObjectHideFlags: 0
@@ -290,9 +451,11 @@ GameObject:
   m_Component:
   - component: {fileID: 231512545}
   - component: {fileID: 231512544}
+  - component: {fileID: 231512546}
+  - component: {fileID: 231512547}
   m_Layer: 0
   m_Name: Guard
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -356,12 +519,55 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 231512543}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.49, y: 0.86, z: -45.93015}
+  m_LocalPosition: {x: 22.49, y: 0.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 174027509}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &231512546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231512543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33378670511f19343ae7d59becb0d968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeName: 
+  dialogue: {fileID: 2480198943629176163, guid: e9a808b57f0fe5142bd2e6079e6666bc, type: 3}
+  checkpoint: {fileID: 0}
+  triggerCheckpointDirectly: 0
+--- !u!61 &231512547
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231512543}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1.5}
+    newSize: {x: 1.09375, y: 1.53125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.5}
+  m_EdgeRadius: 0
 --- !u!1001 &624884402
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -424,6 +630,109 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1399236324986889681, guid: c66b705489c0e8a429b4291b3293d504, type: 3}
   m_PrefabInstance: {fileID: 624884402}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &640317043
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 640317044}
+  - component: {fileID: 640317047}
+  - component: {fileID: 640317046}
+  - component: {fileID: 640317045}
+  m_Layer: 0
+  m_Name: ModalsOfDeductionArrange2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &640317044
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640317043}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.84, y: -7.35, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 692217186}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &640317045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640317043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b01de093687e4d9e07433bf64595a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkpointId: 
+--- !u!114 &640317046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640317043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae5982e42b31a641963ee58cd33fedb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+--- !u!114 &640317047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640317043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fdbdfcc386be874685b0f68ff7ad7e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeName: ModalsOfDeduction.Arrange2
+  dialogue: {fileID: 0}
+  checkpoint: {fileID: 0}
+  triggerCheckpointDirectly: 0
+  answers:
+  - The exam results might come out this week or next week
+  - The exam results could come out this week or next week
+  - The exam results may come out this week or next week
+  - The exam results might come out next week or this week
+  - The exam results could come out next week or or week
+  - The exam results may come out next week or this week
+  options:
+  - results
+  - exam
+  - come
+  - came
+  - in
+  - out
+  - the
+  - week
+  - next
+  - week
+  - may
+  - can't
+  - shouldn't
+  - might
+  - could
+  - or
+  arrangementPanel: {fileID: 0}
+  sentenceHolder: {fileID: 0}
+  arrangementButton: {fileID: 0}
+  optionsHolder: {fileID: 0}
 --- !u!1 &692217184
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,9 +742,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 692217186}
+  - component: {fileID: 692217187}
+  - component: {fileID: 692217188}
   - component: {fileID: 692217185}
+  - component: {fileID: 692217189}
   m_Layer: 0
-  m_Name: Town Runner
+  m_Name: Town(Quest2) Runner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -454,12 +766,55 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flagEvents:
-  - flag: GuardApproached
-    eventType: 2
-    targets: []
-    moveTargets:
-    - target: {fileID: 231512543}
-      coords: {x: -1, y: 0, z: 0}
+  - flag: HasApproachedGuard
+    eventType: 0
+    foldout: 0
+    foldoutTargets: 1
+    targets:
+    - {fileID: 868737704}
+    moveTargets: []
+  - flag: ReportedSpeechOpening
+    eventType: 0
+    foldout: 0
+    foldoutTargets: 0
+    targets:
+    - {fileID: 111101983}
+    moveTargets: []
+  - flag: ReportedSpeechArrange1
+    eventType: 0
+    foldout: 0
+    foldoutTargets: 1
+    targets:
+    - {fileID: 1064092729}
+    moveTargets: []
+  - flag: CaptainArrange1
+    eventType: 0
+    foldout: 0
+    foldoutTargets: 1
+    targets:
+    - {fileID: 1792345842}
+    moveTargets: []
+  - flag: HasTalkedToCaptain
+    eventType: 0
+    foldout: 0
+    foldoutTargets: 1
+    targets:
+    - {fileID: 870282239}
+    moveTargets: []
+  - flag: ModalsOfDeductionOpening
+    eventType: 0
+    foldout: 0
+    foldoutTargets: 1
+    targets:
+    - {fileID: 1604303163}
+    moveTargets: []
+  - flag: ModalsOfDeductionArrange1
+    eventType: 0
+    foldout: 0
+    foldoutTargets: 1
+    targets:
+    - {fileID: 640317043}
+    moveTargets: []
 --- !u!4 &692217186
 Transform:
   m_ObjectHideFlags: 0
@@ -468,12 +823,307 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 692217184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.287888, y: -1.6307585, z: -56.069614}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 868737705}
+  - {fileID: 111101984}
+  - {fileID: 1064092730}
+  - {fileID: 870282240}
+  - {fileID: 1604303164}
+  - {fileID: 640317044}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &692217187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692217184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33378670511f19343ae7d59becb0d968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeName: EventsQuest2
+  dialogue: {fileID: 2480198943629176163, guid: 59e925e087514cc45b0bcee87afac568, type: 3}
+  checkpoint: {fileID: 0}
+  triggerCheckpointDirectly: 0
+--- !u!114 &692217188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692217184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae5982e42b31a641963ee58cd33fedb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 1
+--- !u!114 &692217189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692217184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b01de093687e4d9e07433bf64595a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkpointId: 
+--- !u!1 &868737704
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 868737705}
+  - component: {fileID: 868737707}
+  - component: {fileID: 868737706}
+  m_Layer: 0
+  m_Name: ReportedSpeech
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &868737705
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868737704}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 23.94, y: -14.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 692217186}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &868737706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868737704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7032643ff3dd4c4bbccfb6ea7712da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeName: ReportedSpeech
+  dialogue: {fileID: 0}
+  checkpoint: {fileID: 0}
+  triggerCheckpointDirectly: 0
+  disableAfterTrigger: 1
+--- !u!61 &868737707
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868737704}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.1329279, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 20.143179, y: 1}
+  m_EdgeRadius: 0
+--- !u!1 &870282239
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 870282240}
+  - component: {fileID: 870282242}
+  - component: {fileID: 870282241}
+  m_Layer: 0
+  m_Name: ModalsOfDeduction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &870282240
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870282239}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 23.84, y: -7.35, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 692217186}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &870282241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870282239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7032643ff3dd4c4bbccfb6ea7712da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeName: ModalsOfDeduction
+  dialogue: {fileID: 0}
+  checkpoint: {fileID: 0}
+  triggerCheckpointDirectly: 0
+  disableAfterTrigger: 1
+--- !u!61 &870282242
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 870282239}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.1329279, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 20.143179, y: 1}
+  m_EdgeRadius: 0
+--- !u!1 &1064092729
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1064092730}
+  - component: {fileID: 1064092732}
+  - component: {fileID: 1064092731}
+  - component: {fileID: 1064092733}
+  m_Layer: 0
+  m_Name: ReportedSpeechArrange2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1064092730
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064092729}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.84, y: -7.35, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 692217186}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1064092731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064092729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae5982e42b31a641963ee58cd33fedb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.5
+--- !u!114 &1064092732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064092729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fdbdfcc386be874685b0f68ff7ad7e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeName: ReportedSpeech.Arrange2
+  dialogue: {fileID: 0}
+  checkpoint: {fileID: 0}
+  triggerCheckpointDirectly: 0
+  answers:
+  - Amy said that the Adventurer had saved her
+  - Amy said that I had saved her
+  options:
+  - Amy
+  - that
+  - I
+  - Adventurer
+  - said
+  - had
+  - the
+  - saved
+  - save
+  - have
+  - says
+  - say
+  - there
+  - her
+  arrangementPanel: {fileID: 0}
+  sentenceHolder: {fileID: 0}
+  arrangementButton: {fileID: 0}
+  optionsHolder: {fileID: 0}
+--- !u!114 &1064092733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1064092729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b01de093687e4d9e07433bf64595a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkpointId: 
 --- !u!1 &1417871882
 GameObject:
   m_ObjectHideFlags: 0
@@ -527,7 +1177,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -601,6 +1251,86 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1604303163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1604303164}
+  - component: {fileID: 1604303166}
+  - component: {fileID: 1604303165}
+  m_Layer: 0
+  m_Name: ModalsOfDeductionArrange1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1604303164
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604303163}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.84, y: -7.35, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 692217186}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1604303165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604303163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae5982e42b31a641963ee58cd33fedb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+--- !u!114 &1604303166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604303163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fdbdfcc386be874685b0f68ff7ad7e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeName: ModalsOfDeduction.Arrange1
+  dialogue: {fileID: 0}
+  checkpoint: {fileID: 0}
+  triggerCheckpointDirectly: 0
+  answers:
+  - This coat can't be Amy's
+  options:
+  - that
+  - this
+  - Amy's
+  - Amy
+  - must
+  - be
+  - shouldn't
+  - might
+  - can't
+  - can
+  - coat
+  - mightn't
+  arrangementPanel: {fileID: 0}
+  sentenceHolder: {fileID: 0}
+  arrangementButton: {fileID: 0}
+  optionsHolder: {fileID: 0}
 --- !u!1001 &1631706547
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -773,8 +1503,126 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[0].text
+      value: Talk to the captain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[1].text
+      value: Find the scholar
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[0].endFlag
+      value: HasTalkedToCaptain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[0].foldout
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[1].foldout
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[0].startFlag
+      value: HasApproachedGuard
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[1].startFlag
+      value: HasTalkedToCaptain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+--- !u!1 &1792345842
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1792345843}
+  - component: {fileID: 1792345845}
+  - component: {fileID: 1792345844}
+  m_Layer: 0
+  m_Name: CaptainArrange2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1792345843
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792345842}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 154149463}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1792345844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792345842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b01de093687e4d9e07433bf64595a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkpointId: 
+--- !u!114 &1792345845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792345842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fdbdfcc386be874685b0f68ff7ad7e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeName: Captain.Arrange2
+  dialogue: {fileID: 0}
+  checkpoint: {fileID: 0}
+  triggerCheckpointDirectly: 0
+  answers:
+  - He asked us to bring it to Bridget
+  - He said could you bring it to Bridget
+  options:
+  - he
+  - Bridget
+  - bring
+  - brought
+  - it
+  - them
+  - to
+  - into
+  - ask
+  - asked
+  - said
+  - say
+  - could
+  - can
+  - you
+  - us
+  - we
+  arrangementPanel: {fileID: 0}
+  sentenceHolder: {fileID: 0}
+  arrangementButton: {fileID: 0}
+  optionsHolder: {fileID: 0}
 --- !u!1 &1960523067
 GameObject:
   m_ObjectHideFlags: 0
