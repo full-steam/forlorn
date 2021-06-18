@@ -1,0 +1,10 @@
+﻿title: Pillar-1
+tags:
+---
+Terdapat ukiran sebuah <color=blue>mahkota<color=black> pada pilar.
+<<if $VARPillarCounter is 0>>
+    <<set $VARPillarCounter to 1>>
+<<else>>
+    <<set $VARPillarCounter to 0>>
+<<endif>>
+===

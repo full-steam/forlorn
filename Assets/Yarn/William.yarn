@@ -5,8 +5,10 @@ tags:
     [[Meeting]]
 <<elseif $HasStartedQuest3 is false>>
     [[StartQuest3]]
-<<elseif $HasStartedQuest3 is true>>
+<<elseif $HasStartedQuest3 is true and $HasFoundBook is false>>
     [[Directions]]
+<<elseif $HasFoundBook is true>>
+    [[EndQuest3.1]]
 <<endif>>
 ===
 

@@ -188,6 +188,31 @@ public class FlagHandlerEditor : Editor
 
                         EditorGUI.PropertyField(new Rect(pos.x + 100, pos.y, 200, EditorGUIUtility.singleLineHeight), element.FindPropertyRelative("tag"), GUIContent.none);
                         break;
+                    case FlagEvent.FlagEventType.SetColliderTrigger:
+                        targets = element.FindPropertyRelative("targets");
+
+                        EditorGUI.LabelField(new Rect(pos.x, pos.y, 100, EditorGUIUtility.singleLineHeight), "Size");
+
+                        EditorGUI.BeginChangeCheck();
+                        targets.arraySize = EditorGUI.IntField(new Rect(pos.x + 100, pos.y, 200, EditorGUIUtility.singleLineHeight), targets.arraySize);
+                        EditorGUI.EndChangeCheck();
+
+                        for (var i = 0; i < targets.arraySize; i++)
+                        {
+                            var target = targets.GetArrayElementAtIndex(i);
+
+                            pos.y += EditorGUIUtility.singleLineHeight + 2f;
+
+                            EditorGUI.LabelField(new Rect(pos.x, pos.y, 100, EditorGUIUtility.singleLineHeight), "Target " + i);
+                            EditorGUI.PropertyField(new Rect(pos.x + 100, pos.y, 200, EditorGUIUtility.singleLineHeight), target, GUIContent.none);
+                        }
+
+                        pos.y += EditorGUIUtility.singleLineHeight + 2f;
+
+                        EditorGUI.LabelField(new Rect(pos.x, pos.y, 100, EditorGUIUtility.singleLineHeight), "Is Trigger");
+
+                        EditorGUI.PropertyField(new Rect(pos.x + 100, pos.y, 200, EditorGUIUtility.singleLineHeight), element.FindPropertyRelative("isTrigger"), GUIContent.none);
+                        break;
                 }
             }
         }
@@ -237,6 +262,7 @@ public class FlagHandlerEditor : Editor
                         height += (EditorGUIUtility.singleLineHeight + 2f) * 2;
                         break;
                     case FlagEvent.FlagEventType.SetTag:
+                    case FlagEvent.FlagEventType.SetColliderTrigger:
                         targets = element.FindPropertyRelative("targets");
                         height += (EditorGUIUtility.singleLineHeight + 2f) * (targets.arraySize + 1);
                         height += EditorGUIUtility.singleLineHeight + 2f;

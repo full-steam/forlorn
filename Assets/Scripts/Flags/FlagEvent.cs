@@ -15,6 +15,7 @@ public class FlagEvent
         RunDialogue,
         ChangeSprite,
         SetTag,
+        SetColliderTrigger,
         REMOVE_RING
     };
 
@@ -31,6 +32,7 @@ public class FlagEvent
     public bool foldout = false;
     public bool foldoutTargets = false;
     public string tag;
+    public bool isTrigger = false;
 
     public List<GameObject> targets;
     public List<MoveTarget> moveTargets;
@@ -78,6 +80,12 @@ public class FlagEvent
                 foreach (GameObject target in targets)
                 {
                     target.tag = tag;
+                }
+                break;
+            case FlagEventType.SetColliderTrigger:
+                foreach (GameObject target in targets)
+                {
+                    target.GetComponent<Collider2D>().isTrigger = isTrigger;
                 }
                 break;
             case FlagEventType.REMOVE_RING:

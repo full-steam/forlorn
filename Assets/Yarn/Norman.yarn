@@ -34,6 +34,7 @@ Norman: What do you want to do?
 Norman: And you will return them once you have finished?
 Amy: Yes! Amy promises!
 Norman: Very well. Find me my ring, and I will allow you in. I believe the ring has not gone far from this temple.
+Amy: Kita bisa cari sendiri atau mungkin kita bisa bertanya pada penjaga tadi, tapi sepertinya dia tidak tahu apa-apa.
 <<trigger_checkpoint HasMetNorman>>
 ===
 
