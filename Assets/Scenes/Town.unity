@@ -6852,7 +6852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
       propertyPath: objectives.Array.size
-      value: 2
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
       propertyPath: objectives.Array.data[0].text
@@ -6863,16 +6863,200 @@ PrefabInstance:
       value: Find the scholar
       objectReference: {fileID: 0}
     - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[2].text
+      value: Go to the Temple
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[3].text
+      value: Look around the Temple
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[4].text
+      value: Interact with the bushes
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[5].text
+      value: Interact with the sign
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[6].text
+      value: Talk to the ghost
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[7].text
+      value: Find Norman's ring
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[8].text
+      value: Return to Norman
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[9].text
+      value: Enter the temple
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[10].text
+      value: Interact with the coffin
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[11].text
+      value: Go deeper into the Temple
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[12].text
+      value: Read the sign
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[13].text
+      value: Solve the puzzle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[14].text
+      value: Go deeper into the Temple
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[15].text
+      value: Interact with the bookshelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[16].text
+      value: Go back to William
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
       propertyPath: objectives.Array.data[0].endFlag
       value: HasTalkedToCaptain
       objectReference: {fileID: 0}
     - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
       propertyPath: objectives.Array.data[0].foldout
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[1].endFlag
+      value: HasMetWilliam
       objectReference: {fileID: 0}
     - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
       propertyPath: objectives.Array.data[1].foldout
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[2].endFlag
+      value: HasMetJames
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[2].foldout
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[3].endFlag
+      value: HasReachedDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[3].foldout
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[4].endFlag
+      value: HasInteractedBush
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[4].foldout
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[5].endFlag
+      value: HasFoundNorman
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[5].foldout
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[6].endFlag
+      value: HasMetNorman
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[6].foldout
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[7].endFlag
+      value: HasFoundRing
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[7].foldout
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[8].endFlag
+      value: HasReturnedRing
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[8].foldout
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[9].endFlag
+      value: HasSeenCoffin
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[9].foldout
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[10].endFlag
+      value: HasInteractedCoffin
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[10].foldout
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[11].endFlag
+      value: HasSeenPillars
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[11].foldout
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[12].endFlag
+      value: HasReadSign
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[12].foldout
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[13].endFlag
+      value: HasSolvedPuzzle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[13].foldout
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[14].endFlag
+      value: HasSeenBookshelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[14].foldout
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[15].endFlag
+      value: HasFoundBook
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[15].foldout
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[16].endFlag
+      value: HasFinishedQuest3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[16].foldout
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
       propertyPath: objectives.Array.data[0].startFlag
@@ -6881,6 +7065,66 @@ PrefabInstance:
     - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
       propertyPath: objectives.Array.data[1].startFlag
       value: HasTalkedToCaptain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[2].startFlag
+      value: HasStartedQuest3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[3].startFlag
+      value: HasMetJames
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[4].startFlag
+      value: HasReachedDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[5].startFlag
+      value: HasInteractedBush
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[6].startFlag
+      value: HasFoundNorman
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[7].startFlag
+      value: HasMetNorman
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[8].startFlag
+      value: HasFoundRing
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[9].startFlag
+      value: HasReturnedRing
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[10].startFlag
+      value: HasSeenCoffin
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[11].startFlag
+      value: HasInteractedCoffin
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[12].startFlag
+      value: HasSeenPillars
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[13].startFlag
+      value: HasReadSign
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[14].startFlag
+      value: HasSolvedPuzzle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[15].startFlag
+      value: HasSeenBooksehfl
+      objectReference: {fileID: 0}
+    - target: {fileID: 6301119860348163418, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
+      propertyPath: objectives.Array.data[16].startFlag
+      value: HasFoundBook
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87749d16f97ce52469e16e9cf1487772, type: 3}
@@ -10625,26 +10869,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 91, y: 1, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 9
-      m_TileSpriteIndex: 9
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 92, y: 1, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 14
-      m_TileSpriteIndex: 14
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 103, y: 1, z: 0}
     second:
       serializedVersion: 2
@@ -11235,16 +11459,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 102, y: 23, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 5
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 103, y: 23, z: 0}
     second:
       serializedVersion: 2
@@ -11260,16 +11474,6 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 8
       m_TileSpriteIndex: 8
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 102, y: 24, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 9
-      m_TileSpriteIndex: 9
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -11295,16 +11499,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 102, y: 25, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 9
-      m_TileSpriteIndex: 9
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 103, y: 25, z: 0}
     second:
       serializedVersion: 2
@@ -11320,16 +11514,6 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 9
       m_TileSpriteIndex: 9
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 102, y: 26, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 8
-      m_TileSpriteIndex: 8
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -11955,16 +12139,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 102, y: 57, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 11
-      m_TileSpriteIndex: 11
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 103, y: 57, z: 0}
     second:
       serializedVersion: 2
@@ -11976,16 +12150,6 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
   - first: {x: 104, y: 57, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 9
-      m_TileSpriteIndex: 9
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 102, y: 58, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 9
@@ -12015,16 +12179,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 102, y: 59, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 15
-      m_TileSpriteIndex: 15
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 103, y: 59, z: 0}
     second:
       serializedVersion: 2
@@ -12040,16 +12194,6 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 11
       m_TileSpriteIndex: 11
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 102, y: 60, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 10
-      m_TileSpriteIndex: 10
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -12075,16 +12219,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 102, y: 61, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 11
-      m_TileSpriteIndex: 11
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 103, y: 61, z: 0}
     second:
       serializedVersion: 2
@@ -12100,16 +12234,6 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 9
       m_TileSpriteIndex: 9
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 102, y: 62, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 7
-      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -12807,27 +12931,27 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 8159d41dde44ab340a514cf609a4bb8a, type: 2}
   - m_RefCount: 76
     m_Data: {fileID: 11400000, guid: 6d62ee5bebfab4543a4d42e4d00e4921, type: 2}
-  - m_RefCount: 46
+  - m_RefCount: 45
     m_Data: {fileID: 11400000, guid: 32a9ac03c75f1f34991a1ef854a8eb4a, type: 2}
   - m_RefCount: 63
     m_Data: {fileID: 11400000, guid: b52eb31537a3c0f4d9b909925745af72, type: 2}
-  - m_RefCount: 62
+  - m_RefCount: 61
     m_Data: {fileID: 11400000, guid: d85a59ea5ef7b6d488d8434610470f09, type: 2}
-  - m_RefCount: 52
+  - m_RefCount: 51
     m_Data: {fileID: 11400000, guid: d3860dc7511661042a0e40d8d53db3a3, type: 2}
-  - m_RefCount: 60
+  - m_RefCount: 56
     m_Data: {fileID: 11400000, guid: 9d261fa57a186304eb7c71bcd3920f52, type: 2}
-  - m_RefCount: 27
+  - m_RefCount: 26
     m_Data: {fileID: 11400000, guid: bcf612aaeb488bf48b64a976b440426d, type: 2}
-  - m_RefCount: 24
+  - m_RefCount: 22
     m_Data: {fileID: 11400000, guid: 780dbc86f9d96cb4ea6eb80cedc5297f, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 2576b2060c95e454e9ce0fb19d18f4b9, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: b582a793ebd123e4ba5f4ca704ed259e, type: 2}
-  - m_RefCount: 22
+  - m_RefCount: 21
     m_Data: {fileID: 11400000, guid: 1eb88b0997574584f9e6103018404c4c, type: 2}
-  - m_RefCount: 18
+  - m_RefCount: 17
     m_Data: {fileID: 11400000, guid: 80d878f99cb4c7943b5c46bf5c1a6785, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 25c92bd1a1b2eda46b08a2414b277305, type: 2}
@@ -12862,27 +12986,27 @@ Tilemap:
     m_Data: {fileID: 21300084, guid: 1c9ed9d1200c29d4cbfd2071028c1cd5, type: 3}
   - m_RefCount: 76
     m_Data: {fileID: 21300080, guid: 1c9ed9d1200c29d4cbfd2071028c1cd5, type: 3}
-  - m_RefCount: 46
+  - m_RefCount: 45
     m_Data: {fileID: 21300082, guid: 1c9ed9d1200c29d4cbfd2071028c1cd5, type: 3}
   - m_RefCount: 63
     m_Data: {fileID: 21300064, guid: 1c9ed9d1200c29d4cbfd2071028c1cd5, type: 3}
-  - m_RefCount: 62
+  - m_RefCount: 61
     m_Data: {fileID: 21300066, guid: 1c9ed9d1200c29d4cbfd2071028c1cd5, type: 3}
-  - m_RefCount: 52
+  - m_RefCount: 51
     m_Data: {fileID: 21300096, guid: 1c9ed9d1200c29d4cbfd2071028c1cd5, type: 3}
-  - m_RefCount: 60
+  - m_RefCount: 56
     m_Data: {fileID: 21300098, guid: 1c9ed9d1200c29d4cbfd2071028c1cd5, type: 3}
-  - m_RefCount: 27
+  - m_RefCount: 26
     m_Data: {fileID: 21300114, guid: 1c9ed9d1200c29d4cbfd2071028c1cd5, type: 3}
-  - m_RefCount: 24
+  - m_RefCount: 22
     m_Data: {fileID: 21300122, guid: 1c9ed9d1200c29d4cbfd2071028c1cd5, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300104, guid: 1c9ed9d1200c29d4cbfd2071028c1cd5, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300106, guid: 1c9ed9d1200c29d4cbfd2071028c1cd5, type: 3}
-  - m_RefCount: 22
+  - m_RefCount: 21
     m_Data: {fileID: 21300112, guid: 1c9ed9d1200c29d4cbfd2071028c1cd5, type: 3}
-  - m_RefCount: 18
+  - m_RefCount: 17
     m_Data: {fileID: 21300120, guid: 1c9ed9d1200c29d4cbfd2071028c1cd5, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300072, guid: 1c9ed9d1200c29d4cbfd2071028c1cd5, type: 3}
@@ -12907,7 +13031,7 @@ Tilemap:
   - m_RefCount: 4
     m_Data: {fileID: 21300034, guid: a07735877a3bd644094331b137b71878, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 574
+  - m_RefCount: 562
     m_Data:
       e00: 1
       e01: 0
@@ -12926,7 +13050,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 574
+  - m_RefCount: 562
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1

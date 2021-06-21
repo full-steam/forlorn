@@ -86,8 +86,11 @@ tags:
 title: Quest3.SeeBookshelf
 tags:
 ---
-Amy: Lihat! Ada banyak buku di sini!
-Amy: Ada buku apa itu di akhir ruangan?
-Amy: Cuma satu buku di rak bukunya.
-<color=blue>Interact<color=black> dengan <color=blue>rak buku<color=black> dengan satu buku.
+<<if $HasSeenBookshelf is false>>
+    Amy: Lihat! Ada banyak buku di sini!
+    Amy: Ada buku apa itu di akhir ruangan?
+    Amy: Cuma satu buku di rak bukunya.
+    <color=blue>Interact<color=black> dengan <color=blue>rak buku<color=black> dengan satu buku.
+    <<trigger_checkpoint HasSeenBookshelf>>
+<<endif>>
 ===

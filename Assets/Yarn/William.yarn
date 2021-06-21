@@ -68,7 +68,7 @@ tags:
     William: Splendid. Do you need directions?
     -> Sure.
         William: Once you leave the tower, go out of the town and take the road heading east.
-        William: At the first intersection, turn north. The temple is on the left of the road.
+        William: At the first intersection, turn north. The temple is on the right of the road.
     -> We'll find it.
         William: Alright.
     William: Good luck, Adventurer. Come to me once you've found the books.
@@ -82,7 +82,7 @@ tags:
 William: What do you need?
 -> Directions to the temple
     William: Once you leave the tower, go out of the town and take the road heading east.
-    William: At the first intersection, turn north. The temple is on the left of the road.
+    William: At the first intersection, turn north. The temple is on the right of the road.
 ===
 
 title: EndQuest3.1
@@ -127,4 +127,5 @@ William: I know that this was also for your own benefit, but I feel it is unfair
 William: I do not have much, but have this.
 Amy: Woah!
 William: Thank you, now I shall continue my research.
+<<trigger_checkpoint HasFinishedQuest3>>
 ===
