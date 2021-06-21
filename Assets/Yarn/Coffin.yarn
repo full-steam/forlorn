@@ -1,0 +1,9 @@
+﻿title: Coffin
+tags:
+---
+<<if $HasInteractedCoffin is false>>
+    Amy: Now what?
+    <<trigger_checkpoint HasInteractedCoffin>>
+    Amy: Oh, di situ sepertinya. Ada jalan terbuka.
+<<endif>>
+===

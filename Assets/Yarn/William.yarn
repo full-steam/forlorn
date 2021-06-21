@@ -1,0 +1,130 @@
+﻿title: William
+tags:
+---
+<<if $HasMetWilliam is false>>
+    [[Meeting]]
+<<elseif $HasStartedQuest3 is false>>
+    [[StartQuest3]]
+<<elseif $HasStartedQuest3 is true and $HasFoundBook is false>>
+    [[Directions]]
+<<elseif $HasFoundBook is true>>
+    [[EndQuest3.1]]
+<<endif>>
+===
+
+title: Meeting
+tags:
+---
+<<if $HasMetWilliam is false>>
+    Scholar: Greetings. You must be the Adventurer. Oh, and you are?
+    Amy: What? You don't know me? Why does everyone ignore me...
+    Scholar: Apologies, I'm afraid I don't.
+    Amy: They didn't tell you that Amy was there too?!
+    Scholar: No, they only mentioned the Adventurer.
+    Scholar: What are you? Are you an elf? A fairy?
+    Amy: My name's Amy! And yes, I'm a fairy.
+    Scholar: Well met, Amy.
+    Scholar: Allow me to introduce myself.
+    Scholar: My name is William Covert. I am a scholar, and also the Lord of this town.
+    William: Currently, I'm trying to find a solution to these freak storms and mysterious events blocking us from the rest of the kingdom.
+    William: Which is why I'm very interested in your case.
+    William: How did you get into the forest in the first place? Where are you from?
+    Player: I'm from a place called Tandula. I was travelling with my friends.
+    Player: Then suddenly, a storm appeared. I don't know what happened. Then I woke up in the forest.
+    William: I see.
+    Player: Now I'm trynig to find my way home.
+    Amy: And I'm helping!
+    William: I see. I have heard of Tandula before.
+    Amy: Eh, really?
+    William: Yes. I've learnt much in my studies. But, before I can tell you what I know, I need your help.
+    Amy: With the storm?
+    William: Yes. That and this weird thing happening all around us. I personally call it the Curse.
+    William: It's not just storms. If we try to go out of town, something will always happen that stops us from going. So in the end, we have to go back anyway.
+    William: Of course, this is troubling. We are separated from the rest of the kingdom. We are completely alone.
+    William: Help us lift this curse or whatever it is, and I will help you.
+    -> Alright, I'll help.
+    -> It can't be helped.
+        William: That is true, you don't. You need to lift the curse before you can go home either way.
+    William: Tell me everything that happened in the forest. Everything until you finally got out.
+    <<set $HasMetWilliam to true>>
+<<endif>>
+===
+
+title: StartQuest3
+tags:
+---
+<<if $HasStartedQuest3 is false>>
+    William: I see. How mysterious.
+    Amy: Do you think we were talking with a ghost?!
+    William: I am not sure yet, but it is possible.
+    William: I may have some information, but I need your help, Adventurer.
+    Player: What can I do?
+    William: Some ancient texts write of similar happenings. The dead coming back to life. Freak storms. People stuck in specific areas. I believe we are experiencing the same thing.
+    William: There is an ancient temple to the northeast of the town. Based on my research, I believe it may have an ancient library inside it. And in this library may be some books that have more information.
+    Amy: Eh? Why do you need our help for that? Can't you just go there yourself?
+    William: Oh, I would love to do that. But I can't. Same like whatever's keeping us in Maplehollow, no one can go in the temple either. We've tried. But maybe you can.
+    William: So, how about it?
+    Amy: Leave it to us!
+    William: Splendid. Do you need directions?
+    -> Sure.
+        William: Once you leave the tower, take the road heading east. Go there until you leave the town.
+        William: At the first intersection, turn north. The temple is on the left of the road.
+    -> We'll find it.
+        William: Alright.
+    William: Good luck, Adventurer. Come to me once you've found the books.
+    <<trigger_checkpoint HasStartedQuest3>>
+<<endif>>
+===
+
+title: Directions
+tags:
+---
+William: What do you need?
+-> Directions to the temple
+    William: Once you leave the tower, take the road heading east. Go there until you leave the town.
+    William: At the first intersection, turn north. The temple is on the left of the road.
+===
+
+title: EndQuest3.1
+tags:
+---
+Amy: Mr. Covert! We're back!
+William: That was quick. Did you find the book?
+Amy: Sure did! Here you go.
+William: "On the Storms and Apparitions Plaguing the Land." Excellent. My research can now continue. What happened?
+Amy: Well... we met the ghost of the head of the temple.
+Player: Somebody named Norman.
+Amy: We helped him find his missing ring. Somebody stole it. It turns out, it was the guard!
+William: What? A guard going grave robbing? I shall report this to Sir Mark later.
+Amy: Yeah, but we managed to get it back. Then he let us in, we put back the ring, and then suddenly this door opens!
+Amy: Then we found the door to the library, but it was locked. There was a sign there with a riddle.
+Amy: We just had to press some pillars according to the order described on the sign.
+William: What were they?
+Amy: Uh...
+===
+
+title: EndQuest3.Choice1
+tags:
+---
+-> "The weight sitting on his head that symbolises their power."
+    Amy: Yes, that! That's the crown.
+    [[EndQuest3.2]]
+-> "The weight sitting on his head who symbolises their power."
+    Amy: (Eh, bukan "who" dong...)
+    [[EndQuest3.Choice1]]
+===
+
+title: EndQuest3.2
+tags:
+---
+Amy: Then "The written word which gives wisdom." Meaning the book.
+Amy: And finally...
+<<arrange_sentence>>
+Amy: Yes, that! Means the king.
+William: How interesting. I must go there to see it for myself.
+William: Thank you, Adventurer, Amy. This will help my research.
+William: I know that this was also for your own benefit, but I feel it is unfair if I do not give you some sort of compensation.
+William: I do not have much, but have this.
+Amy: Woah!
+William: Thank you, now I shall continue my research.
+===

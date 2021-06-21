@@ -1,0 +1,10 @@
+﻿title: Pillar-2
+tags:
+---
+Terdapat ukiran sebuah <color=blue>buku<color=black> pada pilar.
+<<if $VARPillarCounter is 1>>
+    <<set $VARPillarCounter to 2>>
+<<else>>
+    <<set $VARPillarCounter to 0>>
+<<endif>>
+===

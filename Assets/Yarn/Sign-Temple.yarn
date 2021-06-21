@@ -1,0 +1,13 @@
+﻿title: Sign-Temple
+tags:
+---
+Sign: Norman, son of Semer, son of Herebert.
+<<if $HasMetNorman is false>>
+    Amy: Norman? Siapa itu? Orang yang tinggal di kuil ini dulu?
+    <<trigger_checkpoint HasFoundNorman>>
+    ???: Who are you? Why have you called me?
+    Amy: Ahh!
+    Norman: Stop screaming.
+    Amy: Aduh, terjadi lagi...
+<<endif>>
+===

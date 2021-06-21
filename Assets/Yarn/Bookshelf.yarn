@@ -1,0 +1,12 @@
+﻿title: Bookshelf
+tags:
+---
+<<if $HasFoundBook is false>>
+    Amy: "On the Storms and Apparitions Plaguing the Land". Sepertinya ini bukunya.
+    -> "Apparitions"?
+        Amy: Artinya hantu.
+        Amy: Yuk kembali ke Pak Covert sekarang.
+    -> Waktunya kembali ke Pak Covert.
+    <<trigger_checkpoint HasFoundBook>>
+<<endif>>
+===

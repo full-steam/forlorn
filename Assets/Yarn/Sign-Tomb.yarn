@@ -1,0 +1,59 @@
+﻿title: Sign-Tomb
+tags:
+---
+Sign: LIBRARY. Here is gathered all my knowledge. And for its safekeeping, behind locked doors.
+<<if $HasReadSign is false>>
+    [[Sign-Tomb.Lesson]]
+<<endif>>
+===
+
+title: Sign-Tomb.Lesson
+tags:
+---
+Amy: "Locked"? Aduh... bikin susah saja.
+Sign: If you seek my knowledge, then you must prove yours. The door may be opened, but only if you unlock it.
+Sign: Three pillars stand before the chamber.
+Sign: The weight sitting on his head that symbolises their power.
+Sign: The written word which gives wisdom.
+Sign: He who rules over the land.
+Sign: Bring these one by one, and the door shall open before you.
+Amy: Hmm... Sepertinya kalau kita berhasil memecahkan teka-teki ini, pintunya akan terbuka.
+Amy: Mereka semua pakai "relative clause".
+-> "Relative clause"?
+Amy: Iya, "relative clause" memberikan informasi lebih tentang seseorang atau sesuatu.
+Amy: "Relative clause" dapat dibuat dengan "who", "which", atau "that".
+Amy: "Who" dipakai untuk orang, "which" untuk barang, dan "that" bisa untuk dua-duanya.
+Amy: Seperti "yang" dalam bahasa kamu.
+Amy: Contoh, "Amy adalah perempuan itu yang cantik." Amy orang kan?
+-> Ya.
+-> Harusnya.
+    Amy: Oi, maksudnya apa harusnya?!
+Amy: Berarti, "Amy is that girl who is beautiful."
+Amy: Atau "kursi yang rusak", itu berarti "the chair that is broken" atau "the chair which is broken".
+Amy: Mengerti maksud Amy?
+-> Seharusnya.
+    [[Sign-Tomb.Test1]]
+-> Coba ulang sekali lagi.
+    [[Sign-Tomb.Lesson]]
+===
+
+title: Sign-Tomb.Test1
+tags:
+---
+Amy: Baik! Kalau misalnya Norman adalah orang yang bertanggungjawab atas kuil ini apa?
+-> Norman is the person who is in charge of this temple.
+    [[Sign-Tomb.Test2]]
+-> Norman is the person which is in charge of this temple.
+    Amy: Kurang tepat! "Which" cuma bisa dipakai untuk barang. Norman bukan barang, kan? Jadi harus pakai "who", atau "that".
+    [[Sign-Tomb.Test1]]
+===
+
+title: Sign-Tomb.Test2
+tags:
+---
+Amy: Kalau ini bagaimana: Sang raja adalah orang yang tinggi itu.
+<<arrange_sentence>>
+Amy: Mantap!
+Amy: Untuk teka-teki ini, sepertinya berhubungan dengan tiga pilar itu. Mungkin kamu bisa lakukan sesuatu pada pilar-pilar itu? Nanti setelah itu mungkin tombol sebelah pintu bisa dipencet?
+<<trigger_checkpoint HasReadSign>>
+===

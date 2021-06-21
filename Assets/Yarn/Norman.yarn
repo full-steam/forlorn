@@ -1,0 +1,53 @@
+﻿title: Norman
+tags:
+---
+<<if $HasMetNorman is false>>
+    [[Norman.Meeting]]
+<<elseif $HasFoundRing is true>>
+    [[Norman.Disappear]]
+<<endif>>
+===
+
+title: Norman.Meeting
+tags:
+---
+-> Hello.
+Norman: What are you doing here?
+Amy: Are you Norman?
+Norman: Yes.
+Amy: You're still alive? I thought this temple was ancient.
+Norman: What are you talking about? I am alive...
+Norman: Am I? I don't remember anything...
+Amy: (Aduh, kenapa kita berurusan dengan yang menakutkan lagi?!)
+-> We need to get in your temple.
+Norman: What for? More thieves? Come to steal from my temple again? Begone!
+Amy: Wait! We don't want to steal anything! We just need to, uh, borrow some books.
+Norman: Borrow permanently?
+Amy: No, no! (Ya kan?)
+-> Thieves?
+Norman: Yes. Many have tried to steal from my temple, but no one has succeeded.
+Norman: But then someone managed to break in and steal a precious ring. The audacity.
+Norman: I will not let anyone enter my temple! Otherwise, more things may be stolen.
+Amy: Oh, Amy has an idea! If we help you get back this ring, will you let us in?
+Norman: What do you want to do?
+-> We need to borrow some books.
+Norman: And you will return them once you have finished?
+Amy: Yes! Amy promises!
+Norman: Very well. Find me my ring, and I will allow you in. I believe the ring has not gone far from this temple.
+Amy: Kita bisa cari sendiri atau mungkin kita bisa bertanya pada penjaga tadi, tapi sepertinya dia tidak tahu apa-apa.
+<<trigger_checkpoint HasMetNorman>>
+===
+
+title: Norman.Disappear
+tags:
+---
+Amy: Norman! We found it!
+Norman: The ring?
+-> Yes, here you go.
+Norman: Indeed. I thank you.
+Norman: I shall open the temple to you.
+Norman: Please take the ring inside and put it back where it belongs, in my tomb.
+Amy: Y-y-your tomb...?
+Norman: Thank you, both. And be sure to return my books.
+<<trigger_checkpoint HasReturnedRing>>
+===
