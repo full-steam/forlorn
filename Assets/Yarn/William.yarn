@@ -67,7 +67,7 @@ tags:
     Amy: Leave it to us!
     William: Splendid. Do you need directions?
     -> Sure.
-        William: Once you leave the tower, take the road heading east. Go there until you leave the town.
+        William: Once you leave the tower, go out of the town and take the road heading east.
         William: At the first intersection, turn north. The temple is on the left of the road.
     -> We'll find it.
         William: Alright.
@@ -81,7 +81,7 @@ tags:
 ---
 William: What do you need?
 -> Directions to the temple
-    William: Once you leave the tower, take the road heading east. Go there until you leave the town.
+    William: Once you leave the tower, go out of the town and take the road heading east.
     William: At the first intersection, turn north. The temple is on the left of the road.
 ===
 
