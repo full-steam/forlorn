@@ -11,7 +11,7 @@ public class Dialogue : MonoBehaviour
     [Tooltip("Giving a node name manually will takes priority to be ran than the set Dialogue")]
     public string nodeName;
     public YarnProgram dialogue;
-    public Checkpoint checkpoint;
+    [HideInInspector] public Checkpoint checkpoint;
     public bool triggerCheckpointDirectly;
 
     protected DialogueRunner runner;

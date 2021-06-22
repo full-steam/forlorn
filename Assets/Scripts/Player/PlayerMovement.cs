@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private bool canMove;
 
     //for debugging purpose
+    [Tooltip("Will be automatically turned to true when palying from editor")]
     public bool useKeyboard = false;
 
     // Start is called before the first frame update
@@ -19,6 +20,9 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+#if UNITY_EDITOR
+        useKeyboard = true;
+#endif
     }
 
     private void Start()

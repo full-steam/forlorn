@@ -87,8 +87,15 @@ public class GameManager : MonoBehaviour
         StartCoroutine(LoadScene());
     }
 
+    public void ChangeLevelScene(string sceneName)
+    {
+        var _so = new SaveObject();
+        Blackboard.Player.playerStatus.GetPlayerStatus(ref _so);
+        StartCoroutine(ChangeScene(sceneName, _so));
+    }
+
     /// <summary>
-    /// for debugging scene only
+    /// For debugging scene only
     /// </summary>
     public void LoadDebug()
     {
@@ -107,6 +114,15 @@ public class GameManager : MonoBehaviour
         while (!asyncLoad.isDone) yield return null;
         yield return new WaitForEndOfFrame();
         saveHandler.AssignSaveData();
+    }
+
+    private IEnumerator ChangeScene(string sn, SaveObject _so)
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sn);
+        asyncLoad.allowSceneActivation = true;
+        while (!asyncLoad.isDone) yield return null;
+        yield return new WaitForEndOfFrame();
+        Blackboard.Player.playerStatus.AssignPlayerStatus(_so, true);
     }
 }
 

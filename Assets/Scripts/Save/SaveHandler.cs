@@ -49,7 +49,12 @@ public class SaveHandler : MonoBehaviour
 
     public SaveObject GetLatestSaveData()
     {
+        var temp = so;
+        so = new SaveObject();
         GetPlayerRef();
+
+        so.sceneName = SceneManager.GetActiveScene().name;
+        flag.SaveFlags(ref so);
         if (inDebugScene)
         {
             sdt.GetPlayerStatus(ref so);
@@ -58,11 +63,6 @@ public class SaveHandler : MonoBehaviour
         {
             player.playerStatus.GetPlayerStatus(ref so);
         }
-
-        flag.SaveFlags(ref so);
-
-        so.sceneName = SceneManager.GetActiveScene().name;
-
         return so;
     }
 }

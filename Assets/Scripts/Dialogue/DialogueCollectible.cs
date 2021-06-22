@@ -18,8 +18,16 @@ public class DialogueCollectible : Dialogue
         itemObject.count = count;
 
         runner = GameManager.Instance.Blackboard.DialogueRunner;
-        if (string.IsNullOrEmpty(nodeName)) nodeName = "Collectible";
-        if (dialogue) runner.Add(dialogue);
+        //if (string.IsNullOrEmpty(nodeName)) nodeName = "Collectible";
+        if (dialogue) 
+        { 
+            runner.Add(dialogue);
+            nodeName = dialogue.name;
+        }
+        else
+        {
+            nodeName = "Collectible";
+        }
 
         if(takenFlag != "") CheckTakenStatus();
     }

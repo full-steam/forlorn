@@ -68,7 +68,7 @@ public class FlagEvent
                 }
                 break;
             case FlagEventType.FadeOutAndIn:
-                GameManager.Instance.Blackboard.Camera.GetComponent<CameraFadeManager>().FadeOutAndIn(fadeOutOptions, fadeInOptions, delay);
+                //GameManager.Instance.Blackboard.Camera.GetComponent<CameraFadeManager>().FadeOutAndIn(fadeOutOptions, fadeInOptions, delay);
                 break;
             case FlagEventType.RunDialogue:
                 dialogueComponent.StartDialogue();

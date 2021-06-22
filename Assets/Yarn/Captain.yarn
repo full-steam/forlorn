@@ -14,14 +14,13 @@ tags:
     Captain: What did he say then?
     [[Captain.Choice1]]
 <<else>>
-    Captain: Look for the scholar living next to the church. He might have the knowledge to help you.
+    Captain: Look for the <color=blue>scholar living next to the church<color=black>. He might have the knowledge to help you.
 <<endif>>
 ===
 
 title: Captain.Choice1
 tags:
 ---
-
 Petualang: (Tadi dia mengatakan "Nobody is allowed to go out of the forest" kalau tidak salah.)
 //*Choice dialogue*
 //# Repeat when wrong?
@@ -68,30 +67,32 @@ Player: This one.
 
 title:Captain.Arrange2
 ---
-Captain: This is... Bridget, right?
-Amy: That's right! How did you know?
-Captain: She lives in Maplehollow. Her fiance was a guard under my command. His name was Reynold, but he died in a battle a few months ago. We buried him in the forest.
-Captain: So you must have met Reynold...
-Captain: Did he say anything else?
-Petualang: (Dia meminta kita berikan ini ke Bridget.)
-<<arrange_sentence>>  //# SENTENCE: He asked us to bring it to Bridget. | He said could you bring it to Bridget.
-Captain: And then?
-Amy: He disappeared, and then we could go out.
-Captain: This is quite weird... and scary, honestly. Anything else?
-Amy: No, that's all.
-Captain: Alright.
-Amy: ...
-Captain: ...
-Amy: So... can we go to Maplehollow now?
-Captain: Yes, you may go.
-Captain: I don't know where Bridget lives, but she does live in Maplehollow.
-Captain: But I would like to ask, why go to Maplehollow?
-Petualang: I am not from here, and I would like to go home.
-Captain: Where are you from, Adventurer?
-Petualang: Tandula.
-Captain: Never heard of it, but the <color=blue>Scholar<color=black> in town may have. He lives in a <color=blue>small house next to the church<color=black>. Go to him, maybe he can help you.
-Petualang: Okay, thank you.
-Amy: Thanks!
-Amy: Waktunya ke Maplehollow!
-<<trigger_checkpoint HasTalkedToCaptain>>
+<<if $HasTalkedToCaptain is false>>
+    Captain: This is... Bridget, right?
+    Amy: That's right! How did you know?
+    Captain: She lives in Maplehollow. Her fiance was a guard under my command. His name was Reynold, but he died in a battle a few months ago. We buried him in the forest.
+    Captain: So you must have met Reynold...
+    Captain: Did he say anything else?
+    Petualang: (Dia meminta kita berikan ini ke Bridget.)
+    <<arrange_sentence>>  //# SENTENCE: He asked us to bring it to Bridget. | He said could you bring it to Bridget.
+    Captain: And then?
+    Amy: He disappeared, and then we could go out.
+    Captain: This is quite weird... and scary, honestly. Anything else?
+    Amy: No, that's all.
+    Captain: Alright.
+    Amy: ...
+    Captain: ...
+    Amy: So... can we go to Maplehollow now?
+    Captain: Yes, you may go.
+    Captain: I don't know where Bridget lives, but she does live in Maplehollow.
+    Captain: But I would like to ask, why go to Maplehollow?
+    Petualang: I am not from here, and I would like to go home.
+    Captain: Where are you from, Adventurer?
+    Petualang: Tandula.
+    Captain: Never heard of it, but the <color=blue>Scholar<color=black> in town may have. He lives in a <color=blue>small house next to the church<color=black>. Go to him, maybe he can help you.
+    Petualang: Okay, thank you.
+    Amy: Thanks!
+    Amy: Waktunya ke Maplehollow!
+    <<trigger_checkpoint HasTalkedToCaptain>>
+<<endif>>
 ===

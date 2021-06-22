@@ -1,11 +1,14 @@
-﻿using UnityEngine;
-
-//DO I EVEN NEED THIS LMAO
-//
-//For context: this is used as a List in PlayerStatus (and other places) to identify what item and how many the player has, this is working but maybe there is a better implementation?
-[System.Serializable]
-public class ItemObject /*: MonoBehaviour*/
+﻿[System.Serializable]
+public class ItemObject
 {
     public int itemID;
     public int count;
+
+    public static ItemObject CopyByValue(ItemObject item)
+    {
+        var io = new ItemObject();
+        io.itemID = item.itemID;
+        io.count = item.count;
+        return io;
+    }
 }

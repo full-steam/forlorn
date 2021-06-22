@@ -44,15 +44,21 @@ public class PlayerStatus : MonoBehaviour
         }
     }
 
-    public void AssignPlayerStatus(SaveObject stat) 
+    public void AssignPlayerStatus(SaveObject stat, bool skipPosition = false) 
     {
         health = stat.health;
         hunger = stat.hunger;
         distanceSum = stat.distanceSum;
         steps = stat.steps;
         starving = stat.starving;
-        transform.position = stat.posInScene.GetData();
-        itemList = stat.itemList;
+        if (!skipPosition) transform.position = stat.posInScene.GetData();
+
+        itemList = new List<ItemObject>();
+        foreach (var item in stat.itemList)
+        {
+            var io = ItemObject.CopyByValue(item);
+            itemList.Add(io);
+        }
 
         lastPos = transform.position;
         UpdateUI();
@@ -66,7 +72,13 @@ public class PlayerStatus : MonoBehaviour
         stat.steps = steps;
         stat.starving = starving;
         stat.posInScene.SetData(transform.position);
-        stat.itemList = itemList;
+
+        stat.itemList = new List<ItemObject>();
+        foreach (var item in itemList)
+        {
+            var io = ItemObject.CopyByValue(item);
+            stat.itemList.Add(io);
+        }
     }
 
     public void SetIcons(Image[] health, Image[] hunger)

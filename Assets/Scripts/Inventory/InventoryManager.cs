@@ -10,13 +10,14 @@ public class InventoryManager : MonoBehaviour
     public TMP_Text itemName;
     public TMP_Text itemType;
     public TMP_Text itemEffect;
+    public TMP_Text money;
     public Button useButton;
     public GameObject itemButtonsParent;
 
     private int selectedIndex;
     private Button[] itemButtons;
     private PlayerStatus playerStat;
-    private List<ItemObject> localItemList;
+    private List<ItemObject> itemListReference;
     private Button tempButton;
     private InventoryItemHolder tempHolder;
 
@@ -27,18 +28,18 @@ public class InventoryManager : MonoBehaviour
         itemButtons = itemButtonsParent.GetComponentsInChildren<Button>();
     }
 
-    // Start is called before the first frame update
     void OnEnable()
     {
         playerStat = GameManager.Instance.Blackboard.Player.playerStatus;
-        localItemList = playerStat.itemList;
+        itemListReference = playerStat.itemList;
+        money.text = "Money: " + playerStat.money;
         SetupButtons();
     }
 
     public void SelectItemInInventory(int index)
     {
         selectedIndex = index;
-        tempItem = GameManager.Instance.Blackboard.ItemLibrary.GetItem(localItemList[selectedIndex].itemID);
+        tempItem = GameManager.Instance.Blackboard.ItemLibrary.GetItem(itemListReference[selectedIndex].itemID);
         itemName.text = tempItem.name;
         itemType.text = tempItem.GetTypeString();
         itemEffect.text = tempItem.text;
@@ -54,7 +55,7 @@ public class InventoryManager : MonoBehaviour
 
         Debug.Log("using item, used item index: " + selectedIndex);
 
-        var _item = GameManager.Instance.Blackboard.ItemLibrary.GetItem(localItemList[selectedIndex].itemID);
+        var _item = GameManager.Instance.Blackboard.ItemLibrary.GetItem(itemListReference[selectedIndex].itemID);
 
         //item takes effect
         foreach (var effect in _item.effects)
@@ -70,29 +71,29 @@ public class InventoryManager : MonoBehaviour
         }
 
         //resolve item quantity
-        localItemList[selectedIndex].count--;
-        if (localItemList[selectedIndex].count <= 0)
+        itemListReference[selectedIndex].count--;
+        if (itemListReference[selectedIndex].count <= 0)
         {
-            ResetButtons(localItemList.Count);
-            localItemList.RemoveAt(selectedIndex);
+            ResetButtons(itemListReference.Count);
+            itemListReference.RemoveAt(selectedIndex);
         }
         else
         {
             useButton.interactable = true;
         }
 
-        GameManager.Instance.Blackboard.Player.playerStatus.itemList = localItemList;
+        GameManager.Instance.Blackboard.Player.playerStatus.itemList = itemListReference;   //probably dont need as the list is sent by ref
         SetupButtons();
     }
 
     private void SetupButtons()
     {
-        for (int i = 0; i < localItemList.Count; i++)
+        for (int i = 0; i < itemListReference.Count; i++)
         {
             tempButton = itemButtons[i];
             tempButton.interactable = true;
             tempHolder = tempButton.GetComponent<InventoryItemHolder>();
-            tempHolder.item = localItemList[i];
+            tempHolder.item = itemListReference[i];
             tempHolder.inventoryIndex = i;
             SetItem(tempHolder);
         }
