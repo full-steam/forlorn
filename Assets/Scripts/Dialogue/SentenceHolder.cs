@@ -1,11 +1,16 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 /// <summary>
 /// Component to hold the data and logic of the sentence holder.
 /// </summary>
 public class SentenceHolder : MonoBehaviour
 {
+    public GameObject feedbackPanel;
+    public TextMeshProUGUI questionText;
+    public TextMeshProUGUI feedbackText;
+
     private List<ArrangementOption> tokens;
 
     // Start is called before the first frame update

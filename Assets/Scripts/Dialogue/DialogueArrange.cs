@@ -10,6 +10,8 @@ public class DialogueArrange : Dialogue
 {
     public List<string> answers;
     public List<string> options;
+    [TextArea(2, 5)] public string question;
+    [TextArea(2, 5)] public string feedback;
 
     private GameObject arrangementPanel;
     private SentenceHolder sentenceHolder;
@@ -28,6 +30,8 @@ public class DialogueArrange : Dialogue
 
     public override void StartDialogue()
     {
+        sentenceHolder.questionText.text = question;
+        sentenceHolder.feedbackText.text = feedback;
         runner.AddCommandHandler("arrange_sentence", ArrangeSentence);
         base.StartDialogue();
     }
@@ -77,8 +81,11 @@ public class DialogueArrange : Dialogue
                 sentenceHolder.Reset();
                 onComplete();
             }
-            // TODO: implement feedback if incorrect
-            else sentenceHolder.Reset();
+            else
+            {
+                sentenceHolder.Reset();
+                sentenceHolder.feedbackPanel.SetActive(true);
+            }
         }
     }
 
