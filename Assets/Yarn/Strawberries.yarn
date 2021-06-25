@@ -4,5 +4,9 @@ tags:
 You have picked up <color=blue>{$VARCollectibleObjName}<color=black>.
 Buka <color=blue>inventory<color=black> dengan menekan tombol <color=blue>tas<color=black> di kanan atas.
 Pilih <color=blue>Strawberries<color=black> dan tekan tombol <color=blue>use<color=black> di kanan bawah untuk memakannya.
+Kamu harus makan untuk memastikan <color=red>hunger<color=black> kamu tidak menjadi 0.
+Jika <color=red>hunger<color=black> kamu 0, maka <color=red>health<color=black> kamu akan turun.
+Ketika <color=red>health<color=black> mencapai 0, maka kamu akan mati.
+Makanan dapat dibeli dari penjual makanan di kota.
 <<trigger_checkpoint HasMetItem>>
 ===
