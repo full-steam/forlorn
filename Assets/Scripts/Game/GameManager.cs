@@ -142,6 +142,7 @@ public class Blackboard
     public Button ArrangementButton { set; get; }
     public ArrangementOptionsHolder OptionsHolder { get; set; }
     public GameObject Camera { get; set; }
+    public VolumeHandler Volume { get; set; }
 
     public Blackboard()
     {
