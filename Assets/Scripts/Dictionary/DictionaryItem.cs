@@ -17,6 +17,7 @@ public class DictionaryItem : MonoBehaviour
         Word = word;
         this.definitionPanel = definitionPanel;
         text.text = word.eng;
+        transform.localScale = new Vector3(1, 1, 1);
     }
 
     public void Define()

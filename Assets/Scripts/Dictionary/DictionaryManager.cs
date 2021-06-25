@@ -101,6 +101,7 @@ public class DictionaryManager : MonoBehaviour
 
         if (!File.Exists(path))
         {
+            Debug.Log("FILE DOESN'T EXIST!");
             var dictFile = Resources.Load<TextAsset>("dict");
 
             RawWords rawWords = JsonUtility.FromJson<RawWords>(dictFile.text);
@@ -111,6 +112,7 @@ public class DictionaryManager : MonoBehaviour
         }
         else
         {
+            Debug.Log("FILE EXISTS");
             var dictFile = File.ReadAllText(path);
 
             RawWords rawWords = JsonUtility.FromJson<RawWords>(dictFile);

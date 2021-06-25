@@ -176,6 +176,7 @@ MonoBehaviour:
     distanceSum: 0
     sceneName: 
     steps: 0
+    money: 0
     starving: 0
     itemList: []
     keys:

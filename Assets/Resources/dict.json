@@ -1,19 +1,2958 @@
 {
-    "dict":
-    [
-        {
-            "eng": "bear",
-            "ind": "melahirkan",
-            "posVal": 3,
-            "pronunciationAudioClipID": "",
-            "isUnlocked": true
-        },
-        {
-            "eng": "love",
-            "ind": "mencintai",
-            "posVal": 3,
-            "pronunciationAudioClipID": "",
-            "isUnlocked": true
-        }
-    ]
+  "dict": [
+    {
+      "eng": "a",
+      "ind": "Sebuah",
+      "posVal": 1,
+      "pronunciationAudioClipID": "a",
+      "isUnlocked": true
+    },
+    {
+      "eng": "abandoned",
+      "ind": "yang ditinggalkan",
+      "posVal": 4,
+      "pronunciationAudioClipID": "abandoned",
+      "isUnlocked": true
+    },
+    {
+      "eng": "able",
+      "ind": "dapat, bisa, sanggup, mampu",
+      "posVal": 4,
+      "pronunciationAudioClipID": "able",
+      "isUnlocked": true
+    },
+    {
+      "eng": "about",
+      "ind": "tentang",
+      "posVal": 6,
+      "pronunciationAudioClipID": "about",
+      "isUnlocked": true
+    },
+    {
+      "eng": "according to",
+      "ind": "menurut",
+      "posVal": 6,
+      "pronunciationAudioClipID": "according_to",
+      "isUnlocked": true
+    },
+    {
+      "eng": "adventurer",
+      "ind": "petualang",
+      "posVal": 0,
+      "pronunciationAudioClipID": "adventurer",
+      "isUnlocked": true
+    },
+    {
+      "eng": "afraid",
+      "ind": "takut",
+      "posVal": 4,
+      "pronunciationAudioClipID": "afraid",
+      "isUnlocked": true
+    },
+    {
+      "eng": "again",
+      "ind": "lagi",
+      "posVal": 5,
+      "pronunciationAudioClipID": "again",
+      "isUnlocked": true
+    },
+    {
+      "eng": "ago",
+      "ind": "lalu",
+      "posVal": 5,
+      "pronunciationAudioClipID": "ago",
+      "isUnlocked": true
+    },
+    {
+      "eng": "alive",
+      "ind": "hidup",
+      "posVal": 4,
+      "pronunciationAudioClipID": "alive",
+      "isUnlocked": true
+    },
+    {
+      "eng": "all",
+      "ind": "semua",
+      "posVal": 1,
+      "pronunciationAudioClipID": "all",
+      "isUnlocked": true
+    },
+    {
+      "eng": "allow",
+      "ind": "mengizinkan",
+      "posVal": 3,
+      "pronunciationAudioClipID": "allow",
+      "isUnlocked": true
+    },
+    {
+      "eng": "alone",
+      "ind": "sendirian",
+      "posVal": 5,
+      "pronunciationAudioClipID": "alone",
+      "isUnlocked": true
+    },
+    {
+      "eng": "alright",
+      "ind": "baik(lah)",
+      "posVal": 4,
+      "pronunciationAudioClipID": "alright",
+      "isUnlocked": true
+    },
+    {
+      "eng": "also",
+      "ind": "juga",
+      "posVal": 5,
+      "pronunciationAudioClipID": "also",
+      "isUnlocked": true
+    },
+    {
+      "eng": "always",
+      "ind": "selalu",
+      "posVal": 5,
+      "pronunciationAudioClipID": "always",
+      "isUnlocked": true
+    },
+    {
+      "eng": "am",
+      "ind": "bentuk \"be\" untuk orang pertama tunggal",
+      "posVal": 3,
+      "pronunciationAudioClipID": "am",
+      "isUnlocked": true
+    },
+    {
+      "eng": "an",
+      "ind": "sebuah",
+      "posVal": 1,
+      "pronunciationAudioClipID": "an",
+      "isUnlocked": true
+    },
+    {
+      "eng": "ancient",
+      "ind": "kuno",
+      "posVal": 4,
+      "pronunciationAudioClipID": "ancient",
+      "isUnlocked": true
+    },
+    {
+      "eng": "and",
+      "ind": "dan",
+      "posVal": 7,
+      "pronunciationAudioClipID": "and",
+      "isUnlocked": true
+    },
+    {
+      "eng": "angry",
+      "ind": "marah",
+      "posVal": 4,
+      "pronunciationAudioClipID": "angry",
+      "isUnlocked": true
+    },
+    {
+      "eng": "annoy",
+      "ind": "mengganggu",
+      "posVal": 3,
+      "pronunciationAudioClipID": "annoy",
+      "isUnlocked": true
+    },
+    {
+      "eng": "annoying",
+      "ind": "menjengkelkan",
+      "posVal": 4,
+      "pronunciationAudioClipID": "annoying",
+      "isUnlocked": true
+    },
+    {
+      "eng": "anyone",
+      "ind": "siapa saja",
+      "posVal": 2,
+      "pronunciationAudioClipID": "anyone",
+      "isUnlocked": true
+    },
+    {
+      "eng": "anything",
+      "ind": "apa pun",
+      "posVal": 2,
+      "pronunciationAudioClipID": "anything",
+      "isUnlocked": true
+    },
+    {
+      "eng": "anyway",
+      "ind": "bagaimanapun",
+      "posVal": 5,
+      "pronunciationAudioClipID": "anyway",
+      "isUnlocked": true
+    },
+    {
+      "eng": "apology",
+      "ind": "permintaan maaf",
+      "posVal": 0,
+      "pronunciationAudioClipID": "apology",
+      "isUnlocked": true
+    },
+    {
+      "eng": "apparition",
+      "ind": "hantu",
+      "posVal": 0,
+      "pronunciationAudioClipID": "apparition",
+      "isUnlocked": true
+    },
+    {
+      "eng": "appear",
+      "ind": "muncul",
+      "posVal": 3,
+      "pronunciationAudioClipID": "appear",
+      "isUnlocked": true
+    },
+    {
+      "eng": "area",
+      "ind": "daerah, area",
+      "posVal": 0,
+      "pronunciationAudioClipID": "area",
+      "isUnlocked": true
+    },
+    {
+      "eng": "around",
+      "ind": "sekitar",
+      "posVal": 6,
+      "pronunciationAudioClipID": "around",
+      "isUnlocked": true
+    },
+    {
+      "eng": "ask",
+      "ind": "bertanya, menanyakan, minta, meminta, mengundang",
+      "posVal": 3,
+      "pronunciationAudioClipID": "ask",
+      "isUnlocked": true
+    },
+    {
+      "eng": "asleep",
+      "ind": "tertidur",
+      "posVal": 4,
+      "pronunciationAudioClipID": "asleep",
+      "isUnlocked": true
+    },
+    {
+      "eng": "at",
+      "ind": "di",
+      "posVal": 6,
+      "pronunciationAudioClipID": "at",
+      "isUnlocked": true
+    },
+    {
+      "eng": "audacity",
+      "ind": "keberanian (tidak tahu diri)",
+      "posVal": 0,
+      "pronunciationAudioClipID": "audacity",
+      "isUnlocked": true
+    },
+    {
+      "eng": "back",
+      "ind": "bagian belakang, kembali",
+      "posVal": 5,
+      "pronunciationAudioClipID": "back",
+      "isUnlocked": true
+    },
+    {
+      "eng": "base",
+      "ind": "dasar",
+      "posVal": 0,
+      "pronunciationAudioClipID": "base",
+      "isUnlocked": true
+    },
+    {
+      "eng": "battle",
+      "ind": "pertarungan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "battle",
+      "isUnlocked": true
+    },
+    {
+      "eng": "be",
+      "ind": "adalah",
+      "posVal": 3,
+      "pronunciationAudioClipID": "be",
+      "isUnlocked": true
+    },
+    {
+      "eng": "beautiful",
+      "ind": "cantik",
+      "posVal": 0,
+      "pronunciationAudioClipID": "beautiful",
+      "isUnlocked": true
+    },
+    {
+      "eng": "because",
+      "ind": "karena",
+      "posVal": 7,
+      "pronunciationAudioClipID": "because",
+      "isUnlocked": true
+    },
+    {
+      "eng": "before",
+      "ind": "sebelum",
+      "posVal": 6,
+      "pronunciationAudioClipID": "before",
+      "isUnlocked": true
+    },
+    {
+      "eng": "begone",
+      "ind": "pergi, enyah",
+      "posVal": 3,
+      "pronunciationAudioClipID": "begone",
+      "isUnlocked": true
+    },
+    {
+      "eng": "behind",
+      "ind": "dibelakang",
+      "posVal": 6,
+      "pronunciationAudioClipID": "behind",
+      "isUnlocked": true
+    },
+    {
+      "eng": "believe",
+      "ind": "percaya",
+      "posVal": 3,
+      "pronunciationAudioClipID": "believe",
+      "isUnlocked": true
+    },
+    {
+      "eng": "belong",
+      "ind": "mestinya",
+      "posVal": 3,
+      "pronunciationAudioClipID": "belong",
+      "isUnlocked": true
+    },
+    {
+      "eng": "benefit",
+      "ind": "manfaat",
+      "posVal": 0,
+      "pronunciationAudioClipID": "benefit",
+      "isUnlocked": true
+    },
+    {
+      "eng": "block",
+      "ind": "blok",
+      "posVal": 0,
+      "pronunciationAudioClipID": "block",
+      "isUnlocked": true
+    },
+    {
+      "eng": "book",
+      "ind": "buku",
+      "posVal": 0,
+      "pronunciationAudioClipID": "book",
+      "isUnlocked": true
+    },
+    {
+      "eng": "borrow",
+      "ind": "meminjam",
+      "posVal": 0,
+      "pronunciationAudioClipID": "borrow",
+      "isUnlocked": true
+    },
+    {
+      "eng": "both",
+      "ind": "kedua, berdua, keduanya",
+      "posVal": 2,
+      "pronunciationAudioClipID": "both",
+      "isUnlocked": true
+    },
+    {
+      "eng": "break",
+      "ind": "merusakkan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "break",
+      "isUnlocked": true
+    },
+    {
+      "eng": "bring",
+      "ind": "membawa",
+      "posVal": 0,
+      "pronunciationAudioClipID": "bring",
+      "isUnlocked": true
+    },
+    {
+      "eng": "building",
+      "ind": "bangunan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "building",
+      "isUnlocked": true
+    },
+    {
+      "eng": "bury",
+      "ind": "mengubur",
+      "posVal": 0,
+      "pronunciationAudioClipID": "bury",
+      "isUnlocked": true
+    },
+    {
+      "eng": "business",
+      "ind": "bisnis",
+      "posVal": 0,
+      "pronunciationAudioClipID": "business",
+      "isUnlocked": true
+    },
+    {
+      "eng": "but",
+      "ind": "tapi",
+      "posVal": 7,
+      "pronunciationAudioClipID": "but",
+      "isUnlocked": true
+    },
+    {
+      "eng": "by",
+      "ind": "oleh",
+      "posVal": 6,
+      "pronunciationAudioClipID": "by",
+      "isUnlocked": true
+    },
+    {
+      "eng": "call",
+      "ind": "panggilan, telepon, memanggil",
+      "posVal": 0,
+      "pronunciationAudioClipID": "call",
+      "isUnlocked": true
+    },
+    {
+      "eng": "calm",
+      "ind": "tenang",
+      "posVal": 0,
+      "pronunciationAudioClipID": "calm",
+      "isUnlocked": true
+    },
+    {
+      "eng": "camp",
+      "ind": "perkemahan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "camp",
+      "isUnlocked": true
+    },
+    {
+      "eng": "can",
+      "ind": "bisa",
+      "posVal": 3,
+      "pronunciationAudioClipID": "can",
+      "isUnlocked": true
+    },
+    {
+      "eng": "captain",
+      "ind": "Kapten",
+      "posVal": 0,
+      "pronunciationAudioClipID": "captain",
+      "isUnlocked": true
+    },
+    {
+      "eng": "case",
+      "ind": "kasus",
+      "posVal": 0,
+      "pronunciationAudioClipID": "case",
+      "isUnlocked": true
+    },
+    {
+      "eng": "chair",
+      "ind": "kursi",
+      "posVal": 0,
+      "pronunciationAudioClipID": "chair",
+      "isUnlocked": true
+    },
+    {
+      "eng": "chamber",
+      "ind": "ruang",
+      "posVal": 0,
+      "pronunciationAudioClipID": "chamber",
+      "isUnlocked": true
+    },
+    {
+      "eng": "charge",
+      "ind": "biaya, cas",
+      "posVal": 0,
+      "pronunciationAudioClipID": "charge",
+      "isUnlocked": true
+    },
+    {
+      "eng": "choice",
+      "ind": "pilihan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "choice",
+      "isUnlocked": true
+    },
+    {
+      "eng": "church",
+      "ind": "gereja",
+      "posVal": 0,
+      "pronunciationAudioClipID": "church",
+      "isUnlocked": true
+    },
+    {
+      "eng": "clause",
+      "ind": "ayat",
+      "posVal": 0,
+      "pronunciationAudioClipID": "clause",
+      "isUnlocked": true
+    },
+    {
+      "eng": "coat",
+      "ind": "mantel",
+      "posVal": 0,
+      "pronunciationAudioClipID": "coat",
+      "isUnlocked": true
+    },
+    {
+      "eng": "come",
+      "ind": "datang",
+      "posVal": 3,
+      "pronunciationAudioClipID": "come",
+      "isUnlocked": true
+    },
+    {
+      "eng": "command",
+      "ind": "perintah",
+      "posVal": 0,
+      "pronunciationAudioClipID": "command",
+      "isUnlocked": true
+    },
+    {
+      "eng": "compensation",
+      "ind": "kompensasi",
+      "posVal": 0,
+      "pronunciationAudioClipID": "compensation",
+      "isUnlocked": true
+    },
+    {
+      "eng": "completely",
+      "ind": "sama sekali, seluruhnya",
+      "posVal": 5,
+      "pronunciationAudioClipID": "completely",
+      "isUnlocked": true
+    },
+    {
+      "eng": "contain",
+      "ind": "berisi",
+      "posVal": 0,
+      "pronunciationAudioClipID": "contain",
+      "isUnlocked": true
+    },
+    {
+      "eng": "continue",
+      "ind": "terus, lanjutkan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "continue",
+      "isUnlocked": true
+    },
+    {
+      "eng": "continuous",
+      "ind": "berkelanjutan",
+      "posVal": 4,
+      "pronunciationAudioClipID": "continuous",
+      "isUnlocked": true
+    },
+    {
+      "eng": "could",
+      "ind": "bisa",
+      "posVal": 3,
+      "pronunciationAudioClipID": "could",
+      "isUnlocked": true
+    },
+    {
+      "eng": "courtyard",
+      "ind": "halaman",
+      "posVal": 0,
+      "pronunciationAudioClipID": "courtyard",
+      "isUnlocked": true
+    },
+    {
+      "eng": "crown",
+      "ind": "mahkota",
+      "posVal": 0,
+      "pronunciationAudioClipID": "crown",
+      "isUnlocked": true
+    },
+    {
+      "eng": "currently",
+      "ind": "saat ini",
+      "posVal": 5,
+      "pronunciationAudioClipID": "currently",
+      "isUnlocked": true
+    },
+    {
+      "eng": "curse",
+      "ind": "kutukan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "curse",
+      "isUnlocked": true
+    },
+    {
+      "eng": "dead",
+      "ind": "mati",
+      "posVal": 4,
+      "pronunciationAudioClipID": "dead",
+      "isUnlocked": true
+    },
+    {
+      "eng": "decide",
+      "ind": "memutuskan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "decide",
+      "isUnlocked": true
+    },
+    {
+      "eng": "deduction",
+      "ind": "deduksi",
+      "posVal": 0,
+      "pronunciationAudioClipID": "deduction",
+      "isUnlocked": true
+    },
+    {
+      "eng": "describe",
+      "ind": "menggambarkan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "describe",
+      "isUnlocked": true
+    },
+    {
+      "eng": "dialogue",
+      "ind": "dialog",
+      "posVal": 0,
+      "pronunciationAudioClipID": "dialogue",
+      "isUnlocked": true
+    },
+    {
+      "eng": "die",
+      "ind": "mati",
+      "posVal": 0,
+      "pronunciationAudioClipID": "die",
+      "isUnlocked": true
+    },
+    {
+      "eng": "direction",
+      "ind": "arah",
+      "posVal": 0,
+      "pronunciationAudioClipID": "direction",
+      "isUnlocked": true
+    },
+    {
+      "eng": "disappear",
+      "ind": "menghilang",
+      "posVal": 0,
+      "pronunciationAudioClipID": "disappear",
+      "isUnlocked": true
+    },
+    {
+      "eng": "do",
+      "ind": "melakukan",
+      "posVal": 3,
+      "pronunciationAudioClipID": "do",
+      "isUnlocked": true
+    },
+    {
+      "eng": "door",
+      "ind": "pintu",
+      "posVal": 0,
+      "pronunciationAudioClipID": "door",
+      "isUnlocked": true
+    },
+    {
+      "eng": "down",
+      "ind": "turun",
+      "posVal": 5,
+      "pronunciationAudioClipID": "down",
+      "isUnlocked": true
+    },
+    {
+      "eng": "east",
+      "ind": "timur",
+      "posVal": 0,
+      "pronunciationAudioClipID": "east",
+      "isUnlocked": true
+    },
+    {
+      "eng": "eight",
+      "ind": "delapan",
+      "posVal": 4,
+      "pronunciationAudioClipID": "eight",
+      "isUnlocked": true
+    },
+    {
+      "eng": "either",
+      "ind": "antara",
+      "posVal": 1,
+      "pronunciationAudioClipID": "either",
+      "isUnlocked": true
+    },
+    {
+      "eng": "elf",
+      "ind": "peri",
+      "posVal": 0,
+      "pronunciationAudioClipID": "elf",
+      "isUnlocked": true
+    },
+    {
+      "eng": "end",
+      "ind": "akhir",
+      "posVal": 0,
+      "pronunciationAudioClipID": "end",
+      "isUnlocked": true
+    },
+    {
+      "eng": "enter",
+      "ind": "memasukkan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "enter",
+      "isUnlocked": true
+    },
+    {
+      "eng": "event",
+      "ind": "peristiwa",
+      "posVal": 0,
+      "pronunciationAudioClipID": "event",
+      "isUnlocked": true
+    },
+    {
+      "eng": "ever",
+      "ind": "pernah",
+      "posVal": 5,
+      "pronunciationAudioClipID": "ever",
+      "isUnlocked": true
+    },
+    {
+      "eng": "everybody",
+      "ind": "semua orang",
+      "posVal": 0,
+      "pronunciationAudioClipID": "everybody",
+      "isUnlocked": true
+    },
+    {
+      "eng": "everyone",
+      "ind": "semua orang",
+      "posVal": 0,
+      "pronunciationAudioClipID": "everyone",
+      "isUnlocked": true
+    },
+    {
+      "eng": "everything",
+      "ind": "segala sesuatu, semuanya",
+      "posVal": 0,
+      "pronunciationAudioClipID": "everything",
+      "isUnlocked": true
+    },
+    {
+      "eng": "exam",
+      "ind": "ujian",
+      "posVal": 0,
+      "pronunciationAudioClipID": "exam",
+      "isUnlocked": true
+    },
+    {
+      "eng": "excellent",
+      "ind": "luar biasa, sangat baik",
+      "posVal": 0,
+      "pronunciationAudioClipID": "excellent",
+      "isUnlocked": true
+    },
+    {
+      "eng": "expensive",
+      "ind": "mahal",
+      "posVal": 4,
+      "pronunciationAudioClipID": "expensive",
+      "isUnlocked": true
+    },
+    {
+      "eng": "experience",
+      "ind": "pengalaman",
+      "posVal": 0,
+      "pronunciationAudioClipID": "experience",
+      "isUnlocked": true
+    },
+    {
+      "eng": "fairy",
+      "ind": "peri",
+      "posVal": 0,
+      "pronunciationAudioClipID": "fairy",
+      "isUnlocked": true
+    },
+    {
+      "eng": "far",
+      "ind": "jauh",
+      "posVal": 5,
+      "pronunciationAudioClipID": "far",
+      "isUnlocked": true
+    },
+    {
+      "eng": "farewell",
+      "ind": "Pamitan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "farewell",
+      "isUnlocked": true
+    },
+    {
+      "eng": "feel",
+      "ind": "merasa",
+      "posVal": 0,
+      "pronunciationAudioClipID": "feel",
+      "isUnlocked": true
+    },
+    {
+      "eng": "few",
+      "ind": "beberapa, sedikit",
+      "posVal": 4,
+      "pronunciationAudioClipID": "few",
+      "isUnlocked": true
+    },
+    {
+      "eng": "fiancé",
+      "ind": "tunangan lelaki (bisa digunakan untuk wanita)",
+      "posVal": 0,
+      "pronunciationAudioClipID": "fiance",
+      "isUnlocked": true
+    },
+    {
+      "eng": "fiancee",
+      "ind": "tunangan wanita (tidak bisa digunakan untuk lelaki)",
+      "posVal": 0,
+      "pronunciationAudioClipID": "fiancee",
+      "isUnlocked": true
+    },
+    {
+      "eng": "finally",
+      "ind": "akhirnya",
+      "posVal": 5,
+      "pronunciationAudioClipID": "finally",
+      "isUnlocked": true
+    },
+    {
+      "eng": "find",
+      "ind": "menemukan",
+      "posVal": 3,
+      "pronunciationAudioClipID": "find",
+      "isUnlocked": true
+    },
+    {
+      "eng": "finish",
+      "ind": "selesai",
+      "posVal": 0,
+      "pronunciationAudioClipID": "finish",
+      "isUnlocked": true
+    },
+    {
+      "eng": "first",
+      "ind": "pertama",
+      "posVal": 5,
+      "pronunciationAudioClipID": "first",
+      "isUnlocked": true
+    },
+    {
+      "eng": "follow",
+      "ind": "mengikuti",
+      "posVal": 3,
+      "pronunciationAudioClipID": "follow",
+      "isUnlocked": true
+    },
+    {
+      "eng": "for",
+      "ind": "untuk",
+      "posVal": 6,
+      "pronunciationAudioClipID": "for",
+      "isUnlocked": true
+    },
+    {
+      "eng": "forest",
+      "ind": "hutan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "forest",
+      "isUnlocked": true
+    },
+    {
+      "eng": "forever",
+      "ind": "selama-lamanya",
+      "posVal": 5,
+      "pronunciationAudioClipID": "forever",
+      "isUnlocked": true
+    },
+    {
+      "eng": "freak",
+      "ind": "aneh",
+      "posVal": 0,
+      "pronunciationAudioClipID": "freak",
+      "isUnlocked": true
+    },
+    {
+      "eng": "free",
+      "ind": "Gratis",
+      "posVal": 4,
+      "pronunciationAudioClipID": "free",
+      "isUnlocked": true
+    },
+    {
+      "eng": "friend",
+      "ind": "teman",
+      "posVal": 0,
+      "pronunciationAudioClipID": "friend",
+      "isUnlocked": true
+    },
+    {
+      "eng": "from",
+      "ind": "dari",
+      "posVal": 6,
+      "pronunciationAudioClipID": "from",
+      "isUnlocked": true
+    },
+    {
+      "eng": "future",
+      "ind": "masa 6",
+      "posVal": 0,
+      "pronunciationAudioClipID": "future",
+      "isUnlocked": true
+    },
+    {
+      "eng": "gather",
+      "ind": "mengumpulkan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "gather",
+      "isUnlocked": true
+    },
+    {
+      "eng": "get",
+      "ind": "dapat",
+      "posVal": 3,
+      "pronunciationAudioClipID": "get",
+      "isUnlocked": true
+    },
+    {
+      "eng": "ghost",
+      "ind": "hantu",
+      "posVal": 0,
+      "pronunciationAudioClipID": "ghost",
+      "isUnlocked": true
+    },
+    {
+      "eng": "girl",
+      "ind": "gadis",
+      "posVal": 0,
+      "pronunciationAudioClipID": "girl",
+      "isUnlocked": true
+    },
+    {
+      "eng": "give",
+      "ind": "memberikan",
+      "posVal": 3,
+      "pronunciationAudioClipID": "give",
+      "isUnlocked": true
+    },
+    {
+      "eng": "go",
+      "ind": "pergi",
+      "posVal": 3,
+      "pronunciationAudioClipID": "go",
+      "isUnlocked": true
+    },
+    {
+      "eng": "good",
+      "ind": "baik",
+      "posVal": 4,
+      "pronunciationAudioClipID": "good",
+      "isUnlocked": true
+    },
+    {
+      "eng": "grave",
+      "ind": "kuburan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "grave",
+      "isUnlocked": true
+    },
+    {
+      "eng": "greeting",
+      "ind": "salam",
+      "posVal": 3,
+      "pronunciationAudioClipID": "greeting",
+      "isUnlocked": true
+    },
+    {
+      "eng": "guard",
+      "ind": "penjaga, menjaga",
+      "posVal": 0,
+      "pronunciationAudioClipID": "guard",
+      "isUnlocked": true
+    },
+    {
+      "eng": "halt",
+      "ind": "berhenti, terhenti",
+      "posVal": 0,
+      "pronunciationAudioClipID": "halt",
+      "isUnlocked": true
+    },
+    {
+      "eng": "happen",
+      "ind": "terjadi",
+      "posVal": 3,
+      "pronunciationAudioClipID": "happen",
+      "isUnlocked": true
+    },
+    {
+      "eng": "happening",
+      "ind": "kejadian",
+      "posVal": 3,
+      "pronunciationAudioClipID": "happening",
+      "isUnlocked": true
+    },
+    {
+      "eng": "harm",
+      "ind": "berbahaya",
+      "posVal": 0,
+      "pronunciationAudioClipID": "harm",
+      "isUnlocked": true
+    },
+    {
+      "eng": "have",
+      "ind": "memiliki",
+      "posVal": 3,
+      "pronunciationAudioClipID": "have",
+      "isUnlocked": true
+    },
+    {
+      "eng": "he",
+      "ind": "dia, ia (lelaki)",
+      "posVal": 2,
+      "pronunciationAudioClipID": "he",
+      "isUnlocked": true
+    },
+    {
+      "eng": "head",
+      "ind": "kepala",
+      "posVal": 0,
+      "pronunciationAudioClipID": "head",
+      "isUnlocked": true
+    },
+    {
+      "eng": "hear",
+      "ind": "mendengar",
+      "posVal": 0,
+      "pronunciationAudioClipID": "hear",
+      "isUnlocked": true
+    },
+    {
+      "eng": "hell",
+      "ind": "neraka",
+      "posVal": 0,
+      "pronunciationAudioClipID": "hell",
+      "isUnlocked": true
+    },
+    {
+      "eng": "hello",
+      "ind": "Halo",
+      "posVal": 0,
+      "pronunciationAudioClipID": "hello",
+      "isUnlocked": true
+    },
+    {
+      "eng": "help",
+      "ind": "Tolong",
+      "posVal": 0,
+      "pronunciationAudioClipID": "help",
+      "isUnlocked": true
+    },
+    {
+      "eng": "her",
+      "ind": "dia, ia, -nya (wanita)",
+      "posVal": 2,
+      "pronunciationAudioClipID": "her",
+      "isUnlocked": true
+    },
+    {
+      "eng": "here",
+      "ind": "sini",
+      "posVal": 5,
+      "pronunciationAudioClipID": "here",
+      "isUnlocked": true
+    },
+    {
+      "eng": "hide",
+      "ind": "sembunyi",
+      "posVal": 3,
+      "pronunciationAudioClipID": "hide",
+      "isUnlocked": true
+    },
+    {
+      "eng": "his",
+      "ind": "#NAME?",
+      "posVal": 2,
+      "pronunciationAudioClipID": "his",
+      "isUnlocked": true
+    },
+    {
+      "eng": "home",
+      "ind": "rumah",
+      "posVal": 0,
+      "pronunciationAudioClipID": "home",
+      "isUnlocked": true
+    },
+    {
+      "eng": "honestly",
+      "ind": "sejujurnya",
+      "posVal": 5,
+      "pronunciationAudioClipID": "honestly",
+      "isUnlocked": true
+    },
+    {
+      "eng": "house",
+      "ind": "rumah",
+      "posVal": 0,
+      "pronunciationAudioClipID": "house",
+      "isUnlocked": true
+    },
+    {
+      "eng": "how",
+      "ind": "bagaimana",
+      "posVal": 5,
+      "pronunciationAudioClipID": "how",
+      "isUnlocked": true
+    },
+    {
+      "eng": "I",
+      "ind": "saya",
+      "posVal": 2,
+      "pronunciationAudioClipID": "I",
+      "isUnlocked": true
+    },
+    {
+      "eng": "idea",
+      "ind": "ide",
+      "posVal": 0,
+      "pronunciationAudioClipID": "idea",
+      "isUnlocked": true
+    },
+    {
+      "eng": "if",
+      "ind": "jika",
+      "posVal": 7,
+      "pronunciationAudioClipID": "if",
+      "isUnlocked": true
+    },
+    {
+      "eng": "ignore",
+      "ind": "mengabaikan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "ignore",
+      "isUnlocked": true
+    },
+    {
+      "eng": "ill",
+      "ind": "sakit, tidak enak badan, kurang sehat",
+      "posVal": 4,
+      "pronunciationAudioClipID": "ill",
+      "isUnlocked": true
+    },
+    {
+      "eng": "impossible",
+      "ind": "mustahil",
+      "posVal": 4,
+      "pronunciationAudioClipID": "impossible",
+      "isUnlocked": true
+    },
+    {
+      "eng": "in",
+      "ind": "di (dalam?)",
+      "posVal": 6,
+      "pronunciationAudioClipID": "in",
+      "isUnlocked": true
+    },
+    {
+      "eng": "indeed",
+      "ind": "memang",
+      "posVal": 5,
+      "pronunciationAudioClipID": "indeed",
+      "isUnlocked": true
+    },
+    {
+      "eng": "information",
+      "ind": "informasi",
+      "posVal": 0,
+      "pronunciationAudioClipID": "information",
+      "isUnlocked": true
+    },
+    {
+      "eng": "inside",
+      "ind": "dalam",
+      "posVal": 6,
+      "pronunciationAudioClipID": "inside",
+      "isUnlocked": true
+    },
+    {
+      "eng": "interact",
+      "ind": "berinteraksi",
+      "posVal": 0,
+      "pronunciationAudioClipID": "interact",
+      "isUnlocked": true
+    },
+    {
+      "eng": "interested",
+      "ind": "tertarik",
+      "posVal": 4,
+      "pronunciationAudioClipID": "interested",
+      "isUnlocked": true
+    },
+    {
+      "eng": "interesting",
+      "ind": "menarik",
+      "posVal": 3,
+      "pronunciationAudioClipID": "interesting",
+      "isUnlocked": true
+    },
+    {
+      "eng": "intersection",
+      "ind": "persimpangan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "intersection",
+      "isUnlocked": true
+    },
+    {
+      "eng": "into",
+      "ind": "ke",
+      "posVal": 6,
+      "pronunciationAudioClipID": "into",
+      "isUnlocked": true
+    },
+    {
+      "eng": "introduce",
+      "ind": "memperkenalkan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "introduce",
+      "isUnlocked": true
+    },
+    {
+      "eng": "inventory",
+      "ind": "inventaris",
+      "posVal": 0,
+      "pronunciationAudioClipID": "inventory",
+      "isUnlocked": true
+    },
+    {
+      "eng": "investigate",
+      "ind": "menyelidiki",
+      "posVal": 0,
+      "pronunciationAudioClipID": "investigate",
+      "isUnlocked": true
+    },
+    {
+      "eng": "is",
+      "ind": "aku s",
+      "posVal": 3,
+      "pronunciationAudioClipID": "is",
+      "isUnlocked": true
+    },
+    {
+      "eng": "isolated",
+      "ind": "terpencil",
+      "posVal": 4,
+      "pronunciationAudioClipID": "isolated",
+      "isUnlocked": true
+    },
+    {
+      "eng": "it",
+      "ind": "itu",
+      "posVal": 2,
+      "pronunciationAudioClipID": "it",
+      "isUnlocked": true
+    },
+    {
+      "eng": "its",
+      "ind": "(kepunyaan, hewan/0)",
+      "posVal": 2,
+      "pronunciationAudioClipID": "its",
+      "isUnlocked": true
+    },
+    {
+      "eng": "just",
+      "ind": "hanya",
+      "posVal": 5,
+      "pronunciationAudioClipID": "just",
+      "isUnlocked": true
+    },
+    {
+      "eng": "keep",
+      "ind": "menjaga",
+      "posVal": 3,
+      "pronunciationAudioClipID": "keep",
+      "isUnlocked": true
+    },
+    {
+      "eng": "kill",
+      "ind": "membunuh",
+      "posVal": 0,
+      "pronunciationAudioClipID": "kill",
+      "isUnlocked": true
+    },
+    {
+      "eng": "king",
+      "ind": "raja",
+      "posVal": 0,
+      "pronunciationAudioClipID": "king",
+      "isUnlocked": true
+    },
+    {
+      "eng": "kingdom",
+      "ind": "kerajaan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "kingdom",
+      "isUnlocked": true
+    },
+    {
+      "eng": "knight",
+      "ind": "ksatria",
+      "posVal": 0,
+      "pronunciationAudioClipID": "knight",
+      "isUnlocked": true
+    },
+    {
+      "eng": "know",
+      "ind": "tahu",
+      "posVal": 3,
+      "pronunciationAudioClipID": "know",
+      "isUnlocked": true
+    },
+    {
+      "eng": "knowledge",
+      "ind": "pengetahuan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "knowledge",
+      "isUnlocked": true
+    },
+    {
+      "eng": "land",
+      "ind": "tanah",
+      "posVal": 0,
+      "pronunciationAudioClipID": "land",
+      "isUnlocked": true
+    },
+    {
+      "eng": "later",
+      "ind": "kemudian",
+      "posVal": 5,
+      "pronunciationAudioClipID": "later",
+      "isUnlocked": true
+    },
+    {
+      "eng": "learn",
+      "ind": "belajar",
+      "posVal": 3,
+      "pronunciationAudioClipID": "learn",
+      "isUnlocked": true
+    },
+    {
+      "eng": "leave",
+      "ind": "meninggalkan",
+      "posVal": 3,
+      "pronunciationAudioClipID": "leave",
+      "isUnlocked": true
+    },
+    {
+      "eng": "let",
+      "ind": "membiarkan",
+      "posVal": 3,
+      "pronunciationAudioClipID": "let",
+      "isUnlocked": true
+    },
+    {
+      "eng": "library",
+      "ind": "Perpustakaan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "library",
+      "isUnlocked": true
+    },
+    {
+      "eng": "lie",
+      "ind": "berbohong",
+      "posVal": 0,
+      "pronunciationAudioClipID": "lie",
+      "isUnlocked": true
+    },
+    {
+      "eng": "life",
+      "ind": "hidup, kehidupan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "life",
+      "isUnlocked": true
+    },
+    {
+      "eng": "lift",
+      "ind": "mengangkat",
+      "posVal": 3,
+      "pronunciationAudioClipID": "lift",
+      "isUnlocked": true
+    },
+    {
+      "eng": "like",
+      "ind": "Suka, seperti",
+      "posVal": 3,
+      "pronunciationAudioClipID": "like",
+      "isUnlocked": true
+    },
+    {
+      "eng": "live",
+      "ind": "hidup, tinggal",
+      "posVal": 4,
+      "pronunciationAudioClipID": "live",
+      "isUnlocked": true
+    },
+    {
+      "eng": "lock",
+      "ind": "mengunci",
+      "posVal": 0,
+      "pronunciationAudioClipID": "lock",
+      "isUnlocked": true
+    },
+    {
+      "eng": "locked",
+      "ind": "terkunci",
+      "posVal": 3,
+      "pronunciationAudioClipID": "locked",
+      "isUnlocked": true
+    },
+    {
+      "eng": "locket",
+      "ind": "liontin",
+      "posVal": 0,
+      "pronunciationAudioClipID": "locket",
+      "isUnlocked": true
+    },
+    {
+      "eng": "look",
+      "ind": "Lihat",
+      "posVal": 0,
+      "pronunciationAudioClipID": "look",
+      "isUnlocked": true
+    },
+    {
+      "eng": "lord",
+      "ind": "Tuan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "lord",
+      "isUnlocked": true
+    },
+    {
+      "eng": "lose",
+      "ind": "kalah",
+      "posVal": 3,
+      "pronunciationAudioClipID": "lose",
+      "isUnlocked": true
+    },
+    {
+      "eng": "love",
+      "ind": "cinta",
+      "posVal": 0,
+      "pronunciationAudioClipID": "love",
+      "isUnlocked": true
+    },
+    {
+      "eng": "luck",
+      "ind": "keberuntungan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "luck",
+      "isUnlocked": true
+    },
+    {
+      "eng": "make",
+      "ind": "membuat",
+      "posVal": 3,
+      "pronunciationAudioClipID": "make",
+      "isUnlocked": true
+    },
+    {
+      "eng": "manage",
+      "ind": "mengelola",
+      "posVal": 0,
+      "pronunciationAudioClipID": "manage",
+      "isUnlocked": true
+    },
+    {
+      "eng": "many",
+      "ind": "banyak",
+      "posVal": 4,
+      "pronunciationAudioClipID": "many",
+      "isUnlocked": true
+    },
+    {
+      "eng": "may",
+      "ind": "mungkin",
+      "posVal": 3,
+      "pronunciationAudioClipID": "may",
+      "isUnlocked": true
+    },
+    {
+      "eng": "maybe",
+      "ind": "mungkin",
+      "posVal": 5,
+      "pronunciationAudioClipID": "maybe",
+      "isUnlocked": true
+    },
+    {
+      "eng": "mean",
+      "ind": "berarti, jahat",
+      "posVal": 4,
+      "pronunciationAudioClipID": "mean",
+      "isUnlocked": true
+    },
+    {
+      "eng": "meet",
+      "ind": "memenuhi, bertemu",
+      "posVal": 0,
+      "pronunciationAudioClipID": "meet",
+      "isUnlocked": true
+    },
+    {
+      "eng": "mention",
+      "ind": "menyebut",
+      "posVal": 0,
+      "pronunciationAudioClipID": "mention",
+      "isUnlocked": true
+    },
+    {
+      "eng": "might",
+      "ind": "mungkin",
+      "posVal": 3,
+      "pronunciationAudioClipID": "might",
+      "isUnlocked": true
+    },
+    {
+      "eng": "mind",
+      "ind": "pikiran",
+      "posVal": 3,
+      "pronunciationAudioClipID": "mind",
+      "isUnlocked": true
+    },
+    {
+      "eng": "miss",
+      "ind": "Rindu, terlewat",
+      "posVal": 0,
+      "pronunciationAudioClipID": "miss",
+      "isUnlocked": true
+    },
+    {
+      "eng": "mistake",
+      "ind": "kesalahan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "mistake",
+      "isUnlocked": true
+    },
+    {
+      "eng": "month",
+      "ind": "bulan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "month",
+      "isUnlocked": true
+    },
+    {
+      "eng": "more",
+      "ind": "lebih",
+      "posVal": 5,
+      "pronunciationAudioClipID": "more",
+      "isUnlocked": true
+    },
+    {
+      "eng": "mr",
+      "ind": "Bapak",
+      "posVal": 0,
+      "pronunciationAudioClipID": "mr",
+      "isUnlocked": true
+    },
+    {
+      "eng": "much",
+      "ind": "banyak",
+      "posVal": 4,
+      "pronunciationAudioClipID": "much",
+      "isUnlocked": true
+    },
+    {
+      "eng": "must",
+      "ind": "harus",
+      "posVal": 3,
+      "pronunciationAudioClipID": "must",
+      "isUnlocked": true
+    },
+    {
+      "eng": "my",
+      "ind": "(kepunyaan, saya)",
+      "posVal": 2,
+      "pronunciationAudioClipID": "my",
+      "isUnlocked": true
+    },
+    {
+      "eng": "myself",
+      "ind": "diri sendiri",
+      "posVal": 2,
+      "pronunciationAudioClipID": "myself",
+      "isUnlocked": true
+    },
+    {
+      "eng": "mysterious",
+      "ind": "gaib, misterius",
+      "posVal": 4,
+      "pronunciationAudioClipID": "mysterious",
+      "isUnlocked": true
+    },
+    {
+      "eng": "name",
+      "ind": "nama",
+      "posVal": 0,
+      "pronunciationAudioClipID": "name",
+      "isUnlocked": true
+    },
+    {
+      "eng": "need",
+      "ind": "perlu",
+      "posVal": 0,
+      "pronunciationAudioClipID": "need",
+      "isUnlocked": true
+    },
+    {
+      "eng": "never",
+      "ind": "tidak pernah",
+      "posVal": 5,
+      "pronunciationAudioClipID": "never",
+      "isUnlocked": true
+    },
+    {
+      "eng": "next",
+      "ind": "lanjut",
+      "posVal": 4,
+      "pronunciationAudioClipID": "next",
+      "isUnlocked": true
+    },
+    {
+      "eng": "nice",
+      "ind": "bagus",
+      "posVal": 4,
+      "pronunciationAudioClipID": "nice",
+      "isUnlocked": true
+    },
+    {
+      "eng": "no",
+      "ind": "tidak",
+      "posVal": 1,
+      "pronunciationAudioClipID": "no",
+      "isUnlocked": true
+    },
+    {
+      "eng": "nobody",
+      "ind": "tak seorangpun",
+      "posVal": 0,
+      "pronunciationAudioClipID": "nobody",
+      "isUnlocked": true
+    },
+    {
+      "eng": "north",
+      "ind": "utara",
+      "posVal": 0,
+      "pronunciationAudioClipID": "north",
+      "isUnlocked": true
+    },
+    {
+      "eng": "northeast",
+      "ind": "timur laut",
+      "posVal": 0,
+      "pronunciationAudioClipID": "northeast",
+      "isUnlocked": true
+    },
+    {
+      "eng": "not",
+      "ind": "tidak",
+      "posVal": 5,
+      "pronunciationAudioClipID": "not",
+      "isUnlocked": true
+    },
+    {
+      "eng": "notice",
+      "ind": "memperhatikan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "notice",
+      "isUnlocked": true
+    },
+    {
+      "eng": "now",
+      "ind": "sekarang",
+      "posVal": 5,
+      "pronunciationAudioClipID": "now",
+      "isUnlocked": true
+    },
+    {
+      "eng": "obviously",
+      "ind": "jelas",
+      "posVal": 5,
+      "pronunciationAudioClipID": "obviously",
+      "isUnlocked": true
+    },
+    {
+      "eng": "odd",
+      "ind": "aneh",
+      "posVal": 0,
+      "pronunciationAudioClipID": "odd",
+      "isUnlocked": true
+    },
+    {
+      "eng": "of",
+      "ind": "dari",
+      "posVal": 6,
+      "pronunciationAudioClipID": "of",
+      "isUnlocked": true
+    },
+    {
+      "eng": "on",
+      "ind": "di",
+      "posVal": 6,
+      "pronunciationAudioClipID": "on",
+      "isUnlocked": true
+    },
+    {
+      "eng": "once",
+      "ind": "sekali",
+      "posVal": 5,
+      "pronunciationAudioClipID": "once",
+      "isUnlocked": true
+    },
+    {
+      "eng": "only",
+      "ind": "hanya",
+      "posVal": 5,
+      "pronunciationAudioClipID": "only",
+      "isUnlocked": true
+    },
+    {
+      "eng": "open",
+      "ind": "Buka",
+      "posVal": 4,
+      "pronunciationAudioClipID": "open",
+      "isUnlocked": true
+    },
+    {
+      "eng": "or",
+      "ind": "atau",
+      "posVal": 7,
+      "pronunciationAudioClipID": "or",
+      "isUnlocked": true
+    },
+    {
+      "eng": "order",
+      "ind": "memesan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "order",
+      "isUnlocked": true
+    },
+    {
+      "eng": "otherwise",
+      "ind": "jika tidak",
+      "posVal": 5,
+      "pronunciationAudioClipID": "otherwise",
+      "isUnlocked": true
+    },
+    {
+      "eng": "our",
+      "ind": "kami",
+      "posVal": 2,
+      "pronunciationAudioClipID": "our",
+      "isUnlocked": true
+    },
+    {
+      "eng": "out",
+      "ind": "di luar",
+      "posVal": 6,
+      "pronunciationAudioClipID": "out",
+      "isUnlocked": true
+    },
+    {
+      "eng": "over",
+      "ind": "lebih",
+      "posVal": 6,
+      "pronunciationAudioClipID": "over",
+      "isUnlocked": true
+    },
+    {
+      "eng": "own",
+      "ind": "sendiri",
+      "posVal": 4,
+      "pronunciationAudioClipID": "own",
+      "isUnlocked": true
+    },
+    {
+      "eng": "painting",
+      "ind": "lukisan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "painting",
+      "isUnlocked": true
+    },
+    {
+      "eng": "pass",
+      "ind": "lulus",
+      "posVal": 0,
+      "pronunciationAudioClipID": "pass",
+      "isUnlocked": true
+    },
+    {
+      "eng": "past",
+      "ind": "lalu, lampau",
+      "posVal": 0,
+      "pronunciationAudioClipID": "past",
+      "isUnlocked": true
+    },
+    {
+      "eng": "path",
+      "ind": "jalan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "path",
+      "isUnlocked": true
+    },
+    {
+      "eng": "people",
+      "ind": "orang",
+      "posVal": 0,
+      "pronunciationAudioClipID": "people",
+      "isUnlocked": true
+    },
+    {
+      "eng": "perfect",
+      "ind": "sempurna",
+      "posVal": 0,
+      "pronunciationAudioClipID": "perfect",
+      "isUnlocked": true
+    },
+    {
+      "eng": "permanently",
+      "ind": "secara permanen",
+      "posVal": 5,
+      "pronunciationAudioClipID": "permanently",
+      "isUnlocked": true
+    },
+    {
+      "eng": "person",
+      "ind": "orang",
+      "posVal": 0,
+      "pronunciationAudioClipID": "person",
+      "isUnlocked": true
+    },
+    {
+      "eng": "personally",
+      "ind": "menurut saya sendiri",
+      "posVal": 5,
+      "pronunciationAudioClipID": "personally",
+      "isUnlocked": true
+    },
+    {
+      "eng": "pet",
+      "ind": "membelai, binatang peliharaan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "pet",
+      "isUnlocked": true
+    },
+    {
+      "eng": "pick",
+      "ind": "memilih",
+      "posVal": 0,
+      "pronunciationAudioClipID": "pick",
+      "isUnlocked": true
+    },
+    {
+      "eng": "pillar",
+      "ind": "pilar",
+      "posVal": 0,
+      "pronunciationAudioClipID": "pillar",
+      "isUnlocked": true
+    },
+    {
+      "eng": "place",
+      "ind": "tempat",
+      "posVal": 0,
+      "pronunciationAudioClipID": "place",
+      "isUnlocked": true
+    },
+    {
+      "eng": "plague",
+      "ind": "wabah",
+      "posVal": 0,
+      "pronunciationAudioClipID": "plague",
+      "isUnlocked": true
+    },
+    {
+      "eng": "please",
+      "ind": "mohon",
+      "posVal": 0,
+      "pronunciationAudioClipID": "please",
+      "isUnlocked": true
+    },
+    {
+      "eng": "possible",
+      "ind": "bisa jadi",
+      "posVal": 4,
+      "pronunciationAudioClipID": "possible",
+      "isUnlocked": true
+    },
+    {
+      "eng": "post",
+      "ind": "pos",
+      "posVal": 0,
+      "pronunciationAudioClipID": "post",
+      "isUnlocked": true
+    },
+    {
+      "eng": "power",
+      "ind": "kekuasaan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "power",
+      "isUnlocked": true
+    },
+    {
+      "eng": "precious",
+      "ind": "berharga",
+      "posVal": 4,
+      "pronunciationAudioClipID": "precious",
+      "isUnlocked": true
+    },
+    {
+      "eng": "present",
+      "ind": "menyajikan, masa kini",
+      "posVal": 0,
+      "pronunciationAudioClipID": "present",
+      "isUnlocked": true
+    },
+    {
+      "eng": "press",
+      "ind": "tekan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "press",
+      "isUnlocked": true
+    },
+    {
+      "eng": "promise",
+      "ind": "janji",
+      "posVal": 0,
+      "pronunciationAudioClipID": "promise",
+      "isUnlocked": true
+    },
+    {
+      "eng": "prove",
+      "ind": "membuktikan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "prove",
+      "isUnlocked": true
+    },
+    {
+      "eng": "publish",
+      "ind": "menerbitkan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "publish",
+      "isUnlocked": true
+    },
+    {
+      "eng": "put",
+      "ind": "taruh",
+      "posVal": 0,
+      "pronunciationAudioClipID": "put",
+      "isUnlocked": true
+    },
+    {
+      "eng": "quarantine",
+      "ind": "karantina",
+      "posVal": 0,
+      "pronunciationAudioClipID": "quarantine",
+      "isUnlocked": true
+    },
+    {
+      "eng": "quick",
+      "ind": "cepat",
+      "posVal": 0,
+      "pronunciationAudioClipID": "quick",
+      "isUnlocked": true
+    },
+    {
+      "eng": "quite",
+      "ind": "cukup",
+      "posVal": 5,
+      "pronunciationAudioClipID": "quite",
+      "isUnlocked": true
+    },
+    {
+      "eng": "really",
+      "ind": "Betulkah",
+      "posVal": 5,
+      "pronunciationAudioClipID": "really",
+      "isUnlocked": true
+    },
+    {
+      "eng": "rebel",
+      "ind": "pemberontak",
+      "posVal": 0,
+      "pronunciationAudioClipID": "rebel",
+      "isUnlocked": true
+    },
+    {
+      "eng": "relative",
+      "ind": "relatif",
+      "posVal": 0,
+      "pronunciationAudioClipID": "relative",
+      "isUnlocked": true
+    },
+    {
+      "eng": "remember",
+      "ind": "ingat",
+      "posVal": 3,
+      "pronunciationAudioClipID": "remember",
+      "isUnlocked": true
+    },
+    {
+      "eng": "repeat",
+      "ind": "ulang",
+      "posVal": 0,
+      "pronunciationAudioClipID": "repeat",
+      "isUnlocked": true
+    },
+    {
+      "eng": "report",
+      "ind": "melaporkan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "report",
+      "isUnlocked": true
+    },
+    {
+      "eng": "research",
+      "ind": "penelitian",
+      "posVal": 0,
+      "pronunciationAudioClipID": "research",
+      "isUnlocked": true
+    },
+    {
+      "eng": "rest",
+      "ind": "istirahat",
+      "posVal": 0,
+      "pronunciationAudioClipID": "rest",
+      "isUnlocked": true
+    },
+    {
+      "eng": "result",
+      "ind": "hasil",
+      "posVal": 0,
+      "pronunciationAudioClipID": "result",
+      "isUnlocked": true
+    },
+    {
+      "eng": "return",
+      "ind": "kembali",
+      "posVal": 0,
+      "pronunciationAudioClipID": "return",
+      "isUnlocked": true
+    },
+    {
+      "eng": "riddle",
+      "ind": "teka-teki",
+      "posVal": 0,
+      "pronunciationAudioClipID": "riddle",
+      "isUnlocked": true
+    },
+    {
+      "eng": "right",
+      "ind": "Kanan, Baik",
+      "posVal": 0,
+      "pronunciationAudioClipID": "right",
+      "isUnlocked": true
+    },
+    {
+      "eng": "ring",
+      "ind": "cincin",
+      "posVal": 0,
+      "pronunciationAudioClipID": "ring",
+      "isUnlocked": true
+    },
+    {
+      "eng": "road",
+      "ind": "jalan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "road",
+      "isUnlocked": true
+    },
+    {
+      "eng": "robbing",
+      "ind": "merampok",
+      "posVal": 3,
+      "pronunciationAudioClipID": "robbing",
+      "isUnlocked": true
+    },
+    {
+      "eng": "rude",
+      "ind": "kasar",
+      "posVal": 0,
+      "pronunciationAudioClipID": "rude",
+      "isUnlocked": true
+    },
+    {
+      "eng": "rule",
+      "ind": "aturan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "rule",
+      "isUnlocked": true
+    },
+    {
+      "eng": "safekeeping",
+      "ind": "diamankan, penyimpanan",
+      "posVal": 3,
+      "pronunciationAudioClipID": "safekeeping",
+      "isUnlocked": true
+    },
+    {
+      "eng": "same",
+      "ind": "sama",
+      "posVal": 4,
+      "pronunciationAudioClipID": "same",
+      "isUnlocked": true
+    },
+    {
+      "eng": "save",
+      "ind": "menyimpan",
+      "posVal": 3,
+      "pronunciationAudioClipID": "save",
+      "isUnlocked": true
+    },
+    {
+      "eng": "say",
+      "ind": "mengatakan",
+      "posVal": 3,
+      "pronunciationAudioClipID": "say",
+      "isUnlocked": true
+    },
+    {
+      "eng": "scary",
+      "ind": "mengerikan",
+      "posVal": 4,
+      "pronunciationAudioClipID": "scary",
+      "isUnlocked": true
+    },
+    {
+      "eng": "scholar",
+      "ind": "sarjana, orang pintar",
+      "posVal": 0,
+      "pronunciationAudioClipID": "scholar",
+      "isUnlocked": true
+    },
+    {
+      "eng": "scream",
+      "ind": "berteriak",
+      "posVal": 0,
+      "pronunciationAudioClipID": "scream",
+      "isUnlocked": true
+    },
+    {
+      "eng": "see",
+      "ind": "Lihat",
+      "posVal": 3,
+      "pronunciationAudioClipID": "see",
+      "isUnlocked": true
+    },
+    {
+      "eng": "seek",
+      "ind": "mencari",
+      "posVal": 0,
+      "pronunciationAudioClipID": "seek",
+      "isUnlocked": true
+    },
+    {
+      "eng": "send",
+      "ind": "Kirim",
+      "posVal": 0,
+      "pronunciationAudioClipID": "send",
+      "isUnlocked": true
+    },
+    {
+      "eng": "sentence",
+      "ind": "kalimat",
+      "posVal": 0,
+      "pronunciationAudioClipID": "sentence",
+      "isUnlocked": true
+    },
+    {
+      "eng": "separate",
+      "ind": "terpisah",
+      "posVal": 4,
+      "pronunciationAudioClipID": "separate",
+      "isUnlocked": true
+    },
+    {
+      "eng": "shall",
+      "ind": "akan",
+      "posVal": 3,
+      "pronunciationAudioClipID": "shall",
+      "isUnlocked": true
+    },
+    {
+      "eng": "she",
+      "ind": "dia (perempuan)",
+      "posVal": 2,
+      "pronunciationAudioClipID": "she",
+      "isUnlocked": true
+    },
+    {
+      "eng": "show",
+      "ind": "menunjukkan, pertunjukan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "show",
+      "isUnlocked": true
+    },
+    {
+      "eng": "sign",
+      "ind": "tanda",
+      "posVal": 0,
+      "pronunciationAudioClipID": "sign",
+      "isUnlocked": true
+    },
+    {
+      "eng": "similar",
+      "ind": "serupa",
+      "posVal": 4,
+      "pronunciationAudioClipID": "similar",
+      "isUnlocked": true
+    },
+    {
+      "eng": "simple",
+      "ind": "sederhana",
+      "posVal": 0,
+      "pronunciationAudioClipID": "simple",
+      "isUnlocked": true
+    },
+    {
+      "eng": "sing",
+      "ind": "bernyanyi",
+      "posVal": 3,
+      "pronunciationAudioClipID": "sing",
+      "isUnlocked": true
+    },
+    {
+      "eng": "sir",
+      "ind": "Pak",
+      "posVal": 0,
+      "pronunciationAudioClipID": "sir",
+      "isUnlocked": true
+    },
+    {
+      "eng": "sit",
+      "ind": "duduk",
+      "posVal": 0,
+      "pronunciationAudioClipID": "sit",
+      "isUnlocked": true
+    },
+    {
+      "eng": "small",
+      "ind": "kecil",
+      "posVal": 4,
+      "pronunciationAudioClipID": "small",
+      "isUnlocked": true
+    },
+    {
+      "eng": "so",
+      "ind": "begitu",
+      "posVal": 5,
+      "pronunciationAudioClipID": "so",
+      "isUnlocked": true
+    },
+    {
+      "eng": "solution",
+      "ind": "larutan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "solution",
+      "isUnlocked": true
+    },
+    {
+      "eng": "some",
+      "ind": "beberapa",
+      "posVal": 1,
+      "pronunciationAudioClipID": "some",
+      "isUnlocked": true
+    },
+    {
+      "eng": "somebody",
+      "ind": "seseorang",
+      "posVal": 0,
+      "pronunciationAudioClipID": "somebody",
+      "isUnlocked": true
+    },
+    {
+      "eng": "someone",
+      "ind": "seseorang",
+      "posVal": 0,
+      "pronunciationAudioClipID": "someone",
+      "isUnlocked": true
+    },
+    {
+      "eng": "something",
+      "ind": "sesuatu",
+      "posVal": 0,
+      "pronunciationAudioClipID": "something",
+      "isUnlocked": true
+    },
+    {
+      "eng": "son",
+      "ind": "putra",
+      "posVal": 0,
+      "pronunciationAudioClipID": "son",
+      "isUnlocked": true
+    },
+    {
+      "eng": "sorry",
+      "ind": "Maaf",
+      "posVal": 0,
+      "pronunciationAudioClipID": "sorry",
+      "isUnlocked": true
+    },
+    {
+      "eng": "sort",
+      "ind": "menyortir",
+      "posVal": 0,
+      "pronunciationAudioClipID": "sort",
+      "isUnlocked": true
+    },
+    {
+      "eng": "sound",
+      "ind": "suara",
+      "posVal": 0,
+      "pronunciationAudioClipID": "sound",
+      "isUnlocked": true
+    },
+    {
+      "eng": "speak",
+      "ind": "berbicara",
+      "posVal": 0,
+      "pronunciationAudioClipID": "speak",
+      "isUnlocked": true
+    },
+    {
+      "eng": "specific",
+      "ind": "spesifik",
+      "posVal": 4,
+      "pronunciationAudioClipID": "specific",
+      "isUnlocked": true
+    },
+    {
+      "eng": "speech",
+      "ind": "pidato",
+      "posVal": 0,
+      "pronunciationAudioClipID": "speech",
+      "isUnlocked": true
+    },
+    {
+      "eng": "splendid",
+      "ind": "megah",
+      "posVal": 0,
+      "pronunciationAudioClipID": "splendid",
+      "isUnlocked": true
+    },
+    {
+      "eng": "stand",
+      "ind": "berdiri",
+      "posVal": 0,
+      "pronunciationAudioClipID": "stand",
+      "isUnlocked": true
+    },
+    {
+      "eng": "steal",
+      "ind": "mencuri",
+      "posVal": 0,
+      "pronunciationAudioClipID": "steal",
+      "isUnlocked": true
+    },
+    {
+      "eng": "stick",
+      "ind": "tongkat",
+      "posVal": 0,
+      "pronunciationAudioClipID": "stick",
+      "isUnlocked": true
+    },
+    {
+      "eng": "still",
+      "ind": "masih",
+      "posVal": 5,
+      "pronunciationAudioClipID": "still",
+      "isUnlocked": true
+    },
+    {
+      "eng": "stop",
+      "ind": "berhenti",
+      "posVal": 0,
+      "pronunciationAudioClipID": "stop",
+      "isUnlocked": true
+    },
+    {
+      "eng": "storm",
+      "ind": "badai",
+      "posVal": 0,
+      "pronunciationAudioClipID": "storm",
+      "isUnlocked": true
+    },
+    {
+      "eng": "strawberry",
+      "ind": "stroberi",
+      "posVal": 0,
+      "pronunciationAudioClipID": "strawberry",
+      "isUnlocked": true
+    },
+    {
+      "eng": "study",
+      "ind": "belajar",
+      "posVal": 0,
+      "pronunciationAudioClipID": "study",
+      "isUnlocked": true
+    },
+    {
+      "eng": "succeed",
+      "ind": "berhasil",
+      "posVal": 3,
+      "pronunciationAudioClipID": "succeed",
+      "isUnlocked": true
+    },
+    {
+      "eng": "suddenly",
+      "ind": "mendadak",
+      "posVal": 5,
+      "pronunciationAudioClipID": "suddenly",
+      "isUnlocked": true
+    },
+    {
+      "eng": "sure",
+      "ind": "Tentu",
+      "posVal": 0,
+      "pronunciationAudioClipID": "sure",
+      "isUnlocked": true
+    },
+    {
+      "eng": "suspicious",
+      "ind": "mencurigakan",
+      "posVal": 4,
+      "pronunciationAudioClipID": "suspicious",
+      "isUnlocked": true
+    },
+    {
+      "eng": "symbolise",
+      "ind": "melambangkan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "symbolise",
+      "isUnlocked": true
+    },
+    {
+      "eng": "take",
+      "ind": "ambil",
+      "posVal": 3,
+      "pronunciationAudioClipID": "take",
+      "isUnlocked": true
+    },
+    {
+      "eng": "talk",
+      "ind": "berbicara",
+      "posVal": 0,
+      "pronunciationAudioClipID": "talk",
+      "isUnlocked": true
+    },
+    {
+      "eng": "tell",
+      "ind": "menceritakan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "tell",
+      "isUnlocked": true
+    },
+    {
+      "eng": "temple",
+      "ind": "Candi",
+      "posVal": 0,
+      "pronunciationAudioClipID": "temple",
+      "isUnlocked": true
+    },
+    {
+      "eng": "tense",
+      "ind": "tegang",
+      "posVal": 0,
+      "pronunciationAudioClipID": "tense",
+      "isUnlocked": true
+    },
+    {
+      "eng": "text",
+      "ind": "teks",
+      "posVal": 0,
+      "pronunciationAudioClipID": "text",
+      "isUnlocked": true
+    },
+    {
+      "eng": "thank",
+      "ind": "menyatakan terima kasih",
+      "posVal": 3,
+      "pronunciationAudioClipID": "thank",
+      "isUnlocked": true
+    },
+    {
+      "eng": "that",
+      "ind": "bahwa, itu",
+      "posVal": 7,
+      "pronunciationAudioClipID": "that",
+      "isUnlocked": true
+    },
+    {
+      "eng": "that",
+      "ind": "bahwa, itu",
+      "posVal": 1,
+      "pronunciationAudioClipID": "that",
+      "isUnlocked": true
+    },
+    {
+      "eng": "that",
+      "ind": "bahwa, itu",
+      "posVal": 2,
+      "pronunciationAudioClipID": "that",
+      "isUnlocked": true
+    },
+    {
+      "eng": "the",
+      "ind": "itu",
+      "posVal": 1,
+      "pronunciationAudioClipID": "the",
+      "isUnlocked": true
+    },
+    {
+      "eng": "their",
+      "ind": "mereka",
+      "posVal": 2,
+      "pronunciationAudioClipID": "their",
+      "isUnlocked": true
+    },
+    {
+      "eng": "then",
+      "ind": "kemudian",
+      "posVal": 5,
+      "pronunciationAudioClipID": "then",
+      "isUnlocked": true
+    },
+    {
+      "eng": "there",
+      "ind": "disana",
+      "posVal": 5,
+      "pronunciationAudioClipID": "there",
+      "isUnlocked": true
+    },
+    {
+      "eng": "these",
+      "ind": "ini (jamak)",
+      "posVal": 1,
+      "pronunciationAudioClipID": "these",
+      "isUnlocked": true
+    },
+    {
+      "eng": "they",
+      "ind": "mereka",
+      "posVal": 2,
+      "pronunciationAudioClipID": "they",
+      "isUnlocked": true
+    },
+    {
+      "eng": "thief",
+      "ind": "pencuri",
+      "posVal": 0,
+      "pronunciationAudioClipID": "thief",
+      "isUnlocked": true
+    },
+    {
+      "eng": "thing",
+      "ind": "benda",
+      "posVal": 0,
+      "pronunciationAudioClipID": "thing",
+      "isUnlocked": true
+    },
+    {
+      "eng": "think",
+      "ind": "berpikir",
+      "posVal": 0,
+      "pronunciationAudioClipID": "think",
+      "isUnlocked": true
+    },
+    {
+      "eng": "this",
+      "ind": "ini",
+      "posVal": 1,
+      "pronunciationAudioClipID": "this",
+      "isUnlocked": true
+    },
+    {
+      "eng": "three",
+      "ind": "tiga",
+      "posVal": 4,
+      "pronunciationAudioClipID": "three",
+      "isUnlocked": true
+    },
+    {
+      "eng": "time",
+      "ind": "waktu",
+      "posVal": 0,
+      "pronunciationAudioClipID": "time",
+      "isUnlocked": true
+    },
+    {
+      "eng": "tired",
+      "ind": "lelah",
+      "posVal": 3,
+      "pronunciationAudioClipID": "tired",
+      "isUnlocked": true
+    },
+    {
+      "eng": "to",
+      "ind": "untuk",
+      "posVal": 6,
+      "pronunciationAudioClipID": "to",
+      "isUnlocked": true
+    },
+    {
+      "eng": "tomb",
+      "ind": "makam",
+      "posVal": 0,
+      "pronunciationAudioClipID": "tomb",
+      "isUnlocked": true
+    },
+    {
+      "eng": "too",
+      "ind": "terlalu",
+      "posVal": 5,
+      "pronunciationAudioClipID": "too",
+      "isUnlocked": true
+    },
+    {
+      "eng": "tower",
+      "ind": "menara",
+      "posVal": 0,
+      "pronunciationAudioClipID": "tower",
+      "isUnlocked": true
+    },
+    {
+      "eng": "town",
+      "ind": "kota",
+      "posVal": 0,
+      "pronunciationAudioClipID": "town",
+      "isUnlocked": true
+    },
+    {
+      "eng": "traitor",
+      "ind": "pengkhianat",
+      "posVal": 0,
+      "pronunciationAudioClipID": "traitor",
+      "isUnlocked": true
+    },
+    {
+      "eng": "travel",
+      "ind": "perjalanan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "travel",
+      "isUnlocked": true
+    },
+    {
+      "eng": "troubling",
+      "ind": "mengganggu",
+      "posVal": 3,
+      "pronunciationAudioClipID": "troubling",
+      "isUnlocked": true
+    },
+    {
+      "eng": "try",
+      "ind": "mencoba",
+      "posVal": 0,
+      "pronunciationAudioClipID": "try",
+      "isUnlocked": true
+    },
+    {
+      "eng": "turn",
+      "ind": "belok",
+      "posVal": 0,
+      "pronunciationAudioClipID": "turn",
+      "isUnlocked": true
+    },
+    {
+      "eng": "under",
+      "ind": "dibawah",
+      "posVal": 6,
+      "pronunciationAudioClipID": "under",
+      "isUnlocked": true
+    },
+    {
+      "eng": "unfair",
+      "ind": "tidak adil",
+      "posVal": 0,
+      "pronunciationAudioClipID": "unfair",
+      "isUnlocked": true
+    },
+    {
+      "eng": "unlock",
+      "ind": "membuka kunci",
+      "posVal": 0,
+      "pronunciationAudioClipID": "unlock",
+      "isUnlocked": true
+    },
+    {
+      "eng": "until",
+      "ind": "sampai",
+      "posVal": 6,
+      "pronunciationAudioClipID": "until",
+      "isUnlocked": true
+    },
+    {
+      "eng": "up",
+      "ind": "naik",
+      "posVal": 5,
+      "pronunciationAudioClipID": "up",
+      "isUnlocked": true
+    },
+    {
+      "eng": "use",
+      "ind": "menggunakan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "use",
+      "isUnlocked": true
+    },
+    {
+      "eng": "very",
+      "ind": "sangat",
+      "posVal": 5,
+      "pronunciationAudioClipID": "very",
+      "isUnlocked": true
+    },
+    {
+      "eng": "wait",
+      "ind": "Tunggu",
+      "posVal": 0,
+      "pronunciationAudioClipID": "wait",
+      "isUnlocked": true
+    },
+    {
+      "eng": "wake",
+      "ind": "bangun",
+      "posVal": 0,
+      "pronunciationAudioClipID": "wake",
+      "isUnlocked": true
+    },
+    {
+      "eng": "walk",
+      "ind": "berjalan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "walk",
+      "isUnlocked": true
+    },
+    {
+      "eng": "want",
+      "ind": "ingin",
+      "posVal": 0,
+      "pronunciationAudioClipID": "want",
+      "isUnlocked": true
+    },
+    {
+      "eng": "watch",
+      "ind": "menonton",
+      "posVal": 0,
+      "pronunciationAudioClipID": "watch",
+      "isUnlocked": true
+    },
+    {
+      "eng": "way",
+      "ind": "cara",
+      "posVal": 0,
+      "pronunciationAudioClipID": "way",
+      "isUnlocked": true
+    },
+    {
+      "eng": "we",
+      "ind": "kita",
+      "posVal": 2,
+      "pronunciationAudioClipID": "we",
+      "isUnlocked": true
+    },
+    {
+      "eng": "week",
+      "ind": "minggu",
+      "posVal": 0,
+      "pronunciationAudioClipID": "week",
+      "isUnlocked": true
+    },
+    {
+      "eng": "weight",
+      "ind": "bobot, berat",
+      "posVal": 0,
+      "pronunciationAudioClipID": "weight",
+      "isUnlocked": true
+    },
+    {
+      "eng": "weird",
+      "ind": "aneh",
+      "posVal": 0,
+      "pronunciationAudioClipID": "weird",
+      "isUnlocked": true
+    },
+    {
+      "eng": "welcome",
+      "ind": "Selamat datang",
+      "posVal": 0,
+      "pronunciationAudioClipID": "welcome",
+      "isUnlocked": true
+    },
+    {
+      "eng": "well",
+      "ind": "baik",
+      "posVal": 5,
+      "pronunciationAudioClipID": "well",
+      "isUnlocked": true
+    },
+    {
+      "eng": "what",
+      "ind": "apa",
+      "posVal": 5,
+      "pronunciationAudioClipID": "what",
+      "isUnlocked": true
+    },
+    {
+      "eng": "whatever",
+      "ind": "Masa bodo",
+      "posVal": 5,
+      "pronunciationAudioClipID": "whatever",
+      "isUnlocked": true
+    },
+    {
+      "eng": "when",
+      "ind": "kapan",
+      "posVal": 5,
+      "pronunciationAudioClipID": "when",
+      "isUnlocked": true
+    },
+    {
+      "eng": "where",
+      "ind": "dimana",
+      "posVal": 5,
+      "pronunciationAudioClipID": "where",
+      "isUnlocked": true
+    },
+    {
+      "eng": "which",
+      "ind": "yang",
+      "posVal": 5,
+      "pronunciationAudioClipID": "which",
+      "isUnlocked": true
+    },
+    {
+      "eng": "who",
+      "ind": "siapa",
+      "posVal": 5,
+      "pronunciationAudioClipID": "who",
+      "isUnlocked": true
+    },
+    {
+      "eng": "why",
+      "ind": "Mengapa",
+      "posVal": 5,
+      "pronunciationAudioClipID": "why",
+      "isUnlocked": true
+    },
+    {
+      "eng": "will",
+      "ind": "akan",
+      "posVal": 3,
+      "pronunciationAudioClipID": "will",
+      "isUnlocked": true
+    },
+    {
+      "eng": "wisdom",
+      "ind": "kebijaksanaan",
+      "posVal": 0,
+      "pronunciationAudioClipID": "wisdom",
+      "isUnlocked": true
+    },
+    {
+      "eng": "with",
+      "ind": "dengan",
+      "posVal": 6,
+      "pronunciationAudioClipID": "with",
+      "isUnlocked": true
+    },
+    {
+      "eng": "wood",
+      "ind": "kayu",
+      "posVal": 0,
+      "pronunciationAudioClipID": "wood",
+      "isUnlocked": true
+    },
+    {
+      "eng": "word",
+      "ind": "kata",
+      "posVal": 0,
+      "pronunciationAudioClipID": "word",
+      "isUnlocked": true
+    },
+    {
+      "eng": "worry",
+      "ind": "khawatir",
+      "posVal": 0,
+      "pronunciationAudioClipID": "worry",
+      "isUnlocked": true
+    },
+    {
+      "eng": "would",
+      "ind": "akan",
+      "posVal": 3,
+      "pronunciationAudioClipID": "would",
+      "isUnlocked": true
+    },
+    {
+      "eng": "write",
+      "ind": "menulis",
+      "posVal": 0,
+      "pronunciationAudioClipID": "write",
+      "isUnlocked": true
+    },
+    {
+      "eng": "wrong",
+      "ind": "salah",
+      "posVal": 4,
+      "pronunciationAudioClipID": "wrong",
+      "isUnlocked": true
+    },
+    {
+      "eng": "yes",
+      "ind": "Iya",
+      "posVal": 0,
+      "pronunciationAudioClipID": "yes",
+      "isUnlocked": true
+    },
+    {
+      "eng": "yet",
+      "ind": "namun",
+      "posVal": 5,
+      "pronunciationAudioClipID": "yet",
+      "isUnlocked": true
+    },
+    {
+      "eng": "you",
+      "ind": "kamu",
+      "posVal": 2,
+      "pronunciationAudioClipID": "you",
+      "isUnlocked": true
+    },
+    {
+      "eng": "your",
+      "ind": "(kepunyaan) mu, (milik) kamu, kepunyaan tuan/saudara",
+      "posVal": 1,
+      "pronunciationAudioClipID": "your",
+      "isUnlocked": true
+    },
+    {
+      "eng": "yours",
+      "ind": "milikmu",
+      "posVal": 0,
+      "pronunciationAudioClipID": "yours",
+      "isUnlocked": true
+    },
+    {
+      "eng": "yourself",
+      "ind": "dirimu sendiri",
+      "posVal": 2,
+      "pronunciationAudioClipID": "yourself",
+      "isUnlocked": true
+    },
+    {
+      "eng": "TRUE",
+      "ind": "benar",
+      "posVal": 0,
+      "pronunciationAudioClipID": "TRUE",
+      "isUnlocked": true
+    }
+  ]
 }
