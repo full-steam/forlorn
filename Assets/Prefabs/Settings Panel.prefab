@@ -273,6 +273,7 @@ GameObject:
   - component: {fileID: 7137244474983803808}
   - component: {fileID: 7137244474983803839}
   - component: {fileID: 7137244474983803838}
+  - component: {fileID: 8840996178447086708}
   m_Layer: 5
   m_Name: Back Button
   m_TagString: Untagged
@@ -381,6 +382,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 8840996178447086708}
+        m_TargetAssemblyTypeName: ButtonHandler, Assembly-CSharp
+        m_MethodName: ButtonSFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 7137244475507579505}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -393,6 +406,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &8840996178447086708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7137244474983803836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f7bd0585b128e4f855bbc10fd86d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7137244475025001116
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,6 +504,7 @@ GameObject:
   - component: {fileID: 7137244475136773863}
   - component: {fileID: 7137244475136773865}
   - component: {fileID: 7137244475136773864}
+  - component: {fileID: 4268718123226270386}
   m_Layer: 5
   m_Name: Version Text
   m_TagString: Untagged
@@ -602,6 +628,18 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &4268718123226270386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7137244475136773862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0eb116be7f9ed04cafb9d5a5ef29c48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7137244475305014144
 GameObject:
   m_ObjectHideFlags: 0
@@ -897,6 +935,7 @@ GameObject:
   - component: {fileID: 7137244475507579506}
   - component: {fileID: 7137244475507579508}
   - component: {fileID: 7137244475507579507}
+  - component: {fileID: 7735798744908112717}
   m_Layer: 5
   m_Name: Settings Panel
   m_TagString: Untagged
@@ -967,6 +1006,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7735798744908112717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7137244475507579505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a44af8400a6b69a4988a21febd536c23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BGMSlider: {fileID: 7137244476295669496}
+  SFXSlider: {fileID: 7137244476514413146}
+  BGMToggle: {fileID: 7137244475893062829}
+  SFXToggle: {fileID: 7137244475847960900}
 --- !u!1 &7137244475640174430
 GameObject:
   m_ObjectHideFlags: 0
@@ -1261,6 +1316,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7137244475847960899}
   - component: {fileID: 7137244475847960900}
+  - component: {fileID: 8810637426495317093}
   m_Layer: 5
   m_Name: SFX Toggle
   m_TagString: Untagged
@@ -1333,8 +1389,32 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
-  m_IsOn: 1
+      m_Calls:
+      - m_Target: {fileID: 8810637426495317093}
+        m_TargetAssemblyTypeName: ButtonHandler, Assembly-CSharp
+        m_MethodName: ButtonSFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_IsOn: 0
+--- !u!114 &8810637426495317093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7137244475847960898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f7bd0585b128e4f855bbc10fd86d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7137244475893062827
 GameObject:
   m_ObjectHideFlags: 0
@@ -1345,6 +1425,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7137244475893062828}
   - component: {fileID: 7137244475893062829}
+  - component: {fileID: 6832321621214494267}
   m_Layer: 5
   m_Name: BGM Toggle
   m_TagString: Untagged
@@ -1417,8 +1498,32 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
-  m_IsOn: 1
+      m_Calls:
+      - m_Target: {fileID: 6832321621214494267}
+        m_TargetAssemblyTypeName: ButtonHandler, Assembly-CSharp
+        m_MethodName: ButtonSFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_IsOn: 0
+--- !u!114 &6832321621214494267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7137244475893062827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f7bd0585b128e4f855bbc10fd86d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7137244476062623405
 GameObject:
   m_ObjectHideFlags: 0
@@ -1693,7 +1798,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1991,7 +2096,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []

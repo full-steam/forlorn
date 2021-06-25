@@ -46,6 +46,11 @@ public class ButtonHandler : MonoBehaviour
         AudioController.PlayMusic(songID);
     }
 
+    public void ButtonSFX()
+    {
+        PlaySound("Click");
+    }
+
     public void SaveGame()
     {
         GameManager.Instance.SaveGame();

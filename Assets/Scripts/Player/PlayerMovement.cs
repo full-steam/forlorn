@@ -10,9 +10,10 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
     private Vector2 movement;
     private bool canMove;
+    private bool moving = false;
 
     //for debugging purpose
-    [Tooltip("Will be automatically turned to true when palying from editor")]
+    [Tooltip("Will be automatically turned to true when playing from editor")]
     public bool useKeyboard = false;
 
     // Start is called before the first frame update
@@ -73,6 +74,18 @@ public class PlayerMovement : MonoBehaviour
 
             movement.x = (movement.x > 0.1) ? 1 : ((movement.x < -0.1) ? -1 : 0);
             movement.y = (movement.y > 0.1) ? 1 : ((movement.y < -0.1) ? -1 : 0);
+
+            if (!moving && movement.sqrMagnitude > 0)
+            {
+                moving = true;
+                AudioController.Play("WalkDirt");
+            }
+            else if (moving && movement.sqrMagnitude == 0)
+            {
+
+                moving = false;
+                AudioController.Stop("WalkDirt");
+            }
 
             //anim.SetFloat("Speed", movement.sqrMagnitude);
         }
