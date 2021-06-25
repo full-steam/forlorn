@@ -51,6 +51,7 @@ public class PlayerStatus : MonoBehaviour
         distanceSum = stat.distanceSum;
         steps = stat.steps;
         starving = stat.starving;
+        money = stat.money;
         if (!skipPosition) transform.position = stat.posInScene.GetData();
 
         itemList = new List<ItemObject>();
@@ -71,6 +72,7 @@ public class PlayerStatus : MonoBehaviour
         stat.distanceSum = distanceSum;
         stat.steps = steps;
         stat.starving = starving;
+        stat.money = money;
         stat.posInScene.SetData(transform.position);
 
         stat.itemList = new List<ItemObject>();

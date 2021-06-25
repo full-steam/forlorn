@@ -82,12 +82,18 @@ public class PlayerMovement : MonoBehaviour
             }
             else if (moving && movement.sqrMagnitude == 0)
             {
-
                 moving = false;
                 AudioController.Stop("WalkDirt");
             }
 
             //anim.SetFloat("Speed", movement.sqrMagnitude);
+        }
+        else
+        {
+            anim.SetFloat("Horizontal", 0);
+            anim.SetFloat("Vertical", 0);
+            moving = false;
+            AudioController.Stop("WalkDirt");
         }
     }
     private void FixedUpdate()

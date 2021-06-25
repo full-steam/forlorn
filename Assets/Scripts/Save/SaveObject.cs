@@ -28,6 +28,7 @@ public class SaveObject
     public float distanceSum;
     public string sceneName;
     public int steps;
+    public int money;
     public bool starving;
     public SerializeableVector3 posInScene = new SerializeableVector3();
     public List<ItemObject> itemList = new List<ItemObject>();

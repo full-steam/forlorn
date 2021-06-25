@@ -61,6 +61,7 @@ public class DialogueCollectible : Dialogue
 
     private void GiveItem(string[] parameters)
     {
+        AudioController.Play("ItemPickup");
         GameManager.Instance.Blackboard.Player.playerStatus.AddItem(itemObject);
         runner.onDialogueComplete.AddListener(DisableObject);
     }

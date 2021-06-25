@@ -361,7 +361,7 @@ MonoBehaviour:
   itemName: {fileID: 9172787903070429950}
   itemType: {fileID: 9172787904730941686}
   itemEffect: {fileID: 9172787904221234398}
-  money: {fileID: 0}
+  money: {fileID: 3226194559654927695}
   useButton: {fileID: 9172787904741470180}
   itemButtonsParent: {fileID: 9172787904133113597}
 --- !u!1 &9172787903453299921
