@@ -53,7 +53,10 @@ public class DialogueCollectible : Dialogue
     /// </summary>
     private void CheckTakenStatus()
     {
-        if (GameManager.Instance.Blackboard.FlagManager.GetFlag(takenFlag)) gameObject.SetActive(false);
+        if (GameManager.Instance.Blackboard.FlagManager.GetFlag(takenFlag))
+        {
+            if (!manual) gameObject.SetActive(false);
+        }
     }
 
     private void GiveItem(string[] parameters)
@@ -71,6 +74,9 @@ public class DialogueCollectible : Dialogue
     private void DisableObject()
     {
         runner.onDialogueComplete.RemoveListener(DisableObject);
-        gameObject.SetActive(false);
+        if (!manual)
+        {
+            gameObject.SetActive(false);
+        }
     }
 }
