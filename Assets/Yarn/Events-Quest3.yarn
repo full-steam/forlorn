@@ -20,6 +20,16 @@ tags:
 <<endif>>
 ===
 
+title: Quest3.SeeFood
+tags:
+---
+<<if $HasSeenFood is false>>
+    Amy: Lihat itu! Ada yang jual makanan.
+    Amy: Sebaiknya kita beli makanan dulu sebelum pergi.
+    <<set $HasSeenFood to true>>
+<<endif>>
+===
+
 title: Quest3.MeetJames
 tags:
 ---

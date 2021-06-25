@@ -213,6 +213,11 @@ public class FlagHandlerEditor : Editor
 
                         EditorGUI.PropertyField(new Rect(pos.x + 100, pos.y, 200, EditorGUIUtility.singleLineHeight), element.FindPropertyRelative("isTrigger"), GUIContent.none);
                         break;
+                    case FlagEvent.FlagEventType.ModifyMoney:
+                        EditorGUI.LabelField(new Rect(pos.x, pos.y, 100, EditorGUIUtility.singleLineHeight), "Amount");
+
+                        EditorGUI.PropertyField(new Rect(pos.x + 100, pos.y, 200, EditorGUIUtility.singleLineHeight), element.FindPropertyRelative("amount"), GUIContent.none);
+                        break;
                 }
             }
         }
@@ -256,6 +261,7 @@ public class FlagHandlerEditor : Editor
                         height += (EditorGUIUtility.singleLineHeight + 2f) * 7;
                         break;
                     case FlagEvent.FlagEventType.RunDialogue:
+                    case FlagEvent.FlagEventType.ModifyMoney:
                         height += EditorGUIUtility.singleLineHeight + 2f;
                         break;
                     case FlagEvent.FlagEventType.ChangeSprite:

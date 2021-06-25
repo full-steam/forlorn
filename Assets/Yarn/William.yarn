@@ -72,6 +72,10 @@ tags:
     -> We'll find it.
         William: Alright.
     William: Good luck, Adventurer. Come to me once you've found the books.
+    William: And here, I'll give you some money just in case you need it.
+    You've received <color=blue>100 coins<color=black>.
+    <color=blue>Coin<color=black> dapat dipakai untuk membeli barang seperti makanan dan obat.
+    Untuk melihat berapa banyak <color=blue>Coin<color=black> yang kamu miliki, lihat di <color=blue>Inventory<color=black>.
     <<trigger_checkpoint HasStartedQuest3>>
 <<endif>>
 ===

@@ -16,6 +16,7 @@ public class FlagEvent
         ChangeSprite,
         SetTag,
         SetColliderTrigger,
+        ModifyMoney,
         REMOVE_RING
     };
 
@@ -33,6 +34,7 @@ public class FlagEvent
     public bool foldoutTargets = false;
     public string tag;
     public bool isTrigger = false;
+    public int amount = 0;
 
     public List<GameObject> targets;
     public List<MoveTarget> moveTargets;
@@ -99,6 +101,9 @@ public class FlagEvent
                         return;
                     }
                 }
+                break;
+            case FlagEventType.ModifyMoney:
+                GameManager.Instance.Blackboard.Player.GetComponent<PlayerStatus>().ModifyMoney(amount);
                 break;
         }
     }

@@ -36,7 +36,11 @@ public class DialogueCollectible : Dialogue
     {
         SetItemName();
         if (!manual) GiveItem(null);
-        else runner.AddCommandHandler("give_item", GiveItem);
+        else
+        {
+            runner.AddCommandHandler("give_item", GiveItem);
+            runner.AddCommandHandler("buy_item", BuyItem);
+        }
         base.StartDialogue();
     }
 
@@ -66,9 +70,21 @@ public class DialogueCollectible : Dialogue
         runner.onDialogueComplete.AddListener(DisableObject);
     }
 
+    private void BuyItem(string[] parameters)
+    {
+        AudioController.Play("ItemPickup");
+        GameManager.Instance.Blackboard.Player.playerStatus.ModifyMoney(int.Parse(parameters[0]));
+        ItemObject itemObj = new ItemObject();
+        itemObj.itemID = int.Parse(parameters[1]);
+        itemObj.count = int.Parse(parameters[2]);
+        GameManager.Instance.Blackboard.Player.playerStatus.AddItem(itemObj);
+        runner.onDialogueComplete.AddListener(DisableObject);
+    }
+
     protected override void RemoveCommandHandlers()
     {
         runner.RemoveCommandHandler("give_item");
+        runner.RemoveCommandHandler("buy_item");
         base.RemoveCommandHandlers();
     }
 

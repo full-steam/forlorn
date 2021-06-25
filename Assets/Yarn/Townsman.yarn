@@ -1,0 +1,15 @@
+﻿title: Townsman
+tags:
+---
+What can I get you?
+-> 1 Apple, 3 coins
+    <<buy_item 3 5 1>>
+    [[Townsman]]
+-> 1 Loaf of Bread, 2 coins
+    <<buy_item 2 6 1>>
+    [[Townsman]]
+-> 1 Piece of Beef, 5 coins
+    <<buy_item 5 7 1>>
+    [[Townsman]]
+-> Exit
+===
