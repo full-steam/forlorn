@@ -69,7 +69,7 @@ MonoBehaviour:
       loopSequenceRandomPitch: 0
       loopSequenceRandomVolume: 0
       DestroyOnLoad: 1
-      Volume: 0.6
+      Volume: 0.35
       SubItemPickMode: 4
       MinTimeBetweenPlayCalls: 0.1
       MaxInstanceCount: 0
@@ -361,7 +361,7 @@ MonoBehaviour:
       loopSequenceRandomPitch: 0
       loopSequenceRandomVolume: 0
       DestroyOnLoad: 1
-      Volume: 0.6
+      Volume: 0.45
       SubItemPickMode: 2
       MinTimeBetweenPlayCalls: 0.1
       MaxInstanceCount: 0
@@ -401,7 +401,7 @@ MonoBehaviour:
       loopSequenceRandomPitch: 0
       loopSequenceRandomVolume: 0
       DestroyOnLoad: 1
-      Volume: 0.75
+      Volume: 0.4
       SubItemPickMode: 3
       MinTimeBetweenPlayCalls: 0.1
       MaxInstanceCount: 0
@@ -477,7 +477,7 @@ MonoBehaviour:
       loopSequenceRandomPitch: 0
       loopSequenceRandomVolume: 0
       DestroyOnLoad: 1
-      Volume: 0.75
+      Volume: 0.4
       SubItemPickMode: 2
       MinTimeBetweenPlayCalls: 0.1
       MaxInstanceCount: 0
@@ -517,7 +517,7 @@ MonoBehaviour:
       loopSequenceRandomPitch: 0
       loopSequenceRandomVolume: 0
       DestroyOnLoad: 1
-      Volume: 1
+      Volume: 0.8
       SubItemPickMode: 2
       MinTimeBetweenPlayCalls: 0.1
       MaxInstanceCount: 0
@@ -557,7 +557,7 @@ MonoBehaviour:
       loopSequenceRandomPitch: 0
       loopSequenceRandomVolume: 0
       DestroyOnLoad: 1
-      Volume: 0.75
+      Volume: 0.4
       SubItemPickMode: 2
       MinTimeBetweenPlayCalls: 0.1
       MaxInstanceCount: 0
@@ -575,7 +575,7 @@ MonoBehaviour:
         Probability: 1
         DisableOtherSubitems: 0
         ItemModeAudioID: 
-        Clip: {fileID: 8300000, guid: 897f0a08ced0d25439698f84c4c4747b, type: 3}
+        Clip: {fileID: 8300000, guid: 2c34e83fa8cf4364da110c71b80aeae1, type: 3}
         Volume: 1
         PitchShift: 0
         Pan2D: 0
@@ -636,14 +636,14 @@ MonoBehaviour:
     AudioObjectPrefab: {fileID: 0}
     AudioItems:
     - Name: Ruins
-      Loop: 0
+      Loop: 1
       loopSequenceCount: 0
       loopSequenceOverlap: 0
       loopSequenceRandomDelay: 0
       loopSequenceRandomPitch: 0
       loopSequenceRandomVolume: 0
       DestroyOnLoad: 1
-      Volume: 1
+      Volume: 0.8
       SubItemPickMode: 2
       MinTimeBetweenPlayCalls: 0.1
       MaxInstanceCount: 0
@@ -676,14 +676,14 @@ MonoBehaviour:
         RandomStartPosition: 0
         individualSettings: []
     - Name: Forest
-      Loop: 0
+      Loop: 1
       loopSequenceCount: 0
       loopSequenceOverlap: 0
       loopSequenceRandomDelay: 0
       loopSequenceRandomPitch: 0
       loopSequenceRandomVolume: 0
       DestroyOnLoad: 1
-      Volume: 0.5
+      Volume: 0.4
       SubItemPickMode: 2
       MinTimeBetweenPlayCalls: 0.1
       MaxInstanceCount: 0
@@ -716,7 +716,7 @@ MonoBehaviour:
         RandomStartPosition: 0
         individualSettings: []
     - Name: MainMenu
-      Loop: 0
+      Loop: 1
       loopSequenceCount: 0
       loopSequenceOverlap: 0
       loopSequenceRandomDelay: 0
@@ -756,14 +756,14 @@ MonoBehaviour:
         RandomStartPosition: 0
         individualSettings: []
     - Name: Town
-      Loop: 0
+      Loop: 1
       loopSequenceCount: 0
       loopSequenceOverlap: 0
       loopSequenceRandomDelay: 0
       loopSequenceRandomPitch: 0
       loopSequenceRandomVolume: 0
       DestroyOnLoad: 1
-      Volume: 1
+      Volume: 0.8
       SubItemPickMode: 2
       MinTimeBetweenPlayCalls: 0.1
       MaxInstanceCount: 0
@@ -809,8 +809,8 @@ MonoBehaviour:
   _audioDisabled: 0
   _volume: 1
   _currentInspectorSelection:
-    currentCategoryIndex: 0
-    currentItemIndex: 6
+    currentCategoryIndex: 1
+    currentItemIndex: 3
     currentSubitemIndex: 0
     currentPlaylistEntryIndex: 0
     currentPlaylistIndex: 0

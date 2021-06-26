@@ -2,4 +2,6 @@
 tags:
 ---
 <<teleport 524 504 0>>
+<<set $InRuins to true>>
+<<set $AtTown to false>>
 ===

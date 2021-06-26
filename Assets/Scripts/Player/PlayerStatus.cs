@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerStatus : MonoBehaviour
 {
+    private const int HUNGER_STEPS = 45;
 
     [HideInInspector] public float maxHealth = 5;
     [HideInInspector] public float maxHunger = 5;
@@ -36,7 +37,7 @@ public class PlayerStatus : MonoBehaviour
         {
             distanceSum = 0;
             steps++;
-            if (steps >= 30)
+            if (steps >= HUNGER_STEPS)
             {
                 steps = 0;
                 ModifyHunger(-0.5f);

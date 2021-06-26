@@ -20,7 +20,7 @@ tags:
 <<endif>>
 ===
 
-title: Quest3.SeeFood
+title: Quest3.HasSeenFood
 tags:
 ---
 <<if $HasSeenFood is false>>

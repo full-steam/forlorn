@@ -71,6 +71,8 @@ title: ReportedSpeech.Arrange2
     Amy: Maka akan jadi?
     <<arrange_sentence>>    //SENTENCE: Amy said that the Adventurer had saved her. | Amy said that I had saved her.
     Amy: Okay! Ayuk!
+    <<set $ReportedSpeechOpening to false>>
+    <<set $ReportedSpeechArrange1 to false>>
     <<trigger_checkpoint ReportedSpeechDone>>
 <<endif>>
 ===
@@ -142,6 +144,8 @@ title: ModalsOfDeduction.Arrange2
     Amy: Terkahir! Kamu baru selesai ujian, dan sedang berbicara tentang kapan hasilnya keluar. Mungkin minggu ini, mungkin minggu depan.
     <<arrange_sentence>> //# SENTENCE: The exam results might come out this week or next week. | The exam results could come out this week or next week. | The exam results may come out this week or next week.
     Amy: Amy bangga sekali. Yuk, lanjut jalan.
-    <<trigger_checkpoint $ModalsOfDeductionDone>>
+    <<set $ModalsOfDeductionOpening to false>>
+    <<set $ModalsOfDeductionArrange1 to false>>
+    <<trigger_checkpoint ModalsOfDeductionDone>>
 <<endif>>
 ===

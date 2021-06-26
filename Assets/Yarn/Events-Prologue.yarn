@@ -105,7 +105,7 @@ Guard: Huh? Oh, you're right. How odd...
 Amy: (Kita tidak ada jalan lain, mungkin <color=blue>locket<color=black>-nya ada di sana!)
 <<if $HasMetDictionary is false>>
     Kalau bingung apa arti dari suatu kata, dapat dilihat di <color=blue>dictionary<color=black>.
-    Untuk buka<color=blue>dictionary<color=black>, tekan tombol berbentuk <color=blue>buku<color=black> buku di kanan atas.
+    Untuk buka <color=blue>dictionary<color=black>, tekan tombol berbentuk <color=blue>buku<color=black> buku di kanan atas.
     <<set $HasMetDictionary to true>>
 <<endif>>
 ===

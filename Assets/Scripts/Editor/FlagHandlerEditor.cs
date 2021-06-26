@@ -218,6 +218,11 @@ public class FlagHandlerEditor : Editor
 
                         EditorGUI.PropertyField(new Rect(pos.x + 100, pos.y, 200, EditorGUIUtility.singleLineHeight), element.FindPropertyRelative("amount"), GUIContent.none);
                         break;
+                    case FlagEvent.FlagEventType.PlayBGM:
+                        EditorGUI.LabelField(new Rect(pos.x, pos.y, 100, EditorGUIUtility.singleLineHeight), "Audio ID");
+
+                        EditorGUI.PropertyField(new Rect(pos.x + 100, pos.y, 200, EditorGUIUtility.singleLineHeight), element.FindPropertyRelative("audioID"), GUIContent.none);
+                        break;
                 }
             }
         }

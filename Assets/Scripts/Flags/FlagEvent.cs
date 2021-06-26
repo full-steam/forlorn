@@ -17,6 +17,7 @@ public class FlagEvent
         SetTag,
         SetColliderTrigger,
         ModifyMoney,
+        PlayBGM,
         REMOVE_RING
     };
 
@@ -33,6 +34,7 @@ public class FlagEvent
     public bool foldout = false;
     public bool foldoutTargets = false;
     public string tag;
+    public string audioID;
     public bool isTrigger = false;
     public int amount = 0;
 
@@ -104,6 +106,9 @@ public class FlagEvent
                 break;
             case FlagEventType.ModifyMoney:
                 GameManager.Instance.Blackboard.Player.GetComponent<PlayerStatus>().ModifyMoney(amount);
+                break;
+            case FlagEventType.PlayBGM:
+                AudioController.PlayMusic(audioID);
                 break;
         }
     }
