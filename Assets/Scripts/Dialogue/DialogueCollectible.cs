@@ -13,14 +13,17 @@ public class DialogueCollectible : Dialogue
 
     protected override void Start()
     {
-        itemObject = new ItemObject();
-        itemObject.itemID = item.id;
-        itemObject.count = count;
+        if (item)
+        {
+            itemObject = new ItemObject();
+            itemObject.itemID = item.id;
+            itemObject.count = count;
+        }
 
         runner = GameManager.Instance.Blackboard.DialogueRunner;
         //if (string.IsNullOrEmpty(nodeName)) nodeName = "Collectible";
-        if (dialogue) 
-        { 
+        if (dialogue)
+        {
             runner.Add(dialogue);
             nodeName = dialogue.name;
         }
@@ -29,7 +32,7 @@ public class DialogueCollectible : Dialogue
             nodeName = "Collectible";
         }
 
-        if(takenFlag != "") CheckTakenStatus();
+        if (takenFlag != "") CheckTakenStatus();
     }
 
     public override void StartDialogue()
@@ -49,7 +52,7 @@ public class DialogueCollectible : Dialogue
     /// </summary>
     private void SetItemName()
     {
-        GameManager.Instance.Blackboard.VariableStorage.SetVariable("$VARCollectibleObjName", new Value(item.name));
+        if (item) GameManager.Instance.Blackboard.VariableStorage.SetVariable("$VARCollectibleObjName", new Value(item.name));
     }
 
     /// <summary>
