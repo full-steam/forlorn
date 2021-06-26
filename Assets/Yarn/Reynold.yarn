@@ -4,11 +4,11 @@ tags:
 <<if $HasMetReynold is true and $HasFoundLocket is true>>
     [[Goodbye]]
 <<elseif $HasMetReynold is false and $HasFoundLocket is false>>
-    [[Meeting]]
+    [[Reynold.Meeting]]
 <<endif>>
 ===
 
-title: Meeting
+title: Reynold.Meeting
 tags:
 ---
 Guard: What are you doing?
