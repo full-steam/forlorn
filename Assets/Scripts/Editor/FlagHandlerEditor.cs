@@ -267,6 +267,7 @@ public class FlagHandlerEditor : Editor
                         break;
                     case FlagEvent.FlagEventType.RunDialogue:
                     case FlagEvent.FlagEventType.ModifyMoney:
+                    case FlagEvent.FlagEventType.PlayBGM:
                         height += EditorGUIUtility.singleLineHeight + 2f;
                         break;
                     case FlagEvent.FlagEventType.ChangeSprite:
