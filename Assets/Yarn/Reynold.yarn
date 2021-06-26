@@ -41,6 +41,7 @@ Guard: Really? Thank you! It contains a painting of my fiancee, Bridget. How bea
     Amy: Tunangan.
 -> I see.
 Guard: Where did you find it?
+Pilih dan susun kata-kata yang diberikan menjadi kalimat yang benar untuk menjawab.
 <<arrange_sentence>>
 Guard: A grave? How weird...
 Amy: So, can we go to Maplehollow now?
