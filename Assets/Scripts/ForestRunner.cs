@@ -21,7 +21,6 @@ public class ForestRunner : MonoBehaviour
         foreach (GameObject element in disabledUIElements)
         {
             element.SetActive(false);
-            Debug.Log(element.name + " disabled.");
         }
         GameManager.Instance.Blackboard.FlagManager.CheckFlags();
         if (!GameManager.Instance.Blackboard.FlagManager.GetFlag("HasMetMovement")) StartCoroutine(StartMonologue());

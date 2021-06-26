@@ -49,7 +49,6 @@ public class ObjectPooler : MonoBehaviour
         {
             if (!pooledObjects[i].activeSelf && pooledObjects[i].tag == tag)
             {
-                Debug.Log("Returning existing object.");
                 return pooledObjects[i];
             }
         }
@@ -59,7 +58,6 @@ public class ObjectPooler : MonoBehaviour
             {
                 if (item.shouldExpand)
                 {
-                    Debug.Log("Instantiating new object.");
                     return AddPoolObject(item.poolObjectPrefab);
                 }
             }

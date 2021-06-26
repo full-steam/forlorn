@@ -4,4 +4,7 @@ tags:
 <<if $IsHelpingAmy is false>>
     <<set $IsHelpingAmy to true>>
 <<endif>>
+<<if $NULL is false>>
+    THIS MESSAGE SHOULD NOT APPEAR.
+<<endif>>
 ===
