@@ -5,7 +5,7 @@ tags:
     Petualang: Di mana aku...?
     Petualang: Terakhir aku ingat... ada badai. Aku terpisah dari teman-teman.
     Petualang: Hanya berdiri di sini tidak akan berguna. Aku harus coba mencari orang.
-    <<trigger_checkpoint HasMetMovement>>
+    <<set $HasMetMovement to true>>
     Gerakkan <color=blue>Joystick<color=black> di kiri bawah untuk berjalan.
 <<endif>>
 ===

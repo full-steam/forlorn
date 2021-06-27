@@ -16,15 +16,15 @@ public class AudioSettingsHandler : MonoBehaviour
     {
         BGMSlider.value = AudioController.GetCategoryVolume("BGM");
         SFXSlider.value = AudioController.GetCategoryVolume("SFX");
-        if (PlayerPrefs.GetInt("BGMOn", 1) == 1)
+        if (PlayerPrefs.GetInt("BGMOn", 1) == 0)
         {
-            BGMToggle.isOn = true;
-            BGMSlider.interactable = true;
+            BGMToggle.isOn = false;
+            BGMSlider.interactable = false;
         }
-        if (PlayerPrefs.GetInt("SFXOn", 1) == 1) 
+        if (PlayerPrefs.GetInt("SFXOn", 1) == 0) 
         { 
-            SFXToggle.isOn = true;
-            SFXSlider.interactable = true;
+            SFXToggle.isOn = false;
+            SFXSlider.interactable = false;
         }
         BGMSlider.onValueChanged.AddListener(ChangeBGMVol);
         SFXSlider.onValueChanged.AddListener(ChangeSFXVol);
