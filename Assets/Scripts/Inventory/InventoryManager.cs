@@ -32,7 +32,7 @@ public class InventoryManager : MonoBehaviour
     {
         playerStat = GameManager.Instance.Blackboard.Player.playerStatus;
         itemListReference = playerStat.itemList;
-        money.text = "Money: " + playerStat.money;
+        money.text = "Coins: " + playerStat.money;
         SetupButtons();
     }
 
