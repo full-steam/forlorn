@@ -5399,7 +5399,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.size
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[0].tag
@@ -6660,6 +6660,78 @@ PrefabInstance:
       propertyPath: dialogue
       value: 
       objectReference: {fileID: 2480198943629176163, guid: 51f045dda7d2485498ca9ffb7d26616f, type: 3}
+    - target: {fileID: 1708266493639254005, guid: 529203345f8343540b49a7bedfd759cd, type: 3}
+      propertyPath: answers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708266493639254005, guid: 529203345f8343540b49a7bedfd759cd, type: 3}
+      propertyPath: options.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708266493639254005, guid: 529203345f8343540b49a7bedfd759cd, type: 3}
+      propertyPath: answers.Array.data[0]
+      value: He who rules over the land
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708266493639254005, guid: 529203345f8343540b49a7bedfd759cd, type: 3}
+      propertyPath: answers.Array.data[1]
+      value: He that rules over the land
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708266493639254005, guid: 529203345f8343540b49a7bedfd759cd, type: 3}
+      propertyPath: options.Array.data[0]
+      value: he
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708266493639254005, guid: 529203345f8343540b49a7bedfd759cd, type: 3}
+      propertyPath: options.Array.data[1]
+      value: who
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708266493639254005, guid: 529203345f8343540b49a7bedfd759cd, type: 3}
+      propertyPath: options.Array.data[2]
+      value: that
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708266493639254005, guid: 529203345f8343540b49a7bedfd759cd, type: 3}
+      propertyPath: options.Array.data[3]
+      value: which
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708266493639254005, guid: 529203345f8343540b49a7bedfd759cd, type: 3}
+      propertyPath: options.Array.data[4]
+      value: whom
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708266493639254005, guid: 529203345f8343540b49a7bedfd759cd, type: 3}
+      propertyPath: options.Array.data[5]
+      value: whose
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708266493639254005, guid: 529203345f8343540b49a7bedfd759cd, type: 3}
+      propertyPath: options.Array.data[6]
+      value: rules
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708266493639254005, guid: 529203345f8343540b49a7bedfd759cd, type: 3}
+      propertyPath: options.Array.data[7]
+      value: ruled
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708266493639254005, guid: 529203345f8343540b49a7bedfd759cd, type: 3}
+      propertyPath: options.Array.data[8]
+      value: rule
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708266493639254005, guid: 529203345f8343540b49a7bedfd759cd, type: 3}
+      propertyPath: options.Array.data[9]
+      value: ruling
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708266493639254005, guid: 529203345f8343540b49a7bedfd759cd, type: 3}
+      propertyPath: options.Array.data[10]
+      value: over
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708266493639254005, guid: 529203345f8343540b49a7bedfd759cd, type: 3}
+      propertyPath: options.Array.data[11]
+      value: the
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708266493639254005, guid: 529203345f8343540b49a7bedfd759cd, type: 3}
+      propertyPath: options.Array.data[12]
+      value: a
+      objectReference: {fileID: 0}
+    - target: {fileID: 1708266493639254005, guid: 529203345f8343540b49a7bedfd759cd, type: 3}
+      propertyPath: options.Array.data[13]
+      value: land
+      objectReference: {fileID: 0}
     - target: {fileID: 5316226553914931689, guid: 529203345f8343540b49a7bedfd759cd, type: 3}
       propertyPath: m_RootOrder
       value: 26
