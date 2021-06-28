@@ -104,3 +104,11 @@ tags:
     <<trigger_checkpoint HasSeenBookshelf>>
 <<endif>>
 ===
+
+title: Quest3.GoCity
+tags:
+---
+<<if $HasStartedQuest3 is false>>
+    Amy: What are you doing? Let's go to the <color=blue>city<color=black> first.
+<<endif>>
+===
