@@ -80,6 +80,6 @@ public class FlagManager : MonoBehaviour
 
     public void CheckFlags()
     {
-        foreach (string flag in flags.Keys) { FlagTriggered(flag); Debug.Log(flag + " triggered"); }
+        foreach (string flag in flags.Keys) { if(flags[flag]) FlagTriggered(flag); Debug.Log(flag + " triggered"); }
     }
 }
