@@ -17,8 +17,16 @@ public class VolumeHandler : MonoBehaviour
         var sfx = PlayerPrefs.GetFloat("SFXVolume", 1.0f);
         if (PlayerPrefs.GetInt("BGMOn", 1) == 1) AudioController.SetCategoryVolume("BGM", bgm);
         else AudioController.SetCategoryVolume("BGM", 0f);
-        if (PlayerPrefs.GetInt("SFXOn", 1) == 1) AudioController.SetCategoryVolume("SFX", sfx);
-        else AudioController.SetCategoryVolume("SFX", 0f);
+        if (PlayerPrefs.GetInt("SFXOn", 1) == 1)
+        {
+            AudioController.SetCategoryVolume("SFX", sfx);
+            AudioController.SetCategoryVolume("Dictionary", sfx);
+        }
+        else
+        {
+            AudioController.SetCategoryVolume("SFX", 0f);
+            AudioController.SetCategoryVolume("Dictionary", 0f);
+        }
     }
 
     public void BGM(bool on)
@@ -65,6 +73,7 @@ public class VolumeHandler : MonoBehaviour
     public void ChangeSFXVolume(float value)
     {
         AudioController.SetCategoryVolume("SFX", value);
+        AudioController.SetCategoryVolume("Dictionary", value);
         PlayerPrefs.SetFloat("SFXVolume", value);
         if (value > 0f) PlayerPrefs.SetFloat("PrevSFXVolume", value);
     }

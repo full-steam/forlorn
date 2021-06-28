@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private Vector2 movement;
-    private bool canMove;
+    private bool canMove = true;
     private bool moving = false;
 
     //for debugging purpose
@@ -21,15 +21,15 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-#if UNITY_EDITOR
-        useKeyboard = true;
-#endif
+//#if UNITY_EDITOR
+//        useKeyboard = true;
+//#endif
     }
 
     private void Start()
     {
         joystick = GameManager.Instance.Blackboard.Joystick;
-        canMove = true;
+        //canMove = true;
     }
 
     // Update is called once per frame
@@ -50,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
 
                 movement.x = joystick.Horizontal;
                 movement.y = joystick.Vertical;
+                //Debug.Log(movement);
             }
             anim.SetFloat("Horizontal", movement.x);
             anim.SetFloat("Vertical", movement.y);
@@ -72,8 +73,9 @@ public class PlayerMovement : MonoBehaviour
             }
             #endregion
 
-            movement.x = (movement.x > 0.1) ? 1 : ((movement.x < -0.1) ? -1 : 0);
-            movement.y = (movement.y > 0.1) ? 1 : ((movement.y < -0.1) ? -1 : 0);
+            //ADDED TO CHECK HOW SENSITIVE IT IS ON BUILT, CHANGE BACK TO 0.1f FOR EVERY CHECK IF WEIRD
+            movement.x = (movement.x > 1.0f) ? 1 : ((movement.x < -1.0f) ? -1 : 0);
+            movement.y = (movement.y > 1.0f) ? 1 : ((movement.y < -1.0f) ? -1 : 0);
 
             if (!moving && movement.sqrMagnitude > 0)
             {
