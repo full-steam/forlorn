@@ -24,7 +24,7 @@ public class DialogueCollectible : Dialogue
         //if (string.IsNullOrEmpty(nodeName)) nodeName = "Collectible";
         if (dialogue)
         {
-            runner.Add(dialogue);
+            if (!runner.NodeExists(dialogue.name)) runner.Add(dialogue);
             nodeName = dialogue.name;
         }
         else

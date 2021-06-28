@@ -21,7 +21,10 @@ public class Dialogue : MonoBehaviour
     {
         runner = GameManager.Instance.Blackboard.DialogueRunner;
         if (string.IsNullOrEmpty(nodeName)) nodeName = dialogue.name;
-        if (dialogue) runner.Add(dialogue);
+        if (dialogue)
+        {
+            if (!runner.NodeExists(dialogue.name)) runner.Add(dialogue);
+        }
     }
 
     /// <summary>
