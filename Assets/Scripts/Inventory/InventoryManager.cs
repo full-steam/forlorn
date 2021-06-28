@@ -70,6 +70,16 @@ public class InventoryManager : MonoBehaviour
             }
         }
 
+        switch (_item.consumableType)
+        {
+            case ConsumableType.Food:
+                AudioController.Play("Eat");
+                break;
+            case ConsumableType.Beverage:
+                AudioController.Play("Drink");
+                break;
+        }
+
         //resolve item quantity
         itemListReference[selectedIndex].count--;
         if (itemListReference[selectedIndex].count <= 0)

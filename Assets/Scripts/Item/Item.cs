@@ -22,10 +22,12 @@ public class Item : ScriptableObject
 
     public int id;
     public new string name;
+    [TextArea(2,5)]
     public string text;
     public bool stackable;
     public bool usable;
     public ItemType type;
+    public ConsumableType consumableType;
     [Tooltip("Each ID is bound to a specific value, please refer to Item.cs to check each ID's value.")]
     public ItemEffect[] effects;
     public Sprite icon;
@@ -54,3 +56,4 @@ public struct ItemEffect
 }
 
 public enum ItemType { Consumable, QuestItem };
+public enum ConsumableType { Other, Food, Beverage };
