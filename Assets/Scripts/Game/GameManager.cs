@@ -149,6 +149,7 @@ public class Blackboard
     public ArrangementOptionsHolder OptionsHolder { get; set; }
     public GameObject Camera { get; set; }
     public VolumeHandler Volume { get; set; }
+    public GameObject PausePanel { get; set; }
 
     public Blackboard()
     {
