@@ -24,7 +24,6 @@ public class ForestRunner : MonoBehaviour
         }
         GameManager.Instance.Blackboard.FlagManager.CheckFlags();
         if (!GameManager.Instance.Blackboard.FlagManager.GetFlag("HasMetMovement")) StartCoroutine(StartMonologue());
-        GameManager.Instance.Blackboard.Player.playerMovement.ToggleMovement(true);
     }
 
     private IEnumerator StartMonologue()
