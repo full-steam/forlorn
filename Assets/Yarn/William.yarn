@@ -47,6 +47,8 @@ tags:
         William: That is true, you don't. You need to lift the curse before you can go home either way.
     William: Tell me everything that happened in the forest. Everything until you finally got out.
     <<set $HasMetWilliam to true>>
+    <<fade_out_and_in>>
+    [[StartQuest3]]
 <<endif>>
 ===
 

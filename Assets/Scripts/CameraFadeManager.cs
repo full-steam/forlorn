@@ -86,6 +86,11 @@ public class CameraFadeManager : MonoBehaviour
         StartCoroutine(CFadeOutAndIn(fadeOutOptions, fadeInOptions, delay));
     }
 
+    public void FadeOutAndIn(Action onComplete)
+    {
+        StartCoroutine(CFadeOutAndIn(onComplete));
+    }
+
     public void FadeInAndOut(Options fadeOutOptions = null, Options fadeInOptions = null, float delay = 0f)
     {
         StartCoroutine(CFadeInAndOut(fadeOutOptions, fadeInOptions, delay));
@@ -154,6 +159,33 @@ public class CameraFadeManager : MonoBehaviour
         }
 
         FadeIn(fadeInOptions);
+
+        yield return 0;
+    }
+
+    private IEnumerator CFadeOutAndIn(Action onComplete)
+    {
+        FadeOut();
+
+        float timer = 0f;
+
+        while (timer < fadeTime + blackScreenDuration)
+        {
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        timer = 0f;
+
+        while (timer < 0f)
+        {
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        FadeIn();
+
+        onComplete();
 
         yield return 0;
     }

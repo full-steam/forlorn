@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using Yarn.Unity;
 
 /// <summary>
@@ -31,6 +32,7 @@ public class Dialogue : MonoBehaviour
         GameManager.Instance.Blackboard.Player.playerMovement.ToggleMovement(false);
         runner.AddCommandHandler("trigger_checkpoint", TriggerCheckpoint);
         runner.AddCommandHandler("teleport", Teleport);
+        runner.AddCommandHandler("fade_out_and_in", FadeOutAndIn);
         if (triggerCheckpointDirectly) checkpoint.TriggerCheckpoint();
         runner.onDialogueComplete.AddListener(RemoveCommandHandlers);
         runner.StartDialogue(nodeName);
@@ -50,6 +52,7 @@ public class Dialogue : MonoBehaviour
     {
         runner.RemoveCommandHandler("trigger_checkpoint");
         runner.RemoveCommandHandler("teleport");
+        runner.RemoveCommandHandler("fade_out_and_in");
         runner.onDialogueComplete.RemoveListener(RemoveCommandHandlers);
     }
 
@@ -57,5 +60,10 @@ public class Dialogue : MonoBehaviour
     {
         Vector3 pos = new Vector3(float.Parse(parameters[0]), float.Parse(parameters[1]), float.Parse(parameters[2]));
         GameManager.Instance.Blackboard.Player.transform.SetPositionAndRotation(pos, Quaternion.identity);
+    }
+
+    protected void FadeOutAndIn(string[] parameters, Action onComplete)
+    {
+        GameManager.Instance.Blackboard.Camera.GetComponent<CameraFadeManager>().FadeOutAndIn(onComplete);
     }
 }
