@@ -46,7 +46,7 @@ Pilih dan susun kata-kata yang diberikan menjadi kalimat yang benar untuk menjaw
 Guard: A grave? How weird...
 Amy: So, can we go to Maplehollow now?
 Guard: Sure.
-Guard: I can't leave my post, but I realy want Bridget to have this locket. Can you bring it to her? She's in town.
+Guard: I can't leave my post, but I really want Bridget to have this locket. Can you bring it to her? She's in town.
 Guard: Farewell. Thank you.
 <<trigger_checkpoint HasOpenedPath>>
 ===

@@ -1,0 +1,1004 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8698391462930193860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8698391462930193863}
+  - component: {fileID: 8698391462930193862}
+  m_Layer: 0
+  m_Name: Blocker (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8698391462930193863
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391462930193860}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
+  m_LocalScale: {x: 100, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8698391463431345116}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &8698391462930193862
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391462930193860}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!1 &8698391463066446603
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8698391463066446602}
+  - component: {fileID: 8698391463066446709}
+  m_Layer: 0
+  m_Name: Blocker (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8698391463066446602
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463066446603}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -30, z: 0}
+  m_LocalScale: {x: 100, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8698391463431345116}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &8698391463066446709
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463066446603}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!1 &8698391463139178410
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8698391463139178389}
+  - component: {fileID: 8698391463139178391}
+  - component: {fileID: 8698391463139178388}
+  m_Layer: 0
+  m_Name: ReportedSpeechArrange1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8698391463139178389
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463139178410}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.84, y: -7.35, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8698391463486970583}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8698391463139178391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463139178410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fdbdfcc386be874685b0f68ff7ad7e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeName: ReportedSpeech.Arrange1
+  dialogue: {fileID: 0}
+  checkpoint: {fileID: 0}
+  triggerCheckpointDirectly: 0
+  answers:
+  - Amy said that the guard was annoying
+  options:
+  - Amy
+  - says
+  - said
+  - say
+  - those
+  - that
+  - guard
+  - is
+  - was
+  - annoying
+  - the
+  question: '"The guard is annoying!" said Amy.'
+  feedback: Ingat! Kalimatnya sama, cuma <color=blue>tense<color=black>-nya berubah.
+--- !u!114 &8698391463139178388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463139178410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae5982e42b31a641963ee58cd33fedb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+--- !u!1 &8698391463249116044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8698391463249116047}
+  - component: {fileID: 8698391463249116041}
+  - component: {fileID: 8698391463249116046}
+  - component: {fileID: 8698391463249116040}
+  m_Layer: 0
+  m_Name: ReportedSpeechArrange2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8698391463249116047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463249116044}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.84, y: -7.35, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8698391463486970583}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8698391463249116041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463249116044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fdbdfcc386be874685b0f68ff7ad7e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeName: ReportedSpeech.Arrange2
+  dialogue: {fileID: 0}
+  checkpoint: {fileID: 0}
+  triggerCheckpointDirectly: 0
+  answers:
+  - Amy said that the Adventurer had saved her
+  - Amy said that I had saved her
+  options:
+  - Amy
+  - that
+  - I
+  - Adventurer
+  - said
+  - had
+  - the
+  - saved
+  - save
+  - have
+  - says
+  - say
+  - there
+  - her
+  question: '"The Adventurer saved me," said Amy.'
+  feedback: Ingat! Kalimatnya sama, tetapi <color=blue>tense<color=black>-nya berubah.
+    Selain itu, <color=blue>pronoun<color=black> juga mungkin berubah.
+--- !u!114 &8698391463249116046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463249116044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae5982e42b31a641963ee58cd33fedb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+--- !u!114 &8698391463249116040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463249116044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b01de093687e4d9e07433bf64595a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkpointId: 
+--- !u!1 &8698391463327423773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8698391463327423772}
+  - component: {fileID: 8698391463327423774}
+  - component: {fileID: 8698391463327423775}
+  m_Layer: 0
+  m_Name: ReportedSpeech
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8698391463327423772
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463327423773}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 23.94, y: -14.1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8698391463486970583}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &8698391463327423774
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463327423773}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.1329279, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 20.143179, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &8698391463327423775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463327423773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7032643ff3dd4c4bbccfb6ea7712da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeName: ReportedSpeech
+  dialogue: {fileID: 0}
+  checkpoint: {fileID: 0}
+  triggerCheckpointDirectly: 0
+  disableAfterTrigger: 1
+--- !u!1 &8698391463327910986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8698391463327910837}
+  - component: {fileID: 8698391463327910839}
+  - component: {fileID: 8698391463327910836}
+  m_Layer: 0
+  m_Name: ModalsOfDeduction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8698391463327910837
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463327910986}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 23.84, y: -7.35, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8698391463486970583}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &8698391463327910839
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463327910986}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.1329279, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 20.143179, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &8698391463327910836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463327910986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7032643ff3dd4c4bbccfb6ea7712da5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeName: ModalsOfDeduction
+  dialogue: {fileID: 0}
+  checkpoint: {fileID: 0}
+  triggerCheckpointDirectly: 0
+  disableAfterTrigger: 1
+--- !u!1 &8698391463431345117
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8698391463431345116}
+  m_Layer: 0
+  m_Name: Path Blockers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8698391463431345116
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463431345117}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8698391464074548340}
+  - {fileID: 8698391462930193863}
+  - {fileID: 8698391463066446602}
+  m_Father: {fileID: 8698391463486970583}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8698391463486970581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8698391463486970583}
+  - component: {fileID: 8698391463486970582}
+  - component: {fileID: 8698391463486970577}
+  - component: {fileID: 8698391463486970580}
+  - component: {fileID: 8698391463486970576}
+  - component: {fileID: 8698391463486970579}
+  m_Layer: 0
+  m_Name: Town(Quest2) Runner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8698391463486970583
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463486970581}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8698391463327423772}
+  - {fileID: 8698391463139178389}
+  - {fileID: 8698391463249116047}
+  - {fileID: 8698391463327910837}
+  - {fileID: 8698391463793493641}
+  - {fileID: 8698391463664699841}
+  - {fileID: 8698391463431345116}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8698391463486970582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463486970581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33378670511f19343ae7d59becb0d968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeName: EventsQuest2
+  dialogue: {fileID: 2480198943629176163, guid: 59e925e087514cc45b0bcee87afac568, type: 3}
+  checkpoint: {fileID: 0}
+  triggerCheckpointDirectly: 0
+--- !u!114 &8698391463486970577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463486970581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae5982e42b31a641963ee58cd33fedb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 1
+--- !u!114 &8698391463486970580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463486970581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ac0efd8cd546154398f216b33f95f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flagEvents:
+  - flag: HasApproachedGuard
+    eventType: 0
+    delay: 1
+    foldout: 1
+    foldoutTargets: 1
+    tag: 
+    audioID: 
+    isTrigger: 0
+    amount: 0
+    targets:
+    - {fileID: 8698391463327423773}
+    moveTargets: []
+    fadeOutOptions:
+      fadeTime: 0
+      blackScreenDuration: 0
+      fadeColor: {r: 0, g: 0, b: 0, a: 0}
+    fadeInOptions:
+      fadeTime: 0
+      blackScreenDuration: 0
+      fadeColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogueComponent: {fileID: 0}
+    spriteRenderer: {fileID: 0}
+    sprite: {fileID: 0}
+  - flag: ReportedSpeechOpening
+    eventType: 0
+    delay: 1
+    foldout: 0
+    foldoutTargets: 0
+    tag: 
+    audioID: 
+    isTrigger: 0
+    amount: 0
+    targets:
+    - {fileID: 8698391463139178410}
+    moveTargets: []
+    fadeOutOptions:
+      fadeTime: 0
+      blackScreenDuration: 0
+      fadeColor: {r: 0, g: 0, b: 0, a: 0}
+    fadeInOptions:
+      fadeTime: 0
+      blackScreenDuration: 0
+      fadeColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogueComponent: {fileID: 0}
+    spriteRenderer: {fileID: 0}
+    sprite: {fileID: 0}
+  - flag: ReportedSpeechArrange1
+    eventType: 0
+    delay: 1
+    foldout: 0
+    foldoutTargets: 1
+    tag: 
+    audioID: 
+    isTrigger: 0
+    amount: 0
+    targets:
+    - {fileID: 8698391463249116044}
+    moveTargets: []
+    fadeOutOptions:
+      fadeTime: 0
+      blackScreenDuration: 0
+      fadeColor: {r: 0, g: 0, b: 0, a: 0}
+    fadeInOptions:
+      fadeTime: 0
+      blackScreenDuration: 0
+      fadeColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogueComponent: {fileID: 0}
+    spriteRenderer: {fileID: 0}
+    sprite: {fileID: 0}
+  - flag: CaptainArrange1
+    eventType: 0
+    delay: 1
+    foldout: 0
+    foldoutTargets: 1
+    tag: 
+    audioID: 
+    isTrigger: 0
+    amount: 0
+    targets:
+    - {fileID: 0}
+    moveTargets: []
+    fadeOutOptions:
+      fadeTime: 0
+      blackScreenDuration: 0
+      fadeColor: {r: 0, g: 0, b: 0, a: 0}
+    fadeInOptions:
+      fadeTime: 0
+      blackScreenDuration: 0
+      fadeColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogueComponent: {fileID: 0}
+    spriteRenderer: {fileID: 0}
+    sprite: {fileID: 0}
+  - flag: HasTalkedToCaptain
+    eventType: 0
+    delay: 1
+    foldout: 1
+    foldoutTargets: 1
+    tag: 
+    audioID: 
+    isTrigger: 0
+    amount: 0
+    targets:
+    - {fileID: 8698391463327910986}
+    moveTargets: []
+    fadeOutOptions:
+      fadeTime: 0
+      blackScreenDuration: 0
+      fadeColor: {r: 0, g: 0, b: 0, a: 0}
+    fadeInOptions:
+      fadeTime: 0
+      blackScreenDuration: 0
+      fadeColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogueComponent: {fileID: 0}
+    spriteRenderer: {fileID: 0}
+    sprite: {fileID: 0}
+  - flag: HasTalkedToCaptain
+    eventType: 1
+    delay: 1
+    foldout: 1
+    foldoutTargets: 1
+    tag: 
+    audioID: 
+    isTrigger: 0
+    amount: 0
+    targets:
+    - {fileID: 8698391463431345117}
+    moveTargets: []
+    fadeOutOptions:
+      fadeTime: 0
+      blackScreenDuration: 0
+      fadeColor: {r: 0, g: 0, b: 0, a: 0}
+    fadeInOptions:
+      fadeTime: 0
+      blackScreenDuration: 0
+      fadeColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogueComponent: {fileID: 0}
+    spriteRenderer: {fileID: 0}
+    sprite: {fileID: 0}
+  - flag: ModalsOfDeductionOpening
+    eventType: 0
+    delay: 1
+    foldout: 1
+    foldoutTargets: 1
+    tag: 
+    audioID: 
+    isTrigger: 0
+    amount: 0
+    targets:
+    - {fileID: 8698391463793493646}
+    moveTargets: []
+    fadeOutOptions:
+      fadeTime: 0
+      blackScreenDuration: 0
+      fadeColor: {r: 0, g: 0, b: 0, a: 0}
+    fadeInOptions:
+      fadeTime: 0
+      blackScreenDuration: 0
+      fadeColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogueComponent: {fileID: 0}
+    spriteRenderer: {fileID: 0}
+    sprite: {fileID: 0}
+  - flag: ModalsOfDeductionArrange1
+    eventType: 0
+    delay: 1
+    foldout: 0
+    foldoutTargets: 1
+    tag: 
+    audioID: 
+    isTrigger: 0
+    amount: 0
+    targets:
+    - {fileID: 8698391463664699846}
+    moveTargets: []
+    fadeOutOptions:
+      fadeTime: 0
+      blackScreenDuration: 0
+      fadeColor: {r: 0, g: 0, b: 0, a: 0}
+    fadeInOptions:
+      fadeTime: 0
+      blackScreenDuration: 0
+      fadeColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogueComponent: {fileID: 0}
+    spriteRenderer: {fileID: 0}
+    sprite: {fileID: 0}
+--- !u!114 &8698391463486970576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463486970581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b01de093687e4d9e07433bf64595a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkpointId: 
+--- !u!114 &8698391463486970579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463486970581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2ebcf3c53fbaf841ae7edf16eed63cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &8698391463664699846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8698391463664699841}
+  - component: {fileID: 8698391463664699842}
+  - component: {fileID: 8698391463664699843}
+  - component: {fileID: 8698391463664699840}
+  m_Layer: 0
+  m_Name: ModalsOfDeductionArrange2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8698391463664699841
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463664699846}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.84, y: -7.35, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8698391463486970583}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8698391463664699842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463664699846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fdbdfcc386be874685b0f68ff7ad7e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeName: ModalsOfDeduction.Arrange2
+  dialogue: {fileID: 0}
+  checkpoint: {fileID: 0}
+  triggerCheckpointDirectly: 0
+  answers:
+  - The exam results might come out this week or next week
+  - The exam results could come out this week or next week
+  - The exam results may come out this week or next week
+  - The exam results might come out next week or this week
+  - The exam results could come out next week or or week
+  - The exam results may come out next week or this week
+  options:
+  - results
+  - exam
+  - come
+  - came
+  - in
+  - out
+  - the
+  - week
+  - next
+  - week
+  - may
+  - can't
+  - shouldn't
+  - might
+  - could
+  - or
+  - this
+  question: Mungkin minggu ini, mungkin minggu depan.
+  feedback: <color=blue>Must<color=black> untuk yang pasti, <color=blue>may/might/could<color=black>
+    untuk yang kurang, dan <color=blue>can't<color=black> untuk yang tidak mungkin.
+--- !u!114 &8698391463664699843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463664699846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae5982e42b31a641963ee58cd33fedb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+--- !u!114 &8698391463664699840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463664699846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65b01de093687e4d9e07433bf64595a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkpointId: 
+--- !u!1 &8698391463793493646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8698391463793493641}
+  - component: {fileID: 8698391463793493643}
+  - component: {fileID: 8698391463793493640}
+  m_Layer: 0
+  m_Name: ModalsOfDeductionArrange1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8698391463793493641
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463793493646}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.84, y: -7.35, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8698391463486970583}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8698391463793493643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463793493646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fdbdfcc386be874685b0f68ff7ad7e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeName: ModalsOfDeduction.Arrange1
+  dialogue: {fileID: 0}
+  checkpoint: {fileID: 0}
+  triggerCheckpointDirectly: 0
+  answers:
+  - This coat can't be Amy's
+  options:
+  - that
+  - this
+  - Amy's
+  - Amy
+  - must
+  - be
+  - shouldn't
+  - might
+  - can't
+  - can
+  - coat
+  - mightn't
+  question: "Gaunnya terlalu jelek dan kecil untuk Amy.\t"
+  feedback: <color=blue>Must<color=black> untuk yang pasti, <color=blue>may/might/could<color=black>
+    untuk yang kurang, dan <color=blue>can't<color=black> untuk yang tidak mungkin.
+--- !u!114 &8698391463793493640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391463793493646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae5982e42b31a641963ee58cd33fedb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0
+--- !u!1 &8698391464074548341
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8698391464074548340}
+  - component: {fileID: 8698391464074548343}
+  m_Layer: 0
+  m_Name: Blocker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8698391464074548340
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391464074548341}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 30, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 300, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8698391463431345116}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &8698391464074548343
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8698391464074548341}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
