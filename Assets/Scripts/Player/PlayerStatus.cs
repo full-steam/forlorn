@@ -34,7 +34,6 @@ public class PlayerStatus : MonoBehaviour
     void LateUpdate()
     {
         distanceSum += Vector3.Distance(lastPos, transform.position);
-        Debug.Log(transform.position);
         lastPos = transform.position;
         if (distanceSum >= 1.0f)
         {

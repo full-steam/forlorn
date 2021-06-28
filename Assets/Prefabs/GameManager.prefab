@@ -1596,6 +1596,22 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 47.4
       objectReference: {fileID: 0}
+    - target: {fileID: 5972275567374537928, guid: 43b590a2eb3055e4396109adc921e33e, type: 3}
+      propertyPath: SpacingX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972275567374537928, guid: 43b590a2eb3055e4396109adc921e33e, type: 3}
+      propertyPath: SpacingY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972275567374537928, guid: 43b590a2eb3055e4396109adc921e33e, type: 3}
+      propertyPath: m_Padding.m_Left
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6533988237205751920, guid: 43b590a2eb3055e4396109adc921e33e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7201793605567232799, guid: 43b590a2eb3055e4396109adc921e33e, type: 3}
       propertyPath: m_SizeDelta.y
       value: -23.314304
