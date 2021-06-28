@@ -580,8 +580,8 @@ MonoBehaviour:
   - flag: ReportedSpeechOpening
     eventType: 0
     delay: 1
-    foldout: 0
-    foldoutTargets: 0
+    foldout: 1
+    foldoutTargets: 1
     tag: 
     audioID: 
     isTrigger: 0
@@ -603,7 +603,7 @@ MonoBehaviour:
   - flag: ReportedSpeechArrange1
     eventType: 0
     delay: 1
-    foldout: 0
+    foldout: 1
     foldoutTargets: 1
     tag: 
     audioID: 
@@ -626,7 +626,7 @@ MonoBehaviour:
   - flag: CaptainArrange1
     eventType: 0
     delay: 1
-    foldout: 0
+    foldout: 1
     foldoutTargets: 1
     tag: 
     audioID: 
