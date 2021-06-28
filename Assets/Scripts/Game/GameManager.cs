@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     public SentenceHolder sentenceHolder;
     public Button arrangementButton;
     public ArrangementOptionsHolder optionsHolder;
+    public GameObject deadCanvas;
 
     // ---Private Variables
     private SaveHandler saveHandler;
@@ -68,6 +69,11 @@ public class GameManager : MonoBehaviour
     public void Pause(bool pause)
     {
         isPaused = pause;
+    }
+
+    public void Dead()
+    {
+        deadCanvas.SetActive(true);
     }
 
     public void SaveGame()

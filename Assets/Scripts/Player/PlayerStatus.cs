@@ -138,10 +138,7 @@ public class PlayerStatus : MonoBehaviour
         if (health <= 0)
         {
             health = 0;
-            Death();
-
-            //debug, change later
-            Time.timeScale = 0f;
+            Dead();
         }
         else if (health > maxHealth) health = maxHealth;
     }
@@ -177,9 +174,11 @@ public class PlayerStatus : MonoBehaviour
         ModifyHealth(-0.5f);
     }
 
-    private void Death() 
+    private void Dead() 
     {
         Debug.Log("Player ded. F");
+        GetComponent<PlayerMovement>().ToggleMovement(false);
+        GameManager.Instance.Dead();
     }
 
     private void UpdateUI() 
