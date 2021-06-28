@@ -16,7 +16,9 @@ public class PlayerStatus : MonoBehaviour
     public int steps;
     public List<ItemObject> itemList;
 
+    [SerializeField]
     private Vector2 lastPos;
+    [SerializeField]
     private float distanceSum;
     private Image[] healthIcons;
     private Image[] hungerIcons;
@@ -32,6 +34,7 @@ public class PlayerStatus : MonoBehaviour
     void LateUpdate()
     {
         distanceSum += Vector3.Distance(lastPos, transform.position);
+        Debug.Log(transform.position);
         lastPos = transform.position;
         if (distanceSum >= 1.0f)
         {

@@ -2,6 +2,7 @@
 tags:
 ---
 <<if $HasFoundBook is false>>
+    <<give_item>>
     Amy: "On the Storms and Apparitions Plaguing the Land". Sepertinya ini bukunya.
     -> "Apparitions"?
         Amy: Artinya hantu.
