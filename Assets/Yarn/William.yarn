@@ -70,7 +70,7 @@ tags:
     William: Splendid. Do you need directions?
     -> Sure.
         William: Once you leave the tower, go out of the town and take the road heading east.
-        William: At the first intersection, turn north. The temple is on the right of the road.
+        William: At the <color=blue>first intersection, turn north<color=black>. The temple is on the <color=blue>right of the road<color=black>.
     -> We'll find it.
         William: Alright.
     William: Good luck, Adventurer. Come to me once you've found the books.
@@ -97,7 +97,7 @@ tags:
 Amy: Mr. Covert! We're back!
 William: That was quick. Did you find the book?
 Amy: Sure did! Here you go.
-William: "On the Storms and Apparitions Plaguing the Land." Excellent. My research can now continue. What happened?
+William: <color=blue>"On the Storms and Apparitions Plaguing the Land.<color=black>" Excellent. My research can now continue. What happened?
 Amy: Well... we met the ghost of the head of the temple.
 Player: Somebody named Norman.
 Amy: We helped him find his missing ring. Somebody stole it. It turns out, it was the guard!
@@ -113,10 +113,10 @@ Amy: Uh...
 title: EndQuest3.Choice1
 tags:
 ---
--> "The weight sitting on his head that symbolises their power."
+-> <color=blue>"The weight sitting on his head that symbolises their power."<color=black>
     Amy: Yes, that! That's the crown.
     [[EndQuest3.2]]
--> "The weight sitting on his head who symbolises their power."
+-> <color=blue>"The weight sitting on his head who symbolises their power."<color=black>
     Amy: (Eh, bukan "who" dong...)
     [[EndQuest3.Choice1]]
 ===
@@ -124,7 +124,7 @@ tags:
 title: EndQuest3.2
 tags:
 ---
-Amy: Then "The written word which gives wisdom." Meaning the book.
+Amy: Then <color=blue>"The written word which gives wisdom."<color=black> Meaning the book.
 Amy: And finally...
 <<arrange_sentence>>
 Amy: Yes, that! Means the king.

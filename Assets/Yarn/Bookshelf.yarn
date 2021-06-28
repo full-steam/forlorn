@@ -3,8 +3,8 @@ tags:
 ---
 <<if $HasFoundBook is false>>
     <<give_item>>
-    Amy: "On the Storms and Apparitions Plaguing the Land". Sepertinya ini bukunya.
-    -> "Apparitions"?
+    Amy: <color=blue>"On the Storms and Apparitions Plaguing the Land"<color=black>. Sepertinya ini bukunya.
+    -> <color=blue>"Apparitions"<color=black>?
         Amy: Artinya hantu.
         Amy: Yuk kembali ke Pak Covert sekarang.
     -> Waktunya kembali ke Pak Covert.

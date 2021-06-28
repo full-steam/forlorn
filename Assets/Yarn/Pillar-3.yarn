@@ -1,7 +1,7 @@
 ﻿title: Pillar-3
 tags:
 ---
-Terdapat ukiran seorang<color=blue>raja<color=black> pada pilar.
+Terdapat ukiran seorang <color=blue>raja<color=black> pada pilar.
 <<if $VARPillarCounter is 2>>
     <<set $VARPillarCounter to 3>>
     <<trigger_checkpoint HasSolvedPuzzle>>

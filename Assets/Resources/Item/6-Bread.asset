@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 6
   name: Bread
-  text: It's bread... you know.
+  text: 'Hunger +1.5
+
+    It''s bread... you know.'
   stackable: 1
   usable: 1
   type: 0

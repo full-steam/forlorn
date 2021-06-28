@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1
   name: Strawberries
-  text: Strawberries.
+  text: 'Hunger +1
+
+    Strawberries, very juicy.'
   stackable: 1
   usable: 1
   type: 0

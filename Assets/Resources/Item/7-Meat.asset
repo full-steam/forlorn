@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 7
   name: Meat
-  text: Now this is food!
+  text: 'Health +1, Hunger +2
+
+    Now this is food!'
   stackable: 1
   usable: 1
   type: 0
@@ -22,6 +24,6 @@ MonoBehaviour:
   effects:
   - statID: 2
     value: 2
-  - statID: 0
-    value: 0
+  - statID: 1
+    value: 1
   icon: {fileID: 21300000, guid: 14e62563269c11443b9c936be93b95f4, type: 3}
