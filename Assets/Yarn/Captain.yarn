@@ -14,7 +14,7 @@ tags:
     Captain: What did he say then?
     [[Captain.Choice1]]
 <<else>>
-    Captain: Look for the <color=blue>scholar living next to the church<color=black>. He might have the knowledge to help you.
+    Captain: Look for the <color=blue>scholar living in a castle at the end of town<color=black>. He might have the knowledge to help you.
 <<endif>>
 ===
 
