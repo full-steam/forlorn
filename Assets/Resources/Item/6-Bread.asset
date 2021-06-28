@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 6-Bread
   m_EditorClassIdentifier: 
   id: 6
-  name: 
-  text: 
+  name: Bread
+  text: It's bread... you know.
   stackable: 1
   usable: 1
   type: 0

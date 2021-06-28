@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 7
   name: Meat
-  text: 
+  text: Now this is food!
   stackable: 1
   usable: 1
   type: 0

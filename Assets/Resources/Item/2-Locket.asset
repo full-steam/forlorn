@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 2
   name: Locket
-  text: 
+  text: A locket belonging to Bridget's fiance, containing a miniature portrait of
+    her.
   stackable: 0
   usable: 0
   type: 1
+  consumableType: 0
   effects: []
   icon: {fileID: 21300000, guid: 1fc370f14e1307c4b8e5642176a9e116, type: 3}
