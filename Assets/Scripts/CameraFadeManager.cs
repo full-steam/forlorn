@@ -46,11 +46,9 @@ public class CameraFadeManager : MonoBehaviour
 
     private void Start()
     {
-        // texture = new Texture2D(1, 1);
-        // texture.SetPixel(0, 0, new Color(fadeColor.r, fadeColor.g, fadeColor.b, alpha));
-        // texture.Apply();
-
-        // FadeOutAndIn(null, null, 2f);
+        texture = new Texture2D(1, 1);
+        texture.SetPixel(0, 0, new Color(fadeColor.r, fadeColor.g, fadeColor.b, alpha));
+        texture.Apply();
     }
 
     private void startFading(bool isFadingIn, bool isFadingOut, Options options = null)
@@ -86,6 +84,11 @@ public class CameraFadeManager : MonoBehaviour
     public void FadeOutAndIn(Options fadeOutOptions = null, Options fadeInOptions = null, float delay = 0f)
     {
         StartCoroutine(CFadeOutAndIn(fadeOutOptions, fadeInOptions, delay));
+    }
+
+    public void FadeInAndOut(Options fadeOutOptions = null, Options fadeInOptions = null, float delay = 0f)
+    {
+        StartCoroutine(CFadeInAndOut(fadeOutOptions, fadeInOptions, delay));
     }
 
     public void OnGUI()
@@ -151,6 +154,31 @@ public class CameraFadeManager : MonoBehaviour
         }
 
         FadeIn(fadeInOptions);
+
+        yield return 0;
+    }
+
+    private IEnumerator CFadeInAndOut(Options fadeOutOptions = null, Options fadeInOptions = null, float delay = 0f)
+    {
+        FadeIn(fadeInOptions);
+
+        float timer = 0f;
+
+        while (timer < fadeTime + blackScreenDuration)
+        {
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        timer = 0f;
+
+        while (timer < delay)
+        {
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        FadeOut(fadeOutOptions);
 
         yield return 0;
     }
