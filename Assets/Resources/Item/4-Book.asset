@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: 4-Book
   m_EditorClassIdentifier: 
   id: 4
-  name: On the Storms and Apparitions Plaguing the Land
-  text: A book about storms and ghosts that suddenly appeared in ancient days.
+  name: Book on Ghosts
+  text: A book about storms and ghosts that suddenly appeared in ancient days. The
+    original title is too long to write here.
   stackable: 0
   usable: 0
   type: 1
+  consumableType: 0
   effects: []
   icon: {fileID: 21300000, guid: 6b22156af64babe4f9bff6441c5b942f, type: 3}
