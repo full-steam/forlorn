@@ -121,8 +121,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0036716461, y: -0.15415192}
-  m_Size: {x: 0.9511452, y: 1.3548737}
+  m_Offset: {x: 0.00012859702, y: -0.3011862}
+  m_Size: {x: 0.7952532, y: 0.98994446}
   m_Direction: 0
 --- !u!50 &1399236324986889693
 Rigidbody2D:
@@ -195,6 +195,8 @@ MonoBehaviour:
   starving: 0
   steps: 0
   itemList: []
+  lastPos: {x: 0, y: 0}
+  distanceSum: 0
 --- !u!114 &1399236324986889689
 MonoBehaviour:
   m_ObjectHideFlags: 0
