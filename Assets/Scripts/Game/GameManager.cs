@@ -103,19 +103,26 @@ public class GameManager : MonoBehaviour
         StartCoroutine(ChangeScene(sceneName, _so));
     }
 
+    /// <summary>
+    /// Enables the "Not Enough Money" feedback panel.
+    /// </summary>
+    /// <param name="onComplete">Action to signal to Yarn that the Command has been completed.</param>
     public void EnableNotEnoughMoneyPanel(Action onComplete)
     {
         notEnoughMoneyAction = onComplete;
         notEnoughMoneyPanel.SetActive(true);
-        Debug.Log("[GameManager] " + "Not enough money panel enabled.");
         notEnoughMoneyButton.onClick.AddListener(OnCompleteNotEnoughMoney);
     }
 
+    /// <summary>
+    /// Triggers the Action associated with the "Not Enough Money" event.
+    /// Removes itself as a listener from the button and then triggers the Action.
+    /// </summary>
     private void OnCompleteNotEnoughMoney()
     {
         notEnoughMoneyButton.onClick.RemoveListener(OnCompleteNotEnoughMoney);
         notEnoughMoneyAction();
-        Debug.Log("[GameManager] " + "Not enough money action triggered.");
+        notEnoughMoneyAction = null;
     }
 
     /// <summary>

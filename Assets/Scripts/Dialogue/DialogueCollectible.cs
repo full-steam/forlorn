@@ -75,13 +75,17 @@ public class DialogueCollectible : Dialogue
         runner.onDialogueComplete.AddListener(DisableObject);
     }
 
+    /// <summary>
+    /// YarnCommand for buying items.
+    /// </summary>
+    /// <param name="parameters">Parameters from the YarnScript. First parameter is the cost, second the ID of the item, and third how many are purchased.</param>
+    /// <param name="onComplete">Action from Yarn to complete the Command.</param>
     private void BuyItem(string[] parameters, Action onComplete)
     {
         int cost = int.Parse(parameters[0]);
 
         if (GameManager.Instance.Blackboard.VariableStorage.GetValue("$VARMoney").AsNumber < Mathf.Abs(cost))
         {
-            Debug.Log("[DialogueCollectible] " + "Not enough money.");
             GameManager.Instance.EnableNotEnoughMoneyPanel(onComplete);
         }
         else
