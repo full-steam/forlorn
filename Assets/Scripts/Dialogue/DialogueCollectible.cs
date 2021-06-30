@@ -1,4 +1,6 @@
-﻿using Yarn;
+﻿using System;
+using UnityEngine;
+using Yarn;
 
 /// <summary>
 /// Component to run dialogue when an item is collected.
@@ -73,15 +75,35 @@ public class DialogueCollectible : Dialogue
         runner.onDialogueComplete.AddListener(DisableObject);
     }
 
-    private void BuyItem(string[] parameters)
+    /// <summary>
+    /// YarnCommand for buying items.
+    /// </summary>
+    /// <param name="parameters">Parameters from the YarnScript. First parameter is the cost, second the ID of the item, and third how many are purchased.</param>
+    /// <param name="onComplete">Action from Yarn to complete the Command.</param>
+    private void BuyItem(string[] parameters, Action onComplete)
     {
-        AudioController.Play("ItemPickup");
-        GameManager.Instance.Blackboard.Player.playerStatus.ModifyMoney(int.Parse(parameters[0]));
-        ItemObject itemObj = new ItemObject();
-        itemObj.itemID = int.Parse(parameters[1]);
-        itemObj.count = int.Parse(parameters[2]);
-        GameManager.Instance.Blackboard.Player.playerStatus.AddItem(itemObj);
-        runner.onDialogueComplete.AddListener(DisableObject);
+        int cost = int.Parse(parameters[0]);
+
+        if (GameManager.Instance.Blackboard.VariableStorage.GetValue("$VARMoney").AsNumber < Mathf.Abs(cost))
+        {
+            GameManager.Instance.EnableNotEnoughMoneyPanel(onComplete);
+        }
+        else
+        {
+            AudioController.Play("ItemPickup");
+
+            GameManager.Instance.Blackboard.Player.playerStatus.Money += cost;
+
+            ItemObject itemObj = new ItemObject();
+            itemObj.itemID = int.Parse(parameters[1]);
+            itemObj.count = int.Parse(parameters[2]);
+
+            GameManager.Instance.Blackboard.Player.playerStatus.AddItem(itemObj);
+
+            runner.onDialogueComplete.AddListener(DisableObject);
+
+            onComplete();
+        }
     }
 
     protected override void RemoveCommandHandlers()

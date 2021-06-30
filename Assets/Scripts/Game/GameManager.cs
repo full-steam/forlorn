@@ -1,5 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -23,11 +23,14 @@ public class GameManager : MonoBehaviour
     public Button arrangementButton;
     public ArrangementOptionsHolder optionsHolder;
     public GameObject deadCanvas;
+    public GameObject notEnoughMoneyPanel;
+    public Button notEnoughMoneyButton;
 
     // ---Private Variables
     private SaveHandler saveHandler;
     private SaveObject so;
-    
+    private Action notEnoughMoneyAction;
+
 
     private void Awake()
     {
@@ -101,6 +104,28 @@ public class GameManager : MonoBehaviour
     }
 
     /// <summary>
+    /// Enables the "Not Enough Money" feedback panel.
+    /// </summary>
+    /// <param name="onComplete">Action to signal to Yarn that the Command has been completed.</param>
+    public void EnableNotEnoughMoneyPanel(Action onComplete)
+    {
+        notEnoughMoneyAction = onComplete;
+        notEnoughMoneyPanel.SetActive(true);
+        notEnoughMoneyButton.onClick.AddListener(OnCompleteNotEnoughMoney);
+    }
+
+    /// <summary>
+    /// Triggers the Action associated with the "Not Enough Money" event.
+    /// Removes itself as a listener from the button and then triggers the Action.
+    /// </summary>
+    private void OnCompleteNotEnoughMoney()
+    {
+        notEnoughMoneyButton.onClick.RemoveListener(OnCompleteNotEnoughMoney);
+        notEnoughMoneyAction();
+        notEnoughMoneyAction = null;
+    }
+
+    /// <summary>
     /// For debugging scene only
     /// </summary>
     public void LoadDebug()
@@ -132,7 +157,7 @@ public class GameManager : MonoBehaviour
     }
 }
 
-public class Blackboard 
+public class Blackboard
 {
     public PlayerController Player { set; get; }
     public bl_Joystick Joystick { set; get; }
