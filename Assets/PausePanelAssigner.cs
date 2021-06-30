@@ -2,10 +2,13 @@
 
 public class PausePanelAssigner : MonoBehaviour
 {
-    // Start is called before the first frame update
+
     void Start()
     {
+        //Debug.Log("Assigning Pause Panel");
+        // IF PAUSE PANEL IS APPARENT AT START OF LOADING LEVEL SCENE, DISABLE THE PAUSE PANEL IN PREFAB
         GameManager.Instance.Blackboard.PausePanel = gameObject;
+        gameObject.SetActive(false);
     }
 
     private void OnDestroy()

@@ -74,8 +74,8 @@ public class PlayerMovement : MonoBehaviour
             #endregion
 
             //ADDED TO CHECK HOW SENSITIVE IT IS ON BUILT, CHANGE BACK TO 0.1f FOR EVERY CHECK IF WEIRD
-            movement.x = (movement.x > 1.0f) ? 1 : ((movement.x < -1.0f) ? -1 : 0);
-            movement.y = (movement.y > 1.0f) ? 1 : ((movement.y < -1.0f) ? -1 : 0);
+            movement.x = (movement.x >= 1.0f) ? 1 : ((movement.x <= -1.0f) ? -1 : 0);
+            movement.y = (movement.y >= 1.0f) ? 1 : ((movement.y <= -1.0f) ? -1 : 0);
 
             if (!moving && movement.sqrMagnitude > 0)
             {
