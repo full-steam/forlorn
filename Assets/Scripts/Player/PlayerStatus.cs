@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,7 +10,18 @@ public class PlayerStatus : MonoBehaviour
     [HideInInspector] public float maxHunger = 5;
     public float health;
     public float hunger;
-    public int money;
+
+    private int money;
+    public int Money
+    {
+        get { return money; }
+        set
+        {
+            money = value;
+            GameManager.Instance.Blackboard.VariableStorage.SetVariable("$VAR_Money", new Yarn.Value(money));
+        }
+    }
+    
     public bool starving;
     public int steps;
     public List<ItemObject> itemList;
@@ -47,14 +57,14 @@ public class PlayerStatus : MonoBehaviour
         }
     }
 
-    public void AssignPlayerStatus(SaveObject stat, bool skipPosition = false) 
+    public void AssignPlayerStatus(SaveObject stat, bool skipPosition = false)
     {
         health = stat.health;
         hunger = stat.hunger;
         distanceSum = stat.distanceSum;
         steps = stat.steps;
         starving = stat.starving;
-        money = stat.money;
+        Money = stat.money;
         if (!skipPosition) transform.position = stat.posInScene.GetData();
 
         itemList = new List<ItemObject>();
@@ -68,14 +78,14 @@ public class PlayerStatus : MonoBehaviour
         UpdateUI();
     }
 
-    public void GetPlayerStatus(ref SaveObject stat) 
+    public void GetPlayerStatus(ref SaveObject stat)
     {
         stat.health = health;
         stat.hunger = hunger;
         stat.distanceSum = distanceSum;
         stat.steps = steps;
         stat.starving = starving;
-        stat.money = money;
+        stat.money = Money;
         stat.posInScene.SetData(transform.position);
 
         stat.itemList = new List<ItemObject>();
@@ -93,26 +103,26 @@ public class PlayerStatus : MonoBehaviour
         UpdateUI();
     }
 
-    public void ModifyHealth(float amount) 
+    public void ModifyHealth(float amount)
     {
         health += amount;
         CheckHealth();
         UpdateUI();
     }
-    
-    public void ModifyHunger(float amount) 
+
+    public void ModifyHunger(float amount)
     {
         hunger += amount;
         CheckHunger();
         UpdateUI();
     }
-    
-    public void ModifyMoney(int amount) 
+
+    public void ModifyMoney(int amount)
     {
-        money += amount;
+        Money += amount;
     }
-    
-    public void AddItem(ItemObject newItem) 
+
+    public void AddItem(ItemObject newItem)
     {
         int sameItemIndex = -1;
         if (GameManager.Instance.Blackboard.ItemLibrary.GetItem(newItem.itemID).stackable)  //check if item is stackable
@@ -135,7 +145,7 @@ public class PlayerStatus : MonoBehaviour
         }
     }
 
-    private void CheckHealth() 
+    private void CheckHealth()
     {
         if (health <= 0)
         {
@@ -145,7 +155,7 @@ public class PlayerStatus : MonoBehaviour
         else if (health > maxHealth) health = maxHealth;
     }
 
-    private void CheckHunger() 
+    private void CheckHunger()
     {
         if (hunger <= 0)
         {
@@ -170,32 +180,32 @@ public class PlayerStatus : MonoBehaviour
         }
     }
 
-    private void Starving() 
+    private void Starving()
     {
         //Debug.Log("Health reduced from starving");
         ModifyHealth(-0.5f);
     }
 
-    private void Dead() 
+    private void Dead()
     {
         Debug.Log("Player ded. F");
         GetComponent<PlayerMovement>().ToggleMovement(false);
         GameManager.Instance.Dead();
     }
 
-    private void UpdateUI() 
+    private void UpdateUI()
     {
         //Health Icons
         for (int i = 0; i < healthIcons.Length; i++)
         {
-            if (i+1 <= (health * 2)) healthIcons[i].enabled = true;
+            if (i + 1 <= (health * 2)) healthIcons[i].enabled = true;
             else healthIcons[i].enabled = false;
         }
 
         //Hunger Icons
         for (int i = 0; i < hungerIcons.Length; i++)
         {
-            if (i+1 <= (hunger * 2)) hungerIcons[i].enabled = true;
+            if (i + 1 <= (hunger * 2)) hungerIcons[i].enabled = true;
             else hungerIcons[i].enabled = false;
         }
     }
