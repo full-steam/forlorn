@@ -18,7 +18,7 @@ public class PlayerStatus : MonoBehaviour
         set
         {
             money = value;
-            GameManager.Instance.Blackboard.VariableStorage.SetVariable("$VAR_Money", new Yarn.Value(money));
+            GameManager.Instance.Blackboard.VariableStorage.SetVariable("$VARMoney", new Yarn.Value(money));
         }
     }
     
@@ -115,11 +115,6 @@ public class PlayerStatus : MonoBehaviour
         hunger += amount;
         CheckHunger();
         UpdateUI();
-    }
-
-    public void ModifyMoney(int amount)
-    {
-        Money += amount;
     }
 
     public void AddItem(ItemObject newItem)

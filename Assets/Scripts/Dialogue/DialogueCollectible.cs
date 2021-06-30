@@ -1,4 +1,6 @@
-﻿using Yarn;
+﻿using System;
+using UnityEngine;
+using Yarn;
 
 /// <summary>
 /// Component to run dialogue when an item is collected.
@@ -73,15 +75,31 @@ public class DialogueCollectible : Dialogue
         runner.onDialogueComplete.AddListener(DisableObject);
     }
 
-    private void BuyItem(string[] parameters)
+    private void BuyItem(string[] parameters, Action onComplete)
     {
-        AudioController.Play("ItemPickup");
-        GameManager.Instance.Blackboard.Player.playerStatus.ModifyMoney(int.Parse(parameters[0]));
-        ItemObject itemObj = new ItemObject();
-        itemObj.itemID = int.Parse(parameters[1]);
-        itemObj.count = int.Parse(parameters[2]);
-        GameManager.Instance.Blackboard.Player.playerStatus.AddItem(itemObj);
-        runner.onDialogueComplete.AddListener(DisableObject);
+        int cost = int.Parse(parameters[0]);
+
+        if (GameManager.Instance.Blackboard.VariableStorage.GetValue("$VARMoney").AsNumber < Mathf.Abs(cost))
+        {
+            Debug.Log("[DialogueCollectible] " + "Not enough money.");
+            GameManager.Instance.EnableNotEnoughMoneyPanel(onComplete);
+        }
+        else
+        {
+            AudioController.Play("ItemPickup");
+
+            GameManager.Instance.Blackboard.Player.playerStatus.Money += cost;
+
+            ItemObject itemObj = new ItemObject();
+            itemObj.itemID = int.Parse(parameters[1]);
+            itemObj.count = int.Parse(parameters[2]);
+
+            GameManager.Instance.Blackboard.Player.playerStatus.AddItem(itemObj);
+
+            runner.onDialogueComplete.AddListener(DisableObject);
+
+            onComplete();
+        }
     }
 
     protected override void RemoveCommandHandlers()

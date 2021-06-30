@@ -105,7 +105,7 @@ public class FlagEvent
                 }
                 break;
             case FlagEventType.ModifyMoney:
-                GameManager.Instance.Blackboard.Player.GetComponent<PlayerStatus>().ModifyMoney(amount);
+                GameManager.Instance.Blackboard.Player.GetComponent<PlayerStatus>().Money += amount;
                 break;
             case FlagEventType.PlayBGM:
                 AudioController.PlayMusic(audioID);

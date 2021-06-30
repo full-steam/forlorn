@@ -1,5 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -23,11 +23,14 @@ public class GameManager : MonoBehaviour
     public Button arrangementButton;
     public ArrangementOptionsHolder optionsHolder;
     public GameObject deadCanvas;
+    public GameObject notEnoughMoneyPanel;
+    public Button notEnoughMoneyButton;
 
     // ---Private Variables
     private SaveHandler saveHandler;
     private SaveObject so;
-    
+    private Action notEnoughMoneyAction;
+
 
     private void Awake()
     {
@@ -100,6 +103,21 @@ public class GameManager : MonoBehaviour
         StartCoroutine(ChangeScene(sceneName, _so));
     }
 
+    public void EnableNotEnoughMoneyPanel(Action onComplete)
+    {
+        notEnoughMoneyAction = onComplete;
+        notEnoughMoneyPanel.SetActive(true);
+        Debug.Log("[GameManager] " + "Not enough money panel enabled.");
+        notEnoughMoneyButton.onClick.AddListener(OnCompleteNotEnoughMoney);
+    }
+
+    private void OnCompleteNotEnoughMoney()
+    {
+        notEnoughMoneyButton.onClick.RemoveListener(OnCompleteNotEnoughMoney);
+        notEnoughMoneyAction();
+        Debug.Log("[GameManager] " + "Not enough money action triggered.");
+    }
+
     /// <summary>
     /// For debugging scene only
     /// </summary>
@@ -132,7 +150,7 @@ public class GameManager : MonoBehaviour
     }
 }
 
-public class Blackboard 
+public class Blackboard
 {
     public PlayerController Player { set; get; }
     public bl_Joystick Joystick { set; get; }
