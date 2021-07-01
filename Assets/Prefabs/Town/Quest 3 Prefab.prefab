@@ -7862,7 +7862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.size
-      value: 24
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[0].tag
@@ -7961,6 +7961,10 @@ PrefabInstance:
       value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
+      propertyPath: flagEvents.Array.data[24].tag
+      value: Interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[2].flag
       value: HasMetNorman
       objectReference: {fileID: 0}
@@ -8026,26 +8030,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[18].flag
-      value: HasSeenPillars
+      value: HasInteractedCoffin
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[19].flag
-      value: HasReadSign
+      value: HasSeenPillars
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[20].flag
-      value: HasSolvedPuzzle
+      value: HasReadSign
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[21].flag
-      value: InRuins
+      value: HasSolvedPuzzle
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[22].flag
-      value: AtTown
+      value: InRuins
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[23].flag
+      value: AtTown
+      objectReference: {fileID: 0}
+    - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
+      propertyPath: flagEvents.Array.data[24].flag
       value: HasFinishedQuest3
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
@@ -8149,6 +8157,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
+      propertyPath: flagEvents.Array.data[24].delay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[2].amount
       value: 0
       objectReference: {fileID: 0}
@@ -8245,6 +8257,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300160, guid: 29c9cded5e558164aaf8c9bf08aa1510, type: 3}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
+      propertyPath: flagEvents.Array.data[24].sprite
+      value: 
+      objectReference: {fileID: 21300160, guid: 29c9cded5e558164aaf8c9bf08aa1510, type: 3}
+    - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[2].foldout
       value: 0
       objectReference: {fileID: 0}
@@ -8298,11 +8314,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[18].audioID
-      value: 
+      value: Town
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[19].audioID
-      value: Town
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[19].foldout
@@ -8310,7 +8326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[20].audioID
-      value: 
+      value: Town
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[20].foldout
@@ -8318,7 +8334,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[21].audioID
-      value: Ruins
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[21].foldout
@@ -8326,10 +8342,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[22].audioID
-      value: Town
+      value: Ruins
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[23].audioID
+      value: Town
+      objectReference: {fileID: 0}
+    - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
+      propertyPath: flagEvents.Array.data[24].audioID
       value: Town
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
@@ -8406,22 +8426,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[18].eventType
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[19].eventType
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
-      propertyPath: flagEvents.Array.data[20].eventType
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
+      propertyPath: flagEvents.Array.data[20].eventType
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[21].eventType
-      value: 9
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[22].eventType
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
+      propertyPath: flagEvents.Array.data[23].eventType
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
@@ -8605,6 +8629,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 433818325656623509}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
+      propertyPath: flagEvents.Array.data[24].foldoutTargets
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
+      propertyPath: flagEvents.Array.data[24].spriteRenderer
+      value: 
+      objectReference: {fileID: 433818325656623509}
+    - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[0].dialogueComponent
       value: 
       objectReference: {fileID: 0}
@@ -8701,6 +8733,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2191274171783440755}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
+      propertyPath: flagEvents.Array.data[24].dialogueComponent
+      value: 
+      objectReference: {fileID: 2191274171783440755}
+    - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[3].targets.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -8766,11 +8802,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[19].targets.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[20].targets.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[21].targets.Array.size
@@ -8782,6 +8818,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[23].targets.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
+      propertyPath: flagEvents.Array.data[24].targets.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
@@ -8863,11 +8903,11 @@ PrefabInstance:
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[18].targets.Array.data[0]
       value: 
-      objectReference: {fileID: 311160791}
+      objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[19].targets.Array.data[0]
       value: 
-      objectReference: {fileID: 603669951299359888}
+      objectReference: {fileID: 311160791}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[19].targets.Array.data[1]
       value: 
@@ -8883,13 +8923,25 @@ PrefabInstance:
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[20].targets.Array.data[0]
       value: 
-      objectReference: {fileID: 5095715467707473447}
+      objectReference: {fileID: 603669951299359888}
+    - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
+      propertyPath: flagEvents.Array.data[20].targets.Array.data[1]
+      value: 
+      objectReference: {fileID: 6677000825144604587}
+    - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
+      propertyPath: flagEvents.Array.data[20].targets.Array.data[2]
+      value: 
+      objectReference: {fileID: 8416291720064619359}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[21].targets.Array.data[0]
       value: 
-      objectReference: {fileID: 311160791}
+      objectReference: {fileID: 5095715467707473447}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[22].targets.Array.data[0]
+      value: 
+      objectReference: {fileID: 311160791}
+    - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
+      propertyPath: flagEvents.Array.data[23].targets.Array.data[0]
       value: 
       objectReference: {fileID: 311160791}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
@@ -8985,6 +9037,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
+      propertyPath: flagEvents.Array.data[24].fadeInOptions.fadeTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[3].fadeOutOptions.fadeTime
       value: 1
       objectReference: {fileID: 0}
@@ -9066,6 +9122,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[23].fadeOutOptions.fadeTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
+      propertyPath: flagEvents.Array.data[24].fadeOutOptions.fadeTime
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
@@ -9169,6 +9229,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
+      propertyPath: flagEvents.Array.data[24].fadeInOptions.blackScreenDuration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[3].fadeOutOptions.blackScreenDuration
       value: 1
       objectReference: {fileID: 0}
@@ -9250,6 +9314,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
       propertyPath: flagEvents.Array.data[23].fadeOutOptions.blackScreenDuration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2898375349728462061, guid: 190e8d07e1318c64f8cb7b5c1bdc95d9, type: 3}
+      propertyPath: flagEvents.Array.data[24].fadeOutOptions.blackScreenDuration
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
