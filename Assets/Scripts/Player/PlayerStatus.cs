@@ -178,7 +178,7 @@ public class PlayerStatus : MonoBehaviour
     private void Starving()
     {
         //Debug.Log("Health reduced from starving");
-        ModifyHealth(-0.5f);
+        if (!GameManager.Instance.dialogueRunner.IsDialogueRunning) ModifyHealth(-0.5f);
     }
 
     private void Dead()
