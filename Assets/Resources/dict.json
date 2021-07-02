@@ -2934,10 +2934,10 @@
       "isUnlocked": true
     },
     {
-      "eng": "TRUE",
+      "eng": "true",
       "ind": "benar",
       "posVal": 0,
-      "pronunciationAudioClipID": "TRUE",
+      "pronunciationAudioClipID": "true",
       "isUnlocked": true
     }
   ]
