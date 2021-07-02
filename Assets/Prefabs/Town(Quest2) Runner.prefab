@@ -160,8 +160,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: ReportedSpeech.Arrange1
   dialogue: {fileID: 0}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
   answers:
   - Amy said that the guard was annoying
   options:
@@ -202,7 +200,6 @@ GameObject:
   - component: {fileID: 8698391463249116047}
   - component: {fileID: 8698391463249116041}
   - component: {fileID: 8698391463249116046}
-  - component: {fileID: 8698391463249116040}
   m_Layer: 0
   m_Name: ReportedSpeechArrange2
   m_TagString: Untagged
@@ -238,8 +235,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: ReportedSpeech.Arrange2
   dialogue: {fileID: 0}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
   answers:
   - Amy said that the Adventurer had saved her
   - Amy said that I had saved her
@@ -274,19 +269,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0
---- !u!114 &8698391463249116040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8698391463249116044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65b01de093687e4d9e07433bf64595a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkpointId: 
 --- !u!1 &8698391463327423773
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,8 +341,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: ReportedSpeech
   dialogue: {fileID: 0}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
   disableAfterTrigger: 1
 --- !u!1 &8698391463327910986
 GameObject:
@@ -434,8 +414,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: ModalsOfDeduction
   dialogue: {fileID: 0}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
   disableAfterTrigger: 1
 --- !u!1 &8698391463431345117
 GameObject:
@@ -482,7 +460,6 @@ GameObject:
   - component: {fileID: 8698391463486970582}
   - component: {fileID: 8698391463486970577}
   - component: {fileID: 8698391463486970580}
-  - component: {fileID: 8698391463486970576}
   - component: {fileID: 8698391463486970579}
   m_Layer: 0
   m_Name: Town(Quest2) Runner
@@ -526,8 +503,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: EventsQuest2
   dialogue: {fileID: 2480198943629176163, guid: 59e925e087514cc45b0bcee87afac568, type: 3}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
 --- !u!114 &8698391463486970577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -738,19 +713,6 @@ MonoBehaviour:
     dialogueComponent: {fileID: 0}
     spriteRenderer: {fileID: 0}
     sprite: {fileID: 0}
---- !u!114 &8698391463486970576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8698391463486970581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65b01de093687e4d9e07433bf64595a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkpointId: 
 --- !u!114 &8698391463486970579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -774,7 +736,6 @@ GameObject:
   - component: {fileID: 8698391463664699841}
   - component: {fileID: 8698391463664699842}
   - component: {fileID: 8698391463664699843}
-  - component: {fileID: 8698391463664699840}
   m_Layer: 0
   m_Name: ModalsOfDeductionArrange2
   m_TagString: Untagged
@@ -810,8 +771,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: ModalsOfDeduction.Arrange2
   dialogue: {fileID: 0}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
   answers:
   - The exam results might come out this week or next week
   - The exam results could come out this week or next week
@@ -853,19 +812,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0
---- !u!114 &8698391463664699840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8698391463664699846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65b01de093687e4d9e07433bf64595a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkpointId: 
 --- !u!1 &8698391463793493646
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,8 +858,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: ModalsOfDeduction.Arrange1
   dialogue: {fileID: 0}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
   answers:
   - This coat can't be Amy's
   options:

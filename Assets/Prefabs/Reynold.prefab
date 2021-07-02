@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5384756814938917193}
   - component: {fileID: 5384756814938917191}
   - component: {fileID: 5384756814938917188}
-  - component: {fileID: 5384756814938917189}
   m_Layer: 0
   m_Name: Reynold
   m_TagString: Interactable
@@ -115,8 +114,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: 
   dialogue: {fileID: 2480198943629176163, guid: af832122ce340a6408aa0a2c77a09105, type: 3}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
   answers:
   - It was buried in a grave
   options:
@@ -137,16 +134,3 @@ MonoBehaviour:
   feedback: <color=blue>be<color=black> + <color=blue>past tense<color=black> kata
     kerjanya.  Kalau bingung, coba lihat <color=blue>Question<color=black> di kiri
     bawah.
---- !u!114 &5384756814938917189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5384756814938917192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65b01de093687e4d9e07433bf64595a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkpointId: 

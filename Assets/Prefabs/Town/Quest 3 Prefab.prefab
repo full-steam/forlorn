@@ -179,8 +179,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: Quest3.SeeCoffin
   dialogue: {fileID: 0}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
   disableAfterTrigger: 1
 --- !u!1 &237757279
 GameObject:
@@ -289,8 +287,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: Quest3.SeePillars
   dialogue: {fileID: 0}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
   disableAfterTrigger: 1
 --- !u!1 &458623407
 GameObject:
@@ -364,8 +360,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: Quest3.GoCity
   dialogue: {fileID: 2480198943629176163, guid: 27844e0882591714d91d73a94adbc764, type: 3}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
   disableAfterTrigger: 0
 --- !u!1 &526422296
 GameObject:
@@ -464,8 +458,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: Quest3.HasSeenFood
   dialogue: {fileID: 0}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
   disableAfterTrigger: 1
 --- !u!1 &1128588360
 GameObject:
@@ -478,7 +470,6 @@ GameObject:
   - component: {fileID: 1128588361}
   - component: {fileID: 1128588363}
   - component: {fileID: 1128588362}
-  - component: {fileID: 1128588364}
   m_Layer: 0
   m_Name: Bookshelf Trigger
   m_TagString: Untagged
@@ -540,22 +531,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: Quest3.SeeBookshelf
   dialogue: {fileID: 0}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
   disableAfterTrigger: 1
---- !u!114 &1128588364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1128588360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65b01de093687e4d9e07433bf64595a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkpointId: 
 --- !u!1 &1166007891
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,7 +578,6 @@ GameObject:
   - component: {fileID: 1461670078}
   - component: {fileID: 1461670079}
   - component: {fileID: 1461670080}
-  - component: {fileID: 5271624459012930332}
   m_Layer: 0
   m_Name: James Trigger
   m_TagString: Interactable
@@ -664,22 +639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: Quest3.MeetJames
   dialogue: {fileID: 0}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
   disableAfterTrigger: 1
---- !u!114 &5271624459012930332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1461670077}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65b01de093687e4d9e07433bf64595a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkpointId: 
 --- !u!1 &1553130160
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,19 +718,6 @@ Transform:
   m_Father: {fileID: 905220630815221560}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &61223021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1756851629}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65b01de093687e4d9e07433bf64595a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkpointId: 
 --- !u!1 &2021621479
 GameObject:
   m_ObjectHideFlags: 0
@@ -837,19 +784,6 @@ PolygonCollider2D:
       - {x: 0.421875, y: 0.0625}
       - {x: 0.421875, y: 0.59375}
       - {x: 0.265625, y: 0.78125}
---- !u!114 &2727023784874869043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 433818324562359725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65b01de093687e4d9e07433bf64595a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkpointId: 
 --- !u!114 &8744293499644648887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -864,8 +798,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: Quest3.InteractBush
   dialogue: {fileID: 0}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
 --- !u!114 &1909539288144526242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -880,34 +812,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: 
   dialogue: {fileID: 2480198943629176163, guid: 05671335a3bad3643b07d80105d18635, type: 3}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
---- !u!114 &1989521606529163264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 433818325327926399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65b01de093687e4d9e07433bf64595a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkpointId: 
---- !u!114 &399641631708255549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 433818325331623384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65b01de093687e4d9e07433bf64595a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkpointId: 
 --- !u!114 &4417596510987464022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -922,8 +826,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: 
   dialogue: {fileID: 2480198943629176163, guid: d74d24844da9c394cba25793f0e1971d, type: 3}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
   answers:
   - The king is that person who is tall
   - The king is that person that is tall
@@ -966,8 +868,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: 
   dialogue: {fileID: 2480198943629176163, guid: 4e07aa56a9e95ac4ea95ee2adb750bbe, type: 3}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
 --- !u!114 &61223024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -982,34 +882,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: 
   dialogue: {fileID: 2480198943629176163, guid: 02c5f760144983b4f9a515c6e863353c, type: 3}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
---- !u!114 &61223028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 603669951299359888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65b01de093687e4d9e07433bf64595a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkpointId: 
---- !u!114 &5797646110878557541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 649877907107997114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65b01de093687e4d9e07433bf64595a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkpointId: 
 --- !u!1 &1046273168635537301
 GameObject:
   m_ObjectHideFlags: 0
@@ -1206,19 +1078,6 @@ Transform:
   m_Father: {fileID: 905220630815221560}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &61223022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4592313911167715267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65b01de093687e4d9e07433bf64595a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkpointId: 
 --- !u!114 &1909539288144526239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1233,8 +1092,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: James
   dialogue: {fileID: 2480198943629176163, guid: dd74184aa5ebbb4409805f68d964b343, type: 3}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
   item: {fileID: 11400000, guid: 0f49febfc60f3034eae1b9c849cf8713, type: 2}
   count: 1
   takenFlag: HasFoundRing
@@ -1250,7 +1107,6 @@ GameObject:
   - component: {fileID: 2478789523859585598}
   - component: {fileID: 8844047763429333602}
   - component: {fileID: 5968384440604130216}
-  - component: {fileID: 4416147446567583775}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1312,22 +1168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: Quest3.ReachDoor
   dialogue: {fileID: 0}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
   disableAfterTrigger: 1
---- !u!114 &4416147446567583775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5529460048392301989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65b01de093687e4d9e07433bf64595a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkpointId: 
 --- !u!1 &6604842970546474248
 GameObject:
   m_ObjectHideFlags: 0
@@ -1374,8 +1215,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: 
   dialogue: {fileID: 2480198943629176163, guid: a41d4260b9ec7a040ac5979b61d6042a, type: 3}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
 --- !u!114 &2191274171783440755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1390,8 +1229,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: Quest3.NormanDisappear
   dialogue: {fileID: 2480198943629176163, guid: 27844e0882591714d91d73a94adbc764, type: 3}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
 --- !u!1 &7429046509407526904
 GameObject:
   m_ObjectHideFlags: 0
@@ -1438,7 +1275,6 @@ GameObject:
   - component: {fileID: 8305619860349358651}
   - component: {fileID: 8305619860349358648}
   - component: {fileID: 9046431853168985957}
-  - component: {fileID: 6585376781400081695}
   m_Layer: 0
   m_Name: Gate Trigger
   m_TagString: Untagged
@@ -1500,22 +1336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: Quest3.ReachGate
   dialogue: {fileID: 2480198943629176163, guid: 27844e0882591714d91d73a94adbc764, type: 3}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
   disableAfterTrigger: 1
---- !u!114 &6585376781400081695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8305619860349358650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65b01de093687e4d9e07433bf64595a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkpointId: 
 --- !u!1 &8305619860779542753
 GameObject:
   m_ObjectHideFlags: 0
@@ -1561,21 +1382,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: 
   dialogue: {fileID: 2480198943629176163, guid: 53ab1cb1239b3eb4aa495ab455ea0fb1, type: 3}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
---- !u!114 &1909539288144526240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8416291720467113363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65b01de093687e4d9e07433bf64595a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkpointId: 
 --- !u!114 &1909539288144526241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1590,8 +1396,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: 
   dialogue: {fileID: 2480198943629176163, guid: b87d51657309330469f32b62036396ec, type: 3}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
 --- !u!1001 &68580395
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2093,7 +1897,8 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.15774536
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5078152410560093059, guid: 1101352d337194d459e5bb6278081ede, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1101352d337194d459e5bb6278081ede, type: 3}
 --- !u!4 &771484898290711504 stripped
 Transform:
@@ -6014,14 +5819,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8728cc48d2747494893fd60426c06f6e, type: 3}
---- !u!4 &8416291720064619352 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7947911505737750448, guid: 8728cc48d2747494893fd60426c06f6e, type: 3}
-  m_PrefabInstance: {fileID: 1909539289197069544}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8416291720064619359 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7947911505737750455, guid: 8728cc48d2747494893fd60426c06f6e, type: 3}
+  m_PrefabInstance: {fileID: 1909539289197069544}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8416291720064619352 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7947911505737750448, guid: 8728cc48d2747494893fd60426c06f6e, type: 3}
   m_PrefabInstance: {fileID: 1909539289197069544}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1909539289286529247
@@ -6535,14 +6340,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4be821d0b78ad5043985b57b738e951b, type: 3}
---- !u!1 &5095715467707473447 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6644944589867386885, guid: 4be821d0b78ad5043985b57b738e951b, type: 3}
-  m_PrefabInstance: {fileID: 1909539289547003426}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5095715467707473446 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6644944589867386884, guid: 4be821d0b78ad5043985b57b738e951b, type: 3}
+  m_PrefabInstance: {fileID: 1909539289547003426}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5095715467707473447 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6644944589867386885, guid: 4be821d0b78ad5043985b57b738e951b, type: 3}
   m_PrefabInstance: {fileID: 1909539289547003426}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1909539289599701540
@@ -6622,14 +6427,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8728cc48d2747494893fd60426c06f6e, type: 3}
---- !u!4 &8416291720467113364 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7947911505737750448, guid: 8728cc48d2747494893fd60426c06f6e, type: 3}
-  m_PrefabInstance: {fileID: 1909539289599701540}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8416291720467113363 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7947911505737750455, guid: 8728cc48d2747494893fd60426c06f6e, type: 3}
+  m_PrefabInstance: {fileID: 1909539289599701540}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8416291720467113364 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7947911505737750448, guid: 8728cc48d2747494893fd60426c06f6e, type: 3}
   m_PrefabInstance: {fileID: 1909539289599701540}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1909539289649264463
@@ -6875,9 +6680,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a057178eb028e94fb93bf39262ea3e8, type: 3}
---- !u!1 &433818325656623508 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2055102311959635369, guid: 6a057178eb028e94fb93bf39262ea3e8, type: 3}
+--- !u!212 &433818325656623509 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2055102311959635368, guid: 6a057178eb028e94fb93bf39262ea3e8, type: 3}
   m_PrefabInstance: {fileID: 1909539289790774333}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &433818325656623506 stripped
@@ -6885,9 +6690,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2055102311959635375, guid: 6a057178eb028e94fb93bf39262ea3e8, type: 3}
   m_PrefabInstance: {fileID: 1909539289790774333}
   m_PrefabAsset: {fileID: 0}
---- !u!212 &433818325656623509 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 2055102311959635368, guid: 6a057178eb028e94fb93bf39262ea3e8, type: 3}
+--- !u!1 &433818325656623508 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2055102311959635369, guid: 6a057178eb028e94fb93bf39262ea3e8, type: 3}
   m_PrefabInstance: {fileID: 1909539289790774333}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1909539289800812839
@@ -9603,10 +9408,5 @@ PrefabInstance:
 --- !u!4 &2371921923488527394 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5316226553914931689, guid: 529203345f8343540b49a7bedfd759cd, type: 3}
-  m_PrefabInstance: {fileID: 7578930963756322251}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &649877907107997114 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6929088249611446385, guid: 529203345f8343540b49a7bedfd759cd, type: 3}
   m_PrefabInstance: {fileID: 7578930963756322251}
   m_PrefabAsset: {fileID: 0}

@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5414893143857861841}
   - component: {fileID: 7713141712210513269}
   - component: {fileID: 7437719510586776342}
-  - component: {fileID: 5078152410560093059}
   m_Layer: 0
   m_Name: Special Bookshelf
   m_TagString: Interactable
@@ -125,22 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: 
   dialogue: {fileID: 2480198943629176163, guid: a12e69f07f7e97441bcfd793308abe3e, type: 3}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
   item: {fileID: 11400000, guid: 7a2de30281f8d3e45a818915a4294015, type: 2}
   count: 1
   takenFlag: HasFoundBook
   manual: 0
---- !u!114 &5078152410560093059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6858895961916922814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65b01de093687e4d9e07433bf64595a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkpointId: 
