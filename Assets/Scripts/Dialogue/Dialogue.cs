@@ -12,6 +12,8 @@ public class Dialogue : MonoBehaviour
     [Tooltip("Giving a node name manually will takes priority to be ran than the set Dialogue")]
     public string nodeName;
     public YarnProgram dialogue;
+    [HideInInspector] public Checkpoint checkpoint;
+    public bool triggerCheckpointDirectly;
 
     protected DialogueRunner runner;
 
@@ -26,7 +28,7 @@ public class Dialogue : MonoBehaviour
     }
 
     /// <summary>
-    // Starts the dialogue.
+    /// Starts the dialogue.
     /// </summary>
     public virtual void StartDialogue()
     {
@@ -34,25 +36,19 @@ public class Dialogue : MonoBehaviour
         runner.AddCommandHandler("trigger_checkpoint", TriggerCheckpoint);
         runner.AddCommandHandler("teleport", Teleport);
         runner.AddCommandHandler("fade_out_and_in", FadeOutAndIn);
+        if (triggerCheckpointDirectly) checkpoint.TriggerCheckpoint();
         runner.onDialogueComplete.AddListener(RemoveCommandHandlers);
         runner.StartDialogue(nodeName);
     }
 
     /// <summary>
-    /// Triggers a flag and saves the game.
+    /// Triggers a checkpoint from a Yarn Program.
     /// </summary>
-    /// <param name="parameters">Parameters sent from the Yarn Program. Should have one string argument: the flag triggered.</param>
+    /// <param name="parameters">Parameters sent from the Yarn Program. Should either be empty or have one string argument.</param>
     protected void TriggerCheckpoint(string[] parameters)
     {
-        string flag = parameters[0];
-
-        // prevents checkpoint from activating more than once
-        if (GameManager.Instance.Blackboard.FlagManager.GetFlag(flag) == false)
-        {
-            Debug.Log("[Checkpoint]: Checkpoint " + flag + " triggered.");
-            GameManager.Instance.Blackboard.FlagManager.SetFlag(flag, true);
-            GameManager.Instance.SaveGame();
-        }
+        if (parameters.Length <= 0) this.checkpoint.TriggerCheckpoint();
+        else checkpoint.TriggerCheckpoint(parameters[0]);
     }
 
     protected virtual void RemoveCommandHandlers()
