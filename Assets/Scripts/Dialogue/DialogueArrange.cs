@@ -62,11 +62,9 @@ public class DialogueArrange : Dialogue
 
             // lowercase
             sent = sent.ToLower();
-            Debug.Log(sent);
 
             foreach (string answer in answers)
             {
-                Debug.Log(answer);
                 if (sent == answer.ToLower())
                 {
                     isCorrect = true;
@@ -83,7 +81,6 @@ public class DialogueArrange : Dialogue
             }
             else
             {
-                sentenceHolder.Reset();
                 sentenceHolder.feedbackPanel.SetActive(true);
             }
         }
