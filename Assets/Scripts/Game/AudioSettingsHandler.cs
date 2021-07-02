@@ -40,7 +40,7 @@ public class AudioSettingsHandler : MonoBehaviour
 
     public void ToggleBGM(bool on)
     {
-        GameManager.Instance.Blackboard.Volume.BGM(on);
+        GameManager.Instance.Blackboard.Volume.ToggleBGM(on);
         if (on)
         {
             BGMSlider.value = AudioController.GetCategoryVolume("BGM");
@@ -61,7 +61,7 @@ public class AudioSettingsHandler : MonoBehaviour
 
     public void ToggleSFX(bool on)
     {
-        GameManager.Instance.Blackboard.Volume.SFX(on);
+        GameManager.Instance.Blackboard.Volume.ToggleSFX(on);
         if (on)
         {
             SFXSlider.value = AudioController.GetCategoryVolume("SFX");
