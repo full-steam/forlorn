@@ -17,6 +17,7 @@ public class ArrangementOptionsHolder : MonoBehaviour
         ArrangementOption arrangementOption = GameManager.Instance.Blackboard.ObjectPooler.GetPooledObject("arrangement option").GetComponentInChildren<ArrangementOption>();
         arrangementOption.Init(option, this);
         arrangementOption.transform.SetParent(transform);
+        arrangementOption.transform.localScale = Vector3.one;
         arrangementOption.gameObject.SetActive(true);
     }
 
