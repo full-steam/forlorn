@@ -806,7 +806,7 @@
       "isUnlocked": true
     },
     {
-      "eng": "fiancee",
+      "eng": "fiancée",
       "ind": "tunangan wanita (tidak bisa digunakan untuk lelaki)",
       "posVal": 0,
       "pronunciationAudioClipID": "fiancee",
@@ -866,6 +866,13 @@
       "ind": "selama-lamanya",
       "posVal": 5,
       "pronunciationAudioClipID": "forever",
+      "isUnlocked": true
+    },
+    {
+      "eng": "forlorn",
+      "ind": "terlantar",
+      "posVal": 4,
+      "pronunciationAudioClipID": "forlorn",
       "isUnlocked": true
     },
     {
