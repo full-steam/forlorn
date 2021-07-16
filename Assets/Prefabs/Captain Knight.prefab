@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3047611033559955868}
   - component: {fileID: 3047611033559955866}
-  - component: {fileID: 3047611033559955867}
   - component: {fileID: 3047611033559955865}
   m_Layer: 0
   m_Name: CaptainArrange2
@@ -47,8 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: Captain.Arrange2
   dialogue: {fileID: 0}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
   answers:
   - He asked us to bring it to Bridget
   - He said could you bring it to Bridget
@@ -74,19 +71,6 @@ MonoBehaviour:
   question: '"I really want Bridget to have this locket. Can you bring it to her?"'
   feedback: <color=blue>Tense<color=black> dan <color=blue>pronoun<color=black> dapat
     berubah!
---- !u!114 &3047611033559955867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3047611033559955869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65b01de093687e4d9e07433bf64595a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkpointId: 
 --- !u!114 &3047611033559955865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,8 +209,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeName: 
   dialogue: {fileID: 2480198943629176163, guid: 3b784e3bc3c837e4fabf0eff872e3f40, type: 3}
-  checkpoint: {fileID: 0}
-  triggerCheckpointDirectly: 0
   answers:
   - He said that he would let us pass if we found it
   options:
